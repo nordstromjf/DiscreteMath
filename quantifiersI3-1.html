@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Quantifiers Part I</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\MyTikzmark}[2]{
+     \tikz[overlay,remember picture,baseline] \node [anchor=base] (#1) {$#2$};}
+\newcommand{\DrawVLine}[3][]{
+  \begin{tikzpicture}[overlay,remember picture]
+    \draw[shorten \lt =0.3ex, #1] (#2.north) -- (#3.south);
+  \end{tikzpicture}
+}
+\newcommand{\DrawHLine}[3][]{
+  \begin{tikzpicture}[overlay,remember picture]
+    \draw[shorten \lt =0.2em, #1] (#2.west) -- (#3.east);
+  \end{tikzpicture}
+}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Discrete Mathematics</span></a></h1>
+<p class="byline">Jennifer Firkins Nordstrom</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter3.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter3.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="negquant3-2.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter3.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter3.html" title="Up">Up</a><a class="next-button button toolbar-item" href="negquant3-2.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter1.html" data-scroll="chapter1"><span class="codenumber">1</span> <span class="title">Introduction to Mathematical Language</span></a><ul>
+<li><a href="variables1-1.html" data-scroll="variables1-1">Variables and Statements</a></li>
+<li><a href="lang_sets1-2.html" data-scroll="lang_sets1-2">Language of Sets</a></li>
+<li><a href="lang_relations1-3.html" data-scroll="lang_relations1-3">Language of Relations and Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter2.html" data-scroll="chapter2"><span class="codenumber">2</span> <span class="title">Logic</span></a><ul>
+<li><a href="logical_form2-1.html" data-scroll="logical_form2-1">Logical Form and Logical Equivalence</a></li>
+<li><a href="conditional2-2.html" data-scroll="conditional2-2">Conditional Statements</a></li>
+<li><a href="arguments2-3.html" data-scroll="arguments2-3">Valid and Invalid Arguments</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter3.html" data-scroll="chapter3"><span class="codenumber">3</span> <span class="title">Logic with Quantifiers</span></a><ul>
+<li><a href="quantifiersI3-1.html" data-scroll="quantifiersI3-1" class="active">Quantifiers Part I</a></li>
+<li><a href="negquant3-2.html" data-scroll="negquant3-2">Quantifiers Part II</a></li>
+<li><a href="multiplequant3-3.html" data-scroll="multiplequant3-3">Statements with Multiple Quantifiers</a></li>
+<li><a href="argumentsquant3-4.html" data-scroll="argumentsquant3-4">Arguments with Quantifiers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter4.html" data-scroll="chapter4"><span class="codenumber">4</span> <span class="title">Proof Techniques</span></a><ul>
+<li><a href="directproof4-1.html" data-scroll="directproof4-1">Direct Proof and Counter Example</a></li>
+<li><a href="rationals4-2.html" data-scroll="rationals4-2">Rational Numbers</a></li>
+<li><a href="divisibility4-3.html" data-scroll="divisibility4-3">Divisibility</a></li>
+<li><a href="cases4-4.html" data-scroll="cases4-4">Proof by Cases</a></li>
+<li><a href="contradiction4-5.html" data-scroll="contradiction4-5">Proof by Contradiction and Contrapositive</a></li>
+<li><a href="morecontradiction4-6.html" data-scroll="morecontradiction4-6">More Proof by Contradiction and Contrapositive</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter5.html" data-scroll="chapter5"><span class="codenumber">5</span> <span class="title">Sequences and Mathematical Induction</span></a><ul>
+<li><a href="sequences5-1.html" data-scroll="sequences5-1">Sequences</a></li>
+<li><a href="induction5-2.html" data-scroll="induction5-2">Mathematical Induction</a></li>
+<li><a href="moreinduction5-3.html" data-scroll="moreinduction5-3">More Mathematical Induction</a></li>
+<li><a href="stronginduction5-4.html" data-scroll="stronginduction5-4">Strong Induction</a></li>
+<li><a href="recursion5-5.html" data-scroll="recursion5-5">Defining Sequences Recursively</a></li>
+<li><a href="iteration5-6.html" data-scroll="iteration5-6">Solving Recurrence Relations by Iteration</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter6.html" data-scroll="chapter6"><span class="codenumber">6</span> <span class="title">Set Theory</span></a><ul>
+<li><a href="sets6-1.html" data-scroll="sets6-1">Set Theory</a></li>
+<li><a href="propertiesofsets6-2.html" data-scroll="propertiesofsets6-2">Properties of Sets</a></li>
+<li><a href="algebraicsets6-3.html" data-scroll="algebraicsets6-3">Algebraic Proofs and Counterexamples</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter7.html" data-scroll="chapter7"><span class="codenumber">7</span> <span class="title">Functions</span></a><ul>
+<li><a href="functions7-1.html" data-scroll="functions7-1">Functions</a></li>
+<li><a href="onetooneonto7-2.html" data-scroll="onetooneonto7-2">One-to-One, Onto, Inverse Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter8.html" data-scroll="chapter8"><span class="codenumber">8</span> <span class="title">Relations</span></a><ul>
+<li><a href="relations8-1.html" data-scroll="relations8-1">Relations on Sets</a></li>
+<li><a href="rstrelations8-2.html" data-scroll="rstrelations8-2">Reflexive, Symmetric, Transitive Properties</a></li>
+<li><a href="equivalencerelations8-3.html" data-scroll="equivalencerelations8-3">Equivalence Relations</a></li>
+<li><a href="modarith8-4.html" data-scroll="modarith8-4">Modular Arithmetic</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter9.html" data-scroll="chapter9"><span class="codenumber">9</span> <span class="title">Probability and Counting</span></a><ul>
+<li><a href="probability9-1.html" data-scroll="probability9-1">Probability</a></li>
+<li><a href="multrule9-2.html" data-scroll="multrule9-2">Multiplication Rule</a></li>
+<li><a href="additionrule9-3.html" data-scroll="additionrule9-3">Addition Rule</a></li>
+<li><a href="pigeonhole9-4.html" data-scroll="pigeonhole9-4">Pigeonhole Principle</a></li>
+<li><a href="combinations9-5.html" data-scroll="combinations9-5">Combinations</a></li>
+<li><a href="binomial9-6.html" data-scroll="binomial9-6">Binomial Theorem</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter10.html" data-scroll="chapter10"><span class="codenumber">10</span> <span class="title">Graph Theory</span></a><ul>
+<li><a href="graphs10-1.html" data-scroll="graphs10-1">Graphs</a></li>
+<li><a href="pathscircuits10-2.html" data-scroll="pathscircuits10-2">Paths and Circuits</a></li>
+<li><a href="trees10-3.html" data-scroll="trees10-3">Trees</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">References</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="quantifiersI3-1"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">Quantifiers Part I</span>
+</h2>
+<p id="p-185">We want to be able to use variables in statements. For example, \(x+3/2=4\) is not a statement since it has no truth value. However, if we say, “there exists \(x\) such that \(x+3/2=4\)” or “for all \(x\text{,}\) \(x+3/2=4\)”, and we know what set \(x\) belongs to, then we can decide whether these statements are true or false.</p>
+<article class="definition definition-like" id="definition-10"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span>
+</h6>
+<p id="p-186">The <dfn class="terminology">domain</dfn> for a quantified statement is the set of possible values for a variable in a quantified statement.</p></article><p id="p-187">In order to determine whether a statement is true of false, we first need to know the domain.</p>
+<article class="example example-like" id="E_domainqexist1"><a data-knowl="" class="id-ref original" data-refid="hk-E_domainqexist1"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Domain and Existential Statements.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_domainqexist1"><article class="example example-like"><p id="p-188">Let \(D=\mathbb{Z}\text{.}\) Determine whether the statement “there exists \(x\in D\) such that \(x+3/2=4\)” is true or false.</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-43" id="answer-43"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-43"><div class="answer solution-like"><p id="p-189">Since \(x=5/2\) is the only value satisfying the equation, but \(x\notin \mathbb{Z}\text{,}\) the statement is false.</p></div></div>
+<p id="p-190">Let \(D=\mathbb{R}\text{.}\) Determine whether the statement “there exists \(x\in D\) such that \(x+3/2=4\)” is true or false.</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-44" id="answer-44"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-44"><div class="answer solution-like"><p id="p-191">Since \(x=5/2\) is the only value satisfying the equation, and \(x\in \mathbb{R}\text{,}\) the statement is true.</p></div></div>
+<p id="p-192">Let \(D=\{5/2\}\text{.}\) Determine whether the statement “there exists \(x\in D\) such that \(x+3/2=4\)” is true or false.</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-45" id="answer-45"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-45"><div class="answer solution-like"><p id="p-193">Since \(x=5/2\) is the only value satisfying the equation, and \(x\in D\text{,}\) the statement is true.</p></div></div></article></div>
+<article class="example example-like" id="E_domainquniversal1"><a data-knowl="" class="id-ref original" data-refid="hk-E_domainquniversal1"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Domain and Universal Statements.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_domainquniversal1"><article class="example example-like"><p id="p-194">Let \(D=\mathbb{Z}\text{.}\) Determine whether the statement “for all \(x\in D\text{,}\) \(x+3/2=4\)” is true or false.</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-46" id="answer-46"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-46"><div class="answer solution-like"><p id="p-195">Since \(x=5/2\) is the only value satisfying the equation, certainly every integer does not satisfy the equation. The statement is false.</p></div></div>
+<p id="p-196">Let \(D=\mathbb{R}\text{.}\) Determine whether the statement “for all \(x\in D\text{,}\) \(x+3/2=4\)” is true or false.</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-47" id="answer-47"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-47"><div class="answer solution-like"><p id="p-197">Since \(x=5/2\) is the only value satisfying the equation, certainly every real numbers does not satisfy the equation. The statement is false.</p></div></div>
+<p id="p-198">Let \(D=\{5/2\}\text{.}\) Determine whether the statement “for all \(x\in D\text{,}\) \(x+3/2=4\)” is true or false.</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-48" id="answer-48"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-48"><div class="answer solution-like"><p id="p-199">Since \(x=5/2\) satisfies the equation, and is the only value in \(D\text{,}\) the statement is true.</p></div></div></article></div>
+<p id="p-200">We want to be able to work with generic statements, like \(p\) and \(q\text{,}\) but also with variables. So instead of \(p\text{,}\) we will use \(P(x)\text{.}\) An expression, \(P(x)\text{,}\) represents some property or expression about \(x\text{.}\) We call \(P(x)\) the <dfn class="terminology">predicate</dfn>.</p>
+<p id="p-201">In our above examples, \(P(x)\) is \(x+3/2=4\text{.}\)</p>
+<p id="p-202">Our properties don't just need to be mathematical, though. For example we could have a predicate such as \(P(x)\) is “\(x\) is a math major.” In this case our domain could be the set of students at Linfield, or the set of students in Math 230.</p>
+<p id="p-203">One goal with quantified statements is to be able to decide when they are true.</p>
+<article class="definition definition-like" id="definition-11"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.4</span><span class="period">.</span>
+</h6>
+<p id="p-204">The <dfn class="terminology">truth set</dfn> for a predicate, \(P(x)\text{,}\) is the set of values for \(x\) that make \(P(x)\) true.</p></article><article class="example example-like" id="E_truthsets"><a data-knowl="" class="id-ref original" data-refid="hk-E_truthsets"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Truth Sets.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_truthsets"><article class="example example-like"><p id="p-205">Find the  truth set for \(P(x)\) given by \(x+3/2=4\text{.}\)</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-49" id="answer-49"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-49"><div class="answer solution-like"><p id="p-206">Since \(x=5/2\) is the only value satisfying the equation, the tuth set is \(\{5/2\}\text{.}\)</p></div></div>
+<p id="p-207">Find the  truth set for \(P(x)\) given by \(x\) is even.</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-50" id="answer-50"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-50"><div class="answer solution-like"><p id="p-208">The truth set is the set of all even numbers.</p></div></div></article></div>
+<p id="p-209">Notation for quantifiers:</p>
+<ul class="disc">
+<li id="li-56">
+<h6 class="heading"><span class="title">Universal quantifier.</span></h6> \(\forall\text{,}\) read as “for all” or  “for every”.</li>
+<li id="li-57">
+<h6 class="heading"><span class="title">Existential quantifier.</span></h6> \(\exists\text{,}\) read as “there exists” or  “for some”.</li>
+</ul>
+<p id="p-210">Showing a universal statement is true/false:</p>
+<p id="p-211">A universal statement has the form \(\forall x\in D, P(x)\text{.}\)</p>
+<p id="p-212">To show a universal statement is <em class="alert">true</em>, you need to show all values in \(D\) make \(P(x)\) true. If your set is small, you can do this just by showing \(P(x)\) is true for each \(x\) (method of exhaustion). If \(D\) is infinite, however, we will need more general techniques.</p>
+<p id="p-213">To show a universal statement is <em class="alert">false</em>, you just need to find one value in \(D\) which makes \(P(x)\) false (counter-example).</p>
+<p id="p-214">Showing an existential statement is true/false:</p>
+<p id="p-215">An existential statement has the form \(\exists x\in D, P(x)\text{.}\)</p>
+<p id="p-216">To show an existential statement is <em class="alert">true</em>, you just need to find one value in \(D\) which makes \(P(x)\) true.</p>
+<p id="p-217">To show an existential statement is <em class="alert">false</em>, you need to show all values in \(D\) make \(P(x)\) false, or no values make it true. If your set is small, you can do this just by showing \(P(x)\) is false for each \(x\text{.}\) If \(D\) is infinite, however, we will need more general techniques.</p>
+<article class="example example-like" id="E_translating"><a data-knowl="" class="id-ref original" data-refid="hk-E_translating"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">Translating Statements.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_translating"><article class="example example-like"><p id="p-218">Translate the statement using quantifiers and variables, “All positive real numbers have square roots greater than zero.”</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-51" id="answer-51"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-51"><div class="answer solution-like">\(\forall x\in \mathbb{R}^+, \sqrt{x}&gt;0.\)</div></div>
+<p id="p-219">Translate the statement using quantifiers and variables, “Nobody's perfect.”</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-52" id="answer-52"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-52"><div class="answer solution-like"><p id="p-220">\(\forall x\in \{\textrm{people}\}, x\) is not perfect.</p></div></div></article></div>
+<p id="p-221">Universal conditional statements:</p>
+<p id="p-222">Recall universal conditional statements from <a href="variables1-1.html" class="internal" title="Section 1.1: Variables and Statements">Section 1.1</a>. These are statements of the form “For all \(x\in D\text{,}\) if \(P(x)\) then \(Q(x)\text{,}\)” In symbols, we can write a universal conditional as \(\forall x\in D, P(x)\rightarrow Q(x).\)</p>
+<article class="example example-like" id="E_univcond"><a data-knowl="" class="id-ref original" data-refid="hk-E_univcond"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Universal Conditional Statement.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_univcond"><article class="example example-like"><p id="p-223">Translate the statement using quantifiers and variables, “If an integer is even then it is divisible by 2.”</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-53" id="answer-53"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-53"><div class="answer solution-like"><p id="p-224">Let \(P(x)= x\) is even; and \(Q(x)= x\) is divisible by 2. \(\forall x\in \mathbb{Z}, P(x)\rightarrow Q(x)\text{.}\)</p></div></div></article></div>
+<section class="reading-questions" id="reading-questions-7"><h3 class="heading hide-type">
+<span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
+</h3>
+<p id="p-225">Let \(D=\mathbb{Z}\text{.}\) Let \(P(x)\) be “\(x^2\) is even.” Determine whether each of the following statements are true or false.</p>
+<article class="exercise exercise-like" id="exercise-42"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-226">\(\forall x\in D, P(x).\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-54" id="answer-54"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-54"><div class="answer solution-like">False. It is not true that every square is even. For example, \(3^2=9\) is odd.</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-43"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-227">\(\exists x\in D, P(x).\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-55" id="answer-55"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-55"><div class="answer solution-like">True. For example, \(2^2=4\) is even.</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-44"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-228">\(\forall x\in D, \sim P(x).\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-56" id="answer-56"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-56"><div class="answer solution-like">False. It is not true that every square is not even.</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-45"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-229">\(\exists x\in D, \sim P(x).\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-57" id="answer-57"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-57"><div class="answer solution-like">True. There exist a square which is not even.</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-46"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-230">\(\sim(\forall x\in D, P(x)).\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-58" id="answer-58"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-58"><div class="answer solution-like">True. This is the negation of (1), so must be True.</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

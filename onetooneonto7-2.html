@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>One-to-One, Onto, Inverse Functions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\MyTikzmark}[2]{
+     \tikz[overlay,remember picture,baseline] \node [anchor=base] (#1) {$#2$};}
+\newcommand{\DrawVLine}[3][]{
+  \begin{tikzpicture}[overlay,remember picture]
+    \draw[shorten \lt =0.3ex, #1] (#2.north) -- (#3.south);
+  \end{tikzpicture}
+}
+\newcommand{\DrawHLine}[3][]{
+  \begin{tikzpicture}[overlay,remember picture]
+    \draw[shorten \lt =0.2em, #1] (#2.west) -- (#3.east);
+  \end{tikzpicture}
+}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Discrete Mathematics</span></a></h1>
+<p class="byline">Jennifer Firkins Nordstrom</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="functions7-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter7.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="chapter8.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="functions7-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter7.html" title="Up">Up</a><a class="next-button button toolbar-item" href="chapter8.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter1.html" data-scroll="chapter1"><span class="codenumber">1</span> <span class="title">Introduction to Mathematical Language</span></a><ul>
+<li><a href="variables1-1.html" data-scroll="variables1-1">Variables and Statements</a></li>
+<li><a href="lang_sets1-2.html" data-scroll="lang_sets1-2">Language of Sets</a></li>
+<li><a href="lang_relations1-3.html" data-scroll="lang_relations1-3">Language of Relations and Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter2.html" data-scroll="chapter2"><span class="codenumber">2</span> <span class="title">Logic</span></a><ul>
+<li><a href="logical_form2-1.html" data-scroll="logical_form2-1">Logical Form and Logical Equivalence</a></li>
+<li><a href="conditional2-2.html" data-scroll="conditional2-2">Conditional Statements</a></li>
+<li><a href="arguments2-3.html" data-scroll="arguments2-3">Valid and Invalid Arguments</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter3.html" data-scroll="chapter3"><span class="codenumber">3</span> <span class="title">Logic with Quantifiers</span></a><ul>
+<li><a href="quantifiersI3-1.html" data-scroll="quantifiersI3-1">Quantifiers Part I</a></li>
+<li><a href="negquant3-2.html" data-scroll="negquant3-2">Quantifiers Part II</a></li>
+<li><a href="multiplequant3-3.html" data-scroll="multiplequant3-3">Statements with Multiple Quantifiers</a></li>
+<li><a href="argumentsquant3-4.html" data-scroll="argumentsquant3-4">Arguments with Quantifiers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter4.html" data-scroll="chapter4"><span class="codenumber">4</span> <span class="title">Proof Techniques</span></a><ul>
+<li><a href="directproof4-1.html" data-scroll="directproof4-1">Direct Proof and Counter Example</a></li>
+<li><a href="rationals4-2.html" data-scroll="rationals4-2">Rational Numbers</a></li>
+<li><a href="divisibility4-3.html" data-scroll="divisibility4-3">Divisibility</a></li>
+<li><a href="cases4-4.html" data-scroll="cases4-4">Proof by Cases</a></li>
+<li><a href="contradiction4-5.html" data-scroll="contradiction4-5">Proof by Contradiction and Contrapositive</a></li>
+<li><a href="morecontradiction4-6.html" data-scroll="morecontradiction4-6">More Proof by Contradiction and Contrapositive</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter5.html" data-scroll="chapter5"><span class="codenumber">5</span> <span class="title">Sequences and Mathematical Induction</span></a><ul>
+<li><a href="sequences5-1.html" data-scroll="sequences5-1">Sequences</a></li>
+<li><a href="induction5-2.html" data-scroll="induction5-2">Mathematical Induction</a></li>
+<li><a href="moreinduction5-3.html" data-scroll="moreinduction5-3">More Mathematical Induction</a></li>
+<li><a href="stronginduction5-4.html" data-scroll="stronginduction5-4">Strong Induction</a></li>
+<li><a href="recursion5-5.html" data-scroll="recursion5-5">Defining Sequences Recursively</a></li>
+<li><a href="iteration5-6.html" data-scroll="iteration5-6">Solving Recurrence Relations by Iteration</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter6.html" data-scroll="chapter6"><span class="codenumber">6</span> <span class="title">Set Theory</span></a><ul>
+<li><a href="sets6-1.html" data-scroll="sets6-1">Set Theory</a></li>
+<li><a href="propertiesofsets6-2.html" data-scroll="propertiesofsets6-2">Properties of Sets</a></li>
+<li><a href="algebraicsets6-3.html" data-scroll="algebraicsets6-3">Algebraic Proofs and Counterexamples</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter7.html" data-scroll="chapter7"><span class="codenumber">7</span> <span class="title">Functions</span></a><ul>
+<li><a href="functions7-1.html" data-scroll="functions7-1">Functions</a></li>
+<li><a href="onetooneonto7-2.html" data-scroll="onetooneonto7-2" class="active">One-to-One, Onto, Inverse Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter8.html" data-scroll="chapter8"><span class="codenumber">8</span> <span class="title">Relations</span></a><ul>
+<li><a href="relations8-1.html" data-scroll="relations8-1">Relations on Sets</a></li>
+<li><a href="rstrelations8-2.html" data-scroll="rstrelations8-2">Reflexive, Symmetric, Transitive Properties</a></li>
+<li><a href="equivalencerelations8-3.html" data-scroll="equivalencerelations8-3">Equivalence Relations</a></li>
+<li><a href="modarith8-4.html" data-scroll="modarith8-4">Modular Arithmetic</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter9.html" data-scroll="chapter9"><span class="codenumber">9</span> <span class="title">Probability and Counting</span></a><ul>
+<li><a href="probability9-1.html" data-scroll="probability9-1">Probability</a></li>
+<li><a href="multrule9-2.html" data-scroll="multrule9-2">Multiplication Rule</a></li>
+<li><a href="additionrule9-3.html" data-scroll="additionrule9-3">Addition Rule</a></li>
+<li><a href="pigeonhole9-4.html" data-scroll="pigeonhole9-4">Pigeonhole Principle</a></li>
+<li><a href="combinations9-5.html" data-scroll="combinations9-5">Combinations</a></li>
+<li><a href="binomial9-6.html" data-scroll="binomial9-6">Binomial Theorem</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter10.html" data-scroll="chapter10"><span class="codenumber">10</span> <span class="title">Graph Theory</span></a><ul>
+<li><a href="graphs10-1.html" data-scroll="graphs10-1">Graphs</a></li>
+<li><a href="pathscircuits10-2.html" data-scroll="pathscircuits10-2">Paths and Circuits</a></li>
+<li><a href="trees10-3.html" data-scroll="trees10-3">Trees</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">References</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="onetooneonto7-2"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">7.2</span> <span class="title">One-to-One, Onto, Inverse Functions</span>
+</h2>
+<p id="p-1094">In this section we will look at specific properties of functions. We will learn how to prove a function is one-to-one and/or onto its codomain. These properies are important as they are the exact properties we need in order for a function to have an inverse function.</p>
+<article class="definition definition-like" id="D_onetoone"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.1</span><span class="period">.</span>
+</h6>
+<p id="p-1095">A function, \(f:X\rightarrow Y\text{,}\) is <dfn class="terminology">one-to-one</dfn> or <dfn class="terminology">injective</dfn> if for all \(x_1, x_2\in X\text{,}\) if \(f(x_1)=f(x_2)\) then \(x_1=x_2\text{.}\)</p></article><p id="p-1096">Equivalently, \(f\) is one-to-one if \(x_1\neq x_2\) implies \(f(x_1)\neq f(x_2)\text{.}\) We note, this is just the contrapositive of the definition.</p>
+<p id="p-1097">Although it is easier to prove a function is one-to-one using the definition, the contrapositive can be helpful for deciding if a function is one-to-one.</p>
+<p id="p-1098">To prove \(f:X\rightarrow Y\) is one-to-one:</p>
+<ul class="disc">
+<li id="li-177">Assume \(f(x_1)=f(x_2).\)</li>
+<li id="li-178">Show \(x_1=x_2.\)</li>
+</ul>
+<p id="p-1099">To prove \(f:X\rightarrow Y\) is NOT one-to-one:</p>
+<ul class="disc">
+<li id="li-179">Find a counterexample.</li>
+<li id="li-180">In particular, find \(x_1, x_2\in X\) with \(x_1\neq x_2\) and \(f(x_1)=f(x_2)\text{.}\)</li>
+</ul>
+<article class="example example-like" id="E_arrownotonetoone"><a data-knowl="" class="id-ref original" data-refid="hk-E_arrownotonetoone"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Arrow Diagram: Not One-to-One.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_arrownotonetoone"><article class="example example-like"><figure class="figure figure-like" id="F_arrowdiagnotonetoone"><div class="image-box" style="width: 10%; margin-left: 45%; margin-right: 45%;"><img src="images/adnotonetoone.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.2.3<span class="period">.</span></span><span class="space"> </span>A function which is not one-to-one</figcaption></figure><p id="p-1100">The function given in <a class="xref" data-knowl="./knowl/F_arrowdiagnotonetoone.html" title="Figure 7.2.3">Figure 7.2.3</a> in not on-to-one since \(c\) and \(d\) both map to the same value in \(Y\text{.}\)</p></article></div>
+<article class="example example-like" id="E_pfonetoone"><a data-knowl="" class="id-ref original" data-refid="hk-E_pfonetoone"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Proving One-to-One.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_pfonetoone"><article class="example example-like"><p id="p-1101">Let  \(f:\mathbb{R}\rightarrow \mathbb{R}\) be given by \(f(x)=3x+2\text{.}\) Prove \(f\) is one-to-one.</p>
+<article class="hiddenproof" id="proof-37"><a data-knowl="" class="id-ref original" data-refid="hk-proof-37"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-37"><article class="hiddenproof"><p id="p-1102">Assume \(f(x_1)=f(x_2)\text{.}\) Then</p>
+<div class="displaymath">
+\begin{align*}
+3x_1+2&amp;=3x_2+2\\
+3x_1&amp;=3x_2\\
+x_1&amp;=x_2
+\end{align*}
+</div>
+<p data-braille="continuation">which is what we wanted to show.</p></article></div></article></div>
+<article class="example example-like" id="E_ceonetoone"><a data-knowl="" class="id-ref original" data-refid="hk-E_ceonetoone"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Disproving One-to-One.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_ceonetoone"><article class="example example-like"><p id="p-1103">Let  \(f:\mathbb{Z}\rightarrow \mathbb{Z}\) be given by \(f(x)=x^2-1\text{.}\) Disprove \(f\) is one-to-one.</p>
+<p id="p-1104">We need a counterexample with \(x_1\neq x_2\) and \(f(x_1)=f(x_2)\text{.}\) Let \(x_1=2, x_2=-2\text{.}\)</p>
+<p id="p-1105">Then \(f(2)=4-1=3\) and \(f(-2)=4-1=3\text{.}\) So \(f(x_1)=f(x_2)\text{,}\) but \(2\neq-2\text{.}\)</p></article></div>
+<article class="definition definition-like" id="D_onto"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.6</span><span class="period">.</span>
+</h6>
+<p id="p-1106">A function, \(f:X\rightarrow Y\text{,}\) is <dfn class="terminology">onto</dfn> \(Y\) or <dfn class="terminology">surjective</dfn> if for all \(y\in Y\) there exists \(x\in X\) such that \(f(x)=y\text{.}\)</p></article><p id="p-1107">Although we need the definition for onto to be able to write a proof, the concept of onto is easier to understand without the definition. Basically, we need every \(y\in Y\) to get mapped to by some \(x\in X\text{.}\) We can also think about onto in terms of sets. A function is onto \(Y\) if \(Y\) is the range of \(f\text{.}\)</p>
+<p id="p-1108">To prove \(f:X\rightarrow Y\) is onto \(Y\text{:}\)</p>
+<ul class="disc">
+<li id="li-181">Let \(y\) be a general element of \(Y\text{.}\) You should not be using any information about the function at this point.</li>
+<li id="li-182">Find \(x\in X\) such that \(f(x)=y\text{.}\) Finding \(x\) may involve scratchwork.</li>
+<li id="li-183">In your proof, state \(x\text{,}\) show \(x\in X\) and show \(f(x)=y\text{.}\)</li>
+</ul>
+<p id="p-1109">To prove \(f:X\rightarrow Y\) is NOT onto \(Y\text{:}\)</p>
+<ul class="disc">
+<li id="li-184">Find a counterexample.</li>
+<li id="li-185">In particular, find \(y\in Y\) such that no \(x\in X\) will map to \(y\text{.}\)</li>
+</ul>
+<article class="example example-like" id="E_arrownotonto"><a data-knowl="" class="id-ref original" data-refid="hk-E_arrownotonto"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Arrow Diagram: Not Onto.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_arrownotonto"><article class="example example-like"><figure class="figure figure-like" id="F_arrowdiagnotonto"><div class="image-box" style="width: 10%; margin-left: 45%; margin-right: 45%;"><img src="images/adnotonto.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.2.8<span class="period">.</span></span><span class="space"> </span>A function which is not onto \(Y\)</figcaption></figure><p id="p-1110">The function given in <a class="xref" data-knowl="./knowl/F_arrowdiagnotonto.html" title="Figure 7.2.8">Figure 7.2.8</a> in not onto \(Y\) since 2 is not mapped to by any value in \(X\text{.}\)</p></article></div>
+<article class="example example-like" id="E_pfonto"><a data-knowl="" class="id-ref original" data-refid="hk-E_pfonto"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.9</span><span class="period">.</span><span class="space"> </span><span class="title">Proving Onto.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_pfonto"><article class="example example-like"><p id="p-1111">Let  \(f:\mathbb{R}\rightarrow \mathbb{R}\) be given by \(f(x)=3x+2\text{.}\) Prove \(f\) is onto \(\mathbb{R}\text{.}\)</p>
+<article class="hiddenproof" id="proof-38"><a data-knowl="" class="id-ref original" data-refid="hk-proof-38"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-38"><article class="hiddenproof"><p id="p-1112">Let \(y\in\mathbb{R}\text{.}\)</p>
+<p id="p-1113">[Scratchwork: we want to find \(x\) so that \(f(x)=y\text{.}\) So we want \(3x+2=y\text{,}\) or \(x=\frac{y-2}{3}\text{.}\)]</p>
+<p id="p-1114">Let \(x=\frac{y-2}{3}\text{.}\) Then since \(y\in \mathbb{R}, x\in\mathbb{R}\text{.}\) Furthermore,</p>
+<div class="displaymath">
+\begin{equation*}
+f(x)=f(\frac{y-2}{3})=3(\frac{y-2}{3})+2=y-2+2=y, 
+\end{equation*}
+</div>
+<p data-braille="continuation">which is what we wanted to show.</p></article></div></article></div>
+<article class="example example-like" id="E_dispfonto"><a data-knowl="" class="id-ref original" data-refid="hk-E_dispfonto"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">Disproving Onto.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_dispfonto"><article class="example example-like"><p id="p-1115">Let  \(f:\mathbb{Z}\rightarrow \mathbb{Z}\) be given by \(f(x)=3x+2\text{.}\) Prove \(f\) is NOT onto \(\mathbb{Z}\text{.}\)</p>
+<p id="p-1116">Let \(y\in\mathbb{Z}\text{.}\)</p>
+<p id="p-1117">We saw in the previous example \(x=\frac{y-2}{3}\text{.}\) But \(x\) is not necessarily in \(\mathbb{Z}\text{.}\) So for our counterexample, let \(y=1\text{.}\) Then we would need \(x=\frac{-1}{3}\notin \mathbb{Z}\text{.}\)</p>
+<p id="p-1118">Hence no element in \(\mathbb{Z}\) will map to \(y=1\text{.}\) Therefore, \(f\) is not onto \(\mathbb{Z}\text{.}\)</p></article></div>
+<article class="example example-like" id="E_pfprdispfonto"><a data-knowl="" class="id-ref original" data-refid="hk-E_pfprdispfonto"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">Prove or Disprove Onto.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_pfprdispfonto"><article class="example example-like"><p id="p-1119">Let  \(f:\mathbb{R}\rightarrow \mathbb{R}\) be given by \(f(x)=x^2-1\text{.}\) Prove or disprove \(f\) is onto \(\mathbb{R}\text{.}\)</p>
+<p id="p-1120">Let \(y=-2\text{.}\) Then if \(f\) is onto \(\mathbb{R}\text{,}\) we could find \(x\) with \(f(x)=-2\text{.}\)</p>
+<p id="p-1121">But if  \(f(x)=-2\text{,}\) then \(x^2-1=-2\text{,}\) or \(x^2=-1\text{.}\) We know there are no real solutions to this equation. Hence no element in \(\mathbb{R}\) will map to \(y=-2\text{.}\) Therefore, \(f\) is not onto \(\mathbb{R}\text{.}\)</p></article></div>
+<p id="p-1122">A function \(f:X\rightarrow Y\) is a <dfn class="terminology">one-to-one correspondence</dfn> or <dfn class="terminology">bijection</dfn> if \(f\) is one-to-one and onto \(Y\text{.}\)</p>
+<p id="p-1123">We showed in the above examples that \(f:\mathbb{R}\rightarrow\mathbb{R}\) given by \(f(x)=3x+2\) is one-to-one and onto \(\mathbb{R}\text{.}\) Thus, it is an example of a one-to-one correspondence.</p>
+<article class="theorem theorem-like" id="T_inverse"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">7.2.12</span><span class="period">.</span>
+</h6>
+<p id="p-1124">If \(f:X\rightarrow Y\) is a one-to-one correspondence, then there exists a function \(f^{-1}:Y\rightarrow X\) such that</p>
+<div class="displaymath">
+\begin{equation*}
+f^{-1}(y)=x\Leftrightarrow f(x)=y.
+\end{equation*}
+</div></article><p id="p-1125">If it exists, we say \(f^{-1}\) is the <dfn class="terminology">inverse</dfn> of \(f\text{.}\)</p>
+<article class="example example-like" id="E_inverse"><a data-knowl="" class="id-ref original" data-refid="hk-E_inverse"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.13</span><span class="period">.</span><span class="space"> </span><span class="title">Inverse Function.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_inverse"><article class="example example-like"><p id="p-1126">Since \(f:\mathbb{R}\rightarrow\mathbb{R}\) given by \(f(x)=3x+2\) is one-to-one and onto, it has an inverse. We can find the inverse as we did in Calculus.</p>
+<p id="p-1127">Let \(y=3x+2\text{,}\) solve for \(x\text{.}\)</p>
+<p id="p-1128">We get \(x=\frac{y-2}{3}\text{.}\) Thus \(f^{-1}=\frac{x-2}{3}\text{.}\)</p></article></div>
+<article class="theorem theorem-like" id="T_inverseonetooneonto"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">7.2.14</span><span class="period">.</span>
+</h6>
+<p id="p-1129">If \(f:X\rightarrow Y\) is one-to-one and onto \(Y\text{,}\) then \(f^{-1}:Y\rightarrow X\) is one-to-one and onto \(X\text{.}\)</p></article><article class="hiddenproof" id="proof-39"><a data-knowl="" class="id-ref original" data-refid="hk-proof-39"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-39"><article class="hiddenproof"><p id="p-1130">Show \(f^{-1}\) is one-to-one: assume \(f^{-1}(y_1)=f^{-1}(y_2)\text{.}\) Then \(f^{-1}(y_1)=f^{-1}(y_2)=x\) for some \(x\in X\text{.}\) Thus,  \(f(x)=y_1\) and \(f(x)=y_2\text{.}\) Since \(f\) is a function, \(y_1=y_2\text{.}\)</p>
+<p id="p-1131">Show \(f^{-1}\) is onto \(X\text{.}\) Let \(x\in X\text{.}\) Then there exists \(y\in Y\) such that \(f(x)=y\) since \(f\) is a function from \(X\text{.}\) Now, \(f^{-1}(y)=x\text{.}\) Therefore, there exists \(y\in Y\) such that \(f^{-1}(y)=x\text{.}\)</p></article></div>
+<section class="reading-questions" id="reading-questions-27"><h3 class="heading hide-type">
+<span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-201"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-1132">True or false: \(f:\mathbb{R}\rightarrow \mathbb{R}, f(x)=5x-2\) is one-to-one.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-295" id="answer-295"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-295"><div class="answer solution-like">True</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-202"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-1133">True or false: \(f:\mathbb{R}\rightarrow \mathbb{R}, f(x)=5x-2\) is onto \(\mathbb{R}\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-296" id="answer-296"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-296"><div class="answer solution-like">True</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-203"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-1134">True or false: \(f:\mathbb{Z}\rightarrow \mathbb{Z}, f(x)=5x-2\) is one-to-one.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-297" id="answer-297"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-297"><div class="answer solution-like">True</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-204"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-1135">True or false: \(f:\mathbb{Z}\rightarrow \mathbb{Z}, f(x)=5x-2\) is onto \(\mathbb{Z}\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-298" id="answer-298"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-298"><div class="answer solution-like">False</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-205"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-1136">True or false: \(f:\mathbb{R}\rightarrow \mathbb{R}, f(x)=x^3-3\) is one-to-one.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-299" id="answer-299"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-299"><div class="answer solution-like">True</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-206"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
+<p id="p-1137">True or false: \(f:\mathbb{R}\rightarrow \mathbb{R}, f(x)=x^3-3\) is onto \(\mathbb{R}\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-300" id="answer-300"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-300"><div class="answer solution-like">True</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-207"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
+<p id="p-1138">True or false: \(f:\mathbb{Z}\rightarrow \mathbb{Z}, f(x)=x^3-3\) is one-to-one.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-301" id="answer-301"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-301"><div class="answer solution-like">True</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-208"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
+<p id="p-1139">True or false: \(f:\mathbb{Z}\rightarrow \mathbb{Z}, f(x)=x^3-3\) is onto \(\mathbb{Z}\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-302" id="answer-302"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-302"><div class="answer solution-like">False</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-209"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
+<p id="p-1140">True or false: \(f:\mathbb{Z}\times\mathbb{Z}\rightarrow \mathbb{Z}, f(x, y)=x\) is one-to-one.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-303" id="answer-303"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-303"><div class="answer solution-like">False</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-210"><h6 class="heading"><span class="codenumber">10<span class="period">.</span></span></h6>
+<p id="p-1141">True or false: \(f:\mathbb{Z}\times\mathbb{Z}\rightarrow \mathbb{Z}, f(x, y)=x\) is onto \(\mathbb{Z}\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-304" id="answer-304"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-304"><div class="answer solution-like">True</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-211"><h6 class="heading"><span class="codenumber">11<span class="period">.</span></span></h6>
+<p id="p-1142">True or false: \(f:\mathbb{Z}\times\mathbb{Z}\rightarrow \mathbb{Z}\times\mathbb{Z}, f(x, y)=(y, x)\) is one-to-one.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-305" id="answer-305"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-305"><div class="answer solution-like">True</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-212"><h6 class="heading"><span class="codenumber">12<span class="period">.</span></span></h6>
+<p id="p-1143">True or false: \(f:\mathbb{Z}\times\mathbb{Z}\rightarrow \mathbb{Z}\times\mathbb{Z}, f(x, y)=(y, x)\) is onto \(\mathbb{Z}\times\mathbb{Z}\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-306" id="answer-306"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-306"><div class="answer solution-like">True</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

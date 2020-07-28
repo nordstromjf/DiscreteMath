@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Arguments with Quantifiers</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\MyTikzmark}[2]{
+     \tikz[overlay,remember picture,baseline] \node [anchor=base] (#1) {$#2$};}
+\newcommand{\DrawVLine}[3][]{
+  \begin{tikzpicture}[overlay,remember picture]
+    \draw[shorten \lt =0.3ex, #1] (#2.north) -- (#3.south);
+  \end{tikzpicture}
+}
+\newcommand{\DrawHLine}[3][]{
+  \begin{tikzpicture}[overlay,remember picture]
+    \draw[shorten \lt =0.2em, #1] (#2.west) -- (#3.east);
+  \end{tikzpicture}
+}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Discrete Mathematics</span></a></h1>
+<p class="byline">Jennifer Firkins Nordstrom</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="multiplequant3-3.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter3.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="chapter4.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="multiplequant3-3.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter3.html" title="Up">Up</a><a class="next-button button toolbar-item" href="chapter4.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter1.html" data-scroll="chapter1"><span class="codenumber">1</span> <span class="title">Introduction to Mathematical Language</span></a><ul>
+<li><a href="variables1-1.html" data-scroll="variables1-1">Variables and Statements</a></li>
+<li><a href="lang_sets1-2.html" data-scroll="lang_sets1-2">Language of Sets</a></li>
+<li><a href="lang_relations1-3.html" data-scroll="lang_relations1-3">Language of Relations and Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter2.html" data-scroll="chapter2"><span class="codenumber">2</span> <span class="title">Logic</span></a><ul>
+<li><a href="logical_form2-1.html" data-scroll="logical_form2-1">Logical Form and Logical Equivalence</a></li>
+<li><a href="conditional2-2.html" data-scroll="conditional2-2">Conditional Statements</a></li>
+<li><a href="arguments2-3.html" data-scroll="arguments2-3">Valid and Invalid Arguments</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter3.html" data-scroll="chapter3"><span class="codenumber">3</span> <span class="title">Logic with Quantifiers</span></a><ul>
+<li><a href="quantifiersI3-1.html" data-scroll="quantifiersI3-1">Quantifiers Part I</a></li>
+<li><a href="negquant3-2.html" data-scroll="negquant3-2">Quantifiers Part II</a></li>
+<li><a href="multiplequant3-3.html" data-scroll="multiplequant3-3">Statements with Multiple Quantifiers</a></li>
+<li><a href="argumentsquant3-4.html" data-scroll="argumentsquant3-4" class="active">Arguments with Quantifiers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter4.html" data-scroll="chapter4"><span class="codenumber">4</span> <span class="title">Proof Techniques</span></a><ul>
+<li><a href="directproof4-1.html" data-scroll="directproof4-1">Direct Proof and Counter Example</a></li>
+<li><a href="rationals4-2.html" data-scroll="rationals4-2">Rational Numbers</a></li>
+<li><a href="divisibility4-3.html" data-scroll="divisibility4-3">Divisibility</a></li>
+<li><a href="cases4-4.html" data-scroll="cases4-4">Proof by Cases</a></li>
+<li><a href="contradiction4-5.html" data-scroll="contradiction4-5">Proof by Contradiction and Contrapositive</a></li>
+<li><a href="morecontradiction4-6.html" data-scroll="morecontradiction4-6">More Proof by Contradiction and Contrapositive</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter5.html" data-scroll="chapter5"><span class="codenumber">5</span> <span class="title">Sequences and Mathematical Induction</span></a><ul>
+<li><a href="sequences5-1.html" data-scroll="sequences5-1">Sequences</a></li>
+<li><a href="induction5-2.html" data-scroll="induction5-2">Mathematical Induction</a></li>
+<li><a href="moreinduction5-3.html" data-scroll="moreinduction5-3">More Mathematical Induction</a></li>
+<li><a href="stronginduction5-4.html" data-scroll="stronginduction5-4">Strong Induction</a></li>
+<li><a href="recursion5-5.html" data-scroll="recursion5-5">Defining Sequences Recursively</a></li>
+<li><a href="iteration5-6.html" data-scroll="iteration5-6">Solving Recurrence Relations by Iteration</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter6.html" data-scroll="chapter6"><span class="codenumber">6</span> <span class="title">Set Theory</span></a><ul>
+<li><a href="sets6-1.html" data-scroll="sets6-1">Set Theory</a></li>
+<li><a href="propertiesofsets6-2.html" data-scroll="propertiesofsets6-2">Properties of Sets</a></li>
+<li><a href="algebraicsets6-3.html" data-scroll="algebraicsets6-3">Algebraic Proofs and Counterexamples</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter7.html" data-scroll="chapter7"><span class="codenumber">7</span> <span class="title">Functions</span></a><ul>
+<li><a href="functions7-1.html" data-scroll="functions7-1">Functions</a></li>
+<li><a href="onetooneonto7-2.html" data-scroll="onetooneonto7-2">One-to-One, Onto, Inverse Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter8.html" data-scroll="chapter8"><span class="codenumber">8</span> <span class="title">Relations</span></a><ul>
+<li><a href="relations8-1.html" data-scroll="relations8-1">Relations on Sets</a></li>
+<li><a href="rstrelations8-2.html" data-scroll="rstrelations8-2">Reflexive, Symmetric, Transitive Properties</a></li>
+<li><a href="equivalencerelations8-3.html" data-scroll="equivalencerelations8-3">Equivalence Relations</a></li>
+<li><a href="modarith8-4.html" data-scroll="modarith8-4">Modular Arithmetic</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter9.html" data-scroll="chapter9"><span class="codenumber">9</span> <span class="title">Probability and Counting</span></a><ul>
+<li><a href="probability9-1.html" data-scroll="probability9-1">Probability</a></li>
+<li><a href="multrule9-2.html" data-scroll="multrule9-2">Multiplication Rule</a></li>
+<li><a href="additionrule9-3.html" data-scroll="additionrule9-3">Addition Rule</a></li>
+<li><a href="pigeonhole9-4.html" data-scroll="pigeonhole9-4">Pigeonhole Principle</a></li>
+<li><a href="combinations9-5.html" data-scroll="combinations9-5">Combinations</a></li>
+<li><a href="binomial9-6.html" data-scroll="binomial9-6">Binomial Theorem</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter10.html" data-scroll="chapter10"><span class="codenumber">10</span> <span class="title">Graph Theory</span></a><ul>
+<li><a href="graphs10-1.html" data-scroll="graphs10-1">Graphs</a></li>
+<li><a href="pathscircuits10-2.html" data-scroll="pathscircuits10-2">Paths and Circuits</a></li>
+<li><a href="trees10-3.html" data-scroll="trees10-3">Trees</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">References</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="argumentsquant3-4"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.4</span> <span class="title">Arguments with Quantifiers</span>
+</h2>
+<p id="p-299">In the previous chapter we studied arguments with logical statements. In this chapter we've looked at statements with quantifiers. Now we want to combine the two ideas.</p>
+<p id="p-300">Recall, an argument is <dfn class="terminology">valid</dfn> if it whenever the premises are true, the conclusion MUST be true. An argument is <dfn class="terminology">invalid</dfn> if it possible for the premises to be true and the conclusion false.</p>
+<article class="example example-like" id="argwquant1"><a data-knowl="" class="id-ref original" data-refid="hk-argwquant1"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">An Argument with Quantified Statements.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-argwquant1"><article class="example example-like"><p id="p-301"><table>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">All computer science majors take Discrete Math before graduation.</td></tr>
+<tr><td class="l m b1 r0 l0 t0 lines" data-braille="last-cell">Anna is a computer science major.</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\therefore\ \)Anna takes Discrete Math before graduation.</td></tr>
+</table> Is this argument valid or invalid?</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-79" id="answer-79"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-79"><div class="answer solution-like">This argument is valid.</div></div></article></div>
+<p id="p-302">Although <a class="xref" data-knowl="./knowl/argwquant1.html" title="Example 3.4.1: An Argument with Quantified Statements">Example 3.4.1</a> is a valid argument. We will have trouble using a truth-table to determine validity. In this section we will develop other tools for analyzing quantified arguments.</p>
+<p id="p-303">Universal modus ponens: <table>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\forall x\text{,}\) if \(P(x)\) then \(Q(x)\)</td></tr>
+<tr><td class="l m b1 r0 l0 t0 lines" data-braille="last-cell">\(P(a)\)</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\therefore\ Q(a)\)</td></tr>
+</table> <a class="xref" data-knowl="./knowl/argwquant1.html" title="Example 3.4.1: An Argument with Quantified Statements">Example 3.4.1</a> is an example of universal modus ponens.</p>
+<article class="example example-like" id="argwquant2"><a data-knowl="" class="id-ref original" data-refid="hk-argwquant2"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Another Argument with Quantified Statements.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-argwquant2"><article class="example example-like"><p id="p-304"><table>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">All computer science majors take Discrete Math before graduation.</td></tr>
+<tr><td class="l m b1 r0 l0 t0 lines" data-braille="last-cell">Troy did not take Discrete Math before graduation.</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\therefore\ \)Troy is not a computer science major.</td></tr>
+</table> Is this argument valid or invalid?</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-80" id="answer-80"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-80"><div class="answer solution-like">This argument is valid.</div></div></article></div>
+<p id="p-305">Universal modus tollens: <table>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\forall x\text{,}\) if \(P(x)\) then \(Q(x)\)</td></tr>
+<tr><td class="l m b1 r0 l0 t0 lines" data-braille="last-cell">\(\sim Q(a)\)</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\therefore\ \sim P(a)\)</td></tr>
+</table> <a class="xref" data-knowl="./knowl/argwquant2.html" title="Example 3.4.2: Another Argument with Quantified Statements">Example 3.4.2</a> is an example of universal modus tollens.</p>
+<p id="p-306">Determining validity of quantified arguments:</p>
+<p id="p-307">We need to ask if it is possible for the premises to be true while the conclusion is false. If it is possible, then the argument is invalid. If it is not possible, then the argument is valid. We will use <dfn class="terminology">Venn diagrams</dfn> to help us determine validity. A Venn diagram is just a picture where we use circles to represent sets of objects and points to represent specific elements. We draw the circles to represent how our sets are related to each other.</p>
+<p id="p-308">The Venn diagram for <a class="xref" data-knowl="./knowl/argwquant1.html" title="Example 3.4.1: An Argument with Quantified Statements">Example 3.4.1</a> is given by the following figure.</p>
+<figure class="figure figure-like" id="venndiagEx1"><div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="images/modusponens1.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.4.3<span class="period">.</span></span><span class="space"> </span>Venn diagram for the argument in <a class="xref" data-knowl="./knowl/argwquant1.html" title="Example 3.4.1: An Argument with Quantified Statements">Example 3.4.1</a></figcaption></figure><p id="p-309">The picture represents the two premises of the argument. In the Venn diagram we have a circle representing students taking Discrete Math (“Discrete Math”) and a circle representing computer science majors (“CS majors”). The CS major circle is completely inside the Discrate Math circle since the first statement in the argument is that all computer science majors take Discrete Math. This means the set of comuter science majors is a subset of the set of students taking Discrete Math. The second statement in the argument is that Anna is a computer science major. This means Anna is an element (represented by a point) of the set of CS majors.</p>
+<p id="p-310">Now, if we look at the diagram determined by the two premises, we see that Anna must also be an element of the set of students taking Discrete Math. Thus, it is not possible to have true premises and a false conclusion.</p>
+<p id="p-311">Process for using a Venn diagram to determine validity:</p>
+<p id="p-312">Draw the Venn diagram for each premise. Statements such as “All A are B” mean A is a subset of B. Make sure you distinguish between sets (lots of things have a certain property) and elements (a specific thing with a property).</p>
+<p id="p-313">Then see if it is possible for the premises to be true and the conclusion false. Sometimes there is a choice about where to place a certain element of set. For example, if I know \(x\) is not in set A, then \(x\) might be in set B or it might not be in B. We can use these choices to see if we can make the premises true and the conclusion false.</p>
+<p id="p-314">Let's use this process on some more examples.</p>
+<article class="example example-like" id="quantmodtoll"><a data-knowl="" class="id-ref original" data-refid="hk-quantmodtoll"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Determining Validity.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-quantmodtoll"><article class="example example-like"><p id="p-315"><table>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">All integers are rational numbers.</td></tr>
+<tr><td class="l m b1 r0 l0 t0 lines" data-braille="last-cell">\(\sqrt{2}\) is not rational.</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\therefore\ \sqrt{2}\) is not an integer.</td></tr>
+</table> The two premises are represented with the following diagram. Recall, \(\mathbb{Q}\) is the set of rational numbers and \(\mathbb{Z}\) is the set of integers.</p>
+<div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="images/modustollens1.svg" style="width: 100%; height: auto;" alt=""></div>
+<p id="p-316">We can see from the diagram that it is impossible to make the conclusion false. In particular, \(\sqrt{2}\) cannot be in the set of integers.</p></article></div>
+<article class="example example-like" id="invalidargquant"><a data-knowl="" class="id-ref original" data-refid="hk-invalidargquant"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">An Invalid Argument.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-invalidargquant"><article class="example example-like"><p id="p-317"><table>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">All integers are rational numbers.</td></tr>
+<tr><td class="l m b1 r0 l0 t0 lines" data-braille="last-cell">\(x\) is rational.</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\therefore\ x\) is an integer.</td></tr>
+</table> The first premises is represented with the following diagram.</p>
+<div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="images/integerrational.svg" style="width: 100%; height: auto;" alt=""></div>
+<p id="p-318">But we need to be careful about where we place \(x\text{.}\) The second premise just says it needs to be inside the rational circle. Is it possible to place it in the rational circle so that the conclusion is false? Yes, we can place \(x\) inside the rational circle, but not in the integer circle. So the following diagram shows how it is possible to have true premises and a false conclusion.</p>
+<div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="images/integerrationalinvalid.svg" style="width: 100%; height: auto;" alt=""></div>
+<p id="p-319">Therefore, the argument is invalid.</p></article></div>
+<p id="p-320">The arguemnt in <a class="xref" data-knowl="./knowl/invalidargquant.html" title="Example 3.4.5: An Invalid Argument">Example 3.4.5</a> is an example Converse error: <table>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\forall x\) if \(P(x)\) the \(Q(x)\)</td></tr>
+<tr><td class="l m b1 r0 l0 t0 lines" data-braille="last-cell">\(Q(a)\)</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\therefore\ \)\(P(a)\)</td></tr>
+</table></p>
+<p id="p-321">Venn diagrams for common statements:</p>
+<p id="p-322">All A are B.</p>
+<div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="images/allAareB.svg" style="width: 100%; height: auto;" alt=""></div>
+<p id="p-323">Some A are B, or there exists an A that is a B.</p>
+<div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="images/someAareB.svg" style="width: 100%; height: auto;" alt=""></div>
+<p id="p-324">No A are B.</p>
+<div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="images/noAareB.svg" style="width: 100%; height: auto;" alt=""></div>
+<section class="reading-questions" id="reading-questions-10"><h3 class="heading hide-type">
+<span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-58"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-325">Determine whether the following argument is valid or invalid. <table>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">All zebras have stripes.</td></tr>
+<tr><td class="l m b1 r0 l0 t0 lines" data-braille="last-cell">Rex has stripes.</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\therefore\ \) Rex is a zebra.</td></tr>
+</table></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-81" id="answer-81"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-81"><div class="answer solution-like"><p id="p-326">Invalid.</p></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-59"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-327">Determine whether the following argument is valid or invalid. <table>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">All zebras have stripes.</td></tr>
+<tr><td class="l m b1 r0 l0 t0 lines" data-braille="last-cell">Lily does not have stripes.</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\therefore\ \) Lily is not a zebra.</td></tr>
+</table></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-82" id="answer-82"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-82"><div class="answer solution-like"><p id="p-328">Valid.</p></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-60"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-329">Determine whether the following argument is valid or invalid. <table>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">All zebras have stripes.</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">All zebras are animals.</td></tr>
+<tr><td class="l m b1 r0 l0 t0 lines" data-braille="last-cell">Rex has stripes.</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\therefore\ \) Rex is an animal.</td></tr>
+</table></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-83" id="answer-83"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-83"><div class="answer solution-like"><p id="p-330">Invalid.</p></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-61"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-331">Determine whether the following argument is valid or invalid. <table>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">All zebras have stripes.</td></tr>
+<tr><td class="l m b1 r0 l0 t0 lines" data-braille="last-cell">All animals have stripes.</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\therefore\ \) All zebras are animals.</td></tr>
+</table></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-84" id="answer-84"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-84"><div class="answer solution-like"><p id="p-332">Invalid.</p></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-62"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-333">Determine whether the following argument is valid or invalid. <table>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">All zebras have stripes.</td></tr>
+<tr><td class="l m b1 r0 l0 t0 lines" data-braille="last-cell">All things with stripes are animals.</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\therefore\ \) All zebras are animals.</td></tr>
+</table></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-85" id="answer-85"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-85"><div class="answer solution-like"><p id="p-334">Valid.</p></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-63"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
+<p id="p-335">Determine whether the following argument is valid or invalid. <table>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">All zebras are animals.</td></tr>
+<tr><td class="l m b1 r0 l0 t0 lines" data-braille="last-cell">All animals have stripes.</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\therefore\ \) All zebras have stripes.</td></tr>
+</table></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-86" id="answer-86"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-86"><div class="answer solution-like"><p id="p-336">Valid.</p></div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

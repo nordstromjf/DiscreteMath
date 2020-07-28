@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Reflexive, Symmetric, Transitive Properties</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\MyTikzmark}[2]{
+     \tikz[overlay,remember picture,baseline] \node [anchor=base] (#1) {$#2$};}
+\newcommand{\DrawVLine}[3][]{
+  \begin{tikzpicture}[overlay,remember picture]
+    \draw[shorten \lt =0.3ex, #1] (#2.north) -- (#3.south);
+  \end{tikzpicture}
+}
+\newcommand{\DrawHLine}[3][]{
+  \begin{tikzpicture}[overlay,remember picture]
+    \draw[shorten \lt =0.2em, #1] (#2.west) -- (#3.east);
+  \end{tikzpicture}
+}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Discrete Mathematics</span></a></h1>
+<p class="byline">Jennifer Firkins Nordstrom</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="relations8-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter8.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="equivalencerelations8-3.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="relations8-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter8.html" title="Up">Up</a><a class="next-button button toolbar-item" href="equivalencerelations8-3.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter1.html" data-scroll="chapter1"><span class="codenumber">1</span> <span class="title">Introduction to Mathematical Language</span></a><ul>
+<li><a href="variables1-1.html" data-scroll="variables1-1">Variables and Statements</a></li>
+<li><a href="lang_sets1-2.html" data-scroll="lang_sets1-2">Language of Sets</a></li>
+<li><a href="lang_relations1-3.html" data-scroll="lang_relations1-3">Language of Relations and Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter2.html" data-scroll="chapter2"><span class="codenumber">2</span> <span class="title">Logic</span></a><ul>
+<li><a href="logical_form2-1.html" data-scroll="logical_form2-1">Logical Form and Logical Equivalence</a></li>
+<li><a href="conditional2-2.html" data-scroll="conditional2-2">Conditional Statements</a></li>
+<li><a href="arguments2-3.html" data-scroll="arguments2-3">Valid and Invalid Arguments</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter3.html" data-scroll="chapter3"><span class="codenumber">3</span> <span class="title">Logic with Quantifiers</span></a><ul>
+<li><a href="quantifiersI3-1.html" data-scroll="quantifiersI3-1">Quantifiers Part I</a></li>
+<li><a href="negquant3-2.html" data-scroll="negquant3-2">Quantifiers Part II</a></li>
+<li><a href="multiplequant3-3.html" data-scroll="multiplequant3-3">Statements with Multiple Quantifiers</a></li>
+<li><a href="argumentsquant3-4.html" data-scroll="argumentsquant3-4">Arguments with Quantifiers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter4.html" data-scroll="chapter4"><span class="codenumber">4</span> <span class="title">Proof Techniques</span></a><ul>
+<li><a href="directproof4-1.html" data-scroll="directproof4-1">Direct Proof and Counter Example</a></li>
+<li><a href="rationals4-2.html" data-scroll="rationals4-2">Rational Numbers</a></li>
+<li><a href="divisibility4-3.html" data-scroll="divisibility4-3">Divisibility</a></li>
+<li><a href="cases4-4.html" data-scroll="cases4-4">Proof by Cases</a></li>
+<li><a href="contradiction4-5.html" data-scroll="contradiction4-5">Proof by Contradiction and Contrapositive</a></li>
+<li><a href="morecontradiction4-6.html" data-scroll="morecontradiction4-6">More Proof by Contradiction and Contrapositive</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter5.html" data-scroll="chapter5"><span class="codenumber">5</span> <span class="title">Sequences and Mathematical Induction</span></a><ul>
+<li><a href="sequences5-1.html" data-scroll="sequences5-1">Sequences</a></li>
+<li><a href="induction5-2.html" data-scroll="induction5-2">Mathematical Induction</a></li>
+<li><a href="moreinduction5-3.html" data-scroll="moreinduction5-3">More Mathematical Induction</a></li>
+<li><a href="stronginduction5-4.html" data-scroll="stronginduction5-4">Strong Induction</a></li>
+<li><a href="recursion5-5.html" data-scroll="recursion5-5">Defining Sequences Recursively</a></li>
+<li><a href="iteration5-6.html" data-scroll="iteration5-6">Solving Recurrence Relations by Iteration</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter6.html" data-scroll="chapter6"><span class="codenumber">6</span> <span class="title">Set Theory</span></a><ul>
+<li><a href="sets6-1.html" data-scroll="sets6-1">Set Theory</a></li>
+<li><a href="propertiesofsets6-2.html" data-scroll="propertiesofsets6-2">Properties of Sets</a></li>
+<li><a href="algebraicsets6-3.html" data-scroll="algebraicsets6-3">Algebraic Proofs and Counterexamples</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter7.html" data-scroll="chapter7"><span class="codenumber">7</span> <span class="title">Functions</span></a><ul>
+<li><a href="functions7-1.html" data-scroll="functions7-1">Functions</a></li>
+<li><a href="onetooneonto7-2.html" data-scroll="onetooneonto7-2">One-to-One, Onto, Inverse Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter8.html" data-scroll="chapter8"><span class="codenumber">8</span> <span class="title">Relations</span></a><ul>
+<li><a href="relations8-1.html" data-scroll="relations8-1">Relations on Sets</a></li>
+<li><a href="rstrelations8-2.html" data-scroll="rstrelations8-2" class="active">Reflexive, Symmetric, Transitive Properties</a></li>
+<li><a href="equivalencerelations8-3.html" data-scroll="equivalencerelations8-3">Equivalence Relations</a></li>
+<li><a href="modarith8-4.html" data-scroll="modarith8-4">Modular Arithmetic</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter9.html" data-scroll="chapter9"><span class="codenumber">9</span> <span class="title">Probability and Counting</span></a><ul>
+<li><a href="probability9-1.html" data-scroll="probability9-1">Probability</a></li>
+<li><a href="multrule9-2.html" data-scroll="multrule9-2">Multiplication Rule</a></li>
+<li><a href="additionrule9-3.html" data-scroll="additionrule9-3">Addition Rule</a></li>
+<li><a href="pigeonhole9-4.html" data-scroll="pigeonhole9-4">Pigeonhole Principle</a></li>
+<li><a href="combinations9-5.html" data-scroll="combinations9-5">Combinations</a></li>
+<li><a href="binomial9-6.html" data-scroll="binomial9-6">Binomial Theorem</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter10.html" data-scroll="chapter10"><span class="codenumber">10</span> <span class="title">Graph Theory</span></a><ul>
+<li><a href="graphs10-1.html" data-scroll="graphs10-1">Graphs</a></li>
+<li><a href="pathscircuits10-2.html" data-scroll="pathscircuits10-2">Paths and Circuits</a></li>
+<li><a href="trees10-3.html" data-scroll="trees10-3">Trees</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">References</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="rstrelations8-2"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">8.2</span> <span class="title">Reflexive, Symmetric, Transitive Properties</span>
+</h2>
+<p id="p-1187">In this section we look at some properties of relations. In particular, we define the reflexive, symmetric, and ransitive properties. We will use directed graphs to identify the properties and look at how to prove whether a relation is reflexive, symmetric, and/or transitive.</p>
+<article class="definition definition-like" id="D_RSTprop"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.2.1</span><span class="period">.</span>
+</h6>
+<p id="p-1188">Let \(R\) be a relation on \(A\text{.}\) Then</p>
+<ol class="decimal">
+<li id="li-190">\(R\) is <dfn class="terminology">reflexive</dfn> if for all \(x\in A\text{,}\) \(x R x\text{.}\) In ordered pair notation, \((x, x)\in R\text{.}\)</li>
+<li id="li-191">\(R\) is <dfn class="terminology">symmetric</dfn> if for all \(x, y\in A\text{,}\) if \(x R y\) then \(y R x\text{.}\) In ordered pair notation, if \((x, y)\in R\) then \((y, x)\in R\text{.}\)</li>
+<li id="li-192">\(R\) is <dfn class="terminology">transitive</dfn> if for all \(x, y, z\in A\text{,}\) if \(x R y\) and \(y R z\) then \(x R z\text{.}\) In ordered pair notation, if \((x, y)\in R\) and \((y, z)\in R\) then \((x, z)\in R\text{.}\)</li>
+</ol></article><article class="example example-like" id="E_propofsets"><a data-knowl="" class="id-ref original" data-refid="hk-E_propofsets"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Reflexive, Symmetric, Transitive.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_propofsets"><article class="example example-like"><p id="p-1189">Let \(A=\{1, 2, 3\}\text{,}\) define the relation on \(A\) by</p>
+<div class="displaymath">
+\begin{equation*}
+R=\{(1, 1), (2, 2), (3, 3)\}.
+\end{equation*}
+</div>
+<p id="p-1190">\(R\) is reflexive since \((x, x)\in R\) for each \(x\in A\text{.}\)</p>
+<p id="p-1191">\(R\) is symmetric since if \((x, y)\in R\) then \((y, x)\in R\text{.}\)  Note, this property does not mean \((x, y)\in R\text{,}\) just that if a pair is in R, then the reverse is as well.</p>
+<p id="p-1192">\(R\) is transitive since  if \((x, y)\in R\) and \((y, z)\in R\) then \((x, z)\in R\text{.}\) Note, this property can be tedious to check by hand. In this example, though, the only pairs that fit the hypothesis are pairs like \((x, y)=(1, 1), (y, z)=(1, 1)\text{,}\) so \((x, z)=(1, 1)\text{,}\) which is in \(R\text{.}\)</p></article></div>
+<article class="example example-like" id="E_propofsets2"><a data-knowl="" class="id-ref original" data-refid="hk-E_propofsets2"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Another Look at the Properties.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_propofsets2"><article class="example example-like"><p id="p-1193">Let \(A=\{1, 2, 3\}\text{,}\) define the relation on \(A\) by</p>
+<div class="displaymath">
+\begin{equation*}
+R=\{(1, 2), (1, 3), (2, 3)\}.
+\end{equation*}
+</div>
+<p id="p-1194">\(R\) is not reflexive since \((1, 1)\notin R\text{.}\)</p>
+<p id="p-1195">\(R\) is not symmetric since \((1, 2)\in R\text{,}\) but not \((2, 1)\text{.}\)</p>
+<p id="p-1196">\(R\) is transitive since  if \((x, y)\in R\) and \((y, z)\in R\) then \((x, z)\in R\text{.}\)</p>
+<p id="p-1197">Check: \((x, y)=(1, 2), (y, z)=(2, 3)\text{,}\) so \((x, z)=(1, 3)\text{,}\) which is in \(R\text{.}\) This is the only set of ordered pairs where the second coordinate matches the first.</p></article></div>
+<p id="p-1198">We can use directed graphs to help identify the properties.</p>
+<ul class="disc">
+<li id="li-193">
+<h6 class="heading"><span class="title">Reflexive.</span></h6> If a relation is reflexive, then the directed graph will have an arrow from the vertex to itself (a loop) at every vertex.</li>
+<li id="li-194">
+<h6 class="heading"><span class="title">Symmetric.</span></h6> If a relation is symmetric, then whenever the directed graph has an arrow from vertex, \(v\) to vertex \(u\text{,}\) there is a corresponding arrow  going from \(u\) to \(v\text{.}\)</li>
+<li id="li-195">
+<h6 class="heading"><span class="title">Transitive.</span></h6> If a relation is transitive, then whenever the directed graph has an arrow from vertex, \(v\) to vertex \(u\) followed by an arrow from \(u\) to \(w\text{,}\) there is a corresponding arrow  going from \(v\) to \(w\text{.}\)</li>
+</ul>
+<figure class="figure figure-like" id="F_digraphreflexive"><div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="images/gdreflexive.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.2.4<span class="period">.</span></span><span class="space"> </span>Directed graph for reflexive property</figcaption></figure><figure class="figure figure-like" id="F_digraphsymmetric"><div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="images/gdsymmetric.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.2.5<span class="period">.</span></span><span class="space"> </span>Directed graph for symmetric property</figcaption></figure><figure class="figure figure-like" id="F_digraphstransitive"><div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="images/gdtransitive.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.2.6<span class="period">.</span></span><span class="space"> </span>Directed graph for transitive property</figcaption></figure><p id="p-1199">The <dfn class="terminology">transitive closure</dfn> of a relation \(R\text{,}\) denoted \(R^{t}\text{,}\) is the set of ordered pairs in \(R\) as well as all additional ordered pairs to make the relation transitive.</p>
+<article class="example example-like" id="E_transclosure"><a data-knowl="" class="id-ref original" data-refid="hk-E_transclosure"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Transitive Closure.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_transclosure"><article class="example example-like"><p id="p-1200">Let \(R=\{(1, 2), (3, 2), (4, 1), (4, 3)\}\text{.}\) Then in \(R^{t}\) we need \((4, 2)\text{.}\) You can check with a directed graph to see this is the only pair we need to add. Thus, \(R^{t}=\{(1, 2), (3, 2), (4, 1), (4, 3), (4, 2)\}\text{.}\)</p></article></div>
+<p id="p-1201">Checking that a relation is refexive, symmetric, or transitive on a small finite set can be done by checking that the property holds for all the elements of \(R\text{.}\) But if \(A\) is infinite we need to prove the properties more generally.</p>
+<p id="p-1202">To prove</p>
+<ul class="disc">
+<li id="li-196">
+<h6 class="heading"><span class="title">Reflexive.</span></h6> Let \(x\in A\text{.}\) Show \((x, x)\in R\text{.}\)</li>
+<li id="li-197">
+<h6 class="heading"><span class="title">Symmetric.</span></h6> Assume \((x, y)\in R\text{.}\) Show \((y, x)\in R\text{.}\)</li>
+<li id="li-198">
+<h6 class="heading"><span class="title">Transitive.</span></h6> Assume \((x, y), (y, z)\in R\text{.}\) Show \((x, z)\in R\text{.}\)</li>
+</ul>
+<p id="p-1203">To disprove a property, find a specific counterexample:</p>
+<ul class="disc">
+<li id="li-199">
+<h6 class="heading"><span class="title">Reflexive.</span></h6> Find \((x, x)\notin R\) for some \(x\in A\text{.}\)</li>
+<li id="li-200">
+<h6 class="heading"><span class="title">Symmetric.</span></h6> Find \((x, y)\in R\) with \((y, x)\notin R\text{.}\)</li>
+<li id="li-201">
+<h6 class="heading"><span class="title">Transitive.</span></h6> Find \((x, y), (y, z)\in R\) with \((x, z)\notin R\text{.}\)</li>
+</ul>
+<article class="example example-like" id="E_provingRST"><a data-knowl="" class="id-ref original" data-refid="hk-E_provingRST"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Proving Refexive, Symmetric, Transitive.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_provingRST"><article class="example example-like"><p id="p-1204">Let \(R\) be the relation on \(\mathbb{Z}\) given by \((m, n)\in R\Leftrightarrow 3\mid(m-n)\text{.}\)</p>
+<p id="p-1205">Reflexive: Show \((m, m)\in R\text{.}\) Now \(m-m=0\text{,}\) and \(3\mid 0\text{.}\) So we get that \(3\mid m-m\text{.}\) Thus \((m, m)\in R\) for all \(m\in \mathbb{Z}\text{.}\)</p>
+<p id="p-1206">Symmetric: Assume \((x, y)\in R\text{.}\) Then \(3\mid (x-y)\text{.}\) This implies \(x-y=3k\) for some \(k\in\mathbb{Z}\text{.}\) But then \(y-x=-3k=3(-k)\text{,}\) where \(-k\in \mathbb{Z}\text{.}\) Thus, \(3\mid (y-x)\text{.}\) Hence, \((y, x)\in R\text{.}\)</p>
+<p id="p-1207">Transitive: Assume \((x, y), (y, z)\in R\text{.}\) Then \(3\mid (x-y)\) and \(3\mid (y-z)\text{.}\) This implies \(x-y=3k\) for some \(k\in\mathbb{Z}\) and \(y-z=3j\) for some \(j\in\mathbb{Z}\text{.}\) But then \(x-z=x-y+y-z=3k+3j=3(j+k)\text{,}\) where \(k+j\in \mathbb{Z}\text{.}\) Thus, \(3\mid (x-z)\text{.}\) Hence, \((x, z)\in R\text{.}\)</p></article></div>
+<section class="reading-questions" id="reading-questions-29"><h3 class="heading hide-type">
+<span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
+</h3>
+<p id="p-1208">Let \(A=\{1, 2, 3\}, B=\{2, 4, 6, 8\}, C=\{0, 1\}\text{.}\)</p>
+<article class="exercise exercise-like" id="exercise-219"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-1209">Determine if the relation is reflexive, symmetric, transitive where \(R\) is the relation on \(A\) given by</p>
+<div class="displaymath">
+\begin{equation*}
+a R b \Leftrightarrow a\leq b
+\end{equation*}
+</div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-321" id="answer-321"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-321"><div class="answer solution-like">Reflexive, transitive, not symmetric</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-220"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-1210">Determine if the relation is reflexive, symmetric, transitive where \(R\) is the relation on \(C\) given by</p>
+<div class="displaymath">
+\begin{equation*}
+a R b \Leftrightarrow a+b \text{ is even}
+\end{equation*}
+</div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-322" id="answer-322"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-322"><div class="answer solution-like">Relexive, symmetric, transitive</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-221"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-1211">Determine if the relation is reflexive, symmetric, transitive where \(R\) is the relation on \(B\) given by</p>
+<div class="displaymath">
+\begin{equation*}
+a R b \Leftrightarrow a\mid b
+\end{equation*}
+</div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-323" id="answer-323"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-323"><div class="answer solution-like">Reflexive, transitive, not symmetric</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-222"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-1212">Determine if the relation is reflexive, symmetric, transitive where \(R\) is the relation on \(\mathbb{Z}\) given by</p>
+<div class="displaymath">
+\begin{equation*}
+a R b \Leftrightarrow a+b=0
+\end{equation*}
+</div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-324" id="answer-324"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-324"><div class="answer solution-like">Symmetric, not reflexive, not transitive</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Relations on Sets</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\MyTikzmark}[2]{
+     \tikz[overlay,remember picture,baseline] \node [anchor=base] (#1) {$#2$};}
+\newcommand{\DrawVLine}[3][]{
+  \begin{tikzpicture}[overlay,remember picture]
+    \draw[shorten \lt =0.3ex, #1] (#2.north) -- (#3.south);
+  \end{tikzpicture}
+}
+\newcommand{\DrawHLine}[3][]{
+  \begin{tikzpicture}[overlay,remember picture]
+    \draw[shorten \lt =0.2em, #1] (#2.west) -- (#3.east);
+  \end{tikzpicture}
+}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Discrete Mathematics</span></a></h1>
+<p class="byline">Jennifer Firkins Nordstrom</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter8.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter8.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="rstrelations8-2.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter8.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter8.html" title="Up">Up</a><a class="next-button button toolbar-item" href="rstrelations8-2.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter1.html" data-scroll="chapter1"><span class="codenumber">1</span> <span class="title">Introduction to Mathematical Language</span></a><ul>
+<li><a href="variables1-1.html" data-scroll="variables1-1">Variables and Statements</a></li>
+<li><a href="lang_sets1-2.html" data-scroll="lang_sets1-2">Language of Sets</a></li>
+<li><a href="lang_relations1-3.html" data-scroll="lang_relations1-3">Language of Relations and Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter2.html" data-scroll="chapter2"><span class="codenumber">2</span> <span class="title">Logic</span></a><ul>
+<li><a href="logical_form2-1.html" data-scroll="logical_form2-1">Logical Form and Logical Equivalence</a></li>
+<li><a href="conditional2-2.html" data-scroll="conditional2-2">Conditional Statements</a></li>
+<li><a href="arguments2-3.html" data-scroll="arguments2-3">Valid and Invalid Arguments</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter3.html" data-scroll="chapter3"><span class="codenumber">3</span> <span class="title">Logic with Quantifiers</span></a><ul>
+<li><a href="quantifiersI3-1.html" data-scroll="quantifiersI3-1">Quantifiers Part I</a></li>
+<li><a href="negquant3-2.html" data-scroll="negquant3-2">Quantifiers Part II</a></li>
+<li><a href="multiplequant3-3.html" data-scroll="multiplequant3-3">Statements with Multiple Quantifiers</a></li>
+<li><a href="argumentsquant3-4.html" data-scroll="argumentsquant3-4">Arguments with Quantifiers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter4.html" data-scroll="chapter4"><span class="codenumber">4</span> <span class="title">Proof Techniques</span></a><ul>
+<li><a href="directproof4-1.html" data-scroll="directproof4-1">Direct Proof and Counter Example</a></li>
+<li><a href="rationals4-2.html" data-scroll="rationals4-2">Rational Numbers</a></li>
+<li><a href="divisibility4-3.html" data-scroll="divisibility4-3">Divisibility</a></li>
+<li><a href="cases4-4.html" data-scroll="cases4-4">Proof by Cases</a></li>
+<li><a href="contradiction4-5.html" data-scroll="contradiction4-5">Proof by Contradiction and Contrapositive</a></li>
+<li><a href="morecontradiction4-6.html" data-scroll="morecontradiction4-6">More Proof by Contradiction and Contrapositive</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter5.html" data-scroll="chapter5"><span class="codenumber">5</span> <span class="title">Sequences and Mathematical Induction</span></a><ul>
+<li><a href="sequences5-1.html" data-scroll="sequences5-1">Sequences</a></li>
+<li><a href="induction5-2.html" data-scroll="induction5-2">Mathematical Induction</a></li>
+<li><a href="moreinduction5-3.html" data-scroll="moreinduction5-3">More Mathematical Induction</a></li>
+<li><a href="stronginduction5-4.html" data-scroll="stronginduction5-4">Strong Induction</a></li>
+<li><a href="recursion5-5.html" data-scroll="recursion5-5">Defining Sequences Recursively</a></li>
+<li><a href="iteration5-6.html" data-scroll="iteration5-6">Solving Recurrence Relations by Iteration</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter6.html" data-scroll="chapter6"><span class="codenumber">6</span> <span class="title">Set Theory</span></a><ul>
+<li><a href="sets6-1.html" data-scroll="sets6-1">Set Theory</a></li>
+<li><a href="propertiesofsets6-2.html" data-scroll="propertiesofsets6-2">Properties of Sets</a></li>
+<li><a href="algebraicsets6-3.html" data-scroll="algebraicsets6-3">Algebraic Proofs and Counterexamples</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter7.html" data-scroll="chapter7"><span class="codenumber">7</span> <span class="title">Functions</span></a><ul>
+<li><a href="functions7-1.html" data-scroll="functions7-1">Functions</a></li>
+<li><a href="onetooneonto7-2.html" data-scroll="onetooneonto7-2">One-to-One, Onto, Inverse Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter8.html" data-scroll="chapter8"><span class="codenumber">8</span> <span class="title">Relations</span></a><ul>
+<li><a href="relations8-1.html" data-scroll="relations8-1" class="active">Relations on Sets</a></li>
+<li><a href="rstrelations8-2.html" data-scroll="rstrelations8-2">Reflexive, Symmetric, Transitive Properties</a></li>
+<li><a href="equivalencerelations8-3.html" data-scroll="equivalencerelations8-3">Equivalence Relations</a></li>
+<li><a href="modarith8-4.html" data-scroll="modarith8-4">Modular Arithmetic</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter9.html" data-scroll="chapter9"><span class="codenumber">9</span> <span class="title">Probability and Counting</span></a><ul>
+<li><a href="probability9-1.html" data-scroll="probability9-1">Probability</a></li>
+<li><a href="multrule9-2.html" data-scroll="multrule9-2">Multiplication Rule</a></li>
+<li><a href="additionrule9-3.html" data-scroll="additionrule9-3">Addition Rule</a></li>
+<li><a href="pigeonhole9-4.html" data-scroll="pigeonhole9-4">Pigeonhole Principle</a></li>
+<li><a href="combinations9-5.html" data-scroll="combinations9-5">Combinations</a></li>
+<li><a href="binomial9-6.html" data-scroll="binomial9-6">Binomial Theorem</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter10.html" data-scroll="chapter10"><span class="codenumber">10</span> <span class="title">Graph Theory</span></a><ul>
+<li><a href="graphs10-1.html" data-scroll="graphs10-1">Graphs</a></li>
+<li><a href="pathscircuits10-2.html" data-scroll="pathscircuits10-2">Paths and Circuits</a></li>
+<li><a href="trees10-3.html" data-scroll="trees10-3">Trees</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">References</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="relations8-1"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">8.1</span> <span class="title">Relations on Sets</span>
+</h2>
+<p id="p-1145">We first saw relations in <a href="lang_relations1-3.html" class="internal" title="Section 1.3: Language of Relations and Functions">Section 1.3</a>. In this section we revisit the definition, look at several examples, and connect the idea of a function to a relation.</p>
+<article class="definition definition-like" id="D_relation"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.1.1</span><span class="period">.</span>
+</h6>
+<p id="p-1146">A <dfn class="terminology">relation</dfn>, \(R\) on \(A\times B\text{,}\) is a set of ordered pairs in \(A\times B\text{.}\)</p></article><p id="p-1147">Simply put, a relation is just a subset \(R\subseteq A\times B\text{.}\)</p>
+<p id="p-1148">Notation: \((x, y)\in R\) if and only if \(x R y\text{.}\)</p>
+<article class="example example-like" id="E_relationsasset"><a data-knowl="" class="id-ref original" data-refid="hk-E_relationsasset"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Relation Defined by a Set.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_relationsasset"><article class="example example-like"><p id="p-1149">Let \(A=\{1, 2, 3, 4\}\text{,}\) \(B=\{1, 3, 5\}\) define the relation on \(A\times B\) by</p>
+<div class="displaymath">
+\begin{equation*}
+R=\{(1, 1), (1, 5), (3, 5), (2, 1), (4, 3)\}.
+\end{equation*}
+</div>
+<p data-braille="continuation">Then \(1 R 1, 3 R 5, 4 R 3\text{,}\) for example. But 3 is not related to 1, for example.</p></article></div>
+<article class="example example-like" id="E_lessthan"><a data-knowl="" class="id-ref original" data-refid="hk-E_lessthan"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Relation Defined by Less Than.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_lessthan"><article class="example example-like"><p id="p-1150">We can also define relations with familiar mathematical relationships.</p>
+<p id="p-1151">Let \(A=\{1, 2, 3, 4\}\text{,}\) \(B=\{1, 3, 5\}\) define the relation in \(A\times B\) by</p>
+<div class="displaymath">
+\begin{equation*}
+x R y \Leftrightarrow x&lt; y.
+\end{equation*}
+</div>
+<p id="p-1152">Find the set of ordered pairs for \(R\)</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-307" id="answer-307"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-307"><div class="answer solution-like">\(R=\{(1, 3), (1, 5), (2, 3), (2, 5), (3, 5), (4, 5)\}\)</div></div></article></div>
+<p id="p-1153">As with functions, we can draw an arrow diagram from \(A\) to \(B\) representing the relationship. We have an arrow from \(a\) to \(b\) if \(aRb\text{,}\) or \((a, b)\in R\text{.}\)</p>
+<p id="p-1154">The arrow diagram for the relation “a&lt; b”, given in <a class="xref" data-knowl="./knowl/E_relationsasset.html" title="Example 8.1.2: Relation Defined by a Set">Example 8.1.2</a> is given in the following figure.</p>
+<figure class="figure figure-like" id="F_arrowdiaglessthan"><div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="images/adlessthan.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.1.4<span class="period">.</span></span><span class="space"> </span>Arrow diagram for less than</figcaption></figure><p id="p-1155">A function is a relation. Let \(f:A\rightarrow B, f(a)=b\text{.}\) Then define \(R\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+(a, b)\in R \Leftrightarrow f(a)=b.
+\end{equation*}
+</div>
+<p id="p-1156">We can see that <a class="xref" data-knowl="./knowl/E_lessthan.html" title="Example 8.1.3: Relation Defined by Less Than">Example 8.1.3</a> is not a function since an element of \(A\) can map to two different elements of \(B\text{:}\) \((1, 3), (1, 5)\text{.}\)</p>
+<article class="example example-like" id="E_fnasrelation"><a data-knowl="" class="id-ref original" data-refid="hk-E_fnasrelation"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">A Function as a Relation.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_fnasrelation"><article class="example example-like"><p id="p-1157">Let \(f:\mathbb{Z}\rightarrow\mathbb{Z}\) be given by \(f(n)=n^2\text{.}\) Let \(F\) be the relation given by \(f\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+(i, j)\in F \Leftrightarrow f(i)=j.
+\end{equation*}
+</div>
+<p id="p-1158">True or false: \((1, 1)\in F\text{.}\)</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-308" id="answer-308"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-308"><div class="answer solution-like"><p id="p-1159">True</p></div></div>
+<p id="p-1160">True or false: \((3, 9)\in F\text{.}\)</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-309" id="answer-309"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-309"><div class="answer solution-like"><p id="p-1161">True</p></div></div>
+<p id="p-1162">True or false: \((9, 3)\in F\text{.}\)</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-310" id="answer-310"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-310"><div class="answer solution-like"><p id="p-1163">False</p></div></div>
+<p id="p-1164">True or false: \((-2, 4)\in F\text{.}\)</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-311" id="answer-311"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">4</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-311"><div class="answer solution-like"><p id="p-1165">True</p></div></div>
+<p id="p-1166">True or false: \((2, -4)\in F\text{.}\)</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-312" id="answer-312"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">5</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-312"><div class="answer solution-like"><p id="p-1167">False</p></div></div>
+<p id="p-1168">True or false: \((1, 3)\in F\text{.}\)</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-313" id="answer-313"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">6</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-313"><div class="answer solution-like"><p id="p-1169">False</p></div></div></article></div>
+<p id="p-1170">Determining if a relation is a function:</p>
+<ul class="disc">
+<li id="li-186">For every \(a\in A\) there must be a \(b\in B\) related to \(a\text{.}\)</li>
+<li id="li-187">Each \(a\in A\) can only be related in one \(b\in B\text{.}\)</li>
+</ul>
+<p id="p-1171">We can translate this idea into the ordered pair notation:</p>
+<ul class="disc">
+<li id="li-188">For every \(a\in A\) there must be a \(b\in B\) such that  \((a, b)\in F\text{.}\)</li>
+<li id="li-189">If \((a, b)\in F\) and \((a, c)\in F\) then \(b=c\text{.}\)</li>
+</ul>
+<article class="definition definition-like" id="D_inverserelation"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.1.6</span><span class="period">.</span>
+</h6>
+<p id="p-1172">Let \(R\) be a relation on \(A\times B\text{.}\) The  <dfn class="terminology">inverse relation</dfn>, \(R^{-1}\text{,}\) on \(B\times A\) is</p>
+<div class="displaymath">
+\begin{equation*}
+R^{-1}=\{(b, a)\in B\times A : (a, b)\in R\}.
+\end{equation*}
+</div></article><p id="p-1173">In other words, \((a, b)\in R \Leftrightarrow (b, a)\in R^{-1}\text{.}\)</p>
+<article class="example example-like" id="E_invereserel"><a data-knowl="" class="id-ref original" data-refid="hk-E_invereserel"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Inverse Relation.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_invereserel"><article class="example example-like"><p id="p-1174">Let  \(R=\{(1, 3), (1, 5), (2, 3), (2, 5), (3, 5), (4, 5)\}\text{.}\) This is the relation in <a class="xref" data-knowl="./knowl/E_lessthan.html" title="Example 8.1.3: Relation Defined by Less Than">Example 8.1.3</a>.</p>
+<p id="p-1175">Find \(R^{-1}\text{.}\)</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-314" id="answer-314"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-314"><div class="answer solution-like">\(\{(3, 1), (5, 1), (3, 2), (5, 2), (5, 3), (5, 4)\}\)</div></div></article></div>
+<article class="definition definition-like" id="D_relonA"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.1.8</span><span class="period">.</span>
+</h6>
+<p id="p-1176">A <dfn class="terminology">relation on \(A\)</dfn> is a relation on \(A\times A\text{.}\) We also say a relation from \(A\) to \(A\text{.}\)</p></article><p id="p-1177">We can use a directed graph to represent a relation an \(A\text{.}\) We label the vertices with the elelments from \(A\) and draw and arrow from \(a\) to \(b\) if \(aRb\text{.}\) Note, if \(aRa\text{,}\) then we get a “loop” at \(a\text{.}\)</p>
+<article class="example example-like" id="E_dirgraphrelation"><a data-knowl="" class="id-ref original" data-refid="hk-E_dirgraphrelation"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.1.9</span><span class="period">.</span><span class="space"> </span><span class="title">Directed Graph of a Relation.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_dirgraphrelation"><article class="example example-like"><p id="p-1178">Let \(A=\{1, 2, 3\}\text{.}\) Let \(R=\{(x, y) : x&lt; y\}\text{.}\) Then we get the following directed graph for \(R\text{.}\)</p>
+<figure class="figure figure-like" id="F_digraphlessthan"><div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="images/gdlessthan.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.1.10<span class="period">.</span></span><span class="space"> </span>Directed graph for less than</figcaption></figure><p id="p-1179">If we now want the relations for less than or equal to, \(R=\{(x, y) : x\leq y\}\text{,}\) we have the following directed graph.</p>
+<figure class="figure figure-like" id="F_digraphlessthaneq"><div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="images/gdlessthaneq.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.1.11<span class="period">.</span></span><span class="space"> </span>Directed graph for less than or equal</figcaption></figure></article></div>
+<section class="reading-questions" id="reading-questions-28"><h3 class="heading hide-type">
+<span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
+</h3>
+<p id="p-1180">Let \(A=\{1, 2, 3\}, B=\{2, 4, 6, 8\}, C=\{0, 1\}\text{.}\)</p>
+<article class="exercise exercise-like" id="exercise-213"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-1181">Give the ordered pairs for the relation on \(A\times B\) given by</p>
+<div class="displaymath">
+\begin{equation*}
+a R b \Leftrightarrow a\geq b
+\end{equation*}
+</div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-315" id="answer-315"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-315"><div class="answer solution-like">\(\{(2, 2), (3, 2)\}\)</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-214"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-1182">Give the ordered pairs for the relation on \(C\) given by</p>
+<div class="displaymath">
+\begin{equation*}
+a R b \Leftrightarrow a+b \text{ is even}
+\end{equation*}
+</div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-316" id="answer-316"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-316"><div class="answer solution-like">\(\{(0, 0), (1, 1)\}\)</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-215"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-1183">True or false: the relation on \(A\times B\) given by</p>
+<div class="displaymath">
+\begin{equation*}
+a R b \Leftrightarrow a\geq b
+\end{equation*}
+</div>
+<p data-braille="continuation">is a function from \(A\) to \(B\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-317" id="answer-317"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-317"><div class="answer solution-like">False</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-216"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-1184">True or false: the relation on \(C\) given by</p>
+<div class="displaymath">
+\begin{equation*}
+a R b \Leftrightarrow a+b \text{ is even}
+\end{equation*}
+</div>
+<p data-braille="continuation">is a function on \(C\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-318" id="answer-318"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-318"><div class="answer solution-like">True</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-217"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-1185">Give the ordered pairs for the relation on \(B\) given by</p>
+<div class="displaymath">
+\begin{equation*}
+a R b \Leftrightarrow a\mid b
+\end{equation*}
+</div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-319" id="answer-319"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-319"><div class="answer solution-like">\(\{(2, 2), (2, 4), (2, 6), (2, 8), (4, 4), (4, 8), (6, 6), (8, 8)\}\)</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-218"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
+<p id="p-1186">Give the ordered pairs for the inverse relation, \(R^{-1}\) on \(B\) when \(R\) is given by</p>
+<div class="displaymath">
+\begin{equation*}
+a R b \Leftrightarrow a\mid b
+\end{equation*}
+</div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-320" id="answer-320"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-320"><div class="answer solution-like">\(\{(2, 2), (4, 2), (6, 2), (8, 2), (4, 4), (8, 4), (6, 6), (8, 8)\}\)</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

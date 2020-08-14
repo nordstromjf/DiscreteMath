@@ -182,9 +182,9 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="iteration5-6"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.6</span> <span class="title">Solving Recurrence Relations by Iteration</span>
 </h2>
-<p id="p-860">Given a sequence defined recursively, we want to be able to find an explicit formula for the sequence. In general, this can be difficult and can involve very sophisticated mathematical tools. We will learn one method just to get a a taste for the ideas.</p>
-<p id="p-861"><dfn class="terminology">Method of Iteration</dfn> to find an explicit formula for a recursive sequence:</p>
-<ol id="p-862" class="decimal">
+<p id="p-859">Given a sequence defined recursively, we want to be able to find an explicit formula for the sequence. In general, this can be difficult and can involve very sophisticated mathematical tools. We will learn one method just to get a a taste for the ideas.</p>
+<p id="p-860"><dfn class="terminology">Method of Iteration</dfn> to find an explicit formula for a recursive sequence:</p>
+<ol id="p-861" class="decimal">
 <li id="li-136">Calculate several terms of the sequence, often without simplifying the terms.</li>
 <li id="li-137">See a pattern.</li>
 <li id="li-138">Guess an explicit formaul for the pattern. Keep in mind your formula should just depend on \(n\text{.}\)</li>
@@ -192,9 +192,9 @@ MathJax.Hub.Config({
 </ol>
 <article class="example example-like" id="E_arithmetic"><a data-knowl="" class="id-ref original" data-refid="hk-E_arithmetic"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.6.1</span><span class="period">.</span><span class="space"> </span><span class="title">Finding an Explicit Formula.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_arithmetic"><article class="example example-like"><p id="p-863">Find the first five terms of the sequence given by \(a_k=a_{k-1}+3, k\geq 1\text{,}\) \(a_0=4\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_arithmetic"><article class="example example-like"><p id="p-862">Find the first five terms of the sequence given by \(a_k=a_{k-1}+3, k\geq 1\text{,}\) \(a_0=4\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-237" id="answer-237"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-237"><div class="answer solution-like">\(a_0=4, a_1=7, a_2=10, a_3=13, a_4=16\)</div></div>
-<p id="p-864">It might be difficult to see a pattern, so we will calculate the terms without simplifying AT ALL.</p>
+<p id="p-863">It might be difficult to see a pattern, so we will calculate the terms without simplifying AT ALL.</p>
 <div class="displaymath">
 \begin{align*}
 a_0&amp; =4\\
@@ -204,13 +204,13 @@ a_3&amp; =((4+3)+3)+3\\
 a_4&amp; =(((4+3)+3)+3)+3
 \end{align*}
 </div>
-<p id="p-865">Now it should be easier to see a pattern: it seems we have \(a_n=4+3n\text{,}\) which is our explicit formula.</p>
-<p id="p-866">To prove this is the correct formula, we would assume \(a_k=a_{k-1}+3\) and prove \(a_n=4+3n\) by induction.</p>
-<article class="hiddenproof" id="proof-27"><a data-knowl="" class="id-ref original" data-refid="hk-proof-27"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-27"><article class="hiddenproof"><p id="p-867">Let \(a_k=a_{k-1}+3, a_0=4\text{.}\) Prove \(a_n=4+3n, n\geq 0\)</p>
-<p id="p-868">Base Step: Let \(n=0\text{.}\) Then \(a_n=a_0=4\text{.}\) And \(4+3n=4+3(0)=4\text{.}\) Thus \(a_n=4+3n\) for \(n=0\text{.}\)</p>
-<p id="p-869">Induction Step: Assume \(a_k=4+3k\) for some \(k\geq 0\text{.}\)</p>
-<p id="p-870">Show \(a_{k+1}=4+3(k+1)\)</p>
-<p id="p-871">Proof of induction step: By the recursive definition of the sequence, \(a_{k+1}=a_{k}+3\text{.}\) Thus,</p>
+<p id="p-864">Now it should be easier to see a pattern: it seems we have \(a_n=4+3n\text{,}\) which is our explicit formula.</p>
+<p id="p-865">To prove this is the correct formula, we would assume \(a_k=a_{k-1}+3\) and prove \(a_n=4+3n\) by induction.</p>
+<article class="hiddenproof" id="proof-27"><a data-knowl="" class="id-ref original" data-refid="hk-proof-27"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-27"><article class="hiddenproof"><p id="p-866">Let \(a_k=a_{k-1}+3, a_0=4\text{.}\) Prove \(a_n=4+3n, n\geq 0\)</p>
+<p id="p-867">Base Step: Let \(n=0\text{.}\) Then \(a_n=a_0=4\text{.}\) And \(4+3n=4+3(0)=4\text{.}\) Thus \(a_n=4+3n\) for \(n=0\text{.}\)</p>
+<p id="p-868">Induction Step: Assume \(a_k=4+3k\) for some \(k\geq 0\text{.}\)</p>
+<p id="p-869">Show \(a_{k+1}=4+3(k+1)\)</p>
+<p id="p-870">Proof of induction step: By the recursive definition of the sequence, \(a_{k+1}=a_{k}+3\text{.}\) Thus,</p>
 <div class="displaymath">
 \begin{align*}
 a_{k+1}&amp;=a_k+3\\
@@ -222,35 +222,35 @@ a_{k+1}&amp;=a_k+3\\
 <article class="definition definition-like" id="D_arithseq"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.2</span><span class="period">.</span>
 </h6>
-<p id="p-872">An <dfn class="terminology">arithmetic sequence</dfn> is given recursively by</p>
+<p id="p-871">An <dfn class="terminology">arithmetic sequence</dfn> is given recursively by</p>
 <div class="displaymath">
 \begin{equation*}
 a_k=a_{k-1}+d
 \end{equation*}
 </div>
-<p data-braille="continuation">where \(d\) is constant.</p></article><p id="p-873">You can probably generalize the example above to find an explicit formula for an arithmentic sequence.</p>
+<p data-braille="continuation">where \(d\) is constant.</p></article><p id="p-872">You can probably generalize the example above to find an explicit formula for an arithmentic sequence.</p>
 <article class="definition definition-like" id="D_geomseq"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.3</span><span class="period">.</span>
 </h6>
-<p id="p-874">A <dfn class="terminology">geometric sequence</dfn> is given recursively by</p>
+<p id="p-873">A <dfn class="terminology">geometric sequence</dfn> is given recursively by</p>
 <div class="displaymath">
 \begin{equation*}
 a_k=ra_{k-1}
 \end{equation*}
 </div>
-<p data-braille="continuation">where \(r\) is constant.</p></article><p id="p-875">You should try the method of iteration to find an explicit formula for a geometric sequence.</p>
-<p id="p-876">To prove a recursively defined sequence satisfies an explicit formula:</p>
+<p data-braille="continuation">where \(r\) is constant.</p></article><p id="p-874">You should try the method of iteration to find an explicit formula for a geometric sequence.</p>
+<p id="p-875">To prove a recursively defined sequence satisfies an explicit formula:</p>
 <ul class="disc">
 <li id="li-140">Assume the recursive formula for the sequence.</li>
 <li id="li-141">Show, using an induction proof, that the explicit formula holds. You need to prove the base step for all initial terms. You will need to use the recurrence relation in the inductive step.</li>
 </ul>
-<p id="p-877">As promised, in the next example we will prove an explicit formula for the Fibonacci sequence. We will not derive it as that is beyond the scope of this course. But we can prove that it works using induction.</p>
+<p id="p-876">As promised, in the next example we will prove an explicit formula for the Fibonacci sequence. We will not derive it as that is beyond the scope of this course. But we can prove that it works using induction.</p>
 <article class="example example-like" id="E_explicitfib"><a data-knowl="" class="id-ref original" data-refid="hk-E_explicitfib"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.6.4</span><span class="period">.</span><span class="space"> </span><span class="title">Proving Explicit Formula for the Fibonacci Sequence.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_explicitfib"><article class="example example-like"><p id="p-878">Let \(F_k=F_{k-1}+F_{k-2}, k\geq 1\text{,}\) \(F_0=1, F_1=1\) be the Fibonacci sequence.</p>
-<p id="p-879">Prove \(F_n=\frac{1}{\sqrt{5}}\biggl[\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{n+1}-\biggl(\frac{1-\sqrt{5}}{2}\biggr)^{n+1}\biggr]\text{.}\)</p>
-<article class="hiddenproof" id="proof-28"><a data-knowl="" class="id-ref original" data-refid="hk-proof-28"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-28"><article class="hiddenproof"><p id="p-880">Let \(F_k=F_{k-1}+F_{k-2}, F_0=1, F_1=1\text{.}\)</p>
-<p id="p-881">Base Step: Let \(n=0\text{.}\) Then \(F_0=1\text{.}\) And</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_explicitfib"><article class="example example-like"><p id="p-877">Let \(F_k=F_{k-1}+F_{k-2}, k\geq 1\text{,}\) \(F_0=1, F_1=1\) be the Fibonacci sequence.</p>
+<p id="p-878">Prove \(F_n=\frac{1}{\sqrt{5}}\biggl[\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{n+1}-\biggl(\frac{1-\sqrt{5}}{2}\biggr)^{n+1}\biggr]\text{.}\)</p>
+<article class="hiddenproof" id="proof-28"><a data-knowl="" class="id-ref original" data-refid="hk-proof-28"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-28"><article class="hiddenproof"><p id="p-879">Let \(F_k=F_{k-1}+F_{k-2}, F_0=1, F_1=1\text{.}\)</p>
+<p id="p-880">Base Step: Let \(n=0\text{.}\) Then \(F_0=1\text{.}\) And</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{1}{\sqrt{5}}\biggl[\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{0+1}-\biggl(\frac{1-\sqrt{5}}{2}\biggr)^{0+1}\biggr]
@@ -258,27 +258,27 @@ a_k=ra_{k-1}
 \frac{1}{\sqrt{5}}\biggl[\frac{2\sqrt{5}}{2}\biggr]=1
 \end{equation*}
 </div>
-<p id="p-882">Let \(n=1\text{.}\) Then \(F_1=1\text{.}\) And</p>
+<p id="p-881">Let \(n=1\text{.}\) Then \(F_1=1\text{.}\) And</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{1}{\sqrt{5}}\biggl[\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{1+1}-\biggl(\frac{1-\sqrt{5}}{2}\biggr)^{1+1}\biggr]=
 \frac{1}{\sqrt{5}}\biggl[\frac{6+2\sqrt{5}}{4}-\frac{6-2\sqrt{5}}{4}\biggr]=1
 \end{equation*}
 </div>
-<p id="p-883">Induction Step: Assume</p>
+<p id="p-882">Induction Step: Assume</p>
 <div class="displaymath">
 \begin{equation*}
 F_i=\frac{1}{\sqrt{5}}\biggl[\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{i+1}-\biggl(\frac{1-\sqrt{5}}{2}\biggr)^{i+1}\biggr], 0\leq i\leq k
 \end{equation*}
 </div>
 <p data-braille="continuation">for some \(k\geq 0\) (Strong induction).</p>
-<p id="p-884">Show</p>
+<p id="p-883">Show</p>
 <div class="displaymath">
 \begin{equation*}
 F_{k+1}=\frac{1}{\sqrt{5}}\biggl[\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{k+2}-\biggl(\frac{1-\sqrt{5}}{2}\biggr)^{k+2}\biggr].
 \end{equation*}
 </div>
-<p id="p-885">Proof of induction step: By the recursive definition of the sequence, \(F_{k+1}=F_{k}+F_{k-1}\text{.}\) Thus,</p>
+<p id="p-884">Proof of induction step: By the recursive definition of the sequence, \(F_{k+1}=F_{k}+F_{k-1}\text{.}\) Thus,</p>
 <div class="displaymath">
 \begin{align*}
 F_{k+1}&amp;=\frac{1}{\sqrt{5}}\biggl[\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{k+1}-\biggl(\frac{1-\sqrt{5}}{2}\biggr)^{k+1}\biggr]+
@@ -296,30 +296,30 @@ F_{k+1}&amp;=\frac{1}{\sqrt{5}}\biggl[\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{k+1}-\
 \end{align*}
 </div>
 <p data-braille="continuation">Therefore, by induction, \(F_n=\frac{1}{\sqrt{5}}\biggl[\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{n+1}-\biggl(\frac{1-\sqrt{5}}{2}\biggr)^{n+1}\biggr]\text{.}\)</p></article></div>
-<p id="p-886">Note, the proof contains some algebraic steps that may not be obvious. But all of them can be checked. For example, it is easier to see that \(\biggl(\frac{3+\sqrt{5}}{2}\biggr)=\biggl(\frac{1+\sqrt{5}}{2}\biggr)^2\) by squaring the RHS and simplifying.</p></article></div>
+<p id="p-885">Note, the proof contains some algebraic steps that may not be obvious. But all of them can be checked. For example, it is easier to see that \(\biggl(\frac{3+\sqrt{5}}{2}\biggr)=\biggl(\frac{1+\sqrt{5}}{2}\biggr)^2\) by squaring the RHS and simplifying.</p></article></div>
 <section class="reading-questions" id="reading-questions-22"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-159"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-887">Find a recurrence relation for \(3, 6, 12, 24, 48, \ldots\text{.}\)</p>
+<p id="p-886">Find a recurrence relation for \(3, 6, 12, 24, 48, \ldots\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-238" id="answer-238"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-238"><div class="answer solution-like"><p id="p-888">\(a_0=3, a_k=2a_{k-1}\)</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-238" id="answer-238"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-238"><div class="answer solution-like"><p id="p-887">\(a_0=3, a_k=2a_{k-1}\)</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-160"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-889">Find an explicit formula for \(3, 6, 12, 24, 48, \ldots\text{.}\)</p>
+<p id="p-888">Find an explicit formula for \(3, 6, 12, 24, 48, \ldots\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-239" id="answer-239"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-239"><div class="answer solution-like"><p id="p-890">\(a_n=3\cdot 2^n, n\geq 0\)</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-239" id="answer-239"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-239"><div class="answer solution-like"><p id="p-889">\(a_n=3\cdot 2^n, n\geq 0\)</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-161"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-891">Find a recurrence relation for \(2, 6, 10, 14, 18, \ldots\text{.}\)</p>
+<p id="p-890">Find a recurrence relation for \(2, 6, 10, 14, 18, \ldots\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-240" id="answer-240"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-240"><div class="answer solution-like"><p id="p-892">\(a_0=2, a_k=a_{k-1}+4\)</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-240" id="answer-240"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-240"><div class="answer solution-like"><p id="p-891">\(a_0=2, a_k=a_{k-1}+4\)</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-162"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-893">Find an explicit formula for \(2, 6, 10, 14, 18, \ldots\text{.}\)</p>
+<p id="p-892">Find an explicit formula for \(2, 6, 10, 14, 18, \ldots\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-241" id="answer-241"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-241"><div class="answer solution-like"><p id="p-894">\(a_n=2+ 4n, n\geq 0\)</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-241" id="answer-241"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-241"><div class="answer solution-like"><p id="p-893">\(a_n=2+ 4n, n\geq 0\)</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-163"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-895">Simplify \(\biggl(\frac{1-\sqrt{5}}{2}\biggr)^2\text{.}\)</p>
+<p id="p-894">Simplify \(\biggl(\frac{1-\sqrt{5}}{2}\biggr)^2\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-242" id="answer-242"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-242"><div class="answer solution-like"><p id="p-896">1, 2, 2, 1</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-242" id="answer-242"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-242"><div class="answer solution-like"><p id="p-895">1, 2, 2, 1</p></div></div>
 </div></article></section></section></div></main>
 </div>
 </body>

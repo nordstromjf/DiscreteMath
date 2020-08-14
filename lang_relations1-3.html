@@ -182,85 +182,86 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="lang_relations1-3"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1.3</span> <span class="title">Language of Relations and Functions</span>
 </h2>
-<p id="p-56">We are familiar with the idea of a function from previous math courses. In this class we want to understand functions as an important mathemaitcal tool to relate object to each other. We are used to functions from the real numbers to the real numbers in Calculus. All math courses use functions in some way, often relating other mathematical objects, such as vectors in Vector Calculus, matrices in Linear Algebra, complex numbers in Complex Analysis, or strings of characters in computer science.</p>
-<p id="p-57">A function really describes a relationship, so we will start with the more general mathematical concept of a relation.</p>
+<p id="p-53">We are familiar with the idea of a function from previous math courses. In this class we want to understand functions as an important mathematical tool to relate objects to each other. We are used to functions from the real numbers to the real numbers in Calculus. All math courses use functions in some way, often relating other mathematical objects, such as vectors in Vector Calculus, matrices in Linear Algebra, complex numbers in Complex Analysis, or strings of characters in computer science.</p>
+<p id="p-54">A function really describes a relationship, so we will start with the more general mathematical concept of a relation.</p>
 <article class="definition definition-like" id="definition-1"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="period">.</span>
 </h6>
-<p id="p-58">A <dfn class="terminology">relation</dfn>, \(R\text{,}\) from a set \(A\) to a set \(B\) is a subset of \(A\times B\text{.}\)</p></article><p id="p-59">Notation:</p>
-<p id="p-60">\((a, b)\in R\) if and only if \(aRb\text{.}\)</p>
-<p id="p-61">It is important to note that a relation is just a set. As long as the first coordinate comes from \(A\) and the second from \(B\text{,}\) we have a relation.  The notation \(aRb\) is a convenient way to describe whether two elements are related. In this case, we are thinking of \(R\) as a symbol representing the relationship, rather than as a set.</p>
+<p id="p-55">A <dfn class="terminology">relation</dfn>, \(R\text{,}\) from a set \(A\) to a set \(B\) is a subset of \(A\times B\text{.}\)</p></article><p id="p-56">Notation: \((a, b)\in R\) if and only if \(aRb\text{.}\)</p>
+<p id="p-57">It is important to note that a relation is just a set. As long as the first coordinate comes from \(A\) and the second from \(B\text{,}\) we have a relation.  The notation \(aRb\) is a convenient way to describe whether two elements are related. In this case, we are thinking of \(R\) as a symbol representing the relationship, rather than as a set.</p>
 <article class="example example-like" id="E_relation1"><a data-knowl="" class="id-ref original" data-refid="hk-E_relation1"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Example of a relation.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_relation1"><article class="example example-like"><p id="p-62">Let \(A=\{1, 2, 3\}, B=\{2, 3, 4\}\text{.}\) Let \(R=\{(1, 4), (3, 2)\}\text{.}\) Then \(R\) is a subset of \(A\times B\text{,}\) thus it is a relation. Since \((1, 4)\in R\text{,}\) \(1R4\) is true. Since \((2, 3)\notin R\text{,}\) \(2R3\) is false. Note, since \(R\) consists of ordered pairs, the order matters.</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_relation1"><article class="example example-like"><p id="p-58">Let \(A=\{1, 2, 3\}, B=\{2, 3, 4\}\text{.}\) Let \(R=\{(1, 4), (3, 2)\}\text{.}\) Then \(R\) is a subset of \(A\times B\text{,}\) thus it is a relation.</p>
+<p id="p-59">Since \((1, 4)\in R\text{,}\) \(1R4\) is true.</p>
+<p id="p-60">Since \((2, 3)\notin R\text{,}\) \(2R3\) is false. Note, since \(R\) consists of ordered pairs, the order matters.</p></article></div>
 <article class="example example-like" id="E_fam_relation"><a data-knowl="" class="id-ref original" data-refid="hk-E_fam_relation"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">A Familiar Relation.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_fam_relation"><article class="example example-like"><p id="p-63">There are lots of familiar relations in math. For example, \(\geq\) is a relation.</p>
-<p id="p-64">Let \(A=\{1, 2, 3\}, B=\{2, 3, 4\}\text{.}\) Find \(R\) from \(A\) to \(B\) if</p>
-<p id="p-65">\(aRb\) is given by \(a\geq b\text{.}\)</p>
-<a data-knowl="" class="id-ref original" data-refid="hk-solution-1" id="solution-1"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution solution-like"><p id="p-66">\(R=\{(2, 2), (3, 2), (3, 3)\}\text{.}\)</p></div></div></article></div>
-<p id="p-67">If \(R\) is a relation from\(A\) to \(B\text{,}\) then \(A\) is the <dfn class="terminology">domain</dfn>  of the relation, and \(B\) is the <dfn class="terminology">codomain</dfn> of the relation.</p>
-<p id="p-68">An <dfn class="terminology">arrow diagram</dfn> for a relation is a picture of the two sets with an arrow from \(a\) to \(b\) if \(aRb\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_fam_relation"><article class="example example-like"><p id="p-61">There are lots of familiar relations in math. For example, \(\geq\) is a relation.</p>
+<p id="p-62">Let \(A=\{1, 2, 3\}, B=\{2, 3, 4\}\text{.}\) Find \(R\) from \(A\) to \(B\) if</p>
+<p id="p-63">\(aRb\) is given by \(a\geq b\text{.}\)</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-1" id="solution-1"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution solution-like"><p id="p-64">\(R=\{(2, 2), (3, 2), (3, 3)\}\text{.}\)</p></div></div></article></div>
+<p id="p-65">If \(R\) is a relation from \(A\) to \(B\text{,}\) then \(A\) is the <dfn class="terminology">domain</dfn>  of the relation, and \(B\) is the <dfn class="terminology">codomain</dfn> of the relation.</p>
+<p id="p-66">An <dfn class="terminology">arrow diagram</dfn> for a relation is a picture of the two sets with an arrow from \(a\) to \(b\) if \(aRb\text{.}\)</p>
 <figure class="figure figure-like" id="arrowdiag1"><div class="image-box" style="width: 10%; margin-left: 45%; margin-right: 45%;"><img src="images/arrowgeq.svg" style="width: 100%; height: auto;" alt=""></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3.4<span class="period">.</span></span><span class="space"> </span>Arrow diagram for the relation in <a class="xref" data-knowl="./knowl/E_fam_relation.html" title="Example 1.3.3: A Familiar Relation">Example 1.3.3</a></figcaption></figure><article class="definition definition-like" id="definition-2"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.3.5</span><span class="period">.</span>
 </h6>
-<p id="p-69">A <dfn class="terminology">function</dfn>, \(f\text{,}\) from a set \(A\) to a set \(B\) is a mapping such that for every \(a\in A\) there is a unique \(b\in B\) with \(f(a)=b\text{.}\)</p></article><article class="example example-like" id="E_func1"><a data-knowl="" class="id-ref original" data-refid="hk-E_func1"><h6 class="heading">
+<p id="p-67">A <dfn class="terminology">function</dfn>, \(f\text{,}\) from a set \(A\) to a set \(B\) is a mapping such that for every \(a\in A\) there is a unique \(b\in B\) with \(f(a)=b\text{.}\)</p></article><article class="example example-like" id="E_func1"><a data-knowl="" class="id-ref original" data-refid="hk-E_func1"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.6</span><span class="period">.</span><span class="space"> </span><span class="title">Example of a function.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_func1"><article class="example example-like"><p id="p-70">Let \(A=\mathbb{R}, B=\mathbb{R}\text{.}\) Let \(f(x)=x+2\text{.}\) Then \(f:\mathbb{R}\rightarrow\mathbb{R}\text{.}\) We can check that it is a function: if we choose an \(x\text{,}\) we can see that there is a corresponding real number \(x+2\text{,}\) which always exists. We can also see that for any \(x\text{,}\) there is only one possible number as output.</p></article></div>
-<p id="p-71">A function is really a relation with some additional properties. First, for each \(a\) in \(A\text{,}\) a corresponding \(b\) must exist. Second, \(b\) must be unique. In other words, every \(a\) must map somewhere and each \(a\) can only map to one \(b\text{.}\)</p>
-<p id="p-72">Since a function is a relation, we can use relation notation to represent a function. Often we use \(F\) for the relation. In particular \(f(x)=y\) if and only if \((x, y)\in F\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_func1"><article class="example example-like"><p id="p-68">Let \(A=\mathbb{R}, B=\mathbb{R}\text{.}\) Let \(f(x)=x+2\text{.}\) Then \(f:\mathbb{R}\rightarrow\mathbb{R}\text{.}\) We can check that it is a function: if we choose an \(x\text{,}\) we can see that there is a corresponding real number \(x+2\text{,}\) which always exists. We can also see that for any \(x\text{,}\) there is only one possible number as output.</p></article></div>
+<p id="p-69">A function is really a relation with some additional properties. First, for each \(a\) in \(A\text{,}\) a corresponding \(b\) must exist. Second, \(b\) must be unique. In other words, every \(a\) must map somewhere and each \(a\) can only map to one \(b\text{.}\)</p>
+<p id="p-70">Since a function is a relation, we can use relation notation to represent a function. Often we use \(F\) for the relation. In particular, \(f(x)=y\) if and only if \((x, y)\in F\text{.}\)</p>
 <article class="example example-like" id="E_funcasrel"><a data-knowl="" class="id-ref original" data-refid="hk-E_funcasrel"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.7</span><span class="period">.</span><span class="space"> </span><span class="title">Example of a function as a relation.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_funcasrel"><article class="example example-like"><p id="p-73">Let \(A=\mathbb{R}, B=\mathbb{R}\text{.}\) Let \(f(x)=x+2\text{.}\) Then \(F\) is a subset of \(\mathbb{R}\times \mathbb{R}\text{,}\) thus it is a relation. Give 3 examples of ordered pairs in \(F\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_funcasrel"><article class="example example-like"><p id="p-71">Let \(A=\mathbb{R}, B=\mathbb{R}\text{.}\) Let \(f(x)=x+2\text{.}\) Then \(F\) is a subset of \(\mathbb{R}\times \mathbb{R}\text{,}\) thus it is a relation. Give 3 examples of ordered pairs in \(F\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-2" id="solution-2"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution solution-like">There are lots of examples, \((1, 3), (-2, 0), (5/2, 9/2)\) are a few.</div></div></article></div>
 <article class="example example-like" id="E_equasrel"><a data-knowl="" class="id-ref original" data-refid="hk-E_equasrel"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.8</span><span class="period">.</span><span class="space"> </span><span class="title">Example of an equation as a relation.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_equasrel"><article class="example example-like"><p id="p-74">Let \(A=\mathbb{R}, B=\mathbb{R}\text{.}\) Let \((x, y)\in R\) if and only if \(x^2=y^2\text{.}\) Then \(R\) is a subset of \(\mathbb{R}\times \mathbb{R}\text{,}\) thus it is a relation. Give 3 examples of ordered pairs in \(R\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_equasrel"><article class="example example-like"><p id="p-72">Let \(A=\mathbb{R}, B=\mathbb{R}\text{.}\) Let \((x, y)\in R\) if and only if \(x^2=y^2\text{.}\) Then \(R\) is a subset of \(\mathbb{R}\times \mathbb{R}\text{,}\) thus it is a relation. Give 3 examples of ordered pairs in \(R\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-3" id="solution-3"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-3"><div class="solution solution-like">There are lots of examples, \((2, 2), (-5, 5), (2, -2)\) are a few.</div></div>
-<p id="p-75">Note, this relation is not a function since if \(x=2\text{,}\) we can have \(y=2\) or \(y=-2\text{.}\) Thus \(y\) is not unique for a given \(x\text{.}\)</p></article></div>
+<p id="p-73">Note, this relation is not a function since if \(x=2\text{,}\) we can have \(y=2\) or \(y=-2\text{.}\) Thus \(y\) is not unique for a given \(x\text{.}\)</p></article></div>
 <section class="reading-questions" id="reading-questions-3"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
 </h3>
-<p id="p-76">Let \(A=\{2, 4, 6\}, B=\{3, 4, 5\}\text{.}\)</p>
+<p id="p-74">Let \(A=\{2, 4, 6\}, B=\{3, 4, 5\}\text{.}\)</p>
 <article class="exercise exercise-like" id="exercise-17"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-77">True or False: \(\{(2, 2), (3, 3), (4, 4)\}\) is a relation from \(A\) to \(B\text{.}\)</p>
+<p id="p-75">True or False: \(\{(2, 2), (3, 3), (4, 4)\}\) is a relation from \(A\) to \(B\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-17" id="answer-17"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-17"><div class="answer solution-like">False</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-18"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-78">True or False: \(\{(2, 2), (4, 4), (6, 6)\}\) is a relation from \(A\) to \(A\text{.}\)</p>
+<p id="p-76">True or False: \(\{(2, 2), (4, 4), (6, 6)\}\) is a relation from \(A\) to \(A\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-18" id="answer-18"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-18"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-19"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-79">True or False: \(\{(2, 3), (4, 3), (6, 3)\}\) is a relation from \(A\) to \(B\text{.}\)</p>
+<p id="p-77">True or False: \(\{(2, 3), (4, 3), (6, 3)\}\) is a relation from \(A\) to \(B\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-19" id="answer-19"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-19"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-20"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-80">True or False: \(\{(2, 3), (2, 4), (2, 5)\}\) is a relation from \(A\) to \(B\text{.}\)</p>
+<p id="p-78">True or False: \(\{(2, 3), (2, 4), (2, 5)\}\) is a relation from \(A\) to \(B\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-20" id="answer-20"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-20"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-21"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-81">True or False: \(\{(4, 3), (2, 5)\}\) is a relation from \(A\) to \(B\text{.}\)</p>
+<p id="p-79">True or False: \(\{(4, 3), (2, 5)\}\) is a relation from \(A\) to \(B\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-21" id="answer-21"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-21"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-22"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-82">True or False: \(\{(2, 2), (3, 3), (4, 4)\}\) is a function from \(A\) to \(B\text{.}\)</p>
+<p id="p-80">True or False: \(\{(2, 2), (3, 3), (4, 4)\}\) is a function from \(A\) to \(B\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-22" id="answer-22"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-22"><div class="answer solution-like">False</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-23"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
-<p id="p-83">True or False: \(\{(2, 2), (4, 4), (6, 6)\}\) is a function from \(A\) to \(A\text{.}\)</p>
+<p id="p-81">True or False: \(\{(2, 2), (4, 4), (6, 6)\}\) is a function from \(A\) to \(A\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-23" id="answer-23"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-23"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-24"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
-<p id="p-84">True or False: \(\{(2, 3), (4, 3), (6, 3)\}\) is a function from \(A\) to \(B\text{.}\)</p>
+<p id="p-82">True or False: \(\{(2, 3), (4, 3), (6, 3)\}\) is a function from \(A\) to \(B\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-24" id="answer-24"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-24"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-25"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
-<p id="p-85">True or False: \(\{(2, 3), (2, 4), (2, 5)\}\) is a function from \(A\) to \(B\text{.}\)</p>
+<p id="p-83">True or False: \(\{(2, 3), (2, 4), (2, 5)\}\) is a function from \(A\) to \(B\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-25" id="answer-25"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-25"><div class="answer solution-like">False</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-26"><h6 class="heading"><span class="codenumber">10<span class="period">.</span></span></h6>
-<p id="p-86">True or False: \(\{(4, 3), (2, 5)\}\) is a function from \(A\) to \(B\text{.}\)</p>
+<p id="p-84">True or False: \(\{(4, 3), (2, 5)\}\) is a function from \(A\) to \(B\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-26" id="answer-26"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-26"><div class="answer solution-like">False</div></div>
 </div></article></section></section></div></main>

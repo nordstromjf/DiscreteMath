@@ -13,10 +13,16 @@
 <body>
 <div class="displaymath">
 \begin{align*}
-(k+1)^3-(k+1)&amp;=k^3+3k^2+3k+1-k-1\\
-&amp;=(k^3-k)+3k^2+3k\ \ \textrm{ rearranged terms and cancelled 1's}
+\sum_{i=0}^{k}r^i&amp;=\frac{r^{k+1}-1}{r-1} \textrm{ by the induction assumption}\\
+\sum_{i=0}^{k+1}r^i&amp;= \sum_{i=0}^{k}r^i+(r^{k+1}) \textrm{ add the } k+1 \textrm{ term of the sum}\\
+&amp;=\frac{r^{k+1}-1}{r-1}+(r^{k+1})\\
+&amp;=\frac{r^{k+1}-1}{r-1}+\frac{(r-1)(r^{k+1})}{r-1}\\
+&amp;=\frac{r^{k+1}-1+(r-1)(r^{k+1})}{r-1} \textrm{ factor out } r^{k+1} \textrm{ on the top}\\
+&amp;=\frac{r^{k+1}(1+r-1)-1}{r-1} \\
+&amp;=\frac{r^{k+1}(r)-1}{r-1} \\
+&amp;=\frac{r^{k+2}-1}{r-1}. 
 \end{align*}
 </div>
-<span class="incontext"><a href="moreinduction5-3.html#mjx-eqn-mrow-29">in-context</a></span>
+<span class="incontext"><a href="induction5-2.html#mjx-eqn-mrow-29">in-context</a></span>
 </body>
 </html>

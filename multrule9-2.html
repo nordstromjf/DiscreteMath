@@ -182,22 +182,22 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="multrule9-2"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">9.2</span> <span class="title">Multiplication Rule</span>
 </h2>
-<p id="p-1334">In this section we look at how to count a process with several steps. We start with an example.</p>
+<p id="p-1333">In this section we look at how to count a process with several steps. We start with an example.</p>
 <article class="example example-like" id="E_cointosscount"><a data-knowl="" class="id-ref original" data-refid="hk-E_cointosscount"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Coin Toss.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_cointosscount"><article class="example example-like"><p id="p-1335">Toss a coin three times. How many ways can you get exactly two heads in the three tosses?</p>
-<p id="p-1336">First toss: H or T</p>
-<p id="p-1337">Second toss: H or T</p>
-<p id="p-1338">Third toss: H or T</p>
-<p id="p-1339">If we think about what happens after the first toss, we have H or T. For each of those outcomes, we get H or T on the second toss, so we now have 4 outcomes: HH, HT, TH, TT</p>
-<p id="p-1340">Now, with the third toss, each of our four outcomes could end with H ot T, giving us 8 outcomes: HHH, HTH, THH, TTH, HHT, HTT, THT, TTT.</p>
-<p id="p-1341">Out of these 8 possible outcomes, there are 3 outcomes with exactly 2 heads: HTH, THH, HHT.</p>
-<p id="p-1342">We can also see the possibilies using a <dfn class="terminology">possibility tree</dfn>, where the first (top) level represents the first toss, the secone, the second toss, and the third row, the third toss. The blue “paths” show the outcomes with exactly two Heads.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_cointosscount"><article class="example example-like"><p id="p-1334">Toss a coin three times. How many ways can you get exactly two heads in the three tosses?</p>
+<p id="p-1335">First toss: H or T</p>
+<p id="p-1336">Second toss: H or T</p>
+<p id="p-1337">Third toss: H or T</p>
+<p id="p-1338">If we think about what happens after the first toss, we have H or T. For each of those outcomes, we get H or T on the second toss, so we now have 4 outcomes: HH, HT, TH, TT</p>
+<p id="p-1339">Now, with the third toss, each of our four outcomes could end with H ot T, giving us 8 outcomes: HHH, HTH, THH, TTH, HHT, HTT, THT, TTT.</p>
+<p id="p-1340">Out of these 8 possible outcomes, there are 3 outcomes with exactly 2 heads: HTH, THH, HHT.</p>
+<p id="p-1341">We can also see the possibilies using a <dfn class="terminology">possibility tree</dfn>, where the first (top) level represents the first toss, the secone, the second toss, and the third row, the third toss. The blue “paths” show the outcomes with exactly two Heads.</p>
 <figure class="figure figure-like" id="F_probtree"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/treecointoss.svg" style="width: 100%; height: auto;" alt=""></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.2.2<span class="period">.</span></span><span class="space"> </span>Possibility tree for tossing a coin three times</figcaption></figure></article></div>
-<p id="p-1343">In <a class="xref" data-knowl="./knowl/E_cointosscount.html" title="Example 9.2.1: Coin Toss">Example 9.2.1</a>, we saw that each toss doubled the number of outcomes from the previous toss. For example, if we tossed the coin 4 times, we would have \(2^4=16\) outcomes. We are using the multiplication rule to determine the number of outcomes.</p>
-<p id="p-1344">Multiplication Rule:</p>
-<p id="p-1345">Supose we have a process with \(k\) steps.</p>
+<p id="p-1342">In <a class="xref" data-knowl="./knowl/E_cointosscount.html" title="Example 9.2.1: Coin Toss">Example 9.2.1</a>, we saw that each toss doubled the number of outcomes from the previous toss. For example, if we tossed the coin 4 times, we would have \(2^4=16\) outcomes. We are using the multiplication rule to determine the number of outcomes.</p>
+<p id="p-1343">Multiplication Rule:</p>
+<p id="p-1344">Supose we have a process with \(k\) steps.</p>
 <ul class="disc">
 <li id="li-214">Suppose the first step can be done in \(n_1\) ways;</li>
 <li id="li-215">the second step can be done in \(n_2\) ways;</li>
@@ -206,86 +206,86 @@ MathJax.Hub.Config({
 <p data-braille="continuation">then the total operation can be done in \(n_1\cdot n_2\cdots n_k\) ways.</p>
 <article class="example example-like" id="E_licenseplates1"><a data-knowl="" class="id-ref original" data-refid="hk-E_licenseplates1"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Multiplication Rule: License Plates.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_licenseplates1"><article class="example example-like"><p id="p-1346">Find the number of license plates that can be made if each one consists of two letters from A through E, followed by four digits from 1 through 9.</p>
-<p id="p-1347">There are 5 choices for the letters: A, B, C, D, E.</p>
-<p id="p-1348">There are 9 choices for the digits: 1, 2, 3, 4, 5, 6, 7, 8, 9.</p>
-<p id="p-1349">First choose a letter, then another letter, then choose each of the numbers. We can use the multiplication rule since we can choose each chararcter as a process.</p>
-<p id="p-1350">Thus, we have \(5\cdot 5\cdot 9\cdot 9\cdot 9\cdot 9=164025\) license plates.</p>
-<p id="p-1351">Now, suppose you cannot repeat a number in any one license plate. How many licesne plates can we make?</p>
-<p id="p-1352">When choosing the numbers, first we have 9 choices, then 8, since we can't choose the same number as the first digit, etc.</p>
-<p id="p-1353">The total number of license plates if we can't repeat a number is \(5\cdot 5\cdot 9\cdot 8\cdot 7\cdot 6=75600\text{.}\)</p></article></div>
-<p id="p-1354">A <dfn class="terminology">string of length \(n\) over \(s\)</dfn> is a list of \(n\) characters where the characters come from set \(S\text{.}\) A <dfn class="terminology">binary string</dfn> or <dfn class="terminology">bit string</dfn> is a string with \(S=\{0, 1\}\text{.}\) The <dfn class="terminology">null string</dfn> is the string of length 0, denoted \(\varepsilon\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_licenseplates1"><article class="example example-like"><p id="p-1345">Find the number of license plates that can be made if each one consists of two letters from A through E, followed by four digits from 1 through 9.</p>
+<p id="p-1346">There are 5 choices for the letters: A, B, C, D, E.</p>
+<p id="p-1347">There are 9 choices for the digits: 1, 2, 3, 4, 5, 6, 7, 8, 9.</p>
+<p id="p-1348">First choose a letter, then another letter, then choose each of the numbers. We can use the multiplication rule since we can choose each chararcter as a process.</p>
+<p id="p-1349">Thus, we have \(5\cdot 5\cdot 9\cdot 9\cdot 9\cdot 9=164025\) license plates.</p>
+<p id="p-1350">Now, suppose you cannot repeat a number in any one license plate. How many licesne plates can we make?</p>
+<p id="p-1351">When choosing the numbers, first we have 9 choices, then 8, since we can't choose the same number as the first digit, etc.</p>
+<p id="p-1352">The total number of license plates if we can't repeat a number is \(5\cdot 5\cdot 9\cdot 8\cdot 7\cdot 6=75600\text{.}\)</p></article></div>
+<p id="p-1353">A <dfn class="terminology">string of length \(n\) over \(s\)</dfn> is a list of \(n\) characters where the characters come from set \(S\text{.}\) A <dfn class="terminology">binary string</dfn> or <dfn class="terminology">bit string</dfn> is a string with \(S=\{0, 1\}\text{.}\) The <dfn class="terminology">null string</dfn> is the string of length 0, denoted \(\varepsilon\text{.}\)</p>
 <article class="example example-like" id="E_bitstrings1"><a data-knowl="" class="id-ref original" data-refid="hk-E_bitstrings1"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Multiplication Rule: Strings.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_bitstrings1"><article class="example example-like"><p id="p-1355">Find the number of bit strings of length 5.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_bitstrings1"><article class="example example-like"><p id="p-1354">Find the number of bit strings of length 5.</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-371" id="answer-371"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-371"><div class="answer solution-like">\(2\cdot 2\cdot 2\cdot 2\cdot 2=32\)</div></div>
-<p id="p-1356">Find the number of “words” of length 4. These are just strings where \(S\) is the alphabet.</p>
+<p id="p-1355">Find the number of “words” of length 4. These are just strings where \(S\) is the alphabet.</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-372" id="answer-372"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-372"><div class="answer solution-like">\(26^{4}\)</div></div>
-<p id="p-1357">Find the number of strings of length 7, where \(S=\{a, b, c, d, 1, 2, 3, 4\}\text{.}\)</p>
+<p id="p-1356">Find the number of strings of length 7, where \(S=\{a, b, c, d, 1, 2, 3, 4\}\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-373" id="answer-373"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-373"><div class="answer solution-like">\(8^{7}\)</div></div></article></div>
 <article class="definition definition-like" id="D_permutation"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.2.5</span><span class="period">.</span>
 </h6>
-<p id="p-1358">A <dfn class="terminology">permutation</dfn> of a set \(S\) is an ordering of the elements of \(S\) in a row.</p></article><article class="example example-like" id="E_permutation"><a data-knowl="" class="id-ref original" data-refid="hk-E_permutation"><h6 class="heading">
+<p id="p-1357">A <dfn class="terminology">permutation</dfn> of a set \(S\) is an ordering of the elements of \(S\) in a row.</p></article><article class="example example-like" id="E_permutation"><a data-knowl="" class="id-ref original" data-refid="hk-E_permutation"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Permutations of a Set.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_permutation"><article class="example example-like"><p id="p-1359">Let \(S=\{a, b, c\}\text{.}\) Then a permutation of \(S\) is a list of elements in \(S\text{.}\) List all the permutations of \(S\text{.}\)</p>
-<p id="p-1360">Since we have 3 choices for our first element, then 2 choices for the second, and 1 for the last, there are \((3)(2)(1)=6\) permutations.</p>
-<p id="p-1361">The permutations are abc, acb, bca, bac, cab, cba.</p>
-<p id="p-1362">How many permutations are there of the set \(S=\{a, b, c, d\}\text{?}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_permutation"><article class="example example-like"><p id="p-1358">Let \(S=\{a, b, c\}\text{.}\) Then a permutation of \(S\) is a list of elements in \(S\text{.}\) List all the permutations of \(S\text{.}\)</p>
+<p id="p-1359">Since we have 3 choices for our first element, then 2 choices for the second, and 1 for the last, there are \((3)(2)(1)=6\) permutations.</p>
+<p id="p-1360">The permutations are abc, acb, bca, bac, cab, cba.</p>
+<p id="p-1361">How many permutations are there of the set \(S=\{a, b, c, d\}\text{?}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-374" id="answer-374"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-374"><div class="answer solution-like">\(4\cdot 3\cdot 2\cdot 1=24\)</div></div></article></div>
-<p id="p-1363">The number of permutations of a set with \(n\) elements is \(n!\text{.}\)</p>
+<p id="p-1362">The number of permutations of a set with \(n\) elements is \(n!\text{.}\)</p>
 <article class="definition definition-like" id="D_rpermutation"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.2.7</span><span class="period">.</span>
 </h6>
-<p id="p-1364">An <dfn class="terminology">\(r\)-permutation</dfn> of a set \(S\) is an ordered selection of \(r\) elements taken from the \(n\) elements of \(S\) in a row. Notation: \(P(n, r)\) is the number of \(r\)-permutations from a set of \(n\) elements.</p></article><article class="example example-like" id="E_rpermutation"><a data-knowl="" class="id-ref original" data-refid="hk-E_rpermutation"><h6 class="heading">
+<p id="p-1363">An <dfn class="terminology">\(r\)-permutation</dfn> of a set \(S\) is an ordered selection of \(r\) elements taken from the \(n\) elements of \(S\) in a row. Notation: \(P(n, r)\) is the number of \(r\)-permutations from a set of \(n\) elements.</p></article><article class="example example-like" id="E_rpermutation"><a data-knowl="" class="id-ref original" data-refid="hk-E_rpermutation"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">\(r\)-Permutations of a Set.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_rpermutation"><article class="example example-like"><p id="p-1365">Let \(S=\{a, b, c, d, e\}\text{.}\) Then a 3-permutation of \(S\) is a list of 3 (non-repeating) elements from \(S\text{.}\) For example, ace, dbe, bda are all 3-permutations.</p>
-<p id="p-1366">Find the number of 3-permutations of \(S\text{,}\) \(P(5, 3)\text{.}\)</p>
-<p id="p-1367">We have 5 choices for the first letter, 4 choices for the second, and 3 choices for the last. Thus, \(P(5, 3)=5\cdot 4\cdot 3=60\text{.}\)</p>
-<p id="p-1368">How many 4-permutations are there of the standard English alphabet?</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_rpermutation"><article class="example example-like"><p id="p-1364">Let \(S=\{a, b, c, d, e\}\text{.}\) Then a 3-permutation of \(S\) is a list of 3 (non-repeating) elements from \(S\text{.}\) For example, ace, dbe, bda are all 3-permutations.</p>
+<p id="p-1365">Find the number of 3-permutations of \(S\text{,}\) \(P(5, 3)\text{.}\)</p>
+<p id="p-1366">We have 5 choices for the first letter, 4 choices for the second, and 3 choices for the last. Thus, \(P(5, 3)=5\cdot 4\cdot 3=60\text{.}\)</p>
+<p id="p-1367">How many 4-permutations are there of the standard English alphabet?</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-375" id="answer-375"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-375"><div class="answer solution-like">\(26\cdot 25\cdot 24\cdot 23\)</div></div></article></div>
-<p id="p-1369">The number of \(r\)-permutations of a set with \(n\) elements is \(P(n, r)=n\cdot (n-1)\cdots (n-r+1)\text{,}\) which is often easier to calculate using \(P(n, r)=\frac{n!}{(n-r)!}\text{.}\)</p>
+<p id="p-1368">The number of \(r\)-permutations of a set with \(n\) elements is \(P(n, r)=n\cdot (n-1)\cdots (n-r+1)\text{,}\) which is often easier to calculate using \(P(n, r)=\frac{n!}{(n-r)!}\text{.}\)</p>
 <article class="example example-like" id="E_numberofintegers"><a data-knowl="" class="id-ref original" data-refid="hk-E_numberofintegers"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.9</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Four-Digit Integers.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_numberofintegers"><article class="example example-like"><p id="p-1370">How many odd integers are there from 1000 to 9999?</p>
-<p id="p-1371">The number is a string of 4 digits. The first digit cannot be 0, so there are 9 choices: 1 through 9. The second and third digits can be anything from 0 to 9, so there are 10 choices for each. The last digit must be odd, so the only choices are 1, 3, 5, 7, 9.</p>
-<p id="p-1372">Thus, there are \((9)(10)(10)(5)=4500\) odd numbers.</p>
-<p id="p-1373">How many integers are there from 1000 to 9999 that have distict digits?</p>
-<p id="p-1374">The first digit cannot be 0, so there are 9 choices: 1 through 9. The second digit can be anything from 0 to 9, except for whatever the first digit is, so there are 9 choices. Similarly, there are 8 choices for the third digit, and 7 for the last digit.</p>
-<p id="p-1375">Thus, there are \((9)(9)(8)(7)=4536\) numbers with distinct digits.</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_numberofintegers"><article class="example example-like"><p id="p-1369">How many odd integers are there from 1000 to 9999?</p>
+<p id="p-1370">The number is a string of 4 digits. The first digit cannot be 0, so there are 9 choices: 1 through 9. The second and third digits can be anything from 0 to 9, so there are 10 choices for each. The last digit must be odd, so the only choices are 1, 3, 5, 7, 9.</p>
+<p id="p-1371">Thus, there are \((9)(10)(10)(5)=4500\) odd numbers.</p>
+<p id="p-1372">How many integers are there from 1000 to 9999 that have distict digits?</p>
+<p id="p-1373">The first digit cannot be 0, so there are 9 choices: 1 through 9. The second digit can be anything from 0 to 9, except for whatever the first digit is, so there are 9 choices. Similarly, there are 8 choices for the third digit, and 7 for the last digit.</p>
+<p id="p-1374">Thus, there are \((9)(9)(8)(7)=4536\) numbers with distinct digits.</p></article></div>
 <section class="reading-questions" id="reading-questions-33"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-247"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-1376">Toss a coin 4 times. How many ways are there to get exactly 1 Head?</p>
+<p id="p-1375">Toss a coin 4 times. How many ways are there to get exactly 1 Head?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-376" id="answer-376"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-376"><div class="answer solution-like">\(4\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-248"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-1377">Toss a coin 4 times. How many ways are there to get exactly 2 Heads?</p>
+<p id="p-1376">Toss a coin 4 times. How many ways are there to get exactly 2 Heads?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-377" id="answer-377"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-377"><div class="answer solution-like">\(6\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-249"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-1378">Toss a coin 4 times. How many ways are there to get 0 Heads?</p>
+<p id="p-1377">Toss a coin 4 times. How many ways are there to get 0 Heads?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-378" id="answer-378"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-378"><div class="answer solution-like">\(1\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-250"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-1379">How many 3 digit numbers begin with 1 or 2 and end with 2, 3, 4?</p>
+<p id="p-1378">How many 3 digit numbers begin with 1 or 2 and end with 2, 3, 4?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-379" id="answer-379"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-379"><div class="answer solution-like">\((2)(10)(3)=60\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-251"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-1380">How many 3 digit numbers are divisible by 5?</p>
+<p id="p-1379">How many 3 digit numbers are divisible by 5?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-380" id="answer-380"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-380"><div class="answer solution-like">\((9)(10)(2)=180\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-252"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-1381">Calculate the number of permutations of a set with 6 elements.</p>
+<p id="p-1380">Calculate the number of permutations of a set with 6 elements.</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-381" id="answer-381"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-381"><div class="answer solution-like">\(6!\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-253"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
-<p id="p-1382">Calculate \(P(7, 4)\text{.}\)</p>
+<p id="p-1381">Calculate \(P(7, 4)\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-382" id="answer-382"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-382"><div class="answer solution-like">\((7)(6)(5)(4)\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-254"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
-<p id="p-1383">Calculate \(P(7, 2)\text{.}\)</p>
+<p id="p-1382">Calculate \(P(7, 2)\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-383" id="answer-383"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-383"><div class="answer solution-like">\((7)(6)\)</div></div>
 </div></article></section></section></div></main>

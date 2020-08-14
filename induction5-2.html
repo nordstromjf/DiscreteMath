@@ -182,24 +182,24 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="induction5-2"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.2</span> <span class="title">Mathematical Induction</span>
 </h2>
-<p id="p-673">In this section we learn a new proof technique, mathematical induction. This technique is useful for proving statements about the positive (or nonnegative) integers. It is based on the following principle.</p>
-<p id="p-674">Principle of Mathematical Induction:</p>
-<p id="p-675">Let \(P(n)\) be a property defined for integers \(n\text{,}\) and let \(a\) be a fixed integer. Suppose the following are true:</p>
+<p id="p-672">In this section we learn a new proof technique, mathematical induction. This technique is useful for proving statements about the positive (or nonnegative) integers. It is based on the following principle.</p>
+<p id="p-673">Principle of Mathematical Induction:</p>
+<p id="p-674">Let \(P(n)\) be a property defined for integers \(n\text{,}\) and let \(a\) be a fixed integer. Suppose the following are true:</p>
 <ol class="decimal">
 <li id="li-113">\(P(a)\) is true;</li>
 <li id="li-114">For all \(k\in\mathbb{Z}\) with \(k\geq a\text{,}\) if \(P(a)\) is true than \(P(k+1)\) is true;</li>
 </ol>
 <p data-braille="continuation">then for all \(n\geq a\text{,}\) \(P(n)\) is true.</p>
-<p id="p-676">The way to think about the Principle of Mathematical Induction is that if you know the statement is true for some starting value, (\(P(a)\) is true), and if you can show that knowing the statement is true for some value allows you to know it is true for the next value (\(P(k)\rightarrow P(k+1)\text{,}\) then you know it for all values greater than or equal to \(a\text{.}\)</p>
-<p id="p-677">So why should this work? Suppose you know two things:</p>
+<p id="p-675">The way to think about the Principle of Mathematical Induction is that if you know the statement is true for some starting value, (\(P(a)\) is true), and if you can show that knowing the statement is true for some value allows you to know it is true for the next value (\(P(k)\rightarrow P(k+1)\text{,}\) then you know it for all values greater than or equal to \(a\text{.}\)</p>
+<p id="p-676">So why should this work? Suppose you know two things:</p>
 <ol class="decimal">
 <li id="li-115">\(P(1)\) is true, and</li>
 <li id="li-116">\(P(k)\rightarrow P(k+1)\text{.}\)</li>
 </ol>
 <p data-braille="continuation">Note, you do not know \(P(k)\) is true, just that if it is true, then \(P(k+1)\) will be true. Now since \(P(1)\) is true, by (2.), \(P(2)\) must be true. Since \(P(2)\) is true, \(P(3)\) must be true, etc. In this way we can see that \(P(n)\) must be true for all \(n\geq 1\text{.}\)</p>
-<p id="p-678">The Principle of Mathematical Induction lets us skip all the intermediate steps, \(P(1)\rightarrow P(2), P(2)\rightarrow P(3),\) and conclude \(P(n)\) once we have (1.) and (2.).</p>
-<p id="p-679">Structure of a mathematical induction proof:</p>
-<p id="p-680">To prove \(P(n), \forall n\geq 1\text{,}\)</p>
+<p id="p-677">The Principle of Mathematical Induction lets us skip all the intermediate steps, \(P(1)\rightarrow P(2), P(2)\rightarrow P(3),\) and conclude \(P(n)\) once we have (1.) and (2.).</p>
+<p id="p-678">Structure of a mathematical induction proof:</p>
+<p id="p-679">To prove \(P(n), \forall n\geq 1\text{,}\)</p>
 <ul class="disc">
 <li id="li-117">
 <h6 class="heading"><span class="title">Base Step.</span></h6> Show \(P(1)\) is true.</li>
@@ -207,12 +207,12 @@ MathJax.Hub.Config({
 <h6 class="heading"><span class="title">Induction Step.</span></h6> Assume \(P(k)\) for some \(k\in\mathbb{Z}\text{,}\) show \(P(k+1)\text{.}\)</li>
 </ul>
 <p data-braille="continuation">Conclude \(P(n)\) is true for all \(n\geq 1\)</p>
-<p id="p-681">In the above structure we used \(a=1\) for simplicitiy, but an induction proof could have a base step starting at a different \(a\text{.}\) Most commonly, the base step starts with 0 or 1.</p>
-<p id="p-682">When writing induction proofs, make sure you use the actual statement you are proving rather than the notation \(P(1), P(k), P(n)\text{.}\)</p>
+<p id="p-680">In the above structure we used \(a=1\) for simplicitiy, but an induction proof could have a base step starting at a different \(a\text{.}\) Most commonly, the base step starts with 0 or 1.</p>
+<p id="p-681">When writing induction proofs, make sure you use the actual statement you are proving rather than the notation \(P(1), P(k), P(n)\text{.}\)</p>
 <article class="example example-like" id="E_sumofninduction"><a data-knowl="" class="id-ref original" data-refid="hk-E_sumofninduction"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Proof by Induction: Summation Formula.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_sumofninduction"><article class="example example-like"><p id="p-683">Prove \(\sum_{i=1}^{n}i=\frac{n(n+1)}{2}\) for \(n\geq 1\text{.}\)</p>
-<article class="hiddenproof" id="proof-18"><a data-knowl="" class="id-ref original" data-refid="hk-proof-18"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-18"><article class="hiddenproof"><p id="p-684">Base Step: Let \(n=1\text{.}\) Then</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_sumofninduction"><article class="example example-like"><p id="p-682">Prove \(\sum_{i=1}^{n}i=\frac{n(n+1)}{2}\) for \(n\geq 1\text{.}\)</p>
+<article class="hiddenproof" id="proof-18"><a data-knowl="" class="id-ref original" data-refid="hk-proof-18"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-18"><article class="hiddenproof"><p id="p-683">Base Step: Let \(n=1\text{.}\) Then</p>
 <div class="displaymath">
 \begin{gather*}
 \sum_{i=1}^{n}i=\sum_{i=1}^{1}i=1\\
@@ -220,10 +220,10 @@ MathJax.Hub.Config({
 \end{gather*}
 </div>
 <p data-braille="continuation">Since the left hand side of the equation equals the right hand side, \(\sum_{i=1}^{n}i=\frac{n(n+1)}{2}\) for \(n=1\text{.}\)</p>
-<p id="p-685">Induction Step:</p>
-<p id="p-686">Assume \(\sum_{i=1}^{k}i=\frac{k(k+1)}{2}\) for some \(k\geq 1\text{.}\)</p>
-<p id="p-687">Show \(\sum_{i=1}^{k+1}i=\frac{(k+1)(k+2)}{2}\text{.}\)</p>
-<p id="p-688">Proof of induction step:</p>
+<p id="p-684">Induction Step:</p>
+<p id="p-685">Assume \(\sum_{i=1}^{k}i=\frac{k(k+1)}{2}\) for some \(k\geq 1\text{.}\)</p>
+<p id="p-686">Show \(\sum_{i=1}^{k+1}i=\frac{(k+1)(k+2)}{2}\text{.}\)</p>
+<p id="p-687">Proof of induction step:</p>
 <div class="displaymath">
 \begin{align*}
 \sum_{i=1}^{k}i&amp;=\frac{k(k+1)}{2}\ \  \textrm{ by the induction assumption}\\
@@ -235,9 +235,9 @@ MathJax.Hub.Config({
 \end{align*}
 </div>
 <p data-braille="continuation">Thus, \(\sum_{i=1}^{k+1}i=\frac{(k+1)(k+2)}{2}\text{.}\)</p>
-<p id="p-689">Hence, by induction \(\sum_{i=1}^{n}i=\frac{n(n+1)}{2}\) for \(n\geq 1\text{.}\)</p></article></div></article></div>
-<p id="p-690">Note, in the base step we looked at each side of what we wanted to show separately. We can refer to this as a “left hand side/ right hand side proof”, or in short hand, a LHS/RHS proof. If we just start with the equation we want to show, then we are assuming what we are trying to prove. To avoid this, it is best, when trying to show two things are equal in the base step, to do a LHS/ RHS proof.</p>
-<p id="p-691"><a class="xref" data-knowl="./knowl/E_sumofninduction.html" title="Example 5.2.1: Proof by Induction: Summation Formula">Example 5.2.1</a> now gives us a useful formula for finding the sum of 1 through \(n\text{:}\)</p>
+<p id="p-688">Hence, by induction \(\sum_{i=1}^{n}i=\frac{n(n+1)}{2}\) for \(n\geq 1\text{.}\)</p></article></div></article></div>
+<p id="p-689">Note, in the base step we looked at each side of what we wanted to show separately. We can refer to this as a “left hand side/ right hand side proof”, or in short hand, a LHS/RHS proof. If we just start with the equation we want to show, then we are assuming what we are trying to prove. To avoid this, it is best, when trying to show two things are equal in the base step, to do a LHS/ RHS proof.</p>
+<p id="p-690"><a class="xref" data-knowl="./knowl/E_sumofninduction.html" title="Example 5.2.1: Proof by Induction: Summation Formula">Example 5.2.1</a> now gives us a useful formula for finding the sum of 1 through \(n\text{:}\)</p>
 <div class="displaymath">
 \begin{equation*}
 \sum_{i=1}^{n}i=\frac{n(n+1)}{2}.
@@ -245,8 +245,8 @@ MathJax.Hub.Config({
 </div>
 <article class="example example-like" id="E_geosuminduction"><a data-knowl="" class="id-ref original" data-refid="hk-E_geosuminduction"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Proof by Induction: Geometric Sum.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_geosuminduction"><article class="example example-like"><p id="p-692">Prove \(\sum_{i=0}^{n}r^i=\frac{r^{n+1}-1}{r-1}\) for \(n\geq 0\text{.}\)</p>
-<article class="hiddenproof" id="proof-19"><a data-knowl="" class="id-ref original" data-refid="hk-proof-19"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-19"><article class="hiddenproof"><p id="p-693">Base Step: Let \(n=0\text{.}\) Then</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_geosuminduction"><article class="example example-like"><p id="p-691">Prove \(\sum_{i=0}^{n}r^i=\frac{r^{n+1}-1}{r-1}\) for \(n\geq 0\text{.}\)</p>
+<article class="hiddenproof" id="proof-19"><a data-knowl="" class="id-ref original" data-refid="hk-proof-19"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-19"><article class="hiddenproof"><p id="p-692">Base Step: Let \(n=0\text{.}\) Then</p>
 <div class="displaymath">
 \begin{gather*}
 \sum_{i=0}^{0}r^i=r^0=1\\
@@ -254,10 +254,10 @@ MathJax.Hub.Config({
 \end{gather*}
 </div>
 <p data-braille="continuation">Since the left hand side of the equation equals the right hand side, \(\sum_{i=0}^{n}r^i=\frac{r^{n+1}-1}{r-1}\) for \(n=0\text{.}\)</p>
-<p id="p-694">Induction Step:</p>
-<p id="p-695">Assume \(\sum_{i=0}^{k}r^i=\frac{r^{k+1}-1}{r-1}\) for some \(k\geq 0\text{.}\)</p>
-<p id="p-696">Show \(\sum_{i=0}^{k+1}r^i=\frac{r^{k+2}-1}{r-1}\text{.}\)</p>
-<p id="p-697">Proof of induction step:</p>
+<p id="p-693">Induction Step:</p>
+<p id="p-694">Assume \(\sum_{i=0}^{k}r^i=\frac{r^{k+1}-1}{r-1}\) for some \(k\geq 0\text{.}\)</p>
+<p id="p-695">Show \(\sum_{i=0}^{k+1}r^i=\frac{r^{k+2}-1}{r-1}\text{.}\)</p>
+<p id="p-696">Proof of induction step:</p>
 <div class="displaymath">
 \begin{align*}
 \sum_{i=0}^{k}r^i&amp;=\frac{r^{k+1}-1}{r-1} \textrm{ by the induction assumption}\\
@@ -271,8 +271,8 @@ MathJax.Hub.Config({
 \end{align*}
 </div>
 <p data-braille="continuation">Thus, \(\sum_{i=0}^{k+1}r^i=\frac{r^{k+2}-1}{r-1}\text{.}\)</p>
-<p id="p-698">Hence, by induction \(\sum_{i=0}^{n}r^i=\frac{r^{n+1}-1}{r-1}\) for \(n\geq 0\text{.}\)</p></article></div></article></div>
-<p id="p-699">The sum in <a class="xref" data-knowl="./knowl/E_geosuminduction.html" title="Example 5.2.2: Proof by Induction: Geometric Sum">Example 5.2.2</a> is called a <dfn class="terminology">geometric sum</dfn>. Now we have a useful formula for the sum of \(r^i\) for various values of \(r&gt;1\text{:}\)</p>
+<p id="p-697">Hence, by induction \(\sum_{i=0}^{n}r^i=\frac{r^{n+1}-1}{r-1}\) for \(n\geq 0\text{.}\)</p></article></div></article></div>
+<p id="p-698">The sum in <a class="xref" data-knowl="./knowl/E_geosuminduction.html" title="Example 5.2.2: Proof by Induction: Geometric Sum">Example 5.2.2</a> is called a <dfn class="terminology">geometric sum</dfn>. Now we have a useful formula for the sum of \(r^i\) for various values of \(r&gt;1\text{:}\)</p>
 <div class="displaymath">
 \begin{equation*}
 \sum_{i=0}^{n}r^i=\frac{r^{n+1}-1}{r-1}.
@@ -280,56 +280,56 @@ MathJax.Hub.Config({
 </div>
 <article class="example example-like" id="E_usingsums"><a data-knowl="" class="id-ref original" data-refid="hk-E_usingsums"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Using Summation Formulas.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_usingsums"><article class="example example-like"><p id="p-700">Use one of the sum formulas in this section to calculate the following sums.</p>
-<p id="p-701">\(1+2+3+4+5+6+7=\sum_{i=1}^{7}i=\frac{7(7+1)}{2}=28\)</p>
-<p id="p-702">\(1+2+3+\cdots +1000=\sum_{i=1}^{1000}i=\frac{1000(1000+1)}{2}=500500\)</p>
-<p id="p-703">\(1+2+4+8+16=\sum_{i=0}^{4}2^i=\frac{2^{4+1}-1}{2-1}=31\)</p>
-<p id="p-704">\(1+3+9+\cdots +3^8=\sum_{i=0}^{8}3^i=\frac{3^{8+1}-1}{3-1}=9841\)</p></article></div>
-<p id="p-705">The <dfn class="terminology">closed form</dfn> of a sum is the computational formula for the sum. For example, the closed form of \(\sum_{i=0}^{n}3^i\) is \(\frac{3^{n+1}-1}{2}\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_usingsums"><article class="example example-like"><p id="p-699">Use one of the sum formulas in this section to calculate the following sums.</p>
+<p id="p-700">\(1+2+3+4+5+6+7=\sum_{i=1}^{7}i=\frac{7(7+1)}{2}=28\)</p>
+<p id="p-701">\(1+2+3+\cdots +1000=\sum_{i=1}^{1000}i=\frac{1000(1000+1)}{2}=500500\)</p>
+<p id="p-702">\(1+2+4+8+16=\sum_{i=0}^{4}2^i=\frac{2^{4+1}-1}{2-1}=31\)</p>
+<p id="p-703">\(1+3+9+\cdots +3^8=\sum_{i=0}^{8}3^i=\frac{3^{8+1}-1}{3-1}=9841\)</p></article></div>
+<p id="p-704">The <dfn class="terminology">closed form</dfn> of a sum is the computational formula for the sum. For example, the closed form of \(\sum_{i=0}^{n}3^i\) is \(\frac{3^{n+1}-1}{2}\text{.}\)</p>
 <section class="reading-questions" id="reading-questions-18"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-128"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-706">Use one of the summation formulas to find \(3+4+5+6+7+8\text{.}\)</p>
+<p id="p-705">Use one of the summation formulas to find \(3+4+5+6+7+8\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-200" id="answer-200"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-200"><div class="answer solution-like">\(\sum_{i=3}^{8}i=\sum_{i=1}^{8}i-(1+2)=\frac{8(8+1)}{2}-(3)=33\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-129"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-707">Use one of the summation formulas to find \(2+4+6+8+10+12\text{.}\)</p>
+<p id="p-706">Use one of the summation formulas to find \(2+4+6+8+10+12\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-201" id="answer-201"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-201"><div class="answer solution-like">\(\sum_{i=1}^{6}2i=2\sum_{i=1}^{6}i=(2)\frac{6(6+1)}{2}=42\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-130"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-708">Use one of the summation formulas to find \(1+5+25+125+625\text{.}\)</p>
+<p id="p-707">Use one of the summation formulas to find \(1+5+25+125+625\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-202" id="answer-202"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-202"><div class="answer solution-like">\(\sum_{i=0}^{4}5^i=\frac{5^{4+1}-1}{4}=781\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-131"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-709">Use one of the summation formulas to find \(1+7+7^2+\cdots+7^{50}\text{.}\)</p>
+<p id="p-708">Use one of the summation formulas to find \(1+7+7^2+\cdots+7^{50}\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-203" id="answer-203"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-203"><div class="answer solution-like">\(\sum_{i=0}^{50}7^i=\frac{7^{50+1}-1}{6}=\frac{7^{51}-1}{6}\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-132"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-710">Use one of the summation formulas to find \(1+7+7^2+\cdots+7^{n}\text{.}\)</p>
+<p id="p-709">Use one of the summation formulas to find \(1+7+7^2+\cdots+7^{n}\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-204" id="answer-204"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-204"><div class="answer solution-like">\(\sum_{i=0}^{n}7^i=\frac{7^{n+1}-1}{6}\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-133"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-711">Suppose you want to prove \(\sum_{i=1}^n i^2=\frac{n(n+1)(2n+1)}{6}\text{.}\) Show the formula holds for \(n=1\text{.}\)</p>
+<p id="p-710">Suppose you want to prove \(\sum_{i=1}^n i^2=\frac{n(n+1)(2n+1)}{6}\text{.}\) Show the formula holds for \(n=1\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-205" id="answer-205"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-205"><div class="answer solution-like">
-<p id="p-712">LHS:\(\sum_{i=1}^1 i^2=1^2=1\)</p>
-<p id="p-713">RHS:\(\frac{1(1+1)(2(1)+1)}{6}=1\)</p>
+<p id="p-711">LHS:\(\sum_{i=1}^1 i^2=1^2=1\)</p>
+<p id="p-712">RHS:\(\frac{1(1+1)(2(1)+1)}{6}=1\)</p>
 </div></div>
 </div></article><article class="exercise exercise-like" id="exercise-134"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
-<p id="p-714">Suppose you want to prove \(\sum_{i=1}^n i^2=\frac{n(n+1)(2n+1)}{6}\text{.}\) What should you assume in the induction step?</p>
+<p id="p-713">Suppose you want to prove \(\sum_{i=1}^n i^2=\frac{n(n+1)(2n+1)}{6}\text{.}\) What should you assume in the induction step?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-206" id="answer-206"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-206"><div class="answer solution-like">\(\sum_{i=1}^k i^2=\frac{k(k+1)(2k+1)}{6}\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-135"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
-<p id="p-715">Suppose you want to prove \(\sum_{i=1}^n i^2=\frac{n(n+1)(2n+1)}{6}\text{.}\) What should you show in the induction step?</p>
+<p id="p-714">Suppose you want to prove \(\sum_{i=1}^n i^2=\frac{n(n+1)(2n+1)}{6}\text{.}\) What should you show in the induction step?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-207" id="answer-207"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-207"><div class="answer solution-like">\(\sum_{i=1}^{k+1} i^2=\frac{(k+1)(k+2)(2(k+1)+1)}{6}=\frac{(k+1)(k+2)(2k+3)}{6}\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-136"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
-<p id="p-716">Consider \(\sum_{i=1}^{k} i^3\text{.}\) What is the \(k+1\) term in the sum?</p>
+<p id="p-715">Consider \(\sum_{i=1}^{k} i^3\text{.}\) What is the \(k+1\) term in the sum?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-208" id="answer-208"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-208"><div class="answer solution-like">\((k+1)^3\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-137"><h6 class="heading"><span class="codenumber">10<span class="period">.</span></span></h6>
-<p id="p-717">Consider \(\sum_{i=1}^{k} \frac{1}{i+1}\text{.}\) What is the \(k+1\) term in the sum?</p>
+<p id="p-716">Consider \(\sum_{i=1}^{k} \frac{1}{i+1}\text{.}\) What is the \(k+1\) term in the sum?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-209" id="answer-209"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-209"><div class="answer solution-like">\(\frac{1}{k+2}\)</div></div>
 </div></article></section></section></div></main>

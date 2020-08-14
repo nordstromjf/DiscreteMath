@@ -13,14 +13,20 @@
 <body>
 <div class="displaymath">
 \begin{align*}
-A-(A\cap B) &amp;= A\cap(A\cap B)^C \ \ \text{ Set Difference Law}\\
-&amp;= A\cap(A^C\cup B^C) \ \ \text{ DeMorgan's Law}\\
-&amp;= (A\cap A^C)\cup (A\cap B^C) \ \ \text{ Distributive Law}\\
-&amp;= \emptyset\cup (A\cap B^C) \ \ \text{ Complement Law}\\
-&amp;= A\cap B^C \ \ \text{ Identity Law}\\
-&amp;= A-B \ \ \text{ Set Difference Law}
+F_{k+1}&amp;=\frac{1}{\sqrt{5}}\biggl[\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{k+1}-\biggl(\frac{1-\sqrt{5}}{2}\biggr)^{k+1}\biggr]+
+\frac{1}{\sqrt{5}}\biggl[\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{k}-\biggl(\frac{1-\sqrt{5}}{2}\biggr)^{k}\biggr]\\
+&amp;=\frac{1}{\sqrt{5}}\biggl[\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{k+1}+\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{k}-
+\biggl(\frac{1-\sqrt{5}}{2}\biggr)^{k+1}-\biggl(\frac{1-\sqrt{5}}{2}\biggr)^{k}\biggr]\\
+&amp;=\frac{1}{\sqrt{5}}\biggl[\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{k}\biggl(\frac{1+\sqrt{5}}{2}+1\biggr)-
+\biggl(\frac{1-\sqrt{5}}{2}\biggr)^{k}\biggl(\frac{1-\sqrt{5}}{2}+1\biggr)\biggr]\\
+&amp;=\frac{1}{\sqrt{5}}\biggl[\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{k}\biggl(\frac{3+\sqrt{5}}{2}\biggr)-
+\biggl(\frac{1-\sqrt{5}}{2}\biggr)^{k}\biggl(\frac{3-\sqrt{5}}{2}\biggr)\biggr]\\
+&amp;=\frac{1}{\sqrt{5}}\biggl[\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{k}\biggl(\frac{1+\sqrt{5}}{2}\biggr)^2-
+\biggl(\frac{1-\sqrt{5}}{2}\biggr)^{k}\biggl(\frac{1-\sqrt{5}}{2}\biggr)^2\biggr]\\
+&amp;=\frac{1}{\sqrt{5}}\biggl[\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{k+2}-
+\biggl(\frac{1-\sqrt{5}}{2}\biggr)^{k+2}\biggr]
 \end{align*}
 </div>
-<span class="incontext"><a href="algebraicsets6-3.html#mjx-eqn-mrow-80">in-context</a></span>
+<span class="incontext"><a href="iteration5-6.html#mjx-eqn-mrow-80">in-context</a></span>
 </body>
 </html>

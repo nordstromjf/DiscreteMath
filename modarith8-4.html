@@ -182,112 +182,112 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="modarith8-4"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">8.4</span> <span class="title">Modular Arithmetic</span>
 </h2>
-<p id="p-1267">In the last section we saw that congruence mod \(n\) is an equivalence relation. In this section we will explore this relation in more detail. We will also introduce the concept of modular arithmetic.</p>
-<p id="p-1268">Recall the definition for congruence mod \(\text{}\), <a class="xref" data-knowl="./knowl/D_mod.html" title="Definition 8.3.2">Definition 8.3.2</a>:</p>
-<p id="p-1269">Let \(a, b, n\in \mathbb{Z}, n&gt;1\text{.}\) Then \(a\equiv b\mod n\) if \(n\mid (a-b)\text{.}\)</p>
-<p id="p-1270">Note, we can use \(n&gt;1\text{,}\) since \(n=1\text{,}\) though defined, is not very interesting since 1 divides everything.</p>
-<p id="p-1271">In some applications, and often in computer science, the remainder, \(r\text{,}\) when \(a\) is divided by \(n\) is denoted \(r=a \mod n\text{.}\) When using equals (=), we will mean the specific remainder. When using congruence (\(\equiv\)), we will mean the relation. For example, \(2=12 \mod 5\text{,}\) but many numbers can satisfy the congruence: \(17 \equiv 12 \mod 5\text{,}\) etc.</p>
+<p id="p-1266">In the last section we saw that congruence mod \(n\) is an equivalence relation. In this section we will explore this relation in more detail. We will also introduce the concept of modular arithmetic.</p>
+<p id="p-1267">Recall the definition for congruence mod \(\text{}\), <a class="xref" data-knowl="./knowl/D_mod.html" title="Definition 8.3.2">Definition 8.3.2</a>:</p>
+<p id="p-1268">Let \(a, b, n\in \mathbb{Z}, n&gt;1\text{.}\) Then \(a\equiv b\mod n\) if \(n\mid (a-b)\text{.}\)</p>
+<p id="p-1269">Note, we can use \(n&gt;1\text{,}\) since \(n=1\text{,}\) though defined, is not very interesting since 1 divides everything.</p>
+<p id="p-1270">In some applications, and often in computer science, the remainder, \(r\text{,}\) when \(a\) is divided by \(n\) is denoted \(r=a \mod n\text{.}\) When using equals (=), we will mean the specific remainder. When using congruence (\(\equiv\)), we will mean the relation. For example, \(2=12 \mod 5\text{,}\) but many numbers can satisfy the congruence: \(17 \equiv 12 \mod 5\text{,}\) etc.</p>
 <article class="example example-like" id="E_modagain"><a data-knowl="" class="id-ref original" data-refid="hk-E_modagain"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">8.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Congruence mod \(n\).</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_modagain"><article class="example example-like"><p id="p-1272">True or false: \(19\equiv 5 \mod 2\text{.}\)</p>
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-345" id="answer-345"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-345"><div class="answer solution-like"><p id="p-1273">True</p></div></div>
-<p id="p-1274">True or false: \(19\equiv 5 \mod 7\text{.}\)</p>
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-346" id="answer-346"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-346"><div class="answer solution-like"><p id="p-1275">True</p></div></div>
-<p id="p-1276">True or false: \(19\equiv 5 \mod 5\text{.}\)</p>
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-347" id="answer-347"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-347"><div class="answer solution-like"><p id="p-1277">False</p></div></div></article></div>
-<p id="p-1278">We use modular arithmetic and equivalence mod \(n\) when we want to think about remainders when dividng by \(n\text{.}\) A familiar example is clock time. Suppose it is 11 am and you have an appointment in 3 hours. In general, you would not think of your appointment for 14 o'clock. You would think of noon as 0, and get that your appointment is at 2 o'clock. There are many more applications in algebra, cryptography, and computer science where we want to classify integers by their remainders mod \(n\text{.}\)</p>
-<p id="p-1279">The following theorem will be useful in proving statements involving congruence, but also in helping do calculations.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_modagain"><article class="example example-like"><p id="p-1271">True or false: \(19\equiv 5 \mod 2\text{.}\)</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-345" id="answer-345"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-345"><div class="answer solution-like"><p id="p-1272">True</p></div></div>
+<p id="p-1273">True or false: \(19\equiv 5 \mod 7\text{.}\)</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-346" id="answer-346"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-346"><div class="answer solution-like"><p id="p-1274">True</p></div></div>
+<p id="p-1275">True or false: \(19\equiv 5 \mod 5\text{.}\)</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-347" id="answer-347"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-347"><div class="answer solution-like"><p id="p-1276">False</p></div></div></article></div>
+<p id="p-1277">We use modular arithmetic and equivalence mod \(n\) when we want to think about remainders when dividng by \(n\text{.}\) A familiar example is clock time. Suppose it is 11 am and you have an appointment in 3 hours. In general, you would not think of your appointment for 14 o'clock. You would think of noon as 0, and get that your appointment is at 2 o'clock. There are many more applications in algebra, cryptography, and computer science where we want to classify integers by their remainders mod \(n\text{.}\)</p>
+<p id="p-1278">The following theorem will be useful in proving statements involving congruence, but also in helping do calculations.</p>
 <article class="theorem theorem-like" id="T_modequvalences"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">8.4.2</span><span class="period">.</span>
 </h6>
-<p id="p-1280">Let \(a, b, n\in \mathbb{Z}, n&gt;1\text{.}\) The following statements are equivalent.</p>
-<ol id="p-1281" class="decimal">
+<p id="p-1279">Let \(a, b, n\in \mathbb{Z}, n&gt;1\text{.}\) The following statements are equivalent.</p>
+<ol id="p-1280" class="decimal">
 <li id="li-202">\(\displaystyle n\mid a-b\)</li>
 <li id="li-203">\(\displaystyle a\equiv b \mod n\)</li>
 <li id="li-204">\(a=b+kn\) for some \(k\in \mathbb{Z}\)</li>
 <li id="li-205">\(a\) and \(b\) have the same remainder when divided by \(n\)</li>
 <li id="li-206">\(a \mod n = b \mod n\text{,}\) where here we refer to the remainder when dividing by \(n\text{.}\)</li>
-</ol></article><article class="hiddenproof" id="proof-42"><a data-knowl="" class="id-ref original" data-refid="hk-proof-42"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-42"><article class="hiddenproof"><p id="p-1282">When proving several statements are equivalent, we need to be able to get from any one statement to any other.</p>
-<p id="p-1283">\((1)\Leftrightarrow (2)\) by definition of congruence.</p>
-<p id="p-1284">\((4)\Leftrightarrow (5)\) by definition of mod as the remainder.</p>
-<p id="p-1285">\((1)\Leftrightarrow (3)\) is left as an exercise.</p>
-<p id="p-1286">We will prove \((3)\Leftrightarrow (4)\text{.}\)</p>
-<p id="p-1287">Assume \(a=b+kn\) for some \(k\in \mathbb{Z}\text{.}\) By the Quotient-Remainder Theorem, \(a=qn+r\) with \(0\leq r&lt; n\text{.}\) Thus, \(b+kn=qn+r\text{.}\) Solving for \(b\text{,}\) we get \(b=(q-k)n+r\text{.}\) But by uniquenes of the remainder, \(b\) has remainder \(r\text{.}\)</p>
-<p id="p-1288">Now assume \(a\) and \(b\) have the same remainder when divided by \(n\text{.}\) By the Quotient-Remainder Theorem, \(a=qn+r\) and \(b=q'n+r\text{.}\) Substituting in for \(r\text{,}\) \(a=qn+b-q'n=b+(q-q')n\text{.}\) Since \((q-q')\in \mathbb{Z}\text{,}\) let \(k=q-q'\text{.}\)</p></article></div>
-<p id="p-1289">The <dfn class="terminology">residue of \(a\) modulo \(n\)</dfn> is the remainder when \(a\) is divided by \(n\text{.}\) The set \(\{0, 1, \ldots, n-1\}\) forms a <dfn class="terminology">complete set of residues mod \(n\)</dfn>.</p>
-<p id="p-1290">Although we have already proved congruence mod \(n\) is an equivalence relation, we formally state it in the following theorem.</p>
+</ol></article><article class="hiddenproof" id="proof-42"><a data-knowl="" class="id-ref original" data-refid="hk-proof-42"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-42"><article class="hiddenproof"><p id="p-1281">When proving several statements are equivalent, we need to be able to get from any one statement to any other.</p>
+<p id="p-1282">\((1)\Leftrightarrow (2)\) by definition of congruence.</p>
+<p id="p-1283">\((4)\Leftrightarrow (5)\) by definition of mod as the remainder.</p>
+<p id="p-1284">\((1)\Leftrightarrow (3)\) is left as an exercise.</p>
+<p id="p-1285">We will prove \((3)\Leftrightarrow (4)\text{.}\)</p>
+<p id="p-1286">Assume \(a=b+kn\) for some \(k\in \mathbb{Z}\text{.}\) By the Quotient-Remainder Theorem, \(a=qn+r\) with \(0\leq r&lt; n\text{.}\) Thus, \(b+kn=qn+r\text{.}\) Solving for \(b\text{,}\) we get \(b=(q-k)n+r\text{.}\) But by uniquenes of the remainder, \(b\) has remainder \(r\text{.}\)</p>
+<p id="p-1287">Now assume \(a\) and \(b\) have the same remainder when divided by \(n\text{.}\) By the Quotient-Remainder Theorem, \(a=qn+r\) and \(b=q'n+r\text{.}\) Substituting in for \(r\text{,}\) \(a=qn+b-q'n=b+(q-q')n\text{.}\) Since \((q-q')\in \mathbb{Z}\text{,}\) let \(k=q-q'\text{.}\)</p></article></div>
+<p id="p-1288">The <dfn class="terminology">residue of \(a\) modulo \(n\)</dfn> is the remainder when \(a\) is divided by \(n\text{.}\) The set \(\{0, 1, \ldots, n-1\}\) forms a <dfn class="terminology">complete set of residues mod \(n\)</dfn>.</p>
+<p id="p-1289">Although we have already proved congruence mod \(n\) is an equivalence relation, we formally state it in the following theorem.</p>
 <article class="theorem theorem-like" id="T_congequivrelation"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">8.4.3</span><span class="period">.</span>
 </h6>
-<p id="p-1291">Congruence mod \(n\) is an equivalence relation in \(\mathbb{Z}\) with equivalence classes \([0], [1], \ldots [n-1]\text{.}\) Furthermore, \([a]=\{m\in \mathbb{Z} : m=a+kn, k\in \mathbb{Z}\}\text{.}\)</p></article><p id="p-1292">Modular arithmetic:</p>
-<p id="p-1293">If \(a\equiv c \mod n\) and \(b\equiv d \mod n\text{,}\) then</p>
+<p id="p-1290">Congruence mod \(n\) is an equivalence relation in \(\mathbb{Z}\) with equivalence classes \([0], [1], \ldots [n-1]\text{.}\) Furthermore, \([a]=\{m\in \mathbb{Z} : m=a+kn, k\in \mathbb{Z}\}\text{.}\)</p></article><p id="p-1291">Modular arithmetic:</p>
+<p id="p-1292">If \(a\equiv c \mod n\) and \(b\equiv d \mod n\text{,}\) then</p>
 <ul class="disc">
 <li id="li-207">\(\displaystyle a+b\equiv c+d \mod n\)</li>
 <li id="li-208">\(\displaystyle a-b\equiv c-d \mod n\)</li>
 <li id="li-209">\(\displaystyle ab\equiv cd \mod n\)</li>
 <li id="li-210">\(a^m\equiv c^m \mod n\text{,}\) for \(m\in\mathbb{Z}^+\)</li>
 </ul>
-<p id="p-1294">Basically, we can do regular arithmetic, where we can reduce to remainders, or equivalence classes mod \(n\text{.}\)</p>
+<p id="p-1293">Basically, we can do regular arithmetic, where we can reduce to remainders, or equivalence classes mod \(n\text{.}\)</p>
 <article class="example example-like" id="E_modarith"><a data-knowl="" class="id-ref original" data-refid="hk-E_modarith"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">8.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Modular Arithmetic.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_modarith"><article class="example example-like"><p id="p-1295">Use modular arithmetic to find</p>
-<p id="p-1296">\(10+25 \mod 6\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_modarith"><article class="example example-like"><p id="p-1294">Use modular arithmetic to find</p>
+<p id="p-1295">\(10+25 \mod 6\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-348" id="answer-348"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-348"><div class="answer solution-like">\(10\equiv 4 \mod 6, 25\equiv 1\mod 6\text{,}\) so \(10+25\equiv 4+1\equiv 5 \mod 6\)</div></div>
-<p id="p-1297">\(10\cdot 25 \mod 6\text{.}\)</p>
+<p id="p-1296">\(10\cdot 25 \mod 6\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-349" id="answer-349"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-349"><div class="answer solution-like">\(10\cdot 25\equiv 4\cdot 1\equiv 4 \mod 6\)</div></div>
-<p id="p-1298">\(25^{15} \mod 6\text{.}\)</p>
+<p id="p-1297">\(25^{15} \mod 6\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-350" id="answer-350"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-350"><div class="answer solution-like">\(25\equiv 1\mod 6\text{,}\) so \(25^{15}\equiv 1^{15}\equiv 1 \mod 6\)</div></div></article></div>
-<p id="p-1299">If we are doing modular arithmetic we often work directly with the equivalence classes, rather than all of the integers.</p>
-<p id="p-1300">We define \(\mathbb{Z}_n=\{0, 1, \ldots, n-1\}\text{,}\) where \(k\in\mathbb{Z}_n\) represents the equivalence class \([k]\text{.}\) Although this sounds complicated, we just do regular arithmetic with \(1, \ldots, n-1\) and reduce to the remainder mod \(n\text{.}\)</p>
+<p id="p-1298">If we are doing modular arithmetic we often work directly with the equivalence classes, rather than all of the integers.</p>
+<p id="p-1299">We define \(\mathbb{Z}_n=\{0, 1, \ldots, n-1\}\text{,}\) where \(k\in\mathbb{Z}_n\) represents the equivalence class \([k]\text{.}\) Although this sounds complicated, we just do regular arithmetic with \(1, \ldots, n-1\) and reduce to the remainder mod \(n\text{.}\)</p>
 <section class="reading-questions" id="reading-questions-31"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-230"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-1301">True or false: \(47\equiv 2\mod 5\text{.}\)</p>
+<p id="p-1300">True or false: \(47\equiv 2\mod 5\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-351" id="answer-351"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-351"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-231"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-1302">True or false: \(45\equiv 0\mod 5\text{.}\)</p>
+<p id="p-1301">True or false: \(45\equiv 0\mod 5\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-352" id="answer-352"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-352"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-232"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-1303">True or false: \(4\equiv -1\mod 5\text{.}\)</p>
+<p id="p-1302">True or false: \(4\equiv -1\mod 5\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-353" id="answer-353"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-353"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-233"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-1304">True or false: \(14\equiv 1\mod 5\text{.}\)</p>
+<p id="p-1303">True or false: \(14\equiv 1\mod 5\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-354" id="answer-354"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-354"><div class="answer solution-like">False</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-234"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-1305">True or false: \(47+45\equiv 2\mod 5\text{.}\)</p>
+<p id="p-1304">True or false: \(47+45\equiv 2\mod 5\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-355" id="answer-355"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-355"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-235"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-1306">True or false: \((47)^2\equiv 4\mod 5\text{.}\)</p>
+<p id="p-1305">True or false: \((47)^2\equiv 4\mod 5\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-356" id="answer-356"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-356"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-236"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
-<p id="p-1307">True or false: \(4^{500}\equiv 1\mod 5\text{.}\)</p>
+<p id="p-1306">True or false: \(4^{500}\equiv 1\mod 5\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-357" id="answer-357"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-357"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-237"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
-<p id="p-1308">True or false: \(10\equiv 1\mod 9\text{.}\)</p>
+<p id="p-1307">True or false: \(10\equiv 1\mod 9\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-358" id="answer-358"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-358"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-238"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
-<p id="p-1309">True or false: \(10^2\equiv 1\mod 9\text{.}\)</p>
+<p id="p-1308">True or false: \(10^2\equiv 1\mod 9\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-359" id="answer-359"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-359"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-239"><h6 class="heading"><span class="codenumber">10<span class="period">.</span></span></h6>
-<p id="p-1310">True or false: \(10^5\equiv 1\mod 9\text{.}\)</p>
+<p id="p-1309">True or false: \(10^5\equiv 1\mod 9\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-360" id="answer-360"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-360"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-240"><h6 class="heading"><span class="codenumber">11<span class="period">.</span></span></h6>
-<p id="p-1311">True or false: \(10^n\equiv 1\mod 9\text{.}\)</p>
+<p id="p-1310">True or false: \(10^n\equiv 1\mod 9\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-361" id="answer-361"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-361"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-241"><h6 class="heading"><span class="codenumber">12<span class="period">.</span></span></h6>
-<p id="p-1312">Give the equivalence classes for  \(a\equiv b \mod 5\text{.}\)</p>
+<p id="p-1311">Give the equivalence classes for  \(a\equiv b \mod 5\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-362" id="answer-362"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-362"><div class="answer solution-like">\([0], [1], [2], [3], [4]\)</div></div>
 </div></article></section></section></div></main>

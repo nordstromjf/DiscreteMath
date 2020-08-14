@@ -182,58 +182,58 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="stronginduction5-4"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.4</span> <span class="title">Strong Induction</span>
 </h2>
-<p id="p-763">In this section we look at a variation on induction called strong induction. This is really just regular induction except we make a strong assumption in the induction hypothesis. It is possible that we need to show more than one base case as well, but for the moment, we will just look at how and why we may need to change the assumption.</p>
-<p id="p-764"><dfn class="terminology">Stong induction</dfn>: Let \(P(n)\) be a property defined for integers \(n\text{.}\) If</p>
+<p id="p-762">In this section we look at a variation on induction called strong induction. This is really just regular induction except we make a strong assumption in the induction hypothesis. It is possible that we need to show more than one base case as well, but for the moment, we will just look at how and why we may need to change the assumption.</p>
+<p id="p-763"><dfn class="terminology">Stong induction</dfn>: Let \(P(n)\) be a property defined for integers \(n\text{.}\) If</p>
 <ol class="decimal">
 <li id="li-124">\(P(1), \ldots P(a)\) are true for some \(a\text{,}\) and</li>
 <li id="li-125">if \(P(i)\) is true for all \(1\leq i\leq k\text{,}\) then \(P(k+1)\) is true;</li>
 </ol>
 <p data-braille="continuation">then we can conclude \(P(n)\) is true for all \(n\geq 1\text{.}\)</p>
-<p id="p-765">As in the previous section, we will assume \(n\in \mathbb{Z}\text{.}\)</p>
-<p id="p-766">Structure of a strong induction proof:</p>
+<p id="p-764">As in the previous section, we will assume \(n\in \mathbb{Z}\text{.}\)</p>
+<p id="p-765">Structure of a strong induction proof:</p>
 <ol class="decimal">
 <li id="li-126">
 <h6 class="heading"><span class="title">Base Step.</span></h6> Assume \(P(1)\) is true.</li>
 <li id="li-127">
 <h6 class="heading"><span class="title">Induction Step.</span></h6> Assume \(P(i)\) is true for all \(1\leq i\leq k\text{.}\) Show \(P(k+1)\) is true.</li>
 </ol>
-<p id="p-767">For now, we can use \(a=1\) in the base step and just do one base step as before. But we might need to show, say, \(P(1)\) and \(P(2)\text{.}\)</p>
-<p id="p-768">The only real difference between strong induction and regular induction is that instead of assuming \(P(k)\text{,}\) we assume \(P(1), P(2), \ldots P(k)\text{.}\) In notation, this is \(P(i)\) for all \(1\leq i\leq k\text{.}\)</p>
-<p id="p-769">Why can we change the assumption? Well, remenber how induction works, first we show \(P(1)\text{,}\) then the induction step gets us to \(P(2)\text{,}\) which then gets us to \(P(3)\text{,}\) etc. But once we get to, say, \(P(4)\text{,}\) we already know \(P(1), P(2), P(3)\text{.}\) So we may as well assume we have \(P(i)\) for everything up to \(P(k)\text{.}\)</p>
-<p id="p-770">For the next two examples, we will look at proving every integer \(n&gt;1\) is divisible by a prime. Although we proved this using cases in Chapter 4, we will now prove it using induction. First we will attempt to use regular induction and see why it isn't enough.</p>
+<p id="p-766">For now, we can use \(a=1\) in the base step and just do one base step as before. But we might need to show, say, \(P(1)\) and \(P(2)\text{.}\)</p>
+<p id="p-767">The only real difference between strong induction and regular induction is that instead of assuming \(P(k)\text{,}\) we assume \(P(1), P(2), \ldots P(k)\text{.}\) In notation, this is \(P(i)\) for all \(1\leq i\leq k\text{.}\)</p>
+<p id="p-768">Why can we change the assumption? Well, remenber how induction works, first we show \(P(1)\text{,}\) then the induction step gets us to \(P(2)\text{,}\) which then gets us to \(P(3)\text{,}\) etc. But once we get to, say, \(P(4)\text{,}\) we already know \(P(1), P(2), P(3)\text{.}\) So we may as well assume we have \(P(i)\) for everything up to \(P(k)\text{.}\)</p>
+<p id="p-769">For the next two examples, we will look at proving every integer \(n&gt;1\) is divisible by a prime. Although we proved this using cases in Chapter 4, we will now prove it using induction. First we will attempt to use regular induction and see why it isn't enough.</p>
 <article class="example example-like" id="E_divbyprimeregular"><a data-knowl="" class="id-ref original" data-refid="hk-E_divbyprimeregular"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Using Regular Induction.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_divbyprimeregular"><article class="example example-like"><p id="p-771">Prove for all integers \(n&gt;1\text{,}\) \(n\) is divisible by a prime.</p>
-<p id="p-772">First we try to do the proof using regular induction.</p>
-<article class="hiddenproof" id="proof-23"><a data-knowl="" class="id-ref original" data-refid="hk-proof-23"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-23"><article class="hiddenproof"><p id="p-773">Base Step: Let \(n=2\text{.}\) Then \(2\mid 2\) and 2 is prime.</p>
-<p id="p-774">Thus, \(n\) is divisible by a prime.</p>
-<p id="p-775">Induction Step:</p>
-<p id="p-776">Assume \(k\) is divisible by a prime for some \(k\geq 2\text{.}\)</p>
-<p id="p-777">Show \(k+1\) is divisible by a prime.</p>
-<p id="p-778">“Proof” of induction step:</p>
-<p id="p-779">Case 1: \(k+1\) is prime. Now, \(k+1\mid k+1\) and hence \(k+1\) is divisible by a prime.</p>
-<p id="p-780">Case 2: \(k+1\) is not prime. This is were we get stuck, since although we know \(k\) is divisible by a prime, that doesn't tell us anything about \(k+1\text{.}\) In fact we showed that any prime dividing \(k\) CANNOT divide \(k+1\text{.}\)</p>
-<p id="p-781">Thus, regular induction is not going to work for this proof.</p></article></div></article></div>
-<p id="p-782">Now we can show how to do the proof with strong induction.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_divbyprimeregular"><article class="example example-like"><p id="p-770">Prove for all integers \(n&gt;1\text{,}\) \(n\) is divisible by a prime.</p>
+<p id="p-771">First we try to do the proof using regular induction.</p>
+<article class="hiddenproof" id="proof-23"><a data-knowl="" class="id-ref original" data-refid="hk-proof-23"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-23"><article class="hiddenproof"><p id="p-772">Base Step: Let \(n=2\text{.}\) Then \(2\mid 2\) and 2 is prime.</p>
+<p id="p-773">Thus, \(n\) is divisible by a prime.</p>
+<p id="p-774">Induction Step:</p>
+<p id="p-775">Assume \(k\) is divisible by a prime for some \(k\geq 2\text{.}\)</p>
+<p id="p-776">Show \(k+1\) is divisible by a prime.</p>
+<p id="p-777">“Proof” of induction step:</p>
+<p id="p-778">Case 1: \(k+1\) is prime. Now, \(k+1\mid k+1\) and hence \(k+1\) is divisible by a prime.</p>
+<p id="p-779">Case 2: \(k+1\) is not prime. This is were we get stuck, since although we know \(k\) is divisible by a prime, that doesn't tell us anything about \(k+1\text{.}\) In fact we showed that any prime dividing \(k\) CANNOT divide \(k+1\text{.}\)</p>
+<p id="p-780">Thus, regular induction is not going to work for this proof.</p></article></div></article></div>
+<p id="p-781">Now we can show how to do the proof with strong induction.</p>
 <article class="example example-like" id="E_divisinduction2"><a data-knowl="" class="id-ref original" data-refid="hk-E_divisinduction2"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Strong Induction.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_divisinduction2"><article class="example example-like"><p id="p-783">Prove for all integers \(n&gt;1\text{,}\) \(n\) is divisible by a prime.</p>
-<p id="p-784">The only change in the structure is to the induction assumption.</p>
-<article class="hiddenproof" id="proof-24"><a data-knowl="" class="id-ref original" data-refid="hk-proof-24"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-24"><article class="hiddenproof"><p id="p-785">Base Step: Let \(n=2\text{.}\) Then \(2\mid 2\) and 2 is prime.</p>
-<p id="p-786">Thus, \(n\) is divisible by a prime..</p>
-<p id="p-787">Induction Step:</p>
-<p id="p-788">Assume \(i\) is divisible by a prime for all \(2\leq i\leq k\) and for some \(k\geq 2\text{.}\)</p>
-<p id="p-789">Show \(k+1\) is divisible by a prime.</p>
-<p id="p-790">Proof of induction step:</p>
-<p id="p-791">Case 1: \(k+1\) is prime. Now, \(k+1\mid k+1\) and hence \(k+1\) is divisible by a prime.</p>
-<p id="p-792">Case 2: \(k+1\) is not prime. Thus \(k+1=ab\) where \(1&lt; a &lt; k+1\text{.}\) Then \(2\leq a\leq k\text{.}\) By our induction assumption, \(a\) must be divisible by a prime. Since \(a\mid k+1\) and \(a\) is divisible by a prime, \(k+1\) is divisible by a prime.</p>
-<p id="p-793">Thus, by induction, every \(n&gt;1\) is divisible by a prime.</p></article></div></article></div>
-<p id="p-794">In regular induction, we use that we know the statement holds for \(k\) to get that it holds for \(k+1\text{.}\) Strong induction is useful when we need to use some smaller case (not just \(k\)) to get the statement for \(k+1\text{.}\)</p>
-<p id="p-795">For the remainder of the section, we are going to switch gears a bit, a prove the existence part of the Quotient-Remainder Theorem. Before we do that we need the Well-Ordering Principle, which we will state without a proof.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_divisinduction2"><article class="example example-like"><p id="p-782">Prove for all integers \(n&gt;1\text{,}\) \(n\) is divisible by a prime.</p>
+<p id="p-783">The only change in the structure is to the induction assumption.</p>
+<article class="hiddenproof" id="proof-24"><a data-knowl="" class="id-ref original" data-refid="hk-proof-24"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-24"><article class="hiddenproof"><p id="p-784">Base Step: Let \(n=2\text{.}\) Then \(2\mid 2\) and 2 is prime.</p>
+<p id="p-785">Thus, \(n\) is divisible by a prime..</p>
+<p id="p-786">Induction Step:</p>
+<p id="p-787">Assume \(i\) is divisible by a prime for all \(2\leq i\leq k\) and for some \(k\geq 2\text{.}\)</p>
+<p id="p-788">Show \(k+1\) is divisible by a prime.</p>
+<p id="p-789">Proof of induction step:</p>
+<p id="p-790">Case 1: \(k+1\) is prime. Now, \(k+1\mid k+1\) and hence \(k+1\) is divisible by a prime.</p>
+<p id="p-791">Case 2: \(k+1\) is not prime. Thus \(k+1=ab\) where \(1&lt; a &lt; k+1\text{.}\) Then \(2\leq a\leq k\text{.}\) By our induction assumption, \(a\) must be divisible by a prime. Since \(a\mid k+1\) and \(a\) is divisible by a prime, \(k+1\) is divisible by a prime.</p>
+<p id="p-792">Thus, by induction, every \(n&gt;1\) is divisible by a prime.</p></article></div></article></div>
+<p id="p-793">In regular induction, we use that we know the statement holds for \(k\) to get that it holds for \(k+1\text{.}\) Strong induction is useful when we need to use some smaller case (not just \(k\)) to get the statement for \(k+1\text{.}\)</p>
+<p id="p-794">For the remainder of the section, we are going to switch gears a bit, a prove the existence part of the Quotient-Remainder Theorem. Before we do that we need the Well-Ordering Principle, which we will state without a proof.</p>
 <article class="theorem theorem-like" id="T_wellordering"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Well-Ordering Principle.</span>
 </h6>
-<p id="p-796">Let \(S\) be a set containing one or more integers, all of which are greater than some fixed integer. Then \(S\) has a least element.</p></article><p id="p-797">To check that the Well-Ordering Principle applies, you need to check three things:</p>
+<p id="p-795">Let \(S\) be a set containing one or more integers, all of which are greater than some fixed integer. Then \(S\) has a least element.</p></article><p id="p-796">To check that the Well-Ordering Principle applies, you need to check three things:</p>
 <ol class="decimal">
 <li id="li-128">\(\displaystyle S\neq \emptyset\)</li>
 <li id="li-129">\(\displaystyle S\subseteq \mathbb{Z}\)</li>
@@ -241,28 +241,28 @@ MathJax.Hub.Config({
 </ol>
 <article class="example example-like" id="E_wop"><a data-knowl="" class="id-ref original" data-refid="hk-E_wop"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Well-Ordering Principle.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_wop"><article class="example example-like"><p id="p-798">First note that the Well-Ordering Principle does not apply if the set is not integers. For example,</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_wop"><article class="example example-like"><p id="p-797">First note that the Well-Ordering Principle does not apply if the set is not integers. For example,</p>
 <div class="displaymath">
 \begin{equation*}
 \{1/n : n\in \mathbb{Z}, n\geq 0\}.
 \end{equation*}
 </div>
 <p data-braille="continuation">This is not a subset of the integers and does not have a least element, even though every elelment is greater than 0.</p>
-<p id="p-799">Now consider \(S=\{2k+1 : k\geq 0\}\text{.}\) Check each of the conditions.</p>
+<p id="p-798">Now consider \(S=\{2k+1 : k\geq 0\}\text{.}\) Check each of the conditions.</p>
 <ol class="decimal">
 <li id="li-131">\(S\neq \emptyset\) since \(1\in S\text{.}\)</li>
 <li id="li-132">\(S\subseteq \mathbb{Z}\) since \(2k+1\in \mathbb{Z}\text{.}\)</li>
 <li id="li-133">Every element of \(S\) is greater than some fixed integer since \(2k+1\geq 1\) when \(k\geq 0\text{.}\)</li>
 </ol></article></div>
-<p id="p-800">We now prove the existence part of the Quotient-Remainder Theorem.</p>
-<p id="p-801"><a class="xref" data-knowl="./knowl/T_divisionalgorthm.html" title="Theorem 4.4.1: The Quotient-Remainder Theorem">Theorem 4.4.1</a>: Given any \(n, d\in \mathbb{Z}\) with \(d&gt;0\text{,}\) there exist \(q, r\) such that \(n=dq+r\) and \(0\leq r&lt; d\text{.}\)</p>
-<article class="hiddenproof" id="proof-25"><a data-knowl="" class="id-ref original" data-refid="hk-proof-25"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-25"><article class="hiddenproof"><p id="p-802">Let \(S=\{n-dk : n-dk\geq 0, k\in\mathbb{Z}\}\text{.}\) Show \(S\) satisfies the Well-Ordering Principle. Clearly \(S\) is a set of integers, and by definition, every element is greater than or equal to 0. So we just need to show that \(S\neq\emptyset\text{.}\)</p>
-<p id="p-803">If \(n\geq 0\text{,}\) we can let \(k=0\text{.}\) Then \(n-dk=n\geq 0\text{.}\) Hence \(n\in S\text{.}\)</p>
-<p id="p-804">If \(n&lt; 0\text{,}\) let \(k=n\text{.}\) Then \(n-dn=n(1-d)\text{.}\) But \(n&lt; 0\) and \(1-d\leq 0\text{.}\) Thus, \(n-dn\geq 0\text{.}\) Hence \(n-dn\in S\text{.}\)</p>
-<p id="p-805">Thus, \(S\) is nonempty and satisfies the conditions of the Well-Ordering Principle. Hence, \(S\) has a least element. Call it \(r\text{.}\)</p>
-<p id="p-806">Since \(r\in S\text{,}\) \(r=n-dk\) for some \(k\in \mathbb{Z}\text{.}\) Let \(k=q\text{.}\) Then \(r=n-dq\text{,}\) and so \(n=dq+r\text{.}\)</p>
-<p id="p-807">We just need to show that \(0\leq r&lt; d\text{.}\) Well, \(r\geq 0\) since \(r\in S\text{.}\)</p>
-<p id="p-808">We will use contradiction to show \(r&lt; d\text{.}\) Assume \(r\geq d\text{.}\) Then</p>
+<p id="p-799">We now prove the existence part of the Quotient-Remainder Theorem.</p>
+<p id="p-800"><a class="xref" data-knowl="./knowl/T_divisionalgorthm.html" title="Theorem 4.4.1: The Quotient-Remainder Theorem">Theorem 4.4.1</a>: Given any \(n, d\in \mathbb{Z}\) with \(d&gt;0\text{,}\) there exist \(q, r\) such that \(n=dq+r\) and \(0\leq r&lt; d\text{.}\)</p>
+<article class="hiddenproof" id="proof-25"><a data-knowl="" class="id-ref original" data-refid="hk-proof-25"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-25"><article class="hiddenproof"><p id="p-801">Let \(S=\{n-dk : n-dk\geq 0, k\in\mathbb{Z}\}\text{.}\) Show \(S\) satisfies the Well-Ordering Principle. Clearly \(S\) is a set of integers, and by definition, every element is greater than or equal to 0. So we just need to show that \(S\neq\emptyset\text{.}\)</p>
+<p id="p-802">If \(n\geq 0\text{,}\) we can let \(k=0\text{.}\) Then \(n-dk=n\geq 0\text{.}\) Hence \(n\in S\text{.}\)</p>
+<p id="p-803">If \(n&lt; 0\text{,}\) let \(k=n\text{.}\) Then \(n-dn=n(1-d)\text{.}\) But \(n&lt; 0\) and \(1-d\leq 0\text{.}\) Thus, \(n-dn\geq 0\text{.}\) Hence \(n-dn\in S\text{.}\)</p>
+<p id="p-804">Thus, \(S\) is nonempty and satisfies the conditions of the Well-Ordering Principle. Hence, \(S\) has a least element. Call it \(r\text{.}\)</p>
+<p id="p-805">Since \(r\in S\text{,}\) \(r=n-dk\) for some \(k\in \mathbb{Z}\text{.}\) Let \(k=q\text{.}\) Then \(r=n-dq\text{,}\) and so \(n=dq+r\text{.}\)</p>
+<p id="p-806">We just need to show that \(0\leq r&lt; d\text{.}\) Well, \(r\geq 0\) since \(r\in S\text{.}\)</p>
+<p id="p-807">We will use contradiction to show \(r&lt; d\text{.}\) Assume \(r\geq d\text{.}\) Then</p>
 <div class="displaymath">
 \begin{align*}
 n-d(q+1)&amp;=n-dq-d\\
@@ -275,25 +275,25 @@ n-d(q+1)&amp;=n-dq-d\\
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-143"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-809">True or false: \(S=\{\frac{3n+1}{4} : n\in \mathbb{Z}, n\geq 0\}\) satisfies the conditions of the Well-Ordering Principle.</p>
+<p id="p-808">True or false: \(S=\{\frac{3n+1}{4} : n\in \mathbb{Z}, n\geq 0\}\) satisfies the conditions of the Well-Ordering Principle.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-215" id="answer-215"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-215"><div class="answer solution-like"><p id="p-810">False, the elements aren't all integers.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-215" id="answer-215"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-215"><div class="answer solution-like"><p id="p-809">False, the elements aren't all integers.</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-144"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-811">True or false: \(S=\{3n : n\in \mathbb{Z}, n\geq 0\}\) satisfies the conditions of the Well-Ordering Principle.</p>
+<p id="p-810">True or false: \(S=\{3n : n\in \mathbb{Z}, n\geq 0\}\) satisfies the conditions of the Well-Ordering Principle.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-216" id="answer-216"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-216"><div class="answer solution-like"><p id="p-812">True.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-216" id="answer-216"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-216"><div class="answer solution-like"><p id="p-811">True.</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-145"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-813">True or false: \(S=\{-n : n\in \mathbb{Z}, n\geq 0\}\) satisfies the conditions of the Well-Ordering Principle.</p>
+<p id="p-812">True or false: \(S=\{-n : n\in \mathbb{Z}, n\geq 0\}\) satisfies the conditions of the Well-Ordering Principle.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-217" id="answer-217"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-217"><div class="answer solution-like"><p id="p-814">False, the elements aren't all greater that some integer.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-217" id="answer-217"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-217"><div class="answer solution-like"><p id="p-813">False, the elements aren't all greater that some integer.</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-146"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-815">True or false: \(S=\{3n-k : n,k\in \mathbb{Z}, 3n-k\geq 0\}\) satisfies the conditions of the Well-Ordering Principle.</p>
+<p id="p-814">True or false: \(S=\{3n-k : n,k\in \mathbb{Z}, 3n-k\geq 0\}\) satisfies the conditions of the Well-Ordering Principle.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-218" id="answer-218"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-218"><div class="answer solution-like"><p id="p-816">True.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-218" id="answer-218"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-218"><div class="answer solution-like"><p id="p-815">True.</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-147"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-817">True or false: \(S=\{(-1)^n : n\in \mathbb{Z}\}\) satisfies the conditions of the Well-Ordering Principle.</p>
+<p id="p-816">True or false: \(S=\{(-1)^n : n\in \mathbb{Z}\}\) satisfies the conditions of the Well-Ordering Principle.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-219" id="answer-219"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-219"><div class="answer solution-like"><p id="p-818">True.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-219" id="answer-219"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-219"><div class="answer solution-like"><p id="p-817">True.</p></div></div>
 </div></article></section></section></div></main>
 </div>
 </body>

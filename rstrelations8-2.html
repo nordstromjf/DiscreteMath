@@ -182,39 +182,39 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="rstrelations8-2"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">8.2</span> <span class="title">Reflexive, Symmetric, Transitive Properties</span>
 </h2>
-<p id="p-1187">In this section we look at some properties of relations. In particular, we define the reflexive, symmetric, and ransitive properties. We will use directed graphs to identify the properties and look at how to prove whether a relation is reflexive, symmetric, and/or transitive.</p>
+<p id="p-1186">In this section we look at some properties of relations. In particular, we define the reflexive, symmetric, and ransitive properties. We will use directed graphs to identify the properties and look at how to prove whether a relation is reflexive, symmetric, and/or transitive.</p>
 <article class="definition definition-like" id="D_RSTprop"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.2.1</span><span class="period">.</span>
 </h6>
-<p id="p-1188">Let \(R\) be a relation on \(A\text{.}\) Then</p>
+<p id="p-1187">Let \(R\) be a relation on \(A\text{.}\) Then</p>
 <ol class="decimal">
 <li id="li-190">\(R\) is <dfn class="terminology">reflexive</dfn> if for all \(x\in A\text{,}\) \(x R x\text{.}\) In ordered pair notation, \((x, x)\in R\text{.}\)</li>
 <li id="li-191">\(R\) is <dfn class="terminology">symmetric</dfn> if for all \(x, y\in A\text{,}\) if \(x R y\) then \(y R x\text{.}\) In ordered pair notation, if \((x, y)\in R\) then \((y, x)\in R\text{.}\)</li>
 <li id="li-192">\(R\) is <dfn class="terminology">transitive</dfn> if for all \(x, y, z\in A\text{,}\) if \(x R y\) and \(y R z\) then \(x R z\text{.}\) In ordered pair notation, if \((x, y)\in R\) and \((y, z)\in R\) then \((x, z)\in R\text{.}\)</li>
 </ol></article><article class="example example-like" id="E_propofsets"><a data-knowl="" class="id-ref original" data-refid="hk-E_propofsets"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">8.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Reflexive, Symmetric, Transitive.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_propofsets"><article class="example example-like"><p id="p-1189">Let \(A=\{1, 2, 3\}\text{,}\) define the relation on \(A\) by</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_propofsets"><article class="example example-like"><p id="p-1188">Let \(A=\{1, 2, 3\}\text{,}\) define the relation on \(A\) by</p>
 <div class="displaymath">
 \begin{equation*}
 R=\{(1, 1), (2, 2), (3, 3)\}.
 \end{equation*}
 </div>
-<p id="p-1190">\(R\) is reflexive since \((x, x)\in R\) for each \(x\in A\text{.}\)</p>
-<p id="p-1191">\(R\) is symmetric since if \((x, y)\in R\) then \((y, x)\in R\text{.}\)  Note, this property does not mean \((x, y)\in R\text{,}\) just that if a pair is in R, then the reverse is as well.</p>
-<p id="p-1192">\(R\) is transitive since  if \((x, y)\in R\) and \((y, z)\in R\) then \((x, z)\in R\text{.}\) Note, this property can be tedious to check by hand. In this example, though, the only pairs that fit the hypothesis are pairs like \((x, y)=(1, 1), (y, z)=(1, 1)\text{,}\) so \((x, z)=(1, 1)\text{,}\) which is in \(R\text{.}\)</p></article></div>
+<p id="p-1189">\(R\) is reflexive since \((x, x)\in R\) for each \(x\in A\text{.}\)</p>
+<p id="p-1190">\(R\) is symmetric since if \((x, y)\in R\) then \((y, x)\in R\text{.}\)  Note, this property does not mean \((x, y)\in R\text{,}\) just that if a pair is in R, then the reverse is as well.</p>
+<p id="p-1191">\(R\) is transitive since  if \((x, y)\in R\) and \((y, z)\in R\) then \((x, z)\in R\text{.}\) Note, this property can be tedious to check by hand. In this example, though, the only pairs that fit the hypothesis are pairs like \((x, y)=(1, 1), (y, z)=(1, 1)\text{,}\) so \((x, z)=(1, 1)\text{,}\) which is in \(R\text{.}\)</p></article></div>
 <article class="example example-like" id="E_propofsets2"><a data-knowl="" class="id-ref original" data-refid="hk-E_propofsets2"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">8.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Another Look at the Properties.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_propofsets2"><article class="example example-like"><p id="p-1193">Let \(A=\{1, 2, 3\}\text{,}\) define the relation on \(A\) by</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_propofsets2"><article class="example example-like"><p id="p-1192">Let \(A=\{1, 2, 3\}\text{,}\) define the relation on \(A\) by</p>
 <div class="displaymath">
 \begin{equation*}
 R=\{(1, 2), (1, 3), (2, 3)\}.
 \end{equation*}
 </div>
-<p id="p-1194">\(R\) is not reflexive since \((1, 1)\notin R\text{.}\)</p>
-<p id="p-1195">\(R\) is not symmetric since \((1, 2)\in R\text{,}\) but not \((2, 1)\text{.}\)</p>
-<p id="p-1196">\(R\) is transitive since  if \((x, y)\in R\) and \((y, z)\in R\) then \((x, z)\in R\text{.}\)</p>
-<p id="p-1197">Check: \((x, y)=(1, 2), (y, z)=(2, 3)\text{,}\) so \((x, z)=(1, 3)\text{,}\) which is in \(R\text{.}\) This is the only set of ordered pairs where the second coordinate matches the first.</p></article></div>
-<p id="p-1198">We can use directed graphs to help identify the properties.</p>
+<p id="p-1193">\(R\) is not reflexive since \((1, 1)\notin R\text{.}\)</p>
+<p id="p-1194">\(R\) is not symmetric since \((1, 2)\in R\text{,}\) but not \((2, 1)\text{.}\)</p>
+<p id="p-1195">\(R\) is transitive since  if \((x, y)\in R\) and \((y, z)\in R\) then \((x, z)\in R\text{.}\)</p>
+<p id="p-1196">Check: \((x, y)=(1, 2), (y, z)=(2, 3)\text{,}\) so \((x, z)=(1, 3)\text{,}\) which is in \(R\text{.}\) This is the only set of ordered pairs where the second coordinate matches the first.</p></article></div>
+<p id="p-1197">We can use directed graphs to help identify the properties.</p>
 <ul class="disc">
 <li id="li-193">
 <h6 class="heading"><span class="title">Reflexive.</span></h6> If a relation is reflexive, then the directed graph will have an arrow from the vertex to itself (a loop) at every vertex.</li>
@@ -226,12 +226,12 @@ R=\{(1, 2), (1, 3), (2, 3)\}.
 <figure class="figure figure-like" id="F_digraphreflexive"><div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="images/gdreflexive.svg" style="width: 100%; height: auto;" alt=""></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.2.4<span class="period">.</span></span><span class="space"> </span>Directed graph for reflexive property</figcaption></figure><figure class="figure figure-like" id="F_digraphsymmetric"><div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="images/gdsymmetric.svg" style="width: 100%; height: auto;" alt=""></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.2.5<span class="period">.</span></span><span class="space"> </span>Directed graph for symmetric property</figcaption></figure><figure class="figure figure-like" id="F_digraphstransitive"><div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="images/gdtransitive.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.2.6<span class="period">.</span></span><span class="space"> </span>Directed graph for transitive property</figcaption></figure><p id="p-1199">The <dfn class="terminology">transitive closure</dfn> of a relation \(R\text{,}\) denoted \(R^{t}\text{,}\) is the set of ordered pairs in \(R\) as well as all additional ordered pairs to make the relation transitive.</p>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.2.6<span class="period">.</span></span><span class="space"> </span>Directed graph for transitive property</figcaption></figure><p id="p-1198">The <dfn class="terminology">transitive closure</dfn> of a relation \(R\text{,}\) denoted \(R^{t}\text{,}\) is the set of ordered pairs in \(R\) as well as all additional ordered pairs to make the relation transitive.</p>
 <article class="example example-like" id="E_transclosure"><a data-knowl="" class="id-ref original" data-refid="hk-E_transclosure"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">8.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Transitive Closure.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_transclosure"><article class="example example-like"><p id="p-1200">Let \(R=\{(1, 2), (3, 2), (4, 1), (4, 3)\}\text{.}\) Then in \(R^{t}\) we need \((4, 2)\text{.}\) You can check with a directed graph to see this is the only pair we need to add. Thus, \(R^{t}=\{(1, 2), (3, 2), (4, 1), (4, 3), (4, 2)\}\text{.}\)</p></article></div>
-<p id="p-1201">Checking that a relation is refexive, symmetric, or transitive on a small finite set can be done by checking that the property holds for all the elements of \(R\text{.}\) But if \(A\) is infinite we need to prove the properties more generally.</p>
-<p id="p-1202">To prove</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_transclosure"><article class="example example-like"><p id="p-1199">Let \(R=\{(1, 2), (3, 2), (4, 1), (4, 3)\}\text{.}\) Then in \(R^{t}\) we need \((4, 2)\text{.}\) You can check with a directed graph to see this is the only pair we need to add. Thus, \(R^{t}=\{(1, 2), (3, 2), (4, 1), (4, 3), (4, 2)\}\text{.}\)</p></article></div>
+<p id="p-1200">Checking that a relation is refexive, symmetric, or transitive on a small finite set can be done by checking that the property holds for all the elements of \(R\text{.}\) But if \(A\) is infinite we need to prove the properties more generally.</p>
+<p id="p-1201">To prove</p>
 <ul class="disc">
 <li id="li-196">
 <h6 class="heading"><span class="title">Reflexive.</span></h6> Let \(x\in A\text{.}\) Show \((x, x)\in R\text{.}\)</li>
@@ -240,7 +240,7 @@ R=\{(1, 2), (1, 3), (2, 3)\}.
 <li id="li-198">
 <h6 class="heading"><span class="title">Transitive.</span></h6> Assume \((x, y), (y, z)\in R\text{.}\) Show \((x, z)\in R\text{.}\)</li>
 </ul>
-<p id="p-1203">To disprove a property, find a specific counterexample:</p>
+<p id="p-1202">To disprove a property, find a specific counterexample:</p>
 <ul class="disc">
 <li id="li-199">
 <h6 class="heading"><span class="title">Reflexive.</span></h6> Find \((x, x)\notin R\) for some \(x\in A\text{.}\)</li>
@@ -251,16 +251,16 @@ R=\{(1, 2), (1, 3), (2, 3)\}.
 </ul>
 <article class="example example-like" id="E_provingRST"><a data-knowl="" class="id-ref original" data-refid="hk-E_provingRST"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">8.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Proving Refexive, Symmetric, Transitive.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_provingRST"><article class="example example-like"><p id="p-1204">Let \(R\) be the relation on \(\mathbb{Z}\) given by \((m, n)\in R\Leftrightarrow 3\mid(m-n)\text{.}\)</p>
-<p id="p-1205">Reflexive: Show \((m, m)\in R\text{.}\) Now \(m-m=0\text{,}\) and \(3\mid 0\text{.}\) So we get that \(3\mid m-m\text{.}\) Thus \((m, m)\in R\) for all \(m\in \mathbb{Z}\text{.}\)</p>
-<p id="p-1206">Symmetric: Assume \((x, y)\in R\text{.}\) Then \(3\mid (x-y)\text{.}\) This implies \(x-y=3k\) for some \(k\in\mathbb{Z}\text{.}\) But then \(y-x=-3k=3(-k)\text{,}\) where \(-k\in \mathbb{Z}\text{.}\) Thus, \(3\mid (y-x)\text{.}\) Hence, \((y, x)\in R\text{.}\)</p>
-<p id="p-1207">Transitive: Assume \((x, y), (y, z)\in R\text{.}\) Then \(3\mid (x-y)\) and \(3\mid (y-z)\text{.}\) This implies \(x-y=3k\) for some \(k\in\mathbb{Z}\) and \(y-z=3j\) for some \(j\in\mathbb{Z}\text{.}\) But then \(x-z=x-y+y-z=3k+3j=3(j+k)\text{,}\) where \(k+j\in \mathbb{Z}\text{.}\) Thus, \(3\mid (x-z)\text{.}\) Hence, \((x, z)\in R\text{.}\)</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_provingRST"><article class="example example-like"><p id="p-1203">Let \(R\) be the relation on \(\mathbb{Z}\) given by \((m, n)\in R\Leftrightarrow 3\mid(m-n)\text{.}\)</p>
+<p id="p-1204">Reflexive: Show \((m, m)\in R\text{.}\) Now \(m-m=0\text{,}\) and \(3\mid 0\text{.}\) So we get that \(3\mid m-m\text{.}\) Thus \((m, m)\in R\) for all \(m\in \mathbb{Z}\text{.}\)</p>
+<p id="p-1205">Symmetric: Assume \((x, y)\in R\text{.}\) Then \(3\mid (x-y)\text{.}\) This implies \(x-y=3k\) for some \(k\in\mathbb{Z}\text{.}\) But then \(y-x=-3k=3(-k)\text{,}\) where \(-k\in \mathbb{Z}\text{.}\) Thus, \(3\mid (y-x)\text{.}\) Hence, \((y, x)\in R\text{.}\)</p>
+<p id="p-1206">Transitive: Assume \((x, y), (y, z)\in R\text{.}\) Then \(3\mid (x-y)\) and \(3\mid (y-z)\text{.}\) This implies \(x-y=3k\) for some \(k\in\mathbb{Z}\) and \(y-z=3j\) for some \(j\in\mathbb{Z}\text{.}\) But then \(x-z=x-y+y-z=3k+3j=3(j+k)\text{,}\) where \(k+j\in \mathbb{Z}\text{.}\) Thus, \(3\mid (x-z)\text{.}\) Hence, \((x, z)\in R\text{.}\)</p></article></div>
 <section class="reading-questions" id="reading-questions-29"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
 </h3>
-<p id="p-1208">Let \(A=\{1, 2, 3\}, B=\{2, 4, 6, 8\}, C=\{0, 1\}\text{.}\)</p>
+<p id="p-1207">Let \(A=\{1, 2, 3\}, B=\{2, 4, 6, 8\}, C=\{0, 1\}\text{.}\)</p>
 <article class="exercise exercise-like" id="exercise-219"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-1209">Determine if the relation is reflexive, symmetric, transitive where \(R\) is the relation on \(A\) given by</p>
+<p id="p-1208">Determine if the relation is reflexive, symmetric, transitive where \(R\) is the relation on \(A\) given by</p>
 <div class="displaymath">
 \begin{equation*}
 a R b \Leftrightarrow a\leq b
@@ -269,7 +269,7 @@ a R b \Leftrightarrow a\leq b
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-321" id="answer-321"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-321"><div class="answer solution-like">Reflexive, transitive, not symmetric</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-220"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-1210">Determine if the relation is reflexive, symmetric, transitive where \(R\) is the relation on \(C\) given by</p>
+<p id="p-1209">Determine if the relation is reflexive, symmetric, transitive where \(R\) is the relation on \(C\) given by</p>
 <div class="displaymath">
 \begin{equation*}
 a R b \Leftrightarrow a+b \text{ is even}
@@ -278,7 +278,7 @@ a R b \Leftrightarrow a+b \text{ is even}
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-322" id="answer-322"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-322"><div class="answer solution-like">Relexive, symmetric, transitive</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-221"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-1211">Determine if the relation is reflexive, symmetric, transitive where \(R\) is the relation on \(B\) given by</p>
+<p id="p-1210">Determine if the relation is reflexive, symmetric, transitive where \(R\) is the relation on \(B\) given by</p>
 <div class="displaymath">
 \begin{equation*}
 a R b \Leftrightarrow a\mid b
@@ -287,7 +287,7 @@ a R b \Leftrightarrow a\mid b
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-323" id="answer-323"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-323"><div class="answer solution-like">Reflexive, transitive, not symmetric</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-222"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-1212">Determine if the relation is reflexive, symmetric, transitive where \(R\) is the relation on \(\mathbb{Z}\) given by</p>
+<p id="p-1211">Determine if the relation is reflexive, symmetric, transitive where \(R\) is the relation on \(\mathbb{Z}\) given by</p>
 <div class="displaymath">
 \begin{equation*}
 a R b \Leftrightarrow a+b=0

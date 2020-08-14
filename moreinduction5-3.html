@@ -182,10 +182,10 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="moreinduction5-3"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.3</span> <span class="title">More Mathematical Induction</span>
 </h2>
-<p id="p-718">In the last section we introduced mathematical induction by looking at proofs involving summation formulas. In this section we look at some more examples, including divisibility proofs and inequality proofs.</p>
-<p id="p-719">As in the previous section, we will assume \(n\in \mathbb{Z}\text{.}\)</p>
-<p id="p-720">Structure of a mathematical induction proof:</p>
-<p id="p-721">To prove \(P(n), \forall n\geq 1\text{,}\)</p>
+<p id="p-717">In the last section we introduced mathematical induction by looking at proofs involving summation formulas. In this section we look at some more examples, including divisibility proofs and inequality proofs.</p>
+<p id="p-718">As in the previous section, we will assume \(n\in \mathbb{Z}\text{.}\)</p>
+<p id="p-719">Structure of a mathematical induction proof:</p>
+<p id="p-720">To prove \(P(n), \forall n\geq 1\text{,}\)</p>
 <ul class="disc">
 <li id="li-119">
 <h6 class="heading"><span class="title">Base Step.</span></h6> Show \(P(1)\) is true.</li>
@@ -193,17 +193,17 @@ MathJax.Hub.Config({
 <h6 class="heading"><span class="title">Induction Step.</span></h6> Assume \(P(k)\) for some \(k\in\mathbb{Z}\text{,}\) show \(P(k+1)\text{.}\)</li>
 </ul>
 <p data-braille="continuation">Conclude \(P(n)\) is true for all \(n\geq 1\)</p>
-<p id="p-722">In the above structure we used \(a=1\) for simplicitiy, but an induction proof could have a base step starting at a different \(a\text{.}\) Most commonly, the base step starts with 0 or 1.</p>
-<p id="p-723">When writing induction proofs, make sure you use the actual statement you are proving rather than the notation \(P(1), P(k), P(n)\text{.}\)</p>
+<p id="p-721">In the above structure we used \(a=1\) for simplicitiy, but an induction proof could have a base step starting at a different \(a\text{.}\) Most commonly, the base step starts with 0 or 1.</p>
+<p id="p-722">When writing induction proofs, make sure you use the actual statement you are proving rather than the notation \(P(1), P(k), P(n)\text{.}\)</p>
 <article class="example example-like" id="E_divisinduction1"><a data-knowl="" class="id-ref original" data-refid="hk-E_divisinduction1"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Proof by Induction: Divisibility.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_divisinduction1"><article class="example example-like"><p id="p-724">Prove \(3\mid (n^3-n)\) for \(n\geq 0\text{.}\)</p>
-<article class="hiddenproof" id="proof-20"><a data-knowl="" class="id-ref original" data-refid="hk-proof-20"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-20"><article class="hiddenproof"><p id="p-725">Base Step: Let \(n=0\text{.}\) Then \(n^3-n=0^3-0=0\text{.}\) We know \(3\mid 0\text{.}\)</p>
-<p id="p-726">Thus, \(3\mid (n^3-n)\) for \(n=0\text{.}\)</p>
-<p id="p-727">Induction Step:</p>
-<p id="p-728">Assume \(3\mid (k^3-k)\) for some \(k\geq 0\text{.}\)</p>
-<p id="p-729">Show \(3\mid ((k+1)^3-(k+1))\text{.}\)</p>
-<p id="p-730">Scratchwork: before proving the induction step, we might need to do some scratchwork. This is NOT part of the proof, but will help us structure a clear proof. We can do some algebra on the expression we are trying to prove: \((k+1)^3-(k+1)\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_divisinduction1"><article class="example example-like"><p id="p-723">Prove \(3\mid (n^3-n)\) for \(n\geq 0\text{.}\)</p>
+<article class="hiddenproof" id="proof-20"><a data-knowl="" class="id-ref original" data-refid="hk-proof-20"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-20"><article class="hiddenproof"><p id="p-724">Base Step: Let \(n=0\text{.}\) Then \(n^3-n=0^3-0=0\text{.}\) We know \(3\mid 0\text{.}\)</p>
+<p id="p-725">Thus, \(3\mid (n^3-n)\) for \(n=0\text{.}\)</p>
+<p id="p-726">Induction Step:</p>
+<p id="p-727">Assume \(3\mid (k^3-k)\) for some \(k\geq 0\text{.}\)</p>
+<p id="p-728">Show \(3\mid ((k+1)^3-(k+1))\text{.}\)</p>
+<p id="p-729">Scratchwork: before proving the induction step, we might need to do some scratchwork. This is NOT part of the proof, but will help us structure a clear proof. We can do some algebra on the expression we are trying to prove: \((k+1)^3-(k+1)\text{.}\)</p>
 <div class="displaymath">
 \begin{align*}
 (k+1)^3-(k+1)&amp;=k^3+3k^2+3k+1-k-1\\
@@ -211,8 +211,8 @@ MathJax.Hub.Config({
 \end{align*}
 </div>
 <p data-braille="continuation">But by our assumption, \(3\mid (k^3-k)\) and since the remaining terms are multiples of 3, \(3\mid 3k^2+3k\text{.}\)</p>
-<p id="p-731">Now we are ready to use our scratch work to write the proof of the induction step.</p>
-<p id="p-732">Proof of induction step:</p>
+<p id="p-730">Now we are ready to use our scratch work to write the proof of the induction step.</p>
+<p id="p-731">Proof of induction step:</p>
 <div class="displaymath">
 \begin{align*}
 3&amp;\mid (k^3-k)\ \  \textrm{ by the induction assumption}\\
@@ -223,23 +223,23 @@ MathJax.Hub.Config({
 \end{align*}
 </div>
 <p data-braille="continuation">Which is what we wanted to show.</p>
-<p id="p-733">Hence, by induction \(3\mid (n^3-n)\) for \(n\geq 0\text{.}\)</p></article></div></article></div>
-<p id="p-734">Some comments about divisibility proofs:</p>
+<p id="p-732">Hence, by induction \(3\mid (n^3-n)\) for \(n\geq 0\text{.}\)</p></article></div></article></div>
+<p id="p-733">Some comments about divisibility proofs:</p>
 <ul class="disc">
 <li id="li-121">You will likely need to do scratchwork. Do not include the scratchwork in your actual proof.</li>
 <li id="li-122">The point of the proof is that the reader can follow all of the steps. You do not need to explain where your choices came from. For example, in the proof above, it might not be obvious why you should add \(3k^2+3k\text{,}\) but the reader just needs to know that 3 divides the expression, which is clear.</li>
 <li id="li-123">Divisibility proofs in this form can be challenging to do at first, but with practice, they often end up being some of the easier induction proofs to do, as they all follow a similar format.</li>
 </ul>
-<p id="p-735">Let's try another example.</p>
+<p id="p-734">Let's try another example.</p>
 <article class="example example-like" id="E_divisinduction2"><a data-knowl="" class="id-ref original" data-refid="hk-E_divisinduction2"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Proof by Induction: Divisibility, Again.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_divisinduction2"><article class="example example-like"><p id="p-736">Prove \(3\mid (2^{2n}-1)\) for \(n\geq 0\text{.}\)</p>
-<article class="hiddenproof" id="proof-21"><a data-knowl="" class="id-ref original" data-refid="hk-proof-21"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-21"><article class="hiddenproof"><p id="p-737">Base Step: Let \(n=0\text{.}\) Then \(2^{2n}-1=2^{0}-1=0\text{.}\) We know \(3\mid 0\text{.}\)</p>
-<p id="p-738">Thus, \(3\mid (2^{2n}-1)\) for \(n=0\text{.}\)</p>
-<p id="p-739">Induction Step:</p>
-<p id="p-740">Assume \(3\mid (2^{2k}-1)\) for some \(k\geq 0\text{.}\)</p>
-<p id="p-741">Show \(3\mid (2^{2(k+1)}-1)\text{.}\)</p>
-<p id="p-742">Scratchwork:</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_divisinduction2"><article class="example example-like"><p id="p-735">Prove \(3\mid (2^{2n}-1)\) for \(n\geq 0\text{.}\)</p>
+<article class="hiddenproof" id="proof-21"><a data-knowl="" class="id-ref original" data-refid="hk-proof-21"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-21"><article class="hiddenproof"><p id="p-736">Base Step: Let \(n=0\text{.}\) Then \(2^{2n}-1=2^{0}-1=0\text{.}\) We know \(3\mid 0\text{.}\)</p>
+<p id="p-737">Thus, \(3\mid (2^{2n}-1)\) for \(n=0\text{.}\)</p>
+<p id="p-738">Induction Step:</p>
+<p id="p-739">Assume \(3\mid (2^{2k}-1)\) for some \(k\geq 0\text{.}\)</p>
+<p id="p-740">Show \(3\mid (2^{2(k+1)}-1)\text{.}\)</p>
+<p id="p-741">Scratchwork:</p>
 <div class="displaymath">
 \begin{align*}
 2^{2(k+1)}-1&amp;=2^{2k+2}-1\\
@@ -251,8 +251,8 @@ MathJax.Hub.Config({
 \end{align*}
 </div>
 <p data-braille="continuation">But by our assumption, \(3\mid 2^{2k}-1\) and since the remaining term is a multiple of 3, \(3\mid 3\cdot 2^{2k}+2^{2k}-1\text{.}\)</p>
-<p id="p-743">Now we are ready to use our scratchwork to write the proof of the induction step.</p>
-<p id="p-744">Proof of induction step:</p>
+<p id="p-742">Now we are ready to use our scratchwork to write the proof of the induction step.</p>
+<p id="p-743">Proof of induction step:</p>
 <div class="displaymath">
 \begin{align*}
 3&amp;\mid 2^{2k}-1\ \  \textrm{ by the induction assumption}\\
@@ -265,17 +265,17 @@ MathJax.Hub.Config({
 \end{align*}
 </div>
 <p data-braille="continuation">Which is what we wanted to show.</p>
-<p id="p-745">Hence, by induction \(3\mid (2^{2n}-1)\) for \(n\geq 0\text{.}\)</p></article></div></article></div>
-<p id="p-746">Now we apply induction to statements involving inequalities. These will be some of the most challenging induction proofs as they often take a bit more trial and error in the scratchwork. When dealing with equalities, you know for example, that you have to add the same thing to both sides. However, with inequalities you can change one side as long as you maintain the inequality. For example, if you know \(P&gt;Q\text{,}\) then you also know \(P+2&gt;Q\text{.}\) The fact that we can change one side of the expression makes it more challenging to see what steps to take.</p>
+<p id="p-744">Hence, by induction \(3\mid (2^{2n}-1)\) for \(n\geq 0\text{.}\)</p></article></div></article></div>
+<p id="p-745">Now we apply induction to statements involving inequalities. These will be some of the most challenging induction proofs as they often take a bit more trial and error in the scratchwork. When dealing with equalities, you know for example, that you have to add the same thing to both sides. However, with inequalities you can change one side as long as you maintain the inequality. For example, if you know \(P&gt;Q\text{,}\) then you also know \(P+2&gt;Q\text{.}\) The fact that we can change one side of the expression makes it more challenging to see what steps to take.</p>
 <article class="example example-like" id="E_inequlinduction2"><a data-knowl="" class="id-ref original" data-refid="hk-E_inequlinduction2"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Proof by Induction: Inequality.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_inequlinduction2"><article class="example example-like"><p id="p-747">Prove \(2n+1&lt; 2^n\) for \(n\geq 3\text{.}\)</p>
-<article class="hiddenproof" id="proof-22"><a data-knowl="" class="id-ref original" data-refid="hk-proof-22"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-22"><article class="hiddenproof"><p id="p-748">Base Step: Let \(n=3\text{.}\) Then \(2n+1=2(3)+1=7\text{,}\) and \(2^n=2^3=8\) We know \(7&lt;8\text{.}\)</p>
-<p id="p-749">Thus, \(2n+1&lt; 2^n\) for \(n=3\text{.}\)</p>
-<p id="p-750">Induction Step:</p>
-<p id="p-751">Assume \(2k+1&lt; 2^k\) for some \(k\geq 3\text{.}\)</p>
-<p id="p-752">Show \(2(k+1)+1&lt; 2^{k+1}\text{.}\)</p>
-<p id="p-753">Scratchwork:</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_inequlinduction2"><article class="example example-like"><p id="p-746">Prove \(2n+1&lt; 2^n\) for \(n\geq 3\text{.}\)</p>
+<article class="hiddenproof" id="proof-22"><a data-knowl="" class="id-ref original" data-refid="hk-proof-22"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-22"><article class="hiddenproof"><p id="p-747">Base Step: Let \(n=3\text{.}\) Then \(2n+1=2(3)+1=7\text{,}\) and \(2^n=2^3=8\) We know \(7&lt;8\text{.}\)</p>
+<p id="p-748">Thus, \(2n+1&lt; 2^n\) for \(n=3\text{.}\)</p>
+<p id="p-749">Induction Step:</p>
+<p id="p-750">Assume \(2k+1&lt; 2^k\) for some \(k\geq 3\text{.}\)</p>
+<p id="p-751">Show \(2(k+1)+1&lt; 2^{k+1}\text{.}\)</p>
+<p id="p-752">Scratchwork:</p>
 <div class="displaymath">
 \begin{gather*}
 \text{LHS: } 2(k+1)+1=2k+2+1=2k+1+2\\
@@ -289,7 +289,7 @@ MathJax.Hub.Config({
 \end{gather*}
 </div>
 <p data-braille="continuation">We know \(2k+1&lt; 2^2\) and \(2&lt;2^2\text{,}\) so we can put all this together into the proof.</p>
-<p id="p-754">Proof of induction step:</p>
+<p id="p-753">Proof of induction step:</p>
 <div class="displaymath">
 \begin{align*}
 2k+1&lt; 2^k\ \  \textrm{ by the induction assumption}\\
@@ -302,28 +302,28 @@ MathJax.Hub.Config({
 \end{align*}
 </div>
 <p data-braille="continuation">Thus, \(2(k+1)+1&lt; 2^{k+1}\text{,}\) which is what we wanted to show.</p>
-<p id="p-755">Hence, by induction \(2n+1&lt; 2^n\) for \(n\geq 3\text{.}\)</p></article></div></article></div>
+<p id="p-754">Hence, by induction \(2n+1&lt; 2^n\) for \(n\geq 3\text{.}\)</p></article></div></article></div>
 <section class="reading-questions" id="reading-questions-19"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-138"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-756">Suppose you want to prove \(8\mid 3^{2n}-1\text{.}\) Show the statement holds for \(n=0\text{.}\)</p>
+<p id="p-755">Suppose you want to prove \(8\mid 3^{2n}-1\text{.}\) Show the statement holds for \(n=0\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-210" id="answer-210"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-210"><div class="answer solution-like"><p id="p-757">\(3^{0}-1=0\) and \(8\mid 0\text{.}\)</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-210" id="answer-210"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-210"><div class="answer solution-like"><p id="p-756">\(3^{0}-1=0\) and \(8\mid 0\text{.}\)</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-139"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-758">Suppose you want to prove \(8\mid 3^{2n}-1\text{.}\) Show the statement holds for \(n=1\text{.}\)</p>
+<p id="p-757">Suppose you want to prove \(8\mid 3^{2n}-1\text{.}\) Show the statement holds for \(n=1\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-211" id="answer-211"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-211"><div class="answer solution-like"><p id="p-759">\(3^{2}-1=8\) and \(8\mid 8\text{.}\)</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-211" id="answer-211"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-211"><div class="answer solution-like"><p id="p-758">\(3^{2}-1=8\) and \(8\mid 8\text{.}\)</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-140"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-760">Suppose you want to prove \(8\mid 3^{2n}-1\text{.}\) What should you assume in the induction step?</p>
+<p id="p-759">Suppose you want to prove \(8\mid 3^{2n}-1\text{.}\) What should you assume in the induction step?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-212" id="answer-212"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-212"><div class="answer solution-like">\(8\mid 3^{2k}-1\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-141"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-761">Suppose you want to prove \(8\mid 3^{2n}-1\text{.}\) What should you show in the induction step?</p>
+<p id="p-760">Suppose you want to prove \(8\mid 3^{2n}-1\text{.}\) What should you show in the induction step?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-213" id="answer-213"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-213"><div class="answer solution-like">\(8\mid 3^{2(k+1)}-1\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-142"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-762">If you know \(8\mid 3^{2k}-1\text{,}\) rewrite \(3^{2(k+1)}-1\) so that it is a sum of terms that are multiples of 8.</p>
+<p id="p-761">If you know \(8\mid 3^{2k}-1\text{,}\) rewrite \(3^{2(k+1)}-1\) so that it is a sum of terms that are multiples of 8.</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-214" id="answer-214"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-214"><div class="answer solution-like">\(3^{2(k+1)}-1=3^{2k+2}-1=3^23^{2k}-1=(8+1)3^{2k}+1=(3^{2k}-1)+8(3^{2k})\)</div></div>
 </div></article></section></section></div></main>

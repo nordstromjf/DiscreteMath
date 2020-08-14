@@ -182,18 +182,18 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="pigeonhole9-4"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">9.4</span> <span class="title">Pigeonhole Principle</span>
 </h2>
-<p id="p-1415">In this section we look at a method of counting that uses a correspondence between two sets. We can think of one set as a set of objects and the other as a set of boxes. The name of the principle comes from thinking of a set of letters and pigeonholes, which is what they used to call rows of letterboxes. Though it is also fun to think about correspondences between pigeons and pigeonholes.</p>
+<p id="p-1414">In this section we look at a method of counting that uses a correspondence between two sets. We can think of one set as a set of objects and the other as a set of boxes. The name of the principle comes from thinking of a set of letters and pigeonholes, which is what they used to call rows of letterboxes. Though it is also fun to think about correspondences between pigeons and pigeonholes.</p>
 <article class="theorem theorem-like" id="T_pigeonhole"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Pigeonhole Principle.</span>
 </h6>
-<p id="p-1416">A function from one fnite set to a smaller finite set cannot be one-to-one. There must be at least two elements in the domain that have the same image in the codomain.</p></article><p id="p-1417">The Pigeonhole Principle really just says that if there are more objects (pigeons) than boxes (pigeonholes) then there must be at least one box with more than one object.</p>
-<p id="p-1418">When working with pigeonhole problems</p>
+<p id="p-1415">A function from one fnite set to a smaller finite set cannot be one-to-one. There must be at least two elements in the domain that have the same image in the codomain.</p></article><p id="p-1416">The Pigeonhole Principle really just says that if there are more objects (pigeons) than boxes (pigeonholes) then there must be at least one box with more than one object.</p>
+<p id="p-1417">When working with pigeonhole problems</p>
 <ul class="disc">
 <li id="li-224">identify the objects (pigeons)</li>
 <li id="li-225">identify the boxes (pigeonholes)</li>
 <li id="li-226">show the number of objects is bigger than the number of boxes.</li>
 </ul>
-<p id="p-1419">Beware:</p>
+<p id="p-1418">Beware:</p>
 <ul class="disc">
 <li id="li-227">You can still have a box with no objects.</li>
 <li id="li-228">You do not know which box has more than one object.</li>
@@ -202,61 +202,61 @@ MathJax.Hub.Config({
 </ul>
 <article class="example example-like" id="E_socks"><a data-knowl="" class="id-ref original" data-refid="hk-E_socks"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Counting Socks.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_socks"><article class="example example-like"><p id="p-1420">In a drawer with 5 pairs of red socks and 5 pairs of blue socks, how many socks do you need to randomly pull out of the drawer to be certain that you have a pair?</p>
-<p id="p-1421">Note, there are 10 socks of each color.</p>
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-392" id="answer-392"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-392"><div class="answer solution-like"><p id="p-1422">3 socks, since the first two might be different colors. If that happens the third sock must match one of the first two.</p></div></div>
-<p id="p-1423">In this example, the socks are the objects and the colors are the boxes.</p>
-<p id="p-1424">Now, what if you need to make sure you have a red pair?</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_socks"><article class="example example-like"><p id="p-1419">In a drawer with 5 pairs of red socks and 5 pairs of blue socks, how many socks do you need to randomly pull out of the drawer to be certain that you have a pair?</p>
+<p id="p-1420">Note, there are 10 socks of each color.</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-392" id="answer-392"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-392"><div class="answer solution-like"><p id="p-1421">3 socks, since the first two might be different colors. If that happens the third sock must match one of the first two.</p></div></div>
+<p id="p-1422">In this example, the socks are the objects and the colors are the boxes.</p>
+<p id="p-1423">Now, what if you need to make sure you have a red pair?</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-393" id="answer-393"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-393"><div class="answer solution-like">12 socks.</div></div></article></div>
-<p id="p-1425">It is important to note that Pigeonhole problems are not about probability. We want to know when, say, we are guaranteed to have a pair of socks, not when it is likely that we have a pair.</p>
+<p id="p-1424">It is important to note that Pigeonhole problems are not about probability. We want to know when, say, we are guaranteed to have a pair of socks, not when it is likely that we have a pair.</p>
 <article class="example example-like" id="E_pigeonholesums"><a data-knowl="" class="id-ref original" data-refid="hk-E_pigeonholesums"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Sums of Integers.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_pigeonholesums"><article class="example example-like"><p id="p-1426">Let \(A=\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}\text{.}\) How many integers do you need to choose from \(A\) to guarantee that 2 numbers wil sum to 11?</p>
-<p id="p-1427">Since we are looking for sums of 11, our boxes can be pairs of numbers that sum to 11: \(\{1, 10\}, \{2, 9\}, \{3, 8\}, \{4, 7\}, \{5, 6\}\text{.}\) Then our objects are the numbers themselves. So we need the number of numbers to be greater than the number of boxes, which is 5. Thus, if we choose 6 numbers from \(A\text{,}\) we are guaranteed to have 2 from the same subset. This means with 6 numbers we must have two numbers that sum to 11.</p></article></div>
-<p id="p-1428">We can generalize the Pigeonhole Principle. If we have enough objects, we can guarantee more than two objects in one box.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_pigeonholesums"><article class="example example-like"><p id="p-1425">Let \(A=\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}\text{.}\) How many integers do you need to choose from \(A\) to guarantee that 2 numbers wil sum to 11?</p>
+<p id="p-1426">Since we are looking for sums of 11, our boxes can be pairs of numbers that sum to 11: \(\{1, 10\}, \{2, 9\}, \{3, 8\}, \{4, 7\}, \{5, 6\}\text{.}\) Then our objects are the numbers themselves. So we need the number of numbers to be greater than the number of boxes, which is 5. Thus, if we choose 6 numbers from \(A\text{,}\) we are guaranteed to have 2 from the same subset. This means with 6 numbers we must have two numbers that sum to 11.</p></article></div>
+<p id="p-1427">We can generalize the Pigeonhole Principle. If we have enough objects, we can guarantee more than two objects in one box.</p>
 <article class="theorem theorem-like" id="T_genpigeonhole"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Generalized Pigeonhole Principle.</span>
 </h6>
-<p id="p-1429">If there are \(n\) objects mapped to \(m\) boxes, and for some \(k\text{,}\) we have  \(n&gt;km\text{,}\) then at least one box contains \(k+1\) or more objects.</p></article><article class="example example-like" id="E_genpigeon"><a data-knowl="" class="id-ref original" data-refid="hk-E_genpigeon"><h6 class="heading">
+<p id="p-1428">If there are \(n\) objects mapped to \(m\) boxes, and for some \(k\text{,}\) we have  \(n&gt;km\text{,}\) then at least one box contains \(k+1\) or more objects.</p></article><article class="example example-like" id="E_genpigeon"><a data-knowl="" class="id-ref original" data-refid="hk-E_genpigeon"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Generalized Pigeonhole.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_genpigeon"><article class="example example-like"><p id="p-1430">Suppose you have 23 books that are placed in 4 boxes.</p>
-<p id="p-1431">Must at least one box contain at least one book?</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_genpigeon"><article class="example example-like"><p id="p-1429">Suppose you have 23 books that are placed in 4 boxes.</p>
+<p id="p-1430">Must at least one box contain at least one book?</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-394" id="answer-394"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-394"><div class="answer solution-like">Yes</div></div>
-<p id="p-1432">Must at least one box contain at least two books?</p>
+<p id="p-1431">Must at least one box contain at least two books?</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-395" id="answer-395"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-395"><div class="answer solution-like">Yes</div></div>
-<p id="p-1433">Must at least one box contain at least six books?</p>
+<p id="p-1432">Must at least one box contain at least six books?</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-396" id="answer-396"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-396"><div class="answer solution-like">Yes</div></div>
-<p id="p-1434">Must at least one box contain at least seven books?</p>
+<p id="p-1433">Must at least one box contain at least seven books?</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-397" id="answer-397"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">4</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-397"><div class="answer solution-like">No</div></div>
-<p id="p-1435">What is the most books that can be in a box?</p>
+<p id="p-1434">What is the most books that can be in a box?</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-398" id="answer-398"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">5</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-398"><div class="answer solution-like">23</div></div>
-<p id="p-1436">What is the fewest books that can be in a box?</p>
+<p id="p-1435">What is the fewest books that can be in a box?</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-399" id="answer-399"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">6</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-399"><div class="answer solution-like">0</div></div></article></div>
 <article class="theorem theorem-like" id="T_ontooneiffonto"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.4.6</span><span class="period">.</span>
 </h6>
-<p id="p-1437">Let \(X, Y\) be finite sets with the same number of elements. Suppose \(f\) is a function from \(X\) to \(Y\text{.}\) Then \(f\) is one-to-one if and only if \(f\) is onto.</p></article><p id="p-1438">The Pigeonhole Principle can be used to prove the theorem, but it is more technical than we need. If you try a few examples of functions from a set of \(n\) elements to another set of \(n\) elements, you can probably convince yourself that a one-to-one function must be onto and vice versa.</p>
+<p id="p-1436">Let \(X, Y\) be finite sets with the same number of elements. Suppose \(f\) is a function from \(X\) to \(Y\text{.}\) Then \(f\) is one-to-one if and only if \(f\) is onto.</p></article><p id="p-1437">The Pigeonhole Principle can be used to prove the theorem, but it is more technical than we need. If you try a few examples of functions from a set of \(n\) elements to another set of \(n\) elements, you can probably convince yourself that a one-to-one function must be onto and vice versa.</p>
 <section class="reading-questions" id="reading-questions-35"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-261"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-1439">What is the fewest number of digits you need to randomly select from \(A=\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}\) to guarantee you have either two even or two odd numbers?</p>
+<p id="p-1438">What is the fewest number of digits you need to randomly select from \(A=\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}\) to guarantee you have either two even or two odd numbers?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-400" id="answer-400"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-400"><div class="answer solution-like">3</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-262"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-1440">What is the fewest number of digits you need to randomly select from \(A=\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}\) to guarantee you have two even numbers?</p>
+<p id="p-1439">What is the fewest number of digits you need to randomly select from \(A=\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}\) to guarantee you have two even numbers?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-401" id="answer-401"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-401"><div class="answer solution-like">7</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-263"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-1441">What is the fewest number of digits you need to randomly select from \(A=\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}\) to guarantee you have a sum of 9?</p>
+<p id="p-1440">What is the fewest number of digits you need to randomly select from \(A=\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}\) to guarantee you have a sum of 9?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-402" id="answer-402"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-402"><div class="answer solution-like">6</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-264"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-1442">What is the fewest number of digit you need to randomly select from \(A=\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}\) to guarantee you have two with the same remainder when divided by 3?</p>
+<p id="p-1441">What is the fewest number of digit you need to randomly select from \(A=\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}\) to guarantee you have two with the same remainder when divided by 3?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-403" id="answer-403"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-403"><div class="answer solution-like">4</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-265"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-1443">If you randomly select 4 digits from \(A=\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}\) are you guaranteed to have two with remainder 0 when divided by 3?</p>
+<p id="p-1442">If you randomly select 4 digits from \(A=\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}\) are you guaranteed to have two with remainder 0 when divided by 3?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-404" id="answer-404"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-404"><div class="answer solution-like">No</div></div>
 </div></article></section></section></div></main>

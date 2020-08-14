@@ -182,8 +182,8 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="additionrule9-3"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">9.3</span> <span class="title">Addition Rule</span>
 </h2>
-<p id="p-1384">In this section we look at how to count unions of disjoint sets, then look at counting sets with nontrivial intersections.</p>
-<p id="p-1385">If \(A\) is the union of \(k\) distinct, mutually disjoint sets, \(A_1, A_2, \ldots, A_k\text{,}\) then the number of elelments in \(A\) is given by</p>
+<p id="p-1383">In this section we look at how to count unions of disjoint sets, then look at counting sets with nontrivial intersections.</p>
+<p id="p-1384">If \(A\) is the union of \(k\) distinct, mutually disjoint sets, \(A_1, A_2, \ldots, A_k\text{,}\) then the number of elelments in \(A\) is given by</p>
 <div class="displaymath">
 \begin{equation*}
 N(A)=N(A_1)+N(A_2)+\cdots +N(A_k).
@@ -191,26 +191,26 @@ N(A)=N(A_1)+N(A_2)+\cdots +N(A_k).
 </div>
 <article class="example example-like" id="E_divby5"><a data-knowl="" class="id-ref original" data-refid="hk-E_divby5"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Addition Rule: Counting Numbers Divisible by 5.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_divby5"><article class="example example-like"><p id="p-1386">How many 3 digit numbers are divisible by 5?</p>
-<p id="p-1387">We were able to count these in the last section by constructing the number as a sequence of digits. We will use this example to think about how to count these as disjoint sets.</p>
-<p id="p-1388">Let \(A_1\) be the set of 3 digit numbers ending in 5.</p>
-<p id="p-1389">Let \(A_2\) be the set of 3 digit numbers ending in 0.</p>
-<p id="p-1390">\(N(A_1)=9\cdot 10 \cdot 1\text{,}\) where we are using the multiplication rule as in <a href="multrule9-2.html" class="internal" title="Section 9.2: Multiplication Rule">Section 9.2</a>.</p>
-<p id="p-1391">\(N(A_2)=9\cdot 10 \cdot 1\text{.}\)</p>
-<p id="p-1392">Since no number ends in both 5 and 0, \(A_1\cap A_2=\emptyset\text{.}\) Thus, by the addition rule,</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_divby5"><article class="example example-like"><p id="p-1385">How many 3 digit numbers are divisible by 5?</p>
+<p id="p-1386">We were able to count these in the last section by constructing the number as a sequence of digits. We will use this example to think about how to count these as disjoint sets.</p>
+<p id="p-1387">Let \(A_1\) be the set of 3 digit numbers ending in 5.</p>
+<p id="p-1388">Let \(A_2\) be the set of 3 digit numbers ending in 0.</p>
+<p id="p-1389">\(N(A_1)=9\cdot 10 \cdot 1\text{,}\) where we are using the multiplication rule as in <a href="multrule9-2.html" class="internal" title="Section 9.2: Multiplication Rule">Section 9.2</a>.</p>
+<p id="p-1390">\(N(A_2)=9\cdot 10 \cdot 1\text{.}\)</p>
+<p id="p-1391">Since no number ends in both 5 and 0, \(A_1\cap A_2=\emptyset\text{.}\) Thus, by the addition rule,</p>
 <div class="displaymath">
 \begin{equation*}
 N(A)=90+90=180.
 \end{equation*}
 </div></article></div>
-<p id="p-1393">It is going to take practice to be able to see when to use the multiplication rule and when to use the addition rule. If you are counting elements of different sets, use addition. If you are counting elements that are constructed in a process (can you determine step 1, step 2, etc?), then use the multiplication rule. Many problems require both rules, as we saw in <a class="xref" data-knowl="./knowl/E_divby5.html" title="Example 9.3.1: Addition Rule: Counting Numbers Divisible by 5">Example 9.3.1</a>.</p>
-<p id="p-1394">Now we want to look at what happens if our sets are not disjoint.</p>
-<p id="p-1395">If \(A\) is finite and \(B\subseteq A\text{,}\) then \(N(A-B)=N(A)-N(B)\text{.}\)</p>
-<p id="p-1396">If we want to count the number of elements in \(A\cup B\text{,}\) we can count those in \(A\) and those in \(B\text{.}\) But every element in the intersetion has now been counted twice. so we need to subtract \(N(A\cap B)\text{.}\) This is the idea behind the Inclusion-Exclusion Rule.</p>
+<p id="p-1392">It is going to take practice to be able to see when to use the multiplication rule and when to use the addition rule. If you are counting elements of different sets, use addition. If you are counting elements that are constructed in a process (can you determine step 1, step 2, etc?), then use the multiplication rule. Many problems require both rules, as we saw in <a class="xref" data-knowl="./knowl/E_divby5.html" title="Example 9.3.1: Addition Rule: Counting Numbers Divisible by 5">Example 9.3.1</a>.</p>
+<p id="p-1393">Now we want to look at what happens if our sets are not disjoint.</p>
+<p id="p-1394">If \(A\) is finite and \(B\subseteq A\text{,}\) then \(N(A-B)=N(A)-N(B)\text{.}\)</p>
+<p id="p-1395">If we want to count the number of elements in \(A\cup B\text{,}\) we can count those in \(A\) and those in \(B\text{.}\) But every element in the intersetion has now been counted twice. so we need to subtract \(N(A\cap B)\text{.}\) This is the idea behind the Inclusion-Exclusion Rule.</p>
 <article class="theorem theorem-like" id="T_inclusionexclusion"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Inclusion-Exclusion Rule.</span>
 </h6>
-<p id="p-1397">Let \(A, B, C\) be finite sets.</p>
+<p id="p-1396">Let \(A, B, C\) be finite sets.</p>
 <div class="displaymath">
 \begin{equation*}
 N(A\cup B)=N(A)+N(B)-N(A\cap B).
@@ -220,19 +220,19 @@ N(A\cup B)=N(A)+N(B)-N(A\cap B).
 \begin{equation*}
 N(A\cup B\cup C)=N(A)+N(B)+N(C)-N(A\cap B)-N(A\cap C)-N(B\cap C)+N(A\cap B\cap C).
 \end{equation*}
-</div></article><p id="p-1398">For the case with three sets, we can see that each element in the intersection of at least two sets got counted twice, but when we subtract off all three intersections, we end up subtracting each element in more than one intersection twice, so we need to add back the elements in the intersection of all three sets. For this class, we won't need to use Inclusion-Exclusion on more than three sets, but the rule does generalize to \(n\) sets by adding the sets, subtracting intersections of two sets, adding the intersections of three sets, subtracting the intersections of four sets, etc.</p>
+</div></article><p id="p-1397">For the case with three sets, we can see that each element in the intersection of at least two sets got counted twice, but when we subtract off all three intersections, we end up subtracting each element in more than one intersection twice, so we need to add back the elements in the intersection of all three sets. For this class, we won't need to use Inclusion-Exclusion on more than three sets, but the rule does generalize to \(n\) sets by adding the sets, subtracting intersections of two sets, adding the intersections of three sets, subtracting the intersections of four sets, etc.</p>
 <article class="example example-like" id="E_countingmultiples"><a data-knowl="" class="id-ref original" data-refid="hk-E_countingmultiples"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Inclusion-Exclusion: Counting Multiples.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_countingmultiples"><article class="example example-like"><p id="p-1399">How many integers from 1 to 1000 are multiples of 3 or multiples of 5?</p>
-<p id="p-1400">Let \(A\) be the set of multiples of 3. Let \(B\) be the set of multiples of 5.</p>
-<p id="p-1401">Then \(A\cap B\) is the set of multiples of 3 and 5, so multiples of 15.</p>
-<p id="p-1402">We need a good way to count the multiples of 3. We know they have the form \(n=3k\text{.}\) Since \(1\leq n\leq 1000,\text{,}\) we have that \(1\leq 3k \leq 1000\text{.}\) Hence, \(1/3\leq k\leq 1000/3\approx 333.3\text{.}\) Since \(k\in \mathbb{Z}\text{,}\) \(1\leq k\leq 333\text{.}\) Thus,</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_countingmultiples"><article class="example example-like"><p id="p-1398">How many integers from 1 to 1000 are multiples of 3 or multiples of 5?</p>
+<p id="p-1399">Let \(A\) be the set of multiples of 3. Let \(B\) be the set of multiples of 5.</p>
+<p id="p-1400">Then \(A\cap B\) is the set of multiples of 3 and 5, so multiples of 15.</p>
+<p id="p-1401">We need a good way to count the multiples of 3. We know they have the form \(n=3k\text{.}\) Since \(1\leq n\leq 1000,\text{,}\) we have that \(1\leq 3k \leq 1000\text{.}\) Hence, \(1/3\leq k\leq 1000/3\approx 333.3\text{.}\) Since \(k\in \mathbb{Z}\text{,}\) \(1\leq k\leq 333\text{.}\) Thus,</p>
 <div class="displaymath">
 \begin{equation*}
 A=\{3k : 1\leq k\leq 333\}.
 \end{equation*}
 </div>
-<p id="p-1403">Similarly, since \(1000/5=200\text{,}\)</p>
+<p id="p-1402">Similarly, since \(1000/5=200\text{,}\)</p>
 <div class="displaymath">
 \begin{equation*}
 B=\{5k : 1\leq k \leq 200\}.
@@ -244,7 +244,7 @@ B=\{5k : 1\leq k \leq 200\}.
 A\cap B=\{15k : 1\leq k \leq 66\}.
 \end{equation*}
 </div>
-<p id="p-1404">By Inclusion-Exclusion,</p>
+<p id="p-1403">By Inclusion-Exclusion,</p>
 <div class="displaymath">
 \begin{equation*}
 N(A\cup B)=N(A)+N(B)-N(A\cap B)=333+200-66=467.
@@ -252,7 +252,7 @@ N(A\cup B)=N(A)+N(B)-N(A\cap B)=333+200-66=467.
 </div></article></div>
 <article class="example example-like" id="E_inclexcldrugs"><a data-knowl="" class="id-ref original" data-refid="hk-E_inclexcldrugs"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Inclusion-Exclusion: Drug Study.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_inclexcldrugs"><article class="example example-like"><p id="p-1405">Suppose a study was done with three drugs, A, B and C. A total of 50 subjects used all three drugs. They reported which drugs made them feel better, with the following results:</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_inclexcldrugs"><article class="example example-like"><p id="p-1404">Suppose a study was done with three drugs, A, B and C. A total of 50 subjects used all three drugs. They reported which drugs made them feel better, with the following results:</p>
 <ul class="disc">
 <li id="li-217">21 felt better with A</li>
 <li id="li-218">21 felt better with B</li>
@@ -263,10 +263,10 @@ N(A\cup B)=N(A)+N(B)-N(A\cap B)=333+200-66=467.
 <li id="li-223">41 felt better with at least one drug</li>
 </ul>
 <p data-braille="continuation">Some of the subjects who had relief from, say, A, might also have had relief from another drug. So some of the 21 who reported feeling better with A, may also be included in the count of the 9 who felt better with A and B.</p>
-<p id="p-1406">How many had relief from none of the drugs?</p>
+<p id="p-1405">How many had relief from none of the drugs?</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-384" id="answer-384"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-384"><div class="answer solution-like">\(50-41=9\)</div></div>
-<p id="p-1407">How many had relief from all three of the drugs?</p>
-<p id="p-1408">We need to calculate \(N(A\cap B\cap C)\text{,}\) which we can find by rewriting the Inclusion-Exclusion Rule:</p>
+<p id="p-1406">How many had relief from all three of the drugs?</p>
+<p id="p-1407">We need to calculate \(N(A\cap B\cap C)\text{,}\) which we can find by rewriting the Inclusion-Exclusion Rule:</p>
 <div class="displaymath">
 \begin{equation*}
 N(A\cap B\cap C)=N(A\cup B\cup C)-N(A)-N(B)-N(C)+N(A\cap B)+N(A\cap C)+N(B\cap C).
@@ -277,27 +277,27 @@ N(A\cap B\cap C)=N(A\cup B\cup C)-N(A)-N(B)-N(C)+N(A\cap B)+N(A\cap C)+N(B\cap C
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-255"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-1409">How many 3 digit numbers begin with 1 or begin with a 2?</p>
+<p id="p-1408">How many 3 digit numbers begin with 1 or begin with a 2?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-386" id="answer-386"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-386"><div class="answer solution-like">\(1(10)(10)+1(10)(10)=200\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-256"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-1410">How many 3 digit numbers end with 1 or end with 2?</p>
+<p id="p-1409">How many 3 digit numbers end with 1 or end with 2?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-387" id="answer-387"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-387"><div class="answer solution-like">\(9(10)(1)+9(10)(1)=180\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-257"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-1411">How many 3 digit numbers begin with 1 or end with a 2?</p>
+<p id="p-1410">How many 3 digit numbers begin with 1 or end with a 2?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-388" id="answer-388"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-388"><div class="answer solution-like">\((1)(10)(10)+9(10)(1)-1(10)(1)=180\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-258"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-1412">How many 3 digit numbers begin with 1 or 2 or end with 2, 3, 4?</p>
+<p id="p-1411">How many 3 digit numbers begin with 1 or 2 or end with 2, 3, 4?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-389" id="answer-389"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-389"><div class="answer solution-like">\((2)(10)(10)+9(10)(3)-2(10)(3)=410\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-259"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-1413">How many integers from 1 to 2500 are multiples of 3 or multiples of 5?</p>
+<p id="p-1412">How many integers from 1 to 2500 are multiples of 3 or multiples of 5?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-390" id="answer-390"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-390"><div class="answer solution-like">\(833+500-166=1167\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-260"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-1414">How many integers from 1 to 2500 are multiples of 2 or multiples of 7?</p>
+<p id="p-1413">How many integers from 1 to 2500 are multiples of 2 or multiples of 7?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-391" id="answer-391"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-391"><div class="answer solution-like">\(1250+357-178=1429\)</div></div>
 </div></article></section></section></div></main>

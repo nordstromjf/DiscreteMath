@@ -12,7 +12,15 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Show \(a_{k+1}=4+3(k+1)\)</p>
+<p>Proof of induction step: By the recursive definition of the sequence, \(a_{k+1}=a_{k}+3\text{.}\) Thus,</p>
+<div class="displaymath">
+\begin{align*}
+a_{k+1}&amp;=a_k+3\\
+&amp;=4+3k+3\ \ \text{ by induction assumption}\\
+&amp;=4+3(k+1)
+\end{align*}
+</div>
+<p data-braille="continuation">Therefore, by induction, \(a_n=4+3n, n\geq 0\text{.}\)</p>
 <span class="incontext"><a href="iteration5-6.html#p-870">in-context</a></span>
 </body>
 </html>

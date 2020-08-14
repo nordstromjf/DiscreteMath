@@ -12,7 +12,12 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>By definition, \(\binom{n}{r}\) is the number of subsets where we choose \(r\) objects from \(n\) objects. We can create a set of \(r\) objects by specifying which objects are in the set or by specifying which objects are NOT in the set. We note that there are \(n-r\) objects NOT in the set. Thus, \(\binom{n}{n-r}\) counts the ways to find a set of \(r\) objects out of \(n\) by finding the ways to not include \(n-r\) objects. Thus, both \(\binom{n}{r}\) and \(\binom{n}{n-r}\) count subsets of \(r\) objects from \(n\text{,}\) one by counting the objects in the set, one by counting the objects not in the set.</p>
+<p>Let \(n, r\) be nonnegative integers with \(r\leq n\text{.}\) Then</p>
+<div class="displaymath">
+\begin{equation*}
+\binom{n+1}{r}=\binom{n}{r-1}+\binom{n}{r}.
+\end{equation*}
+</div>
 <span class="incontext"><a href="binomial9-6.html#p-1496">in-context</a></span>
 </body>
 </html>

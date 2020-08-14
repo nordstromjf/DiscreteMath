@@ -184,24 +184,28 @@ MathJax.Hub.Config({
 </h2>
 <p id="p-19">Sets  are collections of objects. They may be collections of mathematical objects, such as numbers or functions. They may be collections of any other type of object such as students in a class or times of day. We can even have sets of sets!</p>
 <p id="p-20">Notation: We will usually use capital letters for sets, such as \(S\) or \(A\text{.}\) If we want to talk about elements in a set \(S\text{,}\) we use the notation \(x\in S\text{.}\) We read this notatation as "\(x\) is in \(S\)" or "\(x\) is an element of \(S\)". If \(x\) is <em class="alert">not</em> in \(S\text{,}\) then we use the notation \(x\notin S\text{.}\)</p>
-<p id="p-21">If we want to list the specific elemens of a set, we use curly brackets around the elements of the set. We can also do this with a description of the elements in the set.</p>
+<p id="p-21">If we want to list the specific elements of a set, we use curly brackets around the elements of the set. We can also do this with a description of the elements in the set.</p>
 <article class="example example-like" id="E_roster"><a data-knowl="" class="id-ref original" data-refid="hk-E_roster"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Set roster notation.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_roster"><article class="example example-like"><p id="p-22">\(S=\{1, 2, 3, 4, 5\}\text{.}\) This is the set whose elements are 1, 2, 3, 4, 5.</p>
 <p id="p-23">\(A=\{x\in S : x \text{ is odd}\}\text{.}\) This describes the odd numbers in \(S\text{,}\) so 1, 3, 5.</p>
-<p id="p-24">\(A=\{x\in \text{reals} : 1\leq x\leq 5\}\text{.}\) This describes the real numbers between 1 and 5 (of which there are too many to list).</p></article></div>
+<p id="p-24">\(A=\{x\in \text{reals} : 1\leq x\leq 5\}\text{.}\) This describes the real numbers between 1 and 5 (which there are too many to list).</p></article></div>
 <p id="p-25">In general, if we use \(P(x)\) to describe a property of \(x\text{,}\) we use the notation</p>
-<p id="p-26">\(\{x\in S : P(x)\}\)</p>
-<p id="p-27">and read the statement as "\(x\) in \(S\) such that \(x\) has property \(P\)".</p>
-<p id="p-28">A <dfn class="terminology">subset</dfn>, \(B\text{,}\) of a set \(A\) is a set of elements that are also in \(A\text{.}\)</p>
-<p id="p-29">Notation: \(B\subseteq A\text{.}\) If \(B\) is not a subset of \(A\text{,}\) then we use the notation \(B\nsubseteq A\text{.}\)</p>
-<p id="p-30">Example: \(\{1, 3\}\subseteq \{1, 2, 3, 4, 5\}\text{,}\) but \(\{0, 1, 2, 3\}\nsubseteq \{1, 2, 3, 4, 5\}\text{.}\)</p>
-<p id="p-31">It is important to understand the difference between subset (\(\subseteq\)) and element (\(\in\)). For example, if \(S=\{1, 2, 3, 4, 5\}\text{,}\) then \(1\in S\text{,}\) but \(1\nsubseteq S\text{.}\) This is because 1 is an element, not a set. Similarly, \(\{1\}\subseteq S\text{,}\) but \(\{1\}\notin S\text{.}\) This is because \(\{1\}\) is a set, not an element. In general, when working with sets, you should identify the elements of the set. Then sets of those elements are subsets. The curly brackets are our way of saying "set."</p>
-<p id="p-32">The distinction between elements and sets, really gets fuzzy when we want to think about sets of sets.</p>
+<div class="displaymath">
+\begin{equation*}
+\{x\in S : P(x)\}
+\end{equation*}
+</div>
+<p data-braille="continuation">and read the statement as "\(x\) in \(S\) such that \(x\) has property \(P\)".</p>
+<p id="p-26">A <dfn class="terminology">subset</dfn>, \(B\text{,}\) of a set \(A\) is a set of elements that are also in \(A\text{.}\)</p>
+<p id="p-27">Notation: \(B\subseteq A\text{.}\) If \(B\) is not a subset of \(A\text{,}\) then we use the notation \(B\nsubseteq A\text{.}\) Note, some books use \(A\subset B\) as the notation for subset.</p>
+<p id="p-28">Example: \(\{1, 3\}\subseteq \{1, 2, 3, 4, 5\}\text{,}\) but \(\{0, 1, 2, 3\}\nsubseteq \{1, 2, 3, 4, 5\}\text{.}\)</p>
+<p id="p-29">It is important to understand the difference between subset, \(\subseteq\text{,}\) and element, \(\in\text{.}\) For example, if \(S=\{1, 2, 3, 4, 5\}\text{,}\) then \(1\in S\text{,}\) but \(1\nsubseteq S\text{.}\) This is because 1 is an element, not a set. Similarly, \(\{1\}\subseteq S\text{,}\) but \(\{1\}\notin S\text{.}\) This is because \(\{1\}\) is a set, not an element. In general, when working with sets, you should identify the elements of the set. Then sets of those elements are subsets. The curly brackets are our way of saying "set."</p>
+<p id="p-30">The distinction between elements and sets really gets fuzzy when we want to think about sets of sets.</p>
 <article class="example example-like" id="example-2"><a data-knowl="" class="id-ref original" data-refid="hk-example-2"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Example of a set with elements that are sets.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-2"><article class="example example-like"><p id="p-33">Let \(S=\{1, \{2, 3, 4\}, \{3\}, \{5\}, 6, 7\}\)</p>
-<p id="p-34">The six elements are \(1, \{2, 3, 4\}, \{3\}, \{5\}, 6, 7.\) The following are examples of elements and subsets. In each of the examples, pay close attention to how the brackets are being used.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-2"><article class="example example-like"><p id="p-31">Let \(S=\{1, \{2, 3, 4\}, \{3\}, \{5\}, 6, 7\}\)</p>
+<p id="p-32">The six elements are \(1, \{2, 3, 4\}, \{3\}, \{5\}, 6, 7.\) The following are examples of elements and subsets. In each of the examples, pay close attention to how the brackets are being used.</p>
 <ul class="disc">
 <li id="li-14">\(\displaystyle 1\in S\)</li>
 <li id="li-15">\(\displaystyle \{3\}\in S\)</li>
@@ -209,9 +213,9 @@ MathJax.Hub.Config({
 <li id="li-17">\(\displaystyle \{\{3\}\}\subseteq S\)</li>
 <li id="li-18">\(\displaystyle \{1,\{3\}\}\subseteq S\)</li>
 </ul>
-<p id="p-35">It will also be useful to look at examples that are not elements or subsets.</p>
+<p id="p-33">It will also be useful to look at examples that are not elements or subsets.</p>
 <ul class="disc">
-<li id="li-19">\(3\notin S\text{,}\) 3 is not one of the six element.</li>
+<li id="li-19">\(3\notin S\text{,}\) 3 is not one of the six elements.</li>
 <li id="li-20">\(\{6\}\notin S\text{,}\) \(\{6\}\) is not one of the six elements.</li>
 <li id="li-21">\(\{4\}\notin S\text{,}\) \(\{4\}\) is not one of the six elements.</li>
 <li id="li-22">\(1\nsubseteq S\text{,}\) 1 is not a set.</li>
@@ -219,73 +223,77 @@ MathJax.Hub.Config({
 <li id="li-24">\(\{\{6\}\}\nsubseteq S\text{,}\)  since \(\{6\}\) is not an element, \(\{\{6\}\}\) is not a subset.</li>
 <li id="li-25">\(\{1,\{2, 3\}\}\nsubseteq S\text{,}\) since \(\{2, 3\}\) is not an element, \(\{1,\{2, 3\}\}\) is not a subset.</li>
 </ul>
-<p id="p-36">In each of the nonexamples of elements, the object listed is not one of the six elements. In each of the nonexamples of subsets, the set is not a set of elements.</p></article></div>
-<p id="p-37">If \(A\subseteq B\) and \(A\neq B\text{,}\) then we say \(A\) is a <dfn class="terminology">proper</dfn>  subset of \(B\text{.}\)</p>
-<p id="p-38">There are some special subsets that we will use throughout the course (and, in fact, the rest of your mathematical career).</p>
-<ul id="p-39" class="disc">
+<p id="p-34">In each of the nonexamples of elements, the object listed is not one of the six elements. In each of the nonexamples of subsets, the set is not a set of elements.</p></article></div>
+<p id="p-35">If \(A\subseteq B\) and \(A\neq B\text{,}\) then we say \(A\) is a <dfn class="terminology">proper</dfn>  subset of \(B\text{.}\)</p>
+<p id="p-36">There are some special subsets that we will use throughout the course (and, in fact, the rest of your mathematical career).</p>
+<ul id="p-37" class="disc">
 <li id="li-26">\(\mathbb{R}\text{,}\) the set of real numbers. These are all the numbers your are familiar with from Calculus: whole numbers, positives, negatives, fractions, decimals, square roots, \(e\text{,}\) \(\pi\text{,}\) etc.</li>
 <li id="li-27">\(\mathbb{Z}\text{,}\) the set integers. These are all the whole numbers: positive, negative, and zero.</li>
-<li id="li-28">\(\mathbb{Q}\text{,}\) the set rational numbers. These are all the whole numbers and fractions: positive, negative, and zero. We wil revisit this set in more detail later.</li>
-<li id="li-29">\(\mathbb{N}\text{,}\) the set of natural numbers. These are all the positive whole numbers. Some books include zero, some do not. SInce this can be confusing, we will avoid this notation in this class (but you might see it in future classes). Intead, we will use one of the next two notations, which more clearly denote inclusion of zero, or not.</li>
+<li id="li-28">\(\mathbb{Q}\text{,}\) the set rational numbers. These are all the whole numbers and fractions: positive, negative, and zero. We will revisit this set in more detail later.</li>
+<li id="li-29">\(\mathbb{N}\text{,}\) the set of natural numbers. These are all the positive whole numbers. Some books include zero, some do not. Since this can be confusing, we will avoid this notation in this class (but you might see it in future classes). Intead, we will use one of the next two notations, which more clearly denote inclusion of zero, or not.</li>
 <li id="li-30">\(\mathbb{Z}^+\text{,}\) the set of positive integers. These are all the positive whole numbers. This set does NOT include zero.</li>
 <li id="li-31">\(\mathbb{Z}^{nonneg}\text{,}\) the set of nonnegative integers. These are the whole numbers that are not negative. This set DOES include zero.</li>
 </ul>
-<p id="p-40">Another important set that we will need in this class is the <dfn class="terminology">Cartesian product</dfn>. We define it as follows</p>
-<p id="p-41">\(A\times B=\{(a, b) : a\in A, b\in B\}\text{.}\)</p>
-<p id="p-42">This is a set of <dfn class="terminology">ordered pairs</dfn>, where the first coordinate comes from set \(A\) and the second coordinate comes from set \(B\text{.}\)</p>
+<p id="p-38">Another important set that we will need in this class is the <dfn class="terminology">Cartesian product</dfn>. We define it as</p>
+<div class="displaymath">
+\begin{equation*}
+A\times B=\{(a, b) : a\in A, b\in B\}\text{.}
+\end{equation*}
+</div>
+<p id="p-39">This is a set of <dfn class="terminology">ordered pairs</dfn>, where the first coordinate comes from set \(A\) and the second coordinate comes from set \(B\text{.}\)</p>
 <article class="example example-like" id="example-3"><a data-knowl="" class="id-ref original" data-refid="hk-example-3"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Cartesian Product of Sets.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-3"><article class="example example-like">Let \(A=\{2, 4\}, B=\{0, 1\}\text{.}\) Then \(A\times B=\{(2, 0), (4, 0), (2, 1), (4, 1)\}\text{.}\)</article></div>
 <section class="reading-questions" id="reading-questions-2"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
 </h3>
-<p id="p-43">Let \(A=\{2, 4, 6, 8, 10\}\text{.}\)</p>
+<p id="p-40">Let \(A=\{2, 4, 6, 8, 10\}\text{.}\)</p>
 <article class="exercise exercise-like" id="exercise-5"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-44">True or False: \(4\in A\text{.}\)</p>
+<p id="p-41">True or False: \(4\in A\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-5" id="answer-5"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-5"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-6"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-45">True or False: \(0\notin A\text{.}\)</p>
+<p id="p-42">True or False: \(0\notin A\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-6" id="answer-6"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-6"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-7"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-46">True or False: \(\{4\}\in A\text{.}\)</p>
+<p id="p-43">True or False: \(\{4\}\in A\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-7" id="answer-7"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-7"><div class="answer solution-like">False</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-8"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-47">True or False: \(\{2, 4\}\in A\text{.}\)</p>
+<p id="p-44">True or False: \(\{2, 4\}\in A\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-8" id="answer-8"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-8"><div class="answer solution-like">False</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-9"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-48">True or False: \(\{2, 4\}\subseteq A\text{.}\)</p>
+<p id="p-45">True or False: \(\{2, 4\}\subseteq A\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-9" id="answer-9"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-9"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-10"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-49">True or False: \(\{2, 3, 4\}\subseteq A\text{.}\)</p>
+<p id="p-46">True or False: \(\{2, 3, 4\}\subseteq A\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-10" id="answer-10"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-10"><div class="answer solution-like">False</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-11"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
-<p id="p-50">True or False: \(\{0, 2, 6\}\nsubseteq A\text{.}\)</p>
+<p id="p-47">True or False: \(\{0, 2, 6\}\nsubseteq A\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-11" id="answer-11"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-11"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-12"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
-<p id="p-51">True or False: \(\{2, 4, 6, 8, 10\}\subseteq A\text{.}\)</p>
+<p id="p-48">True or False: \(\{2, 4, 6, 8, 10\}\subseteq A\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-12" id="answer-12"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-12"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-13"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
-<p id="p-52">True or False: \(6\in A\times A\text{.}\)</p>
+<p id="p-49">True or False: \(6\in A\times A\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-13" id="answer-13"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-13"><div class="answer solution-like">False</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-14"><h6 class="heading"><span class="codenumber">10<span class="period">.</span></span></h6>
-<p id="p-53">True or False: \((2, 4)\in A\times A\text{.}\)</p>
+<p id="p-50">True or False: \((2, 4)\in A\times A\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-14" id="answer-14"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-14"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-15"><h6 class="heading"><span class="codenumber">11<span class="period">.</span></span></h6>
-<p id="p-54">True or False: \(\{2, 4\}\subseteq A\times A\text{.}\)</p>
+<p id="p-51">True or False: \(\{2, 4\}\subseteq A\times A\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-15" id="answer-15"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-15"><div class="answer solution-like">False</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-16"><h6 class="heading"><span class="codenumber">12<span class="period">.</span></span></h6>
-<p id="p-55">True or False: \(\{(2, 2), (4, 6), (10, 4)\}\subseteq A\times A\text{.}\)</p>
+<p id="p-52">True or False: \(\{(2, 2), (4, 6), (10, 4)\}\subseteq A\times A\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-16" id="answer-16"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-16"><div class="answer solution-like">True</div></div>
 </div></article></section></section></div></main>

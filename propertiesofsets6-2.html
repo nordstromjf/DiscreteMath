@@ -182,21 +182,21 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="propertiesofsets6-2"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">6.2</span> <span class="title">Properties of Sets</span>
 </h2>
-<p id="p-958">Now that we have defined operations on sets such as union and intersection, we can look at various properties of these operations. In the last section we saw that intersection involves an "and" statement, while union involves an "or". As we work with these properties we will be able to see connections between properties of sets and the logical connectives we saw in <a href="chapter2.html" class="internal" title="Chapter 2: Logic">Chapter 2</a>.</p>
-<p id="p-959">Subset Relations:</p>
+<p id="p-957">Now that we have defined operations on sets such as union and intersection, we can look at various properties of these operations. In the last section we saw that intersection involves an "and" statement, while union involves an "or". As we work with these properties we will be able to see connections between properties of sets and the logical connectives we saw in <a href="chapter2.html" class="internal" title="Chapter 2: Logic">Chapter 2</a>.</p>
+<p id="p-958">Subset Relations:</p>
 <ol class="decimal">
 <li id="li-144">\(A\cap B\subseteq A\text{;}\) \(A\cap B\subseteq B\text{.}\)</li>
 <li id="li-145">\(A\subseteq A\cup B\text{;}\) \(B\subseteq A\cup B\text{.}\)</li>
 <li id="li-146">Transitivity: if \(A\subseteq B\) and  \(B\subseteq C\) then \(A\subseteq C\text{.}\)</li>
 </ol>
-<p id="p-960">One of our goals in this section is to learn how to prove properties such as the subset relations.</p>
-<p id="p-961">We can think of the statement \(X\subseteq Y\) as the conditional statement, if \(x\in X\) then \(x\in Y\text{.}\)</p>
-<p id="p-962">To prove \(X\subseteq Y\text{:}\)</p>
+<p id="p-959">One of our goals in this section is to learn how to prove properties such as the subset relations.</p>
+<p id="p-960">We can think of the statement \(X\subseteq Y\) as the conditional statement, if \(x\in X\) then \(x\in Y\text{.}\)</p>
+<p id="p-961">To prove \(X\subseteq Y\text{:}\)</p>
 <ul class="disc">
 <li id="li-147">Assume \(x\in X\text{.}\)</li>
 <li id="li-148">Show \(x\in Y\text{.}\)</li>
 </ul>
-<p id="p-963">We can translate other sets into logical statements, as well. These translations are how we will prove properites of sets using elements.</p>
+<p id="p-962">We can translate other sets into logical statements, as well. These translations are how we will prove properites of sets using elements.</p>
 <ul class="disc">
 <li id="li-149">\(x \in X\cup Y\) if and only if \(x\in X\) or \(x\in Y\)</li>
 <li id="li-150">\(x \in X\cap Y\) if and only if \(x\in X\) and \(x\in Y\)</li>
@@ -206,44 +206,44 @@ MathJax.Hub.Config({
 </ul>
 <article class="example example-like" id="E_subsetprop"><a data-knowl="" class="id-ref original" data-refid="hk-E_subsetprop"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Proving a Subset Property.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_subsetprop"><article class="example example-like"><p id="p-964">Prove \(A\cap B\subseteq A\text{.}\)</p>
-<article class="hiddenproof" id="proof-29"><a data-knowl="" class="id-ref original" data-refid="hk-proof-29"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-29"><article class="hiddenproof"><p id="p-965">Let \(x\in A\cap B\text{.}\) Then \(x\in A\) and \(x\in B\text{.}\) Thus, \(x\in A\text{.}\)</p>
-<p id="p-966">Therefore, \(A\subseteq B\text{.}\)</p></article></div></article></div>
-<p id="p-967">To prove \(X=Y\) show</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_subsetprop"><article class="example example-like"><p id="p-963">Prove \(A\cap B\subseteq A\text{.}\)</p>
+<article class="hiddenproof" id="proof-29"><a data-knowl="" class="id-ref original" data-refid="hk-proof-29"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-29"><article class="hiddenproof"><p id="p-964">Let \(x\in A\cap B\text{.}\) Then \(x\in A\) and \(x\in B\text{.}\) Thus, \(x\in A\text{.}\)</p>
+<p id="p-965">Therefore, \(A\subseteq B\text{.}\)</p></article></div></article></div>
+<p id="p-966">To prove \(X=Y\) show</p>
 <ol class="decimal">
 <li id="li-154">\(X\subseteq Y\text{,}\) ie, show if \(x \in X\) then \(x \in Y\text{,}\) and</li>
 <li id="li-155">\(Y\subseteq X\text{,}\) ie, show if \(x \in Y\) then \(x \in X\text{.}\)</li>
 </ol>
 <article class="example example-like" id="E_DeMorgans"><a data-knowl="" class="id-ref original" data-refid="hk-E_DeMorgans"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Proving Two Sets are Equal.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_DeMorgans"><article class="example example-like"><p id="p-968">Prove \(A\cup(B\cap C)=(A\cup B)\cap (A\cup C)\text{.}\)</p>
-<article class="hiddenproof" id="proof-30"><a data-knowl="" class="id-ref original" data-refid="hk-proof-30"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-30"><article class="hiddenproof"><p id="p-969">\((\subseteq)\text{:}\) Let \(x\in A\cup(B\cap C)\text{.}\) Then \(x\in A\) or \(x\in B\cap C\text{.}\)</p>
-<p id="p-970">Case 1: \(x\in A\text{.}\) Then \(x\in A\cup B\) by the second subset relation. Similarly, \(x\in A\cup C\text{.}\) Thus, \(x\in A\cup B\) and \(x\in A\cup C\text{.}\)</p>
-<p id="p-971">Therefore, \(x\in (A\cup B) \cap (A\cup C)\text{.}\)</p>
-<p id="p-972">Case 2: \(x\in B\cap C\text{.}\) Then \(x\in B\)  and \(x\in C\text{.}\) Then \(x\in A\cup B\) and \(x\in A\cup C\) by the second subset relation. Thus, \(x\in A\cup B\) and \(x\in A\cup C\text{.}\)</p>
-<p id="p-973">Therefore, \(x\in (A\cup B) \cap (A\cup C)\text{.}\)</p>
-<p id="p-974">\((\supseteq)\text{:}\) Let \(x\in (A\cup B)\cap (A\cup C)\text{.}\) Then \(x\in A\cup B\) and \(x\in A\cup C\text{.}\)</p>
-<p id="p-975">Case 1: \(x\in A\text{.}\) Then \(x\in A\cup (B\cap C)\) by the second subset relation (since we can do the union with ANY set).</p>
-<p id="p-976">Case 2: \(x\notin A\text{.}\) Since \(x\in A\cup B\)  by assumption, \(x\in A\) or \(x\in B\text{.}\) Since \(x\notin A\text{,}\) \(x\in B\text{.}\)</p>
-<p id="p-977">Similarly,  since \(x\in A\cup C\text{,}\) and \(x\notin A\text{,}\) \(x\in C\text{.}\) Thus, \(x\in B\cap C\text{.}\)</p>
-<p id="p-978">Therefore, \(x\in A\cup (B\cap C)\) (again by the second subset relation).</p></article></div></article></div>
-<p id="p-979">The next theorem shows that the empty set is a subset of every set.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_DeMorgans"><article class="example example-like"><p id="p-967">Prove \(A\cup(B\cap C)=(A\cup B)\cap (A\cup C)\text{.}\)</p>
+<article class="hiddenproof" id="proof-30"><a data-knowl="" class="id-ref original" data-refid="hk-proof-30"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-30"><article class="hiddenproof"><p id="p-968">\((\subseteq)\text{:}\) Let \(x\in A\cup(B\cap C)\text{.}\) Then \(x\in A\) or \(x\in B\cap C\text{.}\)</p>
+<p id="p-969">Case 1: \(x\in A\text{.}\) Then \(x\in A\cup B\) by the second subset relation. Similarly, \(x\in A\cup C\text{.}\) Thus, \(x\in A\cup B\) and \(x\in A\cup C\text{.}\)</p>
+<p id="p-970">Therefore, \(x\in (A\cup B) \cap (A\cup C)\text{.}\)</p>
+<p id="p-971">Case 2: \(x\in B\cap C\text{.}\) Then \(x\in B\)  and \(x\in C\text{.}\) Then \(x\in A\cup B\) and \(x\in A\cup C\) by the second subset relation. Thus, \(x\in A\cup B\) and \(x\in A\cup C\text{.}\)</p>
+<p id="p-972">Therefore, \(x\in (A\cup B) \cap (A\cup C)\text{.}\)</p>
+<p id="p-973">\((\supseteq)\text{:}\) Let \(x\in (A\cup B)\cap (A\cup C)\text{.}\) Then \(x\in A\cup B\) and \(x\in A\cup C\text{.}\)</p>
+<p id="p-974">Case 1: \(x\in A\text{.}\) Then \(x\in A\cup (B\cap C)\) by the second subset relation (since we can do the union with ANY set).</p>
+<p id="p-975">Case 2: \(x\notin A\text{.}\) Since \(x\in A\cup B\)  by assumption, \(x\in A\) or \(x\in B\text{.}\) Since \(x\notin A\text{,}\) \(x\in B\text{.}\)</p>
+<p id="p-976">Similarly,  since \(x\in A\cup C\text{,}\) and \(x\notin A\text{,}\) \(x\in C\text{.}\) Thus, \(x\in B\cap C\text{.}\)</p>
+<p id="p-977">Therefore, \(x\in A\cup (B\cap C)\) (again by the second subset relation).</p></article></div></article></div>
+<p id="p-978">The next theorem shows that the empty set is a subset of every set.</p>
 <article class="theorem theorem-like" id="T_emptyset"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.2.3</span><span class="period">.</span>
 </h6>
-<p id="p-980">For all sets \(A\text{,}\) \(\emptyset\subseteq A\text{.}\)</p></article><article class="hiddenproof" id="proof-31"><a data-knowl="" class="id-ref original" data-refid="hk-proof-31"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-31"><article class="hiddenproof"><p id="p-981">By contradiction, assume there exists a set \(A\) such that \(\emptyset\nsubseteq A\text{.}\)</p>
-<p id="p-982">This means there exists \(x\in \emptyset\) such that \(x\notin A\text{.}\) But we cannot have \(x\in \emptyset\text{.}\) Hence we have a contradiction. Therefore, \(\emptyset\subseteq A\text{.}\)</p></article></div>
-<p id="p-983">There are many times in mathematics that we need to prove that a set is empty. We might need do do this if we need sets to be disjoint, or if we need to prove that there are no elements with a particular property. The common method for proving a set is empty is to use contradiction. Note, usually if we want to prove \(A=B\text{,}\) we show both subsets (\(A\subseteq B\text{,}\) \(B\subseteq A\)), but we just showed \(\emptyset\subseteq A\text{,}\) always. So we just need to show \(A\subseteq \emptyset\text{.}\) We do this by contradiction.</p>
-<p id="p-984">To show \(A=\emptyset\text{:}\)</p>
+<p id="p-979">For all sets \(A\text{,}\) \(\emptyset\subseteq A\text{.}\)</p></article><article class="hiddenproof" id="proof-31"><a data-knowl="" class="id-ref original" data-refid="hk-proof-31"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-31"><article class="hiddenproof"><p id="p-980">By contradiction, assume there exists a set \(A\) such that \(\emptyset\nsubseteq A\text{.}\)</p>
+<p id="p-981">This means there exists \(x\in \emptyset\) such that \(x\notin A\text{.}\) But we cannot have \(x\in \emptyset\text{.}\) Hence we have a contradiction. Therefore, \(\emptyset\subseteq A\text{.}\)</p></article></div>
+<p id="p-982">There are many times in mathematics that we need to prove that a set is empty. We might need do do this if we need sets to be disjoint, or if we need to prove that there are no elements with a particular property. The common method for proving a set is empty is to use contradiction. Note, usually if we want to prove \(A=B\text{,}\) we show both subsets (\(A\subseteq B\text{,}\) \(B\subseteq A\)), but we just showed \(\emptyset\subseteq A\text{,}\) always. So we just need to show \(A\subseteq \emptyset\text{.}\) We do this by contradiction.</p>
+<p id="p-983">To show \(A=\emptyset\text{:}\)</p>
 <ul class="disc">
 <li id="li-156">Assume \(x\in A\text{.}\)</li>
 <li id="li-157">Reach a contradiction.</li>
 </ul>
 <article class="example example-like" id="E_provesetisempty"><a data-knowl="" class="id-ref original" data-refid="hk-E_provesetisempty"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Proving a Set is Empty.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_provesetisempty"><article class="example example-like"><p id="p-985">Prove \(U^{C}=\emptyset\text{,}\) where \(U\) is the universal set. <article class="hiddenproof" id="proof-32"><a data-knowl="" class="id-ref original" data-refid="hk-proof-32"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-32"><article class="hiddenproof"><p id="p-986">Let \(x\in U^{C}\text{.}\) Then \(x\notin U\text{.}\) But since \(U\) contains everything, \(x\in U\text{,}\) which is a contradiction. Therefore, \(U^{C}=\emptyset\text{.}\)</p></article></div></p></article></div>
-<p id="p-987">Summary of Set Identities</p>
-<p id="p-988">Let \(U\) be the universal set, and \(A, B\text{,}\) and \(C\) subsets of the universal set.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_provesetisempty"><article class="example example-like"><p id="p-984">Prove \(U^{C}=\emptyset\text{,}\) where \(U\) is the universal set. <article class="hiddenproof" id="proof-32"><a data-knowl="" class="id-ref original" data-refid="hk-proof-32"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-32"><article class="hiddenproof"><p id="p-985">Let \(x\in U^{C}\text{.}\) Then \(x\notin U\text{.}\) But since \(U\) contains everything, \(x\in U\text{,}\) which is a contradiction. Therefore, \(U^{C}=\emptyset\text{.}\)</p></article></div></p></article></div>
+<p id="p-986">Summary of Set Identities</p>
+<p id="p-987">Let \(U\) be the universal set, and \(A, B\text{,}\) and \(C\) subsets of the universal set.</p>
 <ol class="decimal">
 <li id="li-158">
 <h6 class="heading"><span class="title">Commutative Laws:.</span></h6> \(A\cup B=B\cup A; \ \ A\cap B=B\cap A\)</li>
@@ -273,43 +273,43 @@ MathJax.Hub.Config({
 <section class="reading-questions" id="reading-questions-24"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
 </h3>
-<p id="p-989">Let \(A, B, C\) be sets and \(U\) be the universal set.</p>
+<p id="p-988">Let \(A, B, C\) be sets and \(U\) be the universal set.</p>
 <article class="exercise exercise-like" id="exercise-177"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-990">True or false: \(A\cap C=C\cap A\text{.}\)</p>
+<p id="p-989">True or false: \(A\cap C=C\cap A\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-262" id="answer-262"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-262"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-178"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-991">True or false: \(A\cap(B\cup C)=(A\cap B)\cup (A\cap C)\text{.}\)</p>
+<p id="p-990">True or false: \(A\cap(B\cup C)=(A\cap B)\cup (A\cap C)\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-263" id="answer-263"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-263"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-179"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-992">True or false: \(A\cap(B\cup C)=(A\cap B)\cup C\text{.}\)</p>
+<p id="p-991">True or false: \(A\cap(B\cup C)=(A\cap B)\cup C\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-264" id="answer-264"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-264"><div class="answer solution-like">False</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-180"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-993">True or false: \(A\cup \emptyset=\emptyset\text{.}\)</p>
+<p id="p-992">True or false: \(A\cup \emptyset=\emptyset\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-265" id="answer-265"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-265"><div class="answer solution-like">False</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-181"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-994">True or false: \((A\cup B)^C=A^C\cup B^C\text{.}\)</p>
+<p id="p-993">True or false: \((A\cup B)^C=A^C\cup B^C\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-266" id="answer-266"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-266"><div class="answer solution-like">False</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-182"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-995">True or false:  \(B-A=A-B\text{.}\)</p>
+<p id="p-994">True or false:  \(B-A=A-B\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-267" id="answer-267"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-267"><div class="answer solution-like"><p id="p-996">False</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-267" id="answer-267"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-267"><div class="answer solution-like"><p id="p-995">False</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-183"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
-<p id="p-997">True or false:  \(\emptyset\subseteq U\text{.}\)</p>
+<p id="p-996">True or false:  \(\emptyset\subseteq U\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-268" id="answer-268"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-268"><div class="answer solution-like"><p id="p-998">True</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-268" id="answer-268"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-268"><div class="answer solution-like"><p id="p-997">True</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-184"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
-<p id="p-999">True or false:  \(A\subseteq A\cup(B\cap C)\text{.}\)</p>
+<p id="p-998">True or false:  \(A\subseteq A\cup(B\cap C)\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-269" id="answer-269"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-269"><div class="answer solution-like"><p id="p-1000">True</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-269" id="answer-269"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-269"><div class="answer solution-like"><p id="p-999">True</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-185"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
-<p id="p-1001">True or false:  \(B\subseteq A\cup(B\cap C)\text{.}\)</p>
+<p id="p-1000">True or false:  \(B\subseteq A\cup(B\cap C)\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-270" id="answer-270"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-270"><div class="answer solution-like"><p id="p-1002">False</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-270" id="answer-270"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-270"><div class="answer solution-like"><p id="p-1001">False</p></div></div>
 </div></article></section></section></div></main>
 </div>
 </body>

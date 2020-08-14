@@ -182,38 +182,38 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="combinations9-5"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">9.5</span> <span class="title">Combinations</span>
 </h2>
-<p id="p-1444">In this section we look at how to count subsets of a set and define the mathematical concept of combinations.</p>
+<p id="p-1443">In this section we look at how to count subsets of a set and define the mathematical concept of combinations.</p>
 <article class="definition definition-like" id="D_combination"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.5.1</span><span class="period">.</span>
 </h6>
-<p id="p-1445">Let \(n, r\) be nonnegative integers with \(r\leq n\text{.}\) An <dfn class="terminology">\(r\)-combination</dfn> of a set of \(n\) elements is the number of subsets of size \(r\) that can be chosen from a set of \(n\) elements.</p></article><p id="p-1446">Notation: \(\binom{n}{r}\text{,}\) \(C(n, r)\text{,}\) or \(nCr\text{.}\) We will generally use the first notation, which we first saw in <a href="sequences5-1.html" class="internal" title="Section 5.1: Sequences">Section 5.1</a>.</p>
-<p id="p-1447">For example, \(\binom{5}{4}\) is the number of subsets of size 4 chosen from a set of 5 elements.</p>
-<p id="p-1448">Note, the order in which we choose elements of a set does not matter.</p>
-<p id="p-1449">We can calculate combinations by first finding all the \(r\)-permuatiations of a set, then dividing by all the possible orderings of that subset: \(\frac{P(n, r)}{r!}\text{.}\) This can be rewritten to be the standard formula for calculating combinations:</p>
+<p id="p-1444">Let \(n, r\) be nonnegative integers with \(r\leq n\text{.}\) An <dfn class="terminology">\(r\)-combination</dfn> of a set of \(n\) elements is the number of subsets of size \(r\) that can be chosen from a set of \(n\) elements.</p></article><p id="p-1445">Notation: \(\binom{n}{r}\text{,}\) \(C(n, r)\text{,}\) or \(nCr\text{.}\) We will generally use the first notation, which we first saw in <a href="sequences5-1.html" class="internal" title="Section 5.1: Sequences">Section 5.1</a>.</p>
+<p id="p-1446">For example, \(\binom{5}{4}\) is the number of subsets of size 4 chosen from a set of 5 elements.</p>
+<p id="p-1447">Note, the order in which we choose elements of a set does not matter.</p>
+<p id="p-1448">We can calculate combinations by first finding all the \(r\)-permuatiations of a set, then dividing by all the possible orderings of that subset: \(\frac{P(n, r)}{r!}\text{.}\) This can be rewritten to be the standard formula for calculating combinations:</p>
 <div class="displaymath">
 \begin{equation*}
 \binom{n}{r}=\frac{n!}{r!(n-r)!}\text{.}
 \end{equation*}
 </div>
-<p id="p-1450">Note: \(\binom{n}{0}=1\) and \(\binom{0}{0}=1\text{.}\)</p>
+<p id="p-1449">Note: \(\binom{n}{0}=1\) and \(\binom{0}{0}=1\text{.}\)</p>
 <article class="example example-like" id="E_combvperm"><a data-knowl="" class="id-ref original" data-refid="hk-E_combvperm"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">Combinations versus Permutations.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_combvperm"><article class="example example-like"><p id="p-1451">Suppose you want to choose a group of 3 students in a class of 15 for a group project. How many ways can you choose the group?</p>
-<p id="p-1452">We use combinations: \(\binom{15}{3}\text{.}\) It does not matter if a member was chosen first, second, or third, they would still be a member of the group. Thus, there are \(\frac{15!}{3!12!}=455\) ways to choose a group of 3.</p>
-<p id="p-1453">Now suppose you want to choose a group of 3 students in a class of 15 for a group project, but the first student chosen will be the note-taker, the second will be the presenter, the third will manage the discussion. How many ways can you choose the group?</p>
-<p id="p-1454">We use permutations: \(P(15, 3)\text{.}\) Now it DOES matter if a member was chosen first, second, or third, as each member has a different role. Thus, there are \(\frac{15!}{12!}=2730\) ways to choose a group of 3 where the members' roles are defined.</p></article></div>
-<p id="p-1455">In deciding whether to use combinations or permutations, you need to decide whether order matters. For combinatons, order doesn't matter, think about choosing subsets. For permuations, order does matter, think about choosing ordered lists.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_combvperm"><article class="example example-like"><p id="p-1450">Suppose you want to choose a group of 3 students in a class of 15 for a group project. How many ways can you choose the group?</p>
+<p id="p-1451">We use combinations: \(\binom{15}{3}\text{.}\) It does not matter if a member was chosen first, second, or third, they would still be a member of the group. Thus, there are \(\frac{15!}{3!12!}=455\) ways to choose a group of 3.</p>
+<p id="p-1452">Now suppose you want to choose a group of 3 students in a class of 15 for a group project, but the first student chosen will be the note-taker, the second will be the presenter, the third will manage the discussion. How many ways can you choose the group?</p>
+<p id="p-1453">We use permutations: \(P(15, 3)\text{.}\) Now it DOES matter if a member was chosen first, second, or third, as each member has a different role. Thus, there are \(\frac{15!}{12!}=2730\) ways to choose a group of 3 where the members' roles are defined.</p></article></div>
+<p id="p-1454">In deciding whether to use combinations or permutations, you need to decide whether order matters. For combinatons, order doesn't matter, think about choosing subsets. For permuations, order does matter, think about choosing ordered lists.</p>
 <article class="example example-like" id="E_binstrings"><a data-knowl="" class="id-ref original" data-refid="hk-E_binstrings"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.5.3</span><span class="period">.</span><span class="space"> </span><span class="title">Binary Strings.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_binstrings"><article class="example example-like"><p id="p-1456">How many binary strings of length 5 can have exactly 2 ones?</p>
-<p id="p-1457">We can think of forming a binary string with 2 ones as a list of 5 places where we need to choose 2 places for the ones. Once we've done that, the other places must have 0's. Thus, we have five places and choose 2:</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_binstrings"><article class="example example-like"><p id="p-1455">How many binary strings of length 5 can have exactly 2 ones?</p>
+<p id="p-1456">We can think of forming a binary string with 2 ones as a list of 5 places where we need to choose 2 places for the ones. Once we've done that, the other places must have 0's. Thus, we have five places and choose 2:</p>
 <div class="displaymath">
 \begin{equation*}
 \binom{5}{2}=\frac{5!}{2!}{3!}=10.
 \end{equation*}
 </div>
-<p id="p-1458">How many binary strings of length 5 can have at most 2 ones?</p>
-<p id="p-1459">Here we can count the strings with 2 ones, 1 one, and 0 ones. We add them since the strings with different numbers of ones are disjoint:</p>
+<p id="p-1457">How many binary strings of length 5 can have at most 2 ones?</p>
+<p id="p-1458">Here we can count the strings with 2 ones, 1 one, and 0 ones. We add them since the strings with different numbers of ones are disjoint:</p>
 <div class="displaymath">
 \begin{equation*}
 \binom{5}{2}+\binom{5}{1}+\binom{5}{0}=10+5+1=16.
@@ -221,23 +221,23 @@ MathJax.Hub.Config({
 </div></article></div>
 <article class="example example-like" id="E_reorderletters"><a data-knowl="" class="id-ref original" data-refid="hk-E_reorderletters"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.5.4</span><span class="period">.</span><span class="space"> </span><span class="title">Rearranging Letters.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_reorderletters"><article class="example example-like"><p id="p-1460">How many ways are there to order the letters in the word “letter”?</p>
-<p id="p-1461">We can think of the string of letters as 6 places where we can choose to put letters. First we can choose the place to put the “l”: we have 6 places, we need to choose 1: \(\binom{6}{1}.\)</p>
-<p id="p-1462">Next we choose the places to put the two “e”s: we now only have 5 places (since one has the l), we need to choose 2: \(\binom{5}{2}.\)</p>
-<p id="p-1463">We continue in this way, with 3 places to put the two “t”s: \(\binom{3}{2}\text{,}\) and one remaining place to put the “r”: \(\binom{1}{1}\text{.}\)</p>
-<p id="p-1464">Since placing each letter is a process (we don't have a complete string until we have placed all the letters), we need to use the multiplication rule:</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_reorderletters"><article class="example example-like"><p id="p-1459">How many ways are there to order the letters in the word “letter”?</p>
+<p id="p-1460">We can think of the string of letters as 6 places where we can choose to put letters. First we can choose the place to put the “l”: we have 6 places, we need to choose 1: \(\binom{6}{1}.\)</p>
+<p id="p-1461">Next we choose the places to put the two “e”s: we now only have 5 places (since one has the l), we need to choose 2: \(\binom{5}{2}.\)</p>
+<p id="p-1462">We continue in this way, with 3 places to put the two “t”s: \(\binom{3}{2}\text{,}\) and one remaining place to put the “r”: \(\binom{1}{1}\text{.}\)</p>
+<p id="p-1463">Since placing each letter is a process (we don't have a complete string until we have placed all the letters), we need to use the multiplication rule:</p>
 <div class="displaymath">
 \begin{equation*}
 \binom{6}{1}\cdot \binom{5}{2}\cdot \binom{3}{2}\cdot \binom{1}{1}=6\cdot 10\cdot 3\cdot 1=180.
 \end{equation*}
 </div></article></div>
-<p id="p-1465">There is another way to calculate the previous example.</p>
+<p id="p-1464">There is another way to calculate the previous example.</p>
 <article class="example example-like" id="E_altreorderletters"><a data-knowl="" class="id-ref original" data-refid="hk-E_altreorderletters"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.5.5</span><span class="period">.</span><span class="space"> </span><span class="title">Alternate Rearranging Letters.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_altreorderletters"><article class="example example-like"><p id="p-1466">How many ways are there to order the letters in the word “letter”?</p>
-<p id="p-1467">We can think of the string of letters as 6 places where we can choose to put letters. First we can think of all the letters as distinct. Then we have 6 letters to choose for the first place, 5 for the second, 4 for the third, etc. Thus we have \(6!\) ways to place 6 distinct letters.</p>
-<p id="p-1468">But the letters are not distinct, so we need to divide by the number of ways we over-counted. For each permutation we just counted, switching the two e's gives us the same word, so we need to divide by the number of ways to rearrange to two e's: \(2!.\) Similarly, we need to divide by equivalent arrangements of the two t's: \(2!\text{.}\)</p>
-<p id="p-1469">Putting this together we have</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_altreorderletters"><article class="example example-like"><p id="p-1465">How many ways are there to order the letters in the word “letter”?</p>
+<p id="p-1466">We can think of the string of letters as 6 places where we can choose to put letters. First we can think of all the letters as distinct. Then we have 6 letters to choose for the first place, 5 for the second, 4 for the third, etc. Thus we have \(6!\) ways to place 6 distinct letters.</p>
+<p id="p-1467">But the letters are not distinct, so we need to divide by the number of ways we over-counted. For each permutation we just counted, switching the two e's gives us the same word, so we need to divide by the number of ways to rearrange to two e's: \(2!.\) Similarly, we need to divide by equivalent arrangements of the two t's: \(2!\text{.}\)</p>
+<p id="p-1468">Putting this together we have</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{6!}{2!2!}=180.
@@ -245,21 +245,21 @@ MathJax.Hub.Config({
 </div></article></div>
 <article class="example example-like" id="E_committees"><a data-knowl="" class="id-ref original" data-refid="hk-E_committees"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.5.6</span><span class="period">.</span><span class="space"> </span><span class="title">Forming Committees.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_committees"><article class="example example-like"><p id="p-1470">A class has 13 students. How many ways can a group of 7 be chosen?</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_committees"><article class="example example-like"><p id="p-1469">A class has 13 students. How many ways can a group of 7 be chosen?</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-405" id="answer-405"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-405"><div class="answer solution-like">\(\binom{13}{7}\)</div></div>
-<p id="p-1471">Suppose in this class of 13 there are 6 juniors and 7 seniors.</p>
-<p id="p-1472">How many groups of 7 can be chosen that contain 4 juniors and 3 seniors?</p>
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-406" id="answer-406"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-406"><div class="answer solution-like"><p id="p-1473">\(\binom{7}{4}\cdot \binom{6}{3}\text{,}\) first choose the juniors then the seniors.</p></div></div>
-<p id="p-1474">How many groups of 7 can be chosen so that there is at least one senior?</p>
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-407" id="answer-407"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-407"><div class="answer solution-like"><p id="p-1475">\(\binom{13}{7}- \binom{7}{7}\text{,}\) all the possible groups minus the groups with no seniors.</p></div></div>
-<p id="p-1476">How many groups of 7 can be chosen so that there are at most 3 juniors?</p>
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-408" id="answer-408"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">4</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-408"><div class="answer solution-like"><p id="p-1477">\(\binom{7}{1}\cdot \binom{6}{6}+\binom{7}{2}\cdot \binom{6}{5}+\binom{7}{3}\cdot \binom{6}{4}\text{,}\) count the groups of one junior and 6 seniors, two juniors and 5 seniors, three juniors and 4 seniors. Note, there are no groups with no juniors.</p></div></div>
-<p id="p-1478">How many groups of 7 can be chosen if two people refuse to work together?</p>
-<p id="p-1479">Call the two people A and B.</p>
-<p id="p-1480">Find the number of groups with A and not B: \(\binom{11}{6}\text{.}\) Note, we only need to choose 6 out of 11 since we know A is in the group and B is not, so we just need to choose the other 6 members.</p>
-<p id="p-1481">Similarly, find the number of groups with B and not A: \(\binom{11}{6}\text{.}\)</p>
-<p id="p-1482">Now, find the number of groups with neither A nor B: \(\binom{11}{7}\text{.}\) Note, we need to choose 7 out of 11 since we know A and B cannot be chosen.</p>
-<p id="p-1483">Since the sets of each type of group (with A, with B, with neither) are disjoint, we use the addition rule:</p>
+<p id="p-1470">Suppose in this class of 13 there are 6 juniors and 7 seniors.</p>
+<p id="p-1471">How many groups of 7 can be chosen that contain 4 juniors and 3 seniors?</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-406" id="answer-406"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-406"><div class="answer solution-like"><p id="p-1472">\(\binom{7}{4}\cdot \binom{6}{3}\text{,}\) first choose the juniors then the seniors.</p></div></div>
+<p id="p-1473">How many groups of 7 can be chosen so that there is at least one senior?</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-407" id="answer-407"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-407"><div class="answer solution-like"><p id="p-1474">\(\binom{13}{7}- \binom{7}{7}\text{,}\) all the possible groups minus the groups with no seniors.</p></div></div>
+<p id="p-1475">How many groups of 7 can be chosen so that there are at most 3 juniors?</p>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-408" id="answer-408"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">4</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-408"><div class="answer solution-like"><p id="p-1476">\(\binom{7}{1}\cdot \binom{6}{6}+\binom{7}{2}\cdot \binom{6}{5}+\binom{7}{3}\cdot \binom{6}{4}\text{,}\) count the groups of one junior and 6 seniors, two juniors and 5 seniors, three juniors and 4 seniors. Note, there are no groups with no juniors.</p></div></div>
+<p id="p-1477">How many groups of 7 can be chosen if two people refuse to work together?</p>
+<p id="p-1478">Call the two people A and B.</p>
+<p id="p-1479">Find the number of groups with A and not B: \(\binom{11}{6}\text{.}\) Note, we only need to choose 6 out of 11 since we know A is in the group and B is not, so we just need to choose the other 6 members.</p>
+<p id="p-1480">Similarly, find the number of groups with B and not A: \(\binom{11}{6}\text{.}\)</p>
+<p id="p-1481">Now, find the number of groups with neither A nor B: \(\binom{11}{7}\text{.}\) Note, we need to choose 7 out of 11 since we know A and B cannot be chosen.</p>
+<p id="p-1482">Since the sets of each type of group (with A, with B, with neither) are disjoint, we use the addition rule:</p>
 <div class="displaymath">
 \begin{equation*}
 \binom{11}{6}+\binom{11}{6}+ \binom{11}{7}.
@@ -269,39 +269,39 @@ MathJax.Hub.Config({
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-266"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-1484">Calculate the number of 4-combinations of a set with 6 elements.</p>
+<p id="p-1483">Calculate the number of 4-combinations of a set with 6 elements.</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-409" id="answer-409"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-409"><div class="answer solution-like">\(\frac{6!}{4!2!}=15\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-267"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-1485">Calculate \(\binom{7}{4}\text{.}\)</p>
+<p id="p-1484">Calculate \(\binom{7}{4}\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-410" id="answer-410"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-410"><div class="answer solution-like">\(\frac{7!}{4!3!}=35\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-268"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-1486">Calculate \(\binom{7}{2}\text{.}\)</p>
+<p id="p-1485">Calculate \(\binom{7}{2}\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-411" id="answer-411"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-411"><div class="answer solution-like">\(21\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-269"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-1487">Calculate \(\binom{7}{1}\text{.}\)</p>
+<p id="p-1486">Calculate \(\binom{7}{1}\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-412" id="answer-412"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-412"><div class="answer solution-like">\(7\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-270"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-1488">Calculate \(\binom{7}{7}\text{.}\)</p>
+<p id="p-1487">Calculate \(\binom{7}{7}\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-413" id="answer-413"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-413"><div class="answer solution-like">\(1\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-271"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-1489">Calculate \(\binom{7}{0}\text{.}\)</p>
+<p id="p-1488">Calculate \(\binom{7}{0}\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-414" id="answer-414"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-414"><div class="answer solution-like">\(1\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-272"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
-<p id="p-1490">Find the number of binary strings of length 7 with 4 zeros.</p>
+<p id="p-1489">Find the number of binary strings of length 7 with 4 zeros.</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-415" id="answer-415"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-415"><div class="answer solution-like">\(\binom{7}{4}\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-273"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
-<p id="p-1491">Find the number of binary strings of length 7 with at most 2 zeros.</p>
+<p id="p-1490">Find the number of binary strings of length 7 with at most 2 zeros.</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-416" id="answer-416"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-416"><div class="answer solution-like">\(\binom{7}{0}+\binom{7}{1}+\binom{7}{2}\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-274"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
-<p id="p-1492">Find the number of strings that can be formed from the letters in the word “calculate”.</p>
+<p id="p-1491">Find the number of strings that can be formed from the letters in the word “calculate”.</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-417" id="answer-417"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-417"><div class="answer solution-like">\(\binom{9}{2}\cdot\binom{7}{2}\cdot\binom{5}{2}\cdot\binom{3}{1}\cdot\binom{2}{1}\cdot\binom{1}{1}\) or \(\frac{9!}{2!2!2!}\)</div></div>
 </div></article></section></section></div></main>

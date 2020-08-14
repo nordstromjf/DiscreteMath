@@ -12,13 +12,14 @@
 </head>
 <body>
 <div class="displaymath">
-\begin{align*}
-(a+b)^{k+1}&amp;=(a+b)^k(a+b)\\
-&amp;=\biggl(\sum_{i=0}^{k}\binom{k}{i}a^{k-i}b^i\biggr)(a+b)\\
-&amp;=a\sum_{i=0}^{k}\binom{k}{i}a^{k-i}b^i+b\sum_{i=0}^{k}\binom{k}{i}a^{k-i}b^i\\
-&amp;=\sum_{i=0}^{k}\binom{k}{i}a^{k+1-i}b^i+\sum_{i=0}^{k}\binom{k}{i}a^{k-i}b^{i+1}
-\end{align*}
+\begin{gather*}
+C\in \mathcal{P}(A\cap B)\\
+\Leftrightarrow C\subseteq A\cap B\\
+\Leftrightarrow C\subseteq A \text{ and } C\subseteq B\\
+\Leftrightarrow C\in \mathcal{P}(A) \text{ and } C\in \mathcal{P}(B)\\
+\Leftrightarrow C\in\mathcal{P}(A)\cap\mathcal{P}(B).
+\end{gather*}
 </div>
-<span class="incontext"><a href="binomial9-6.html#mjx-eqn-mrow-92">in-context</a></span>
+<span class="incontext"><a href="algebraicsets6-3.html#mjx-eqn-mrow-92">in-context</a></span>
 </body>
 </html>

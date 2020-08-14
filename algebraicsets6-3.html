@@ -182,25 +182,25 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="algebraicsets6-3"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">6.3</span> <span class="title">Algebraic Proofs and Counterexamples</span>
 </h2>
-<p id="p-1003">The proofs we did in the last sections involed looking at elements in sets. We could translate statements about sets into logical statement such as "and"s, "or"s, and conditionals. This allowed us to prove many other properties of sets, such as DeMorgan's Laws. But now that we have these properties, we can use them to prove new properties in a more algebraic way.</p>
-<p id="p-1004">First we look at how to disprove statements involving sets. As we saw in the chapters on proof-writng, we can disprove a statement with a counterexample.</p>
-<p id="p-1005">To prove a statement is false, give a specific counterexample. This means defining specific sets for witch the property fails. If you are trying to decide if a statement is true or false, you can experiment with small sets, or you can draw a Venn diagram. The Venn diagram itself is NOT a proof or a counterexample. But it can help you decide which you should be trying to find.</p>
+<p id="p-1002">The proofs we did in the last sections involed looking at elements in sets. We could translate statements about sets into logical statement such as "and"s, "or"s, and conditionals. This allowed us to prove many other properties of sets, such as DeMorgan's Laws. But now that we have these properties, we can use them to prove new properties in a more algebraic way.</p>
+<p id="p-1003">First we look at how to disprove statements involving sets. As we saw in the chapters on proof-writng, we can disprove a statement with a counterexample.</p>
+<p id="p-1004">To prove a statement is false, give a specific counterexample. This means defining specific sets for witch the property fails. If you are trying to decide if a statement is true or false, you can experiment with small sets, or you can draw a Venn diagram. The Venn diagram itself is NOT a proof or a counterexample. But it can help you decide which you should be trying to find.</p>
 <article class="example example-like" id="E_setcounterexample"><a data-knowl="" class="id-ref original" data-refid="hk-E_setcounterexample"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Finding a Counterexample.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_setcounterexample"><article class="example example-like"><p id="p-1006">Prove or disprove \(\forall A, B, C,\) if \(A\nsubseteq B\) and \(B\nsubseteq C\text{,}\) then \(A\nsubseteq C\text{.}\)</p>
-<p id="p-1007">This statement is false. Our counterexample should satisfy the negation of the statement: \(A\nsubseteq B, B\nsubseteq C\text{,}\) and \(A\subseteq C\text{.}\) Find small sets that satisfy the negation.</p>
-<p id="p-1008">For example, we can try \(A=\{1, 2\}, B=\{4, 5\}, C=\{1, 2, 3\}\text{.}\) Then \(A\nsubseteq B, B\nsubseteq C\text{,}\) and \(A\subseteq C\text{.}\) Thus, we have a counterexample.</p></article></div>
-<p id="p-1009">Advice for finding counterexamples:</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_setcounterexample"><article class="example example-like"><p id="p-1005">Prove or disprove \(\forall A, B, C,\) if \(A\nsubseteq B\) and \(B\nsubseteq C\text{,}\) then \(A\nsubseteq C\text{.}\)</p>
+<p id="p-1006">This statement is false. Our counterexample should satisfy the negation of the statement: \(A\nsubseteq B, B\nsubseteq C\text{,}\) and \(A\subseteq C\text{.}\) Find small sets that satisfy the negation.</p>
+<p id="p-1007">For example, we can try \(A=\{1, 2\}, B=\{4, 5\}, C=\{1, 2, 3\}\text{.}\) Then \(A\nsubseteq B, B\nsubseteq C\text{,}\) and \(A\subseteq C\text{.}\) Thus, we have a counterexample.</p></article></div>
+<p id="p-1008">Advice for finding counterexamples:</p>
 <ol class="decimal">
 <li id="li-170">Write the negation of the statement so you can make sure your sets satify the appropriate conditions.</li>
 <li id="li-171">Most counterexamples for the types of statements we see in this chapter can be found without needing to find "tricky" sets. So just try something, it will probably work.</li>
 <li id="li-172">You might need to be careful about whether your sets intersect or not.</li>
 <li id="li-173">If you need counterexamples that involve set complements, if might be helpful to define a small universal set such as \(U=\{1, 2, 3, 4, 5, 6\}\text{.}\) Then if \(A=\{1, 2, 3\}\text{,}\) \(A^C=\{4, 5, 6\}\text{,}\) which is easier to work with than,  say, all the integers except 1, 2, 3.</li>
 </ol>
-<p id="p-1010">Now we want to be able to use the list of properties from the end of the previous section to prove statements algebraically. In this case, we do not need to use elements, but we can use properties such as the distributive property or DeMorgan's Laws to rewrite our sets.</p>
+<p id="p-1009">Now we want to be able to use the list of properties from the end of the previous section to prove statements algebraically. In this case, we do not need to use elements, but we can use properties such as the distributive property or DeMorgan's Laws to rewrite our sets.</p>
 <article class="example example-like" id="E_algebraicproof"><a data-knowl="" class="id-ref original" data-refid="hk-E_algebraicproof"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Algebraic Set Theory Proof.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_algebraicproof"><article class="example example-like"><p id="p-1011">Prove \(A-(A\cap B)=A-B\) using properties of sets.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_algebraicproof"><article class="example example-like"><p id="p-1010">Prove \(A-(A\cap B)=A-B\) using properties of sets.</p>
 <article class="hiddenproof" id="proof-33"><a data-knowl="" class="id-ref original" data-refid="hk-proof-33"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-33"><article class="hiddenproof"><div class="displaymath">
 \begin{align*}
 A-(A\cap B) &amp;= A\cap(A\cap B)^C \ \ \text{ Set Difference Law}\\
@@ -211,17 +211,17 @@ A-(A\cap B) &amp;= A\cap(A\cap B)^C \ \ \text{ Set Difference Law}\\
 &amp;= A-B \ \ \text{ Set Difference Law}
 \end{align*}
 </div></article></div></article></div>
-<p id="p-1012">Recall the power set of a set \(A\text{,}\) \(\mathcal{P}(A)\text{,}\) is the set of all subsets of \(A\text{.}\)</p>
+<p id="p-1011">Recall the power set of a set \(A\text{,}\) \(\mathcal{P}(A)\text{,}\) is the set of all subsets of \(A\text{.}\)</p>
 <article class="example example-like" id="E_powersetproof"><a data-knowl="" class="id-ref original" data-refid="hk-E_powersetproof"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Power Set Proof.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_powersetproof"><article class="example example-like"><p id="p-1013">Prove for all sets \(A, B\text{,}\) \(\mathcal{P}(A\cap B)=\mathcal{P}(A)\cap \mathcal{P}(B)\text{.}\) <article class="hiddenproof" id="proof-34"><a data-knowl="" class="id-ref original" data-refid="hk-proof-34"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-34"><article class="hiddenproof"><p id="p-1014">Since we need to show two sets are equal we need to show both subsets. We should also note that elements of power sets are sets.</p>
-<p id="p-1015">\((\subseteq)\text{:}\) Let \(C\in \mathcal{P}(A\cap B)\text{.}\) Then \(C\) must be a subset of \(A\cap B\text{.}\) Then \(C\subseteq A\) and \(C\subseteq B\text{.}\) This implies \(C\in \mathcal{P}(A)\) and \(C\in \mathcal{P}(B)\text{.}\) Thus, \(C\in\mathcal{P}(A)\cap\mathcal{P}(B)\text{.}\)</p>
-<p id="p-1016">\((\supseteq)\text{:}\) Let \(C\in \mathcal{P}(A)\cap\mathcal{P}(B)\text{.}\) Then \(C\in \mathcal{P}(A)\) and \(C\in \mathcal{P}(B)\text{.}\) Then \(C\subseteq A\) and \(C\subseteq B\text{.}\) This implies \(C\) must be a subset of \(A\cap B\text{.}\) Thus, \(C\in\mathcal{P}(A)\cap\mathcal{P}(B)\text{.}\)</p></article></div></p></article></div>
-<p id="p-1017">You might have noticed in this last proof that each of the subsets proofs are really just the reverse of each other. If all the implications in our proof are really “if and only if” statements, then we can write the proof more succinctly as a single “if and only if” proof. We will show that in the next example. Be careful with if and only if proofs, though. Make sure that at each step both directions of the conditional are true. If you are unsure, you can always write you proof in two stages, as we did in the previous example.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_powersetproof"><article class="example example-like"><p id="p-1012">Prove for all sets \(A, B\text{,}\) \(\mathcal{P}(A\cap B)=\mathcal{P}(A)\cap \mathcal{P}(B)\text{.}\) <article class="hiddenproof" id="proof-34"><a data-knowl="" class="id-ref original" data-refid="hk-proof-34"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-34"><article class="hiddenproof"><p id="p-1013">Since we need to show two sets are equal we need to show both subsets. We should also note that elements of power sets are sets.</p>
+<p id="p-1014">\((\subseteq)\text{:}\) Let \(C\in \mathcal{P}(A\cap B)\text{.}\) Then \(C\) must be a subset of \(A\cap B\text{.}\) Then \(C\subseteq A\) and \(C\subseteq B\text{.}\) This implies \(C\in \mathcal{P}(A)\) and \(C\in \mathcal{P}(B)\text{.}\) Thus, \(C\in\mathcal{P}(A)\cap\mathcal{P}(B)\text{.}\)</p>
+<p id="p-1015">\((\supseteq)\text{:}\) Let \(C\in \mathcal{P}(A)\cap\mathcal{P}(B)\text{.}\) Then \(C\in \mathcal{P}(A)\) and \(C\in \mathcal{P}(B)\text{.}\) Then \(C\subseteq A\) and \(C\subseteq B\text{.}\) This implies \(C\) must be a subset of \(A\cap B\text{.}\) Thus, \(C\in\mathcal{P}(A)\cap\mathcal{P}(B)\text{.}\)</p></article></div></p></article></div>
+<p id="p-1016">You might have noticed in this last proof that each of the subsets proofs are really just the reverse of each other. If all the implications in our proof are really “if and only if” statements, then we can write the proof more succinctly as a single “if and only if” proof. We will show that in the next example. Be careful with if and only if proofs, though. Make sure that at each step both directions of the conditional are true. If you are unsure, you can always write you proof in two stages, as we did in the previous example.</p>
 <article class="example example-like" id="E_shortpowersetproof"><a data-knowl="" class="id-ref original" data-refid="hk-E_shortpowersetproof"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Power Set Proof, Shortened.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_shortpowersetproof"><article class="example example-like"><p id="p-1018">Prove for all sets \(A, B\text{,}\) \(\mathcal{P}(A\cap B)=\mathcal{P}(A)\cap \mathcal{P}(B)\text{.}\)</p>
-<article class="hiddenproof" id="proof-35"><a data-knowl="" class="id-ref original" data-refid="hk-proof-35"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-35"><article class="hiddenproof"><div class="displaymath" id="p-1019">
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_shortpowersetproof"><article class="example example-like"><p id="p-1017">Prove for all sets \(A, B\text{,}\) \(\mathcal{P}(A\cap B)=\mathcal{P}(A)\cap \mathcal{P}(B)\text{.}\)</p>
+<article class="hiddenproof" id="proof-35"><a data-knowl="" class="id-ref original" data-refid="hk-proof-35"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-35"><article class="hiddenproof"><div class="displaymath" id="p-1018">
 \begin{gather*}
 C\in \mathcal{P}(A\cap B)\\
 \Leftrightarrow C\subseteq A\cap B\\
@@ -230,22 +230,22 @@ C\in \mathcal{P}(A\cap B)\\
 \Leftrightarrow C\in\mathcal{P}(A)\cap\mathcal{P}(B).
 \end{gather*}
 </div></article></div></article></div>
-<p id="p-1020">Since we are looking at the power set, we can prove a formula for counting the number of elements of a power set. In this proof we will revisit induction. The number of elements in a set, \(S\text{,}\) is denoted \(|S|\text{.}\)</p>
+<p id="p-1019">Since we are looking at the power set, we can prove a formula for counting the number of elements of a power set. In this proof we will revisit induction. The number of elements in a set, \(S\text{,}\) is denoted \(|S|\text{.}\)</p>
 <article class="theorem theorem-like" id="T_numbereltspowerset"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.3.5</span><span class="period">.</span>
 </h6>
-<p id="p-1021">If \(S\) has \(n\) elements, then \(\mathcal{P}(S)\) has \(2^n\) elements.</p></article><article class="hiddenproof" id="proof-36"><a data-knowl="" class="id-ref original" data-refid="hk-proof-36"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-36"><article class="hiddenproof"><p id="p-1022">We will prove this by induction on the number of elements, \(n\text{.}\)</p>
-<p id="p-1023">Base step: Let \(n=0\text{.}\) Then since \(S\) has 0 elements, \(S=\emptyset\text{.}\) The only subset of the empty set is \(\emptyset\text{.}\) Thus, \(\mathcal{P}(S)=\{\emptyset\}\text{.}\) Hece, \(|\mathcal{P}(S)|=1\text{.}\) Since \(2^0=1\text{,}\) if \(n=0\text{,}\)\(\mathcal{P}(S)\) has \(2^n\) elements.</p>
-<p id="p-1024">Induction step: Assume if a set \(S\) has \(k\) elements, then \(\mathcal{P}(S)\) has \(2^k\) elements.</p>
-<p id="p-1025">Show if a set \(S\) has \(k+1\) elements, then \(\mathcal{P}(S)\) has \(2^{k+1}\) elements.</p>
-<p id="p-1026">Proof of induction step: Assume \(|S|=k+1\text{.}\) Let \(b\in S\text{,}\) then \(S=A\cup \{b\}\) where \(A=S-\{b\}\text{,}\) the set of elements of \(S\) except \(b\text{.}\) Then \(A\) has \(k\) elements, so by the induction assumption, \(|\mathcal{P}(A)|=2^k\text{.}\)</p>
-<p id="p-1027">Now consider the subsets of \(S\text{.}\) Each subset either contains \(b\) or it doesn't. We know there are \(2^k\) subsets that do not contain \(b\text{.}\) We get all the subsets of \(S\) that do contain \(b\) by adding \(b\) to the sets that don't contain \(b\text{.}\) Thus there are the same number of subsets that do contain \(b\) as those that don't. Hence, we have \(2^k\) subsets not containing \(b\) and \(2^k\) subsets  containing \(b\text{.}\)</p>
-<p id="p-1028">Therefore, \(S\) has \(2^k+2^k=2(2^k)=2^{k+1}\) subsets, hence \(\mathcal{P}(S)\) has \(2^{k+1}\) elements.</p></article></div>
-<p id="p-1029">The next example demonstrates the ideas from the proof in a specific set.</p>
+<p id="p-1020">If \(S\) has \(n\) elements, then \(\mathcal{P}(S)\) has \(2^n\) elements.</p></article><article class="hiddenproof" id="proof-36"><a data-knowl="" class="id-ref original" data-refid="hk-proof-36"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-36"><article class="hiddenproof"><p id="p-1021">We will prove this by induction on the number of elements, \(n\text{.}\)</p>
+<p id="p-1022">Base step: Let \(n=0\text{.}\) Then since \(S\) has 0 elements, \(S=\emptyset\text{.}\) The only subset of the empty set is \(\emptyset\text{.}\) Thus, \(\mathcal{P}(S)=\{\emptyset\}\text{.}\) Hece, \(|\mathcal{P}(S)|=1\text{.}\) Since \(2^0=1\text{,}\) if \(n=0\text{,}\)\(\mathcal{P}(S)\) has \(2^n\) elements.</p>
+<p id="p-1023">Induction step: Assume if a set \(S\) has \(k\) elements, then \(\mathcal{P}(S)\) has \(2^k\) elements.</p>
+<p id="p-1024">Show if a set \(S\) has \(k+1\) elements, then \(\mathcal{P}(S)\) has \(2^{k+1}\) elements.</p>
+<p id="p-1025">Proof of induction step: Assume \(|S|=k+1\text{.}\) Let \(b\in S\text{,}\) then \(S=A\cup \{b\}\) where \(A=S-\{b\}\text{,}\) the set of elements of \(S\) except \(b\text{.}\) Then \(A\) has \(k\) elements, so by the induction assumption, \(|\mathcal{P}(A)|=2^k\text{.}\)</p>
+<p id="p-1026">Now consider the subsets of \(S\text{.}\) Each subset either contains \(b\) or it doesn't. We know there are \(2^k\) subsets that do not contain \(b\text{.}\) We get all the subsets of \(S\) that do contain \(b\) by adding \(b\) to the sets that don't contain \(b\text{.}\) Thus there are the same number of subsets that do contain \(b\) as those that don't. Hence, we have \(2^k\) subsets not containing \(b\) and \(2^k\) subsets  containing \(b\text{.}\)</p>
+<p id="p-1027">Therefore, \(S\) has \(2^k+2^k=2(2^k)=2^{k+1}\) subsets, hence \(\mathcal{P}(S)\) has \(2^{k+1}\) elements.</p></article></div>
+<p id="p-1028">The next example demonstrates the ideas from the proof in a specific set.</p>
 <article class="example example-like" id="E_countingsubsets"><a data-knowl="" class="id-ref original" data-refid="hk-E_countingsubsets"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.6</span><span class="period">.</span><span class="space"> </span><span class="title">Counting the Number of Subsets.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_countingsubsets"><article class="example example-like"><p id="p-1030">Let \(S=\{1, 2, 3\}\text{.}\) We can pull off the last element so, as in the proof, \(b=3, A=\{1, 2\}\text{.}\)</p>
-<p id="p-1031">We can look at the subsets of \(S\) that do not contain 3:</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_countingsubsets"><article class="example example-like"><p id="p-1029">Let \(S=\{1, 2, 3\}\text{.}\) We can pull off the last element so, as in the proof, \(b=3, A=\{1, 2\}\text{.}\)</p>
+<p id="p-1030">We can look at the subsets of \(S\) that do not contain 3:</p>
 <div class="displaymath">
 \begin{equation*}
 \emptyset, \{1\}, \{2\}, \{1, 2\}.
@@ -258,45 +258,45 @@ C\in \mathcal{P}(A\cap B)\\
 \end{equation*}
 </div>
 <p data-braille="continuation">You can check that we have all the possible subsets of \(S\text{.}\)</p>
-<p id="p-1032">Now if we count up the sets, we have \(2^2\) subsets not containing 3, and \(2^2\) subsets containing 3. Which gives us \(2(2^2)=8=2^3\) subsets of \(S\text{.}\) Hence, \(|\mathcal{P}(S)|=2^3=8\text{.}\)</p></article></div>
+<p id="p-1031">Now if we count up the sets, we have \(2^2\) subsets not containing 3, and \(2^2\) subsets containing 3. Which gives us \(2(2^2)=8=2^3\) subsets of \(S\text{.}\) Hence, \(|\mathcal{P}(S)|=2^3=8\text{.}\)</p></article></div>
 <section class="reading-questions" id="reading-questions-25"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
 </h3>
-<p id="p-1033">Let \(A, B, C\) be sets and \(U\) be the universal set.</p>
+<p id="p-1032">Let \(A, B, C\) be sets and \(U\) be the universal set.</p>
 <article class="exercise exercise-like" id="exercise-186"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-1034">Give a counterexample to disprove \(A\cap(B\cup C)=(A\cap B)\cup C\text{.}\)</p>
+<p id="p-1033">Give a counterexample to disprove \(A\cap(B\cup C)=(A\cap B)\cup C\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-271" id="answer-271"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-271"><div class="answer solution-like"><p id="p-1035">There are many possible answers. \(A=\{1, 2\}, B=\{1, 3\}, C=\{2, 3\}\) is one.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-271" id="answer-271"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-271"><div class="answer solution-like"><p id="p-1034">There are many possible answers. \(A=\{1, 2\}, B=\{1, 3\}, C=\{2, 3\}\) is one.</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-187"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-1036">Give a counterexample to disprove \(A\cup \emptyset=\emptyset\text{.}\)</p>
+<p id="p-1035">Give a counterexample to disprove \(A\cup \emptyset=\emptyset\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-272" id="answer-272"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-272"><div class="answer solution-like"><p id="p-1037">There are many possible answers. \(A=\{1, 2\}\) is one.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-272" id="answer-272"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-272"><div class="answer solution-like"><p id="p-1036">There are many possible answers. \(A=\{1, 2\}\) is one.</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-188"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-1038">Give a counterexample to disprove \(A\cup \emptyset\neq\emptyset\text{.}\)</p>
+<p id="p-1037">Give a counterexample to disprove \(A\cup \emptyset\neq\emptyset\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-273" id="answer-273"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-273"><div class="answer solution-like"><p id="p-1039">\(A=\emptyset\text{.}\)</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-273" id="answer-273"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-273"><div class="answer solution-like"><p id="p-1038">\(A=\emptyset\text{.}\)</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-189"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-1040">Give a counterexample to disprove \((A\cup B)^C=A^C\cup B^C\text{.}\)</p>
+<p id="p-1039">Give a counterexample to disprove \((A\cup B)^C=A^C\cup B^C\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-274" id="answer-274"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-274"><div class="answer solution-like"><p id="p-1041">There are many possible answers. \(A=\{1, 2\}, B=\{1, 3\}, U=\{1, 2, 3\}\) is one.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-274" id="answer-274"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-274"><div class="answer solution-like"><p id="p-1040">There are many possible answers. \(A=\{1, 2\}, B=\{1, 3\}, U=\{1, 2, 3\}\) is one.</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-190"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-1042">Give a counterexample to disprove \(B-A=A-B\text{.}\)</p>
+<p id="p-1041">Give a counterexample to disprove \(B-A=A-B\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-275" id="answer-275"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-275"><div class="answer solution-like"><p id="p-1043">There are many possible answers. \(A=\{1, 2\}, B=\{1, 3\}\) is one.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-275" id="answer-275"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-275"><div class="answer solution-like"><p id="p-1042">There are many possible answers. \(A=\{1, 2\}, B=\{1, 3\}\) is one.</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-191"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-1044">Give a counterexample to disprove  \(B\subseteq A\cup(B\cap C)\text{.}\)</p>
+<p id="p-1043">Give a counterexample to disprove  \(B\subseteq A\cup(B\cap C)\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-276" id="answer-276"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-276"><div class="answer solution-like"><p id="p-1045">There are many possible answers. \(A=\{1, 2\}, B=\{3, 4\}, C=\{5\}\) is one.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-276" id="answer-276"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-276"><div class="answer solution-like"><p id="p-1044">There are many possible answers. \(A=\{1, 2\}, B=\{3, 4\}, C=\{5\}\) is one.</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-192"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
-<p id="p-1046">True or false:  if \(A\subseteq B\cup C\text{,}\) then \(A\subseteq B\) or \(A\subseteq C\text{.}\)</p>
+<p id="p-1045">True or false:  if \(A\subseteq B\cup C\text{,}\) then \(A\subseteq B\) or \(A\subseteq C\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-277" id="answer-277"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-277"><div class="answer solution-like"><p id="p-1047">False</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-277" id="answer-277"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-277"><div class="answer solution-like"><p id="p-1046">False</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-193"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
-<p id="p-1048">True or false:  if \(A\subseteq B\cap C\text{,}\) then \(A\subseteq B\) and \(A\subseteq C\text{.}\)</p>
+<p id="p-1047">True or false:  if \(A\subseteq B\cap C\text{,}\) then \(A\subseteq B\) and \(A\subseteq C\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-278" id="answer-278"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-278"><div class="answer solution-like"><p id="p-1049">True</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-278" id="answer-278"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-278"><div class="answer solution-like"><p id="p-1048">True</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-194"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
-<p id="p-1050">Let \(A=\{1, 2, 3, 4, 5\}\)Find \(|\mathcal{P}(A)|\text{.}\)</p>
+<p id="p-1049">Let \(A=\{1, 2, 3, 4, 5\}\)Find \(|\mathcal{P}(A)|\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-279" id="answer-279"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-279"><div class="answer solution-like">\(2^5=32\)</div></div>
 </div></article></section></section></div></main>

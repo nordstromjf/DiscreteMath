@@ -182,64 +182,64 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="graphs10-1"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">10.1</span> <span class="title">Graphs</span>
 </h2>
-<p id="p-1526">This section focuses on some of the terminology associated with graphs. We will also define some special types of graphs, such as complete graphs.</p>
-<p id="p-1527">A <dfn class="terminology">graph</dfn> is a collection of <dfn class="terminology">vertices</dfn> and <dfn class="terminology">edges</dfn>.</p>
+<p id="p-1525">This section focuses on some of the terminology associated with graphs. We will also define some special types of graphs, such as complete graphs.</p>
+<p id="p-1526">A <dfn class="terminology">graph</dfn> is a collection of <dfn class="terminology">vertices</dfn> and <dfn class="terminology">edges</dfn>.</p>
 <figure class="figure figure-like" id="F_basicgraph"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="images/basicgraph.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.1.1<span class="period">.</span></span><span class="space"> </span>Example of a graph, \(G\)</figcaption></figure><p id="p-1528"><a class="xref" data-knowl="./knowl/F_basicgraph.html" title="Figure 10.1.1">Figure 10.1.1</a> is an example of a graph. We have labeled the vertices with\(v_1, v_2, v_3, v_4\) and the edges with \(e_1, e_2, e_3, e_4, e_5\text{.}\)</p>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.1.1<span class="period">.</span></span><span class="space"> </span>Example of a graph, \(G\)</figcaption></figure><p id="p-1527"><a class="xref" data-knowl="./knowl/F_basicgraph.html" title="Figure 10.1.1">Figure 10.1.1</a> is an example of a graph. We have labeled the vertices with\(v_1, v_2, v_3, v_4\) and the edges with \(e_1, e_2, e_3, e_4, e_5\text{.}\)</p>
 <article class="definition definition-like" id="D_graphterms"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">10.1.2</span><span class="period">.</span>
 </h6>
-<p id="p-1529">A graph, \(G\text{,}\) consists of a finite set, \(V(G)\text{,}\) of <dfn class="terminology">vertices</dfn> and a finite set, \(E(G)\text{,}\) of <dfn class="terminology">edges</dfn>. Each edge is assocated with two vertices (it may be the same vertex) called <dfn class="terminology">endpoints</dfn>. In the above example, \(V(G)=\{v_1, v_2, v_3, v_4\}, E(G)=\{e_1, e_2, e_3, e_4, e_5\}\text{.}\) The endpoints of edge \(e_1\) are \(v_1, v_2\text{.}\)</p>
-<p id="p-1530">If two edges have the same endpoints, we say they are <dfn class="terminology">parallel</dfn>.</p>
-<p id="p-1531">A <dfn class="terminology">loop</dfn> is an edge where both endpints are the same vertex.</p>
-<p id="p-1532">Two vertices connected by an edge are called <dfn class="terminology">adjacent</dfn>. For example, \(v_2\) is adjacent to \(v_3\text{,}\) but \(v_3\) is not adjacent to \(v_4\text{.}\)</p>
-<p id="p-1533">A vertex of a loop is adjacent to itself.</p>
-<p id="p-1534">An edge is <dfn class="terminology">incident on</dfn> each of its endpoints.</p>
-<p id="p-1535">Two edges that are incident on the same vertex are <dfn class="terminology">adjacent</dfn>. For example, \(e_1\) and \(e_2\) are adjacent, but \(e_2\) and \(e_5\) are not adjacent.</p>
-<p id="p-1536">An <dfn class="terminology">isolated vertex</dfn> is one with no incident edges.</p>
-<p id="p-1537">A graph with no vertices is the <dfn class="terminology">empty graph</dfn>.</p></article><p id="p-1538">In <a class="xref" data-knowl="./knowl/F_parallelandloop.html" title="Figure 10.1.3">Figure 10.1.3</a>, edges \(e_1\) and \(e_2\) are parallel edges, while edge \(e_3\) is a loop. We also have an isolated vertex, \(v_3\text{.}\)</p>
+<p id="p-1528">A graph, \(G\text{,}\) consists of a finite set, \(V(G)\text{,}\) of <dfn class="terminology">vertices</dfn> and a finite set, \(E(G)\text{,}\) of <dfn class="terminology">edges</dfn>. Each edge is assocated with two vertices (it may be the same vertex) called <dfn class="terminology">endpoints</dfn>. In the above example, \(V(G)=\{v_1, v_2, v_3, v_4\}, E(G)=\{e_1, e_2, e_3, e_4, e_5\}\text{.}\) The endpoints of edge \(e_1\) are \(v_1, v_2\text{.}\)</p>
+<p id="p-1529">If two edges have the same endpoints, we say they are <dfn class="terminology">parallel</dfn>.</p>
+<p id="p-1530">A <dfn class="terminology">loop</dfn> is an edge where both endpints are the same vertex.</p>
+<p id="p-1531">Two vertices connected by an edge are called <dfn class="terminology">adjacent</dfn>. For example, \(v_2\) is adjacent to \(v_3\text{,}\) but \(v_3\) is not adjacent to \(v_4\text{.}\)</p>
+<p id="p-1532">A vertex of a loop is adjacent to itself.</p>
+<p id="p-1533">An edge is <dfn class="terminology">incident on</dfn> each of its endpoints.</p>
+<p id="p-1534">Two edges that are incident on the same vertex are <dfn class="terminology">adjacent</dfn>. For example, \(e_1\) and \(e_2\) are adjacent, but \(e_2\) and \(e_5\) are not adjacent.</p>
+<p id="p-1535">An <dfn class="terminology">isolated vertex</dfn> is one with no incident edges.</p>
+<p id="p-1536">A graph with no vertices is the <dfn class="terminology">empty graph</dfn>.</p></article><p id="p-1537">In <a class="xref" data-knowl="./knowl/F_parallelandloop.html" title="Figure 10.1.3">Figure 10.1.3</a>, edges \(e_1\) and \(e_2\) are parallel edges, while edge \(e_3\) is a loop. We also have an isolated vertex, \(v_3\text{.}\)</p>
 <figure class="figure figure-like" id="F_parallelandloop"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/parallelgraph.svg" style="width: 100%; height: auto;" alt=""></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.1.3<span class="period">.</span></span><span class="space"> </span>Example of a graph with parallel edges and a loop</figcaption></figure><article class="example example-like" id="E_beachballgraph"><a data-knowl="" class="id-ref original" data-refid="hk-E_beachballgraph"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">10.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">Graph Terminology.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_beachballgraph"><article class="example example-like"><p id="p-1539">Consider the graph, \(G\) given in the figure.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_beachballgraph"><article class="example example-like"><p id="p-1538">Consider the graph, \(G\) given in the figure.</p>
 <figure class="figure figure-like" id="F_beachballgr"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/beachball.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.1.5<span class="period">.</span></span><span class="space"> </span>Graph \(G\)</figcaption></figure><p id="p-1540">Find \(V(G)\text{.}\)</p>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.1.5<span class="period">.</span></span><span class="space"> </span>Graph \(G\)</figcaption></figure><p id="p-1539">Find \(V(G)\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-424" id="answer-424"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-424"><div class="answer solution-like">\(V(G)=\{v_1, v_2, v_3, v_4\}\)</div></div>
-<p id="p-1541">Find \(E(G)\text{.}\)</p>
+<p id="p-1540">Find \(E(G)\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-425" id="answer-425"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-425"><div class="answer solution-like">\(E(G)=\{e_1, e_2, \ldots, e_6\}\)</div></div>
-<p id="p-1542">Find the endpoints for \(e_1\text{.}\)</p>
+<p id="p-1541">Find the endpoints for \(e_1\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-426" id="answer-426"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-426"><div class="answer solution-like">\(\{v_1, v_2\}\)</div></div>
-<p id="p-1543">Find the endpoints for \(e_3\text{.}\)</p>
+<p id="p-1542">Find the endpoints for \(e_3\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-427" id="answer-427"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">4</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-427"><div class="answer solution-like">\(\{v_1, v_3\}\)</div></div>
-<p id="p-1544">Find the endpoints for \(e_6\text{.}\)</p>
+<p id="p-1543">Find the endpoints for \(e_6\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-428" id="answer-428"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">5</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-428"><div class="answer solution-like">\(\{v_3, v_4\}\)</div></div>
-<p id="p-1545">Find the edges incident on \(v_1\text{.}\)</p>
+<p id="p-1544">Find the edges incident on \(v_1\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-429" id="answer-429"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">6</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-429"><div class="answer solution-like">\(e_1, e_2, e_3, e_4\)</div></div>
-<p id="p-1546">Find all vertices adjacent to \(v_4\text{.}\)</p>
+<p id="p-1545">Find all vertices adjacent to \(v_4\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-430" id="answer-430"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">7</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-430"><div class="answer solution-like">\(\{v_1, v_3\}\)</div></div>
-<p id="p-1547">Does \(G\) have any paralell edges?</p>
+<p id="p-1546">Does \(G\) have any paralell edges?</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-431" id="answer-431"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">8</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-431"><div class="answer solution-like">Yes. \(e_2, e_3\)</div></div>
-<p id="p-1548">Does \(G\) have any loops?</p>
+<p id="p-1547">Does \(G\) have any loops?</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-432" id="answer-432"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">9</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-432"><div class="answer solution-like">No.</div></div></article></div>
-<p id="p-1549">It is important to note that it is possible to draw the same graph in different ways.</p>
+<p id="p-1548">It is important to note that it is possible to draw the same graph in different ways.</p>
 <figure class="figure figure-like" id="F_isographs"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/isomorphicgraphs.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.1.6<span class="period">.</span></span><span class="space"> </span>The same graph drawn in two different ways</figcaption></figure><p id="p-1550">The two graphs in <a class="xref" data-knowl="./knowl/F_isographs.html" title="Figure 10.1.6">Figure 10.1.6</a> are the same graph since they have the same vertex and edge sets, and a given edge still has the same endpoints.</p>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.1.6<span class="period">.</span></span><span class="space"> </span>The same graph drawn in two different ways</figcaption></figure><p id="p-1549">The two graphs in <a class="xref" data-knowl="./knowl/F_isographs.html" title="Figure 10.1.6">Figure 10.1.6</a> are the same graph since they have the same vertex and edge sets, and a given edge still has the same endpoints.</p>
 <article class="definition definition-like" id="digraph"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">10.1.7</span><span class="period">.</span>
 </h6>
-<p id="p-1551">A <dfn class="terminology">directed graph</dfn> or <dfn class="terminology">digraph</dfn> consists of a set of vertices, \(V(G)\) and directed edges (arrows), \(D(G)\text{,}\) where each edge is associated with an <em class="alert">ordered</em> pair of of vertices called endpoints, \((v, w)\text{.}\)</p></article><p id="p-1552">We saw directed graphs in <a href="relations8-1.html" class="internal" title="Section 8.1: Relations on Sets">Section 8.1</a> and <a href="relations8-1.html" class="internal" title="Section 8.1: Relations on Sets">Section 8.1</a>. For example, see <a class="xref" data-knowl="./knowl/F_digraphlessthan.html" title="Figure 8.1.10">Figure 8.1.10</a>. In this example, we have an edge with endpoints \((1, 2)\text{,}\) but not \((2, 1)\text{.}\)</p>
-<p id="p-1553">Really, the vertices of a graph represent a set, while the edges represent relationships between elements of that set. There are lots of examples of graphs as representations of relationships, or networks. For example graphs are used to represent communications systems, flight patterns, and friendship networks. Graphs can even be used to find strategies in games such as sudoku.</p>
-<p id="p-1554">A graph with no parallel edges or loops is called <dfn class="terminology">simple</dfn>. For example, <a class="xref" data-knowl="./knowl/F_basicgraph.html" title="Figure 10.1.1">Figure 10.1.1</a> is simple, while <a class="xref" data-knowl="./knowl/F_parallelandloop.html" title="Figure 10.1.3">Figure 10.1.3</a> is not.</p>
-<p id="p-1555">Now we want to define a couple special graphs.</p>
+<p id="p-1550">A <dfn class="terminology">directed graph</dfn> or <dfn class="terminology">digraph</dfn> consists of a set of vertices, \(V(G)\) and directed edges (arrows), \(D(G)\text{,}\) where each edge is associated with an <em class="alert">ordered</em> pair of of vertices called endpoints, \((v, w)\text{.}\)</p></article><p id="p-1551">We saw directed graphs in <a href="relations8-1.html" class="internal" title="Section 8.1: Relations on Sets">Section 8.1</a> and <a href="relations8-1.html" class="internal" title="Section 8.1: Relations on Sets">Section 8.1</a>. For example, see <a class="xref" data-knowl="./knowl/F_digraphlessthan.html" title="Figure 8.1.10">Figure 8.1.10</a>. In this example, we have an edge with endpoints \((1, 2)\text{,}\) but not \((2, 1)\text{.}\)</p>
+<p id="p-1552">Really, the vertices of a graph represent a set, while the edges represent relationships between elements of that set. There are lots of examples of graphs as representations of relationships, or networks. For example graphs are used to represent communications systems, flight patterns, and friendship networks. Graphs can even be used to find strategies in games such as sudoku.</p>
+<p id="p-1553">A graph with no parallel edges or loops is called <dfn class="terminology">simple</dfn>. For example, <a class="xref" data-knowl="./knowl/F_basicgraph.html" title="Figure 10.1.1">Figure 10.1.1</a> is simple, while <a class="xref" data-knowl="./knowl/F_parallelandloop.html" title="Figure 10.1.3">Figure 10.1.3</a> is not.</p>
+<p id="p-1554">Now we want to define a couple special graphs.</p>
 <article class="definition definition-like" id="D_completegraph"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">10.1.8</span><span class="period">.</span>
 </h6>
-<p id="p-1556">A <dfn class="terminology">complete graph on \(n\) vertices</dfn>, \(K_n\text{,}\) is a simple graph with \(n\) vertices whose set of edges contains exactly one edge for every pair of vertices.</p></article><p id="p-1557">\(K_1, \ldots, K_4\) are given in the following figure.</p>
+<p id="p-1555">A <dfn class="terminology">complete graph on \(n\) vertices</dfn>, \(K_n\text{,}\) is a simple graph with \(n\) vertices whose set of edges contains exactly one edge for every pair of vertices.</p></article><p id="p-1556">\(K_1, \ldots, K_4\) are given in the following figure.</p>
 <figure class="figure figure-like" id="F_completegraphs"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/compgraphs.svg" style="width: 100%; height: auto;" alt=""></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.1.9<span class="period">.</span></span><span class="space"> </span>Examples of complete graphs</figcaption></figure><article class="definition definition-like" id="D_compbipartite"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">10.1.10</span><span class="period">.</span>
 </h6>
-<p id="p-1558">Let \(m, n\in \mathbb{Z}^{+}\text{.}\) A <dfn class="terminology">complete bipartite graph on \((m, n)\) vertices</dfn>, \(K_{m, n}\text{,}\) is a simple graph with vertices \(v_1, v_2, \ldots, v_m\) and \(w_1, w_2, \ldots w_n\text{,}\) such that</p>
+<p id="p-1557">Let \(m, n\in \mathbb{Z}^{+}\text{.}\) A <dfn class="terminology">complete bipartite graph on \((m, n)\) vertices</dfn>, \(K_{m, n}\text{,}\) is a simple graph with vertices \(v_1, v_2, \ldots, v_m\) and \(w_1, w_2, \ldots w_n\text{,}\) such that</p>
 <ol class="decimal">
 <li id="li-235">there is an edge from \(v_i\) to \(w_j\) for all \(i=1, \ldots, m\) and \(j=1, \ldots n\text{;}\)</li>
 <li id="li-236">there are no edges from \(v_i\) to \(v_k\) for all \(i, k=1, \ldots, m\text{;}\)</li>
@@ -248,95 +248,95 @@ MathJax.Hub.Config({
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.1.11<span class="period">.</span></span><span class="space"> </span>Complete bipartite graph, \(K_{3, 2}\)</figcaption></figure><article class="definition definition-like" id="D_subgraph"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">10.1.12</span><span class="period">.</span>
 </h6>
-<p id="p-1559">A graph \(H\) is a <dfn class="terminology">subgraph</dfn> of \(G\) if every vertex in \(H\) is also a vertex in \(G\text{,}\) and every edge in \(H\) is also an edge in \(G\) such that the edges in \(H\) have the same endpoints as in \(G\text{.}\)</p></article><p id="p-1560">In the following figure, \(H_1\) and \(H_2\) are subgraphs of \(G\text{.}\)</p>
+<p id="p-1558">A graph \(H\) is a <dfn class="terminology">subgraph</dfn> of \(G\) if every vertex in \(H\) is also a vertex in \(G\text{,}\) and every edge in \(H\) is also an edge in \(G\) such that the edges in \(H\) have the same endpoints as in \(G\text{.}\)</p></article><p id="p-1559">In the following figure, \(H_1\) and \(H_2\) are subgraphs of \(G\text{.}\)</p>
 <figure class="figure figure-like" id="F_subgraph"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/subgraphs.svg" style="width: 100%; height: auto;" alt=""></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.1.13<span class="period">.</span></span><span class="space"> </span>Examples of subgraphs, \(H_1, H_2\text{,}\) of the graph \(G\)</figcaption></figure><article class="definition definition-like" id="D_degree"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">10.1.14</span><span class="period">.</span>
 </h6>
-<p id="p-1561">The <dfn class="terminology">degree</dfn> of a vertex \(v\text{,}\) \(\text{deg}(v)\text{,}\) is the number of edges incident on \(v\text{.}\) Loops are counted twice. The <dfn class="terminology">total degree</dfn> of a graph \(G\) is the sum of the degrees of all vertices in \(G\text{.}\)</p></article><article class="example example-like" id="E_degree"><a data-knowl="" class="id-ref original" data-refid="hk-E_degree"><h6 class="heading">
+<p id="p-1560">The <dfn class="terminology">degree</dfn> of a vertex \(v\text{,}\) \(\text{deg}(v)\text{,}\) is the number of edges incident on \(v\text{.}\) Loops are counted twice. The <dfn class="terminology">total degree</dfn> of a graph \(G\) is the sum of the degrees of all vertices in \(G\text{.}\)</p></article><article class="example example-like" id="E_degree"><a data-knowl="" class="id-ref original" data-refid="hk-E_degree"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">10.1.15</span><span class="period">.</span><span class="space"> </span><span class="title">Degree.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_degree"><article class="example example-like"><p id="p-1562">Let \(G\) be the graph in <a class="xref" data-knowl="./knowl/F_basicgraph.html" title="Figure 10.1.1">Figure 10.1.1</a>.</p>
-<p id="p-1563">Find \(\text{deg}(v_2)\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_degree"><article class="example example-like"><p id="p-1561">Let \(G\) be the graph in <a class="xref" data-knowl="./knowl/F_basicgraph.html" title="Figure 10.1.1">Figure 10.1.1</a>.</p>
+<p id="p-1562">Find \(\text{deg}(v_2)\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-433" id="answer-433"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-433"><div class="answer solution-like">3</div></div>
-<p id="p-1564">Find \(\text{deg}(v_4)\text{.}\)</p>
+<p id="p-1563">Find \(\text{deg}(v_4)\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-434" id="answer-434"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-434"><div class="answer solution-like">2</div></div>
-<p id="p-1565">Find the total degree of \(G\text{.}\)</p>
+<p id="p-1564">Find the total degree of \(G\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-435" id="answer-435"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-435"><div class="answer solution-like">10</div></div>
-<p id="p-1566">Let \(G\) be the graph in <a class="xref" data-knowl="./knowl/F_parallelandloop.html" title="Figure 10.1.3">Figure 10.1.3</a>.</p>
-<p id="p-1567">Find \(\text{deg}(v_2)\text{.}\)</p>
+<p id="p-1565">Let \(G\) be the graph in <a class="xref" data-knowl="./knowl/F_parallelandloop.html" title="Figure 10.1.3">Figure 10.1.3</a>.</p>
+<p id="p-1566">Find \(\text{deg}(v_2)\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-436" id="answer-436"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">4</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-436"><div class="answer solution-like">4</div></div>
-<p id="p-1568">Find \(\text{deg}(v_3)\text{.}\)</p>
+<p id="p-1567">Find \(\text{deg}(v_3)\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-437" id="answer-437"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">5</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-437"><div class="answer solution-like">0</div></div>
-<p id="p-1569">Find the total degree of \(G\text{.}\)</p>
+<p id="p-1568">Find the total degree of \(G\text{.}\)</p>
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-438" id="answer-438"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">6</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-438"><div class="answer solution-like">6</div></div>
-<p id="p-1570">Is there a relationship between the number of edges in \(G\) and the total degree?</p></article></div>
-<p id="p-1571">As you might have seen in <a class="xref" data-knowl="./knowl/E_degree.html" title="Example 10.1.15: Degree">Example 10.1.15</a>, there is a relationship between the total degree of a graph and the number of edges.</p>
+<p id="p-1569">Is there a relationship between the number of edges in \(G\) and the total degree?</p></article></div>
+<p id="p-1570">As you might have seen in <a class="xref" data-knowl="./knowl/E_degree.html" title="Example 10.1.15: Degree">Example 10.1.15</a>, there is a relationship between the total degree of a graph and the number of edges.</p>
 <article class="theorem theorem-like" id="T_totaldegree"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">10.1.16</span><span class="period">.</span>
 </h6>
-<p id="p-1572">The total degree of a graph \(G\) is \(2k\) where \(k\) is the number of edges in \(G\text{.}\)</p></article><p id="p-1573">We will not provide a formal proof, but the theorem is not hard to show as each edge must be incident on two vertices, thus each edge is counted twice in the total degree.</p>
+<p id="p-1571">The total degree of a graph \(G\) is \(2k\) where \(k\) is the number of edges in \(G\text{.}\)</p></article><p id="p-1572">We will not provide a formal proof, but the theorem is not hard to show as each edge must be incident on two vertices, thus each edge is counted twice in the total degree.</p>
 <article class="corollary theorem-like" id="C_totaldegreeeven"><h6 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">10.1.17</span><span class="period">.</span>
 </h6>
-<p id="p-1574">The total degree of any graph is even.</p></article><section class="reading-questions" id="reading-questions-38"><h3 class="heading hide-type">
+<p id="p-1573">The total degree of any graph is even.</p></article><section class="reading-questions" id="reading-questions-38"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
 </h3>
-<p id="p-1575">Use the following graph for questions about \(G\text{.}\)</p>
+<p id="p-1574">Use the following graph for questions about \(G\text{.}\)</p>
 <figure class="figure figure-like" id="F_readingquestions"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="images/readquest.svg" style="width: 100%; height: auto;" alt=""></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.1.18<span class="period">.</span></span><span class="space"> </span>The graph \(G\) for Check Your Understanding</figcaption></figure><article class="exercise exercise-like" id="exercise-281"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-1576">List the edges of \(G\) incident on \(v_2\text{.}\)</p>
+<p id="p-1575">List the edges of \(G\) incident on \(v_2\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-439" id="answer-439"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-439"><div class="answer solution-like">\(e_1, e_3, e_5, e_6, e_7\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-282"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-1577">Does \(G\) have any parallel edges?</p>
+<p id="p-1576">Does \(G\) have any parallel edges?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-440" id="answer-440"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-440"><div class="answer solution-like">Yes, \(e_3, e_6\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-283"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-1578">True or false: in \(G\text{,}\) \(v_1\) and \(v_2\) are adjacent.</p>
+<p id="p-1577">True or false: in \(G\text{,}\) \(v_1\) and \(v_2\) are adjacent.</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-441" id="answer-441"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-441"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-284"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-1579">True or false: in \(G\text{,}\) \(v_3\) and \(v_4\) are adjacent.</p>
+<p id="p-1578">True or false: in \(G\text{,}\) \(v_3\) and \(v_4\) are adjacent.</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-442" id="answer-442"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-442"><div class="answer solution-like">False</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-285"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-1580">True or false: in \(G\text{,}\) \(e_3\) and \(e_6\) are adjacent.</p>
+<p id="p-1579">True or false: in \(G\text{,}\) \(e_3\) and \(e_6\) are adjacent.</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-443" id="answer-443"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-443"><div class="answer solution-like">True</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-286"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-1581">In \(G\text{,}\) find the degree of \(v_4\text{.}\)</p>
+<p id="p-1580">In \(G\text{,}\) find the degree of \(v_4\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-444" id="answer-444"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-444"><div class="answer solution-like">\(3\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-287"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
-<p id="p-1582">In \(G\text{,}\) find the degree of \(v_2\text{.}\)</p>
+<p id="p-1581">In \(G\text{,}\) find the degree of \(v_2\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-445" id="answer-445"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-445"><div class="answer solution-like">\(6\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-288"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
-<p id="p-1583">What is the total degree of \(G\text{?}\)</p>
+<p id="p-1582">What is the total degree of \(G\text{?}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-446" id="answer-446"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-446"><div class="answer solution-like">\(14\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-289"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
-<p id="p-1584">Draw \(K_5\text{.}\) How many edges does it have? What is the degree of each vertex?</p>
+<p id="p-1583">Draw \(K_5\text{.}\) How many edges does it have? What is the degree of each vertex?</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-447" id="answer-447"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-447"><div class="answer solution-like"><p id="p-1585">It has 10 edges. All vertices have degree 4.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-447" id="answer-447"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-447"><div class="answer solution-like"><p id="p-1584">It has 10 edges. All vertices have degree 4.</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-290"><h6 class="heading"><span class="codenumber">10<span class="period">.</span></span></h6>
-<p id="p-1586">True or false: there exists a graph with 4 vertices of degrees 1, 2, 1, 2.</p>
+<p id="p-1585">True or false: there exists a graph with 4 vertices of degrees 1, 2, 1, 2.</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-448" id="answer-448"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-448"><div class="answer solution-like">True. One example is a line (path) with 4 vertices.</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-291"><h6 class="heading"><span class="codenumber">11<span class="period">.</span></span></h6>
-<p id="p-1587">True or false: there exists a graph with 4 vertices of degrees 1, 2, 1, 3.</p>
+<p id="p-1586">True or false: there exists a graph with 4 vertices of degrees 1, 2, 1, 3.</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-449" id="answer-449"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-449"><div class="answer solution-like">False. Total degree would be odd.</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-292"><h6 class="heading"><span class="codenumber">12<span class="period">.</span></span></h6>
-<p id="p-1588">True or false: there exists a graph with 4 vertices of degrees 4, 4, 4, 4.</p>
+<p id="p-1587">True or false: there exists a graph with 4 vertices of degrees 4, 4, 4, 4.</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-450" id="answer-450"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-450"><div class="answer solution-like">True. One example has parallel edges between each vertex.</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-293"><h6 class="heading"><span class="codenumber">13<span class="period">.</span></span></h6>
-<p id="p-1589">True or false: there exists a graph with 4 vertices of degrees 4, 4, 4, 4.</p>
+<p id="p-1588">True or false: there exists a graph with 4 vertices of degrees 4, 4, 4, 4.</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-451" id="answer-451"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-451"><div class="answer solution-like">True. One example has parallel edges between each vertex. Can also have an example with loops.</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-294"><h6 class="heading"><span class="codenumber">14<span class="period">.</span></span></h6>
-<p id="p-1590">True or false: there exists a simple graph with 4 vertices of degrees 4, 4, 4, 4.</p>
+<p id="p-1589">True or false: there exists a simple graph with 4 vertices of degrees 4, 4, 4, 4.</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-452" id="answer-452"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-452"><div class="answer solution-like">False. Can't have more edges than the complete graph on 4 vertices.</div></div>
 </div></article></section></section></div></main>

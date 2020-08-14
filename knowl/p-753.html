@@ -12,20 +12,19 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Scratchwork:</p>
+<p>Proof of induction step:</p>
 <div class="displaymath">
-\begin{gather*}
-\text{LHS: } 2(k+1)+1=2k+2+1=2k+1+2\\
-\text{RHS: } 2^{k+1}=2(2^k)
-\end{gather*}
+\begin{align*}
+2k+1&lt; 2^k\ \  \textrm{ by the induction assumption}\\
+2(k+1)+1 &amp;= 2k+2+1\\
+&amp;=2k+1+2\\
+&amp;&lt;2^k+2\ \ \textrm{ by the induction assumption}\\
+&amp;&lt;2^k+2^k\ \ \textrm{ since } 2&lt; 2^k\\
+&amp;=2(2^k)\\
+&amp;=2^{k+1}
+\end{align*}
 </div>
-<p data-braille="continuation">Now we want to make a useful observation: in the LHS expression we are addding. In the RHS expression we are multiplying. We need a way to go between them. One way is to notice that \(2(A)=A+A\text{.}\) Then</p>
-<div class="displaymath">
-\begin{gather*}
-2^{k+1}=2(2^k)=2^k+2^k
-\end{gather*}
-</div>
-<p data-braille="continuation">We know \(2k+1&lt; 2^2\) and \(2&lt;2^2\text{,}\) so we can put all this together into the proof.</p>
+<p data-braille="continuation">Thus, \(2(k+1)+1&lt; 2^{k+1}\text{,}\) which is what we wanted to show.</p>
 <span class="incontext"><a href="moreinduction5-3.html#p-753">in-context</a></span>
 </body>
 </html>

@@ -182,18 +182,18 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="logical_form2-1"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.1</span> <span class="title">Logical Form and Logical Equivalence</span>
 </h2>
-<p id="p-88">We want to understand what makes a mathematical proof. One of the foundations for proofs is logical structure. ,if we build a good foundation in logic, then we can better understand mathematical statements and proof structures. So we begin by looking at logical forms, independent of content.</p>
-<p id="p-89">A logical argument consists of premises and a conclusion. The premises and conclusion are statements. A <dfn class="terminology">statement</dfn> is a sentence that is either true of false (not both!).</p>
+<p id="p-86">We want to understand what makes a mathematical proof. One of the foundations for proofs is logical structure. If we build a good foundation in logic, then we can better understand mathematical statements and proof structures. So we begin by looking at logical forms, independent of content.</p>
+<p id="p-87">A logical argument consists of premises and a conclusion. The premises and conclusion are statements. A <dfn class="terminology">statement</dfn> is a sentence that is either true of false (not both!).</p>
 <article class="example example-like" id="E_statement"><a data-knowl="" class="id-ref original" data-refid="hk-E_statement"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Statements.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_statement"><article class="example example-like"><ul class="disc">
-<li id="li-32"><p id="p-90">"\(2+3=5\)" is a statement. It is a true statement.</p></li>
-<li id="li-33"><p id="p-91">"\(2+1=5\)" is a statement. It is a false statement.</p></li>
-<li id="li-34"><p id="p-92">"\(x+y=5\)" is <em class="alert">not</em> a statement. It is neither true nor false. If we had additional information, such as specific information about the variables, then this might be a statement.</p></li>
-<li id="li-35"><p id="p-93">"I ate breakfast today." is a statement. Although you might not be able to determine whether I ate breakfast, the statement is either true or false.</p></li>
+<li id="li-32"><p id="p-88">"\(2+3=5\)" is a statement. It is a true statement.</p></li>
+<li id="li-33"><p id="p-89">"\(2+1=5\)" is a statement. It is a false statement.</p></li>
+<li id="li-34"><p id="p-90">"\(x+y=5\)" is <em class="alert">not</em> a statement. It is neither true nor false. If we had additional information, such as specific information about the variables, then this might be a statement.</p></li>
+<li id="li-35"><p id="p-91">"I ate breakfast today." is a statement. Although you might not be able to determine whether I ate breakfast, the statement is either true or false.</p></li>
 </ul></article></div>
-<p id="p-94">If \(p\) and \(q\) are variables representing statements, we can combine these statements into new statements using logical connectives.</p>
-<p id="p-95">Logical Connectives:</p>
+<p id="p-92">If \(p\) and \(q\) are variables representing statements, we can combine these statements into new statements using logical connectives.</p>
+<p id="p-93">Logical Connectives:</p>
 <ul class="disc">
 <li id="li-36">
 <h6 class="heading"><span class="title">Negation.</span></h6> NOT. Notation: \(\sim p\text{,}\) read as "not \(p\text{.}\)"</li>
@@ -202,8 +202,8 @@ MathJax.Hub.Config({
 <li id="li-38">
 <h6 class="heading"><span class="title">Disjunction.</span></h6> OR. Notation: \(p\vee q\text{,}\) read as "\(p\) or \(q\text{.}\)"</li>
 </ul>
-<p id="p-96">Our goal is to determine when these new statements are true or false based on whether \(p\) and \(q\) are true or false. We can create a truth-table  that looks at all the possibilities of true of false for \(p\) and \(q\text{.}\) When writing a truth-table, make a column for each variable, list all the possible cases of true and false, then for each case, determine whether the new statement (with the connective) is true or false</p>
-<p id="p-97"><figure class="table table-like" id="T_ttnot"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.2<span class="period">.</span></span><span class="space"> </span>Truth-table for \(\sim p\text{.}\)</figcaption><table>
+<p id="p-94">Our goal is to determine when these new statements are true or false based on whether \(p\) and \(q\) are true or false. We can create a truth-table  that looks at all the possibilities of true of false for \(p\) and \(q\text{.}\) When writing a truth-table, make a column for each variable, list all the possible cases of true and false, then for each case, determine whether the new statement (with the connective) is true or false</p>
+<p id="p-95"><figure class="table table-like" id="T_ttnot"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.2<span class="period">.</span></span><span class="space"> </span>Truth-table for \(\sim p\text{.}\)</figcaption><table>
 <tr>
 <td class="c m b2 r2 l1 t1 lines">\(p\)</td>
 <td class="c m b2 r1 l0 t1 lines" data-braille="last-cell">\(\sim p\)</td>
@@ -217,7 +217,7 @@ MathJax.Hub.Config({
 <td class="c m b1 r1 l0 t0 lines" data-braille="last-cell">T</td>
 </tr>
 </table></figure> It should make sense that if we negate T we get F, and vice versa.</p>
-<p id="p-98"><figure class="table table-like" id="T_ttand"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.3<span class="period">.</span></span><span class="space"> </span>Truth-table for \(p\wedge q\text{.}\)</figcaption><table>
+<p id="p-96"><figure class="table table-like" id="T_ttand"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.3<span class="period">.</span></span><span class="space"> </span>Truth-table for \(p\wedge q\text{.}\)</figcaption><table>
 <tr>
 <td class="c m b2 r1 l1 t1 lines">\(p\)</td>
 <td class="c m b2 r2 l0 t1 lines">\(q\)</td>
@@ -244,7 +244,7 @@ MathJax.Hub.Config({
 <td class="c m b1 r1 l0 t0 lines" data-braille="last-cell">F</td>
 </tr>
 </table></figure> Again, the truth values for an "and" statement should make sense. The only time it should be true is if both parts of the statement are true.</p>
-<p id="p-99"><figure class="table table-like" id="T_ttor"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.4<span class="period">.</span></span><span class="space"> </span>Truth-table for \(p\vee q\text{.}\)</figcaption><table>
+<p id="p-97"><figure class="table table-like" id="T_ttor"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.4<span class="period">.</span></span><span class="space"> </span>Truth-table for \(p\vee q\text{.}\)</figcaption><table>
 <tr>
 <td class="c m b2 r1 l1 t1 lines">\(p\)</td>
 <td class="c m b2 r2 l0 t1 lines">\(q\)</td>
@@ -270,9 +270,9 @@ MathJax.Hub.Config({
 <td class="c m b1 r2 l0 t0 lines">F</td>
 <td class="c m b1 r1 l0 t0 lines" data-braille="last-cell">F</td>
 </tr>
-</table></figure> The truth values for an "or" statement should, mostly, make sense,  as long as one part of the "or" statement is true, the whole statement is true. You may ask about the case where both parts are true. We think of this as an "inclusive or," which means we allow both to be true. For example, "A computer science major must take math 175 or Math 250." You will still get a major if you take both. There is a connective for an "exclusive or" (one or the other, not both), but we won't use it in this course.</p>
-<p id="p-100">Now that we can connect two statements, we can connect as many as we'd like using multiple quantifiers. For example, we could form the statement \(p\vee(q \wedge \sim p)\text{.}\) Make sure you use parentheses when combining statements. For example, \(\sim p\vee q\) is not the same as \(\sim (p\vee q)\text{.}\)</p>
-<p id="p-101"><figure class="table table-like" id="T_ttparenexample"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.5<span class="period">.</span></span><span class="space"> </span>Truth-table for \(\sim p\vee q\) and \(\sim (p\vee q)\text{.}\)</figcaption><table>
+</table></figure> The truth values for an "or" statement should, mostly, make sense,  as long as one part of the "or" statement is true, the whole statement is true. You may ask about the case where both parts are true. We think of this as an "inclusive or," which means we allow both to be true. For example, "A computer science major must take Math 175 or Math 250." You will still get a major if you take both. There is a connective for an "exclusive or" (one or the other, not both), but we won't use it in this course.</p>
+<p id="p-98">Now that we can connect two statements, we can connect as many as we'd like using multiple quantifiers. For example, we could form the statement \(p\vee(q\ \wedge \sim p)\text{.}\) Make sure you use parentheses when combining statements. For example, \(\sim p\vee q\) is not the same as \(\sim (p\vee q)\text{.}\)</p>
+<p id="p-99"><figure class="table table-like" id="T_ttparenexample"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.5<span class="period">.</span></span><span class="space"> </span>Truth-table for \(\sim p\vee q\) and \(\sim (p\vee q)\text{.}\)</figcaption><table>
 <tr>
 <td class="c m b2 r1 l1 t1 lines">\(p\)</td>
 <td class="c m b2 r2 l0 t1 lines">\(q\)</td>
@@ -314,20 +314,20 @@ MathJax.Hub.Config({
 <td class="c m b1 r1 l0 t0 lines" data-braille="last-cell">T</td>
 </tr>
 </table></figure></p>
-<p id="p-102">One of the thing we want to be able to do is to translate English (or mathematical) sentences into logical statements. We have to be careful about how common phrases are really hidden "and"s. For example, "\(p\) but \(q\)" is really \(p\wedge q\text{.}\) Similarly, "neither \(p\) nor \(q\)" is really \(\sim p \wedge \sim q\text{.}\)</p>
+<p id="p-100">One of the thing we want to be able to do is to translate English (or mathematical) sentences into logical statements. We have to be careful about how common phrases are really hidden "and"s. For example, "\(p\) but \(q\)" is really \(p\wedge q\text{.}\) Similarly, "neither \(p\) nor \(q\)" is really \(\sim p\ \wedge \sim q\text{.}\)</p>
 <article class="definition definition-like" id="definition-3"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.6</span><span class="period">.</span>
 </h6>
-<p id="p-103">A <dfn class="terminology">tautology</dfn> is a statement that is always true.</p>
-<p id="p-104">For example, \(p \vee \sim p\) is a tautology. If you check the truth table, you will see that the only values in the column for the statement are T.</p></article><article class="definition definition-like" id="definition-4"><h6 class="heading">
+<p id="p-101">A <dfn class="terminology">tautology</dfn> is a statement that is always true.</p>
+<p id="p-102">For example, \(p\ \vee \sim p\) is a tautology. If you check the truth table, you will see that the only values in the column for the statement are T.</p></article><article class="definition definition-like" id="definition-4"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.7</span><span class="period">.</span>
 </h6>
-<p id="p-105">A <dfn class="terminology">contradiction</dfn> is a statement that is always false.</p>
-<p id="p-106">For example, \(p \wedge \sim p\) is a tautology. If you check the truth table, you will see that the only values in the column for the statement are F.</p></article><p id="p-107">Note that tautologies and contradictions are logical statements that are always true or always false, independent of the content of \(p\text{.}\)</p>
-<p id="p-108">If we want to make bigger statements using tautologies or contradictions, we can use \(\mathbf{t}\) to represent a tautology and \(\mathbf{c}\) to represent a contradiction. For example, we could find the truth-table for \(p\wedge \mathbf{t}\text{.}\)</p>
+<p id="p-103">A <dfn class="terminology">contradiction</dfn> is a statement that is always false.</p>
+<p id="p-104">For example, \(p\ \wedge \sim p\) is a contradiction. If you check the truth table, you will see that the only values in the column for the statement are F.</p></article><p id="p-105">Note that tautologies and contradictions are logical statements that are always true or always false, independent of the content of \(p\text{.}\)</p>
+<p id="p-106">If we want to make bigger statements using tautologies or contradictions, we can use \(\mathbf{t}\) to represent a tautology and \(\mathbf{c}\) to represent a contradiction. For example, we could find the truth-table for \(p\wedge \mathbf{t}\text{.}\)</p>
 <article class="example example-like" id="example-10"><a data-knowl="" class="id-ref original" data-refid="hk-example-10"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.8</span><span class="period">.</span><span class="space"> </span><span class="title">Example of \(p\wedge \mathbf{t}\).</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-10"><article class="example example-like"><p id="p-109"><figure class="table table-like" id="T_ttwithtautology"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.9<span class="period">.</span></span><span class="space"> </span>Truth-table for \(p\wedge \mathbf{t}\text{.}\)</figcaption><table>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-10"><article class="example example-like"><p id="p-107"><figure class="table table-like" id="T_ttwithtautology"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.9<span class="period">.</span></span><span class="space"> </span>Truth-table for \(p\wedge \mathbf{t}\text{.}\)</figcaption><table>
 <tr>
 <td class="c m b2 r2 l1 t1 lines">\(p\)</td>
 <td class="c m b2 r2 l0 t1 lines">\(\mathbf{t}\)</td>
@@ -346,7 +346,7 @@ MathJax.Hub.Config({
 </table></figure></p></article></div>
 <article class="definition definition-like" id="definition-5"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.10</span><span class="period">.</span>
-</h6>Two statements are <dfn class="terminology">logically equivalent</dfn> if they have identical truth-tables. If statements \(P\) and \(Q\) are logically equivalent, we denote it \(P\equiv Q\text{.}\) For example, we can see that \(p\) is logically equivalent to \(p\wedge \mathbf{t}\) by comparing the first and last columns of <a class="xref" data-knowl="./knowl/T_ttwithtautology.html" title="Table 2.1.9: Truth-table for \(p\wedge \mathbf{t}\text{.}\)">Table 2.1.9</a></article><p id="p-110">The following is a list of important logical equivalences. All of them can be checked using truth-tables. Let \(p, q,\) and \(r\) be variables representing statements. Let \(\mathbf{t}\) be a tautology and \(\mathbf{c}\) be a contradiction. <p id="p-111">Summary of Logical Equivalences</p></p>
+</h6>Two statements are <dfn class="terminology">logically equivalent</dfn> if they have identical truth-tables. If statements \(P\) and \(Q\) are logically equivalent, we denote it \(P\equiv Q\text{.}\) For example, we can see that \(p\) is logically equivalent to \(p\wedge \mathbf{t}\) by comparing the first and last columns of <a class="xref" data-knowl="./knowl/T_ttwithtautology.html" title="Table 2.1.9: Truth-table for \(p\wedge \mathbf{t}\text{.}\)">Table 2.1.9</a></article><p id="p-108">The following is a list of important logical equivalences. All of them can be checked using truth-tables. Let \(p, q,\) and \(r\) be variables representing statements. Let \(\mathbf{t}\) be a tautology and \(\mathbf{c}\) be a contradiction. <p id="p-109">Summary of Logical Equivalences</p></p>
 <ol class="decimal">
 <li id="li-39">Commutative Laws: \(p \wedge q \equiv q \wedge p; \ \ \ p \vee q \equiv q \vee p\)</li>
 <li id="li-40">Associative Laws: \((p \wedge q)\wedge r \equiv p \wedge (q \wedge r);\ \ \ (p \vee q)\vee r \equiv p \vee (q \vee r)\)</li>
@@ -363,7 +363,7 @@ MathJax.Hub.Config({
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-27"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-112">Give the truth-table for \(\sim(\sim p \vee q)\text{.}\)</p>
+<p id="p-110">Give the truth-table for \(\sim(\sim p \vee q)\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-27" id="answer-27"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-27"><div class="answer solution-like"><table>
 <tr>
@@ -393,13 +393,13 @@ MathJax.Hub.Config({
 </tr>
 </table></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-28"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-113">Give the truth-table for \((p \vee \sim q)\text{.}\)</p>
+<p id="p-111">Give the truth-table for \((p\ \vee \sim q)\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-28" id="answer-28"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-28"><div class="answer solution-like"><table>
 <tr>
 <td class="c m b2 r1 l1 t1 lines">\(p\)</td>
 <td class="c m b2 r2 l0 t1 lines">\(q\)</td>
-<td class="c m b2 r1 l0 t1 lines" data-braille="last-cell">\((p \vee \sim q)\)</td>
+<td class="c m b2 r1 l0 t1 lines" data-braille="last-cell">\((p\ \vee \sim q)\)</td>
 </tr>
 <tr>
 <td class="c m b1 r1 l1 t0 lines">T</td>
@@ -423,13 +423,13 @@ MathJax.Hub.Config({
 </tr>
 </table></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-29"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-114">Give the truth-table for \((p \wedge \sim q)\text{.}\)</p>
+<p id="p-112">Give the truth-table for \((p\ \wedge \sim q)\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-answer-29" id="answer-29"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-29"><div class="answer solution-like"><table>
 <tr>
 <td class="c m b2 r1 l1 t1 lines">\(p\)</td>
 <td class="c m b2 r2 l0 t1 lines">\(q\)</td>
-<td class="c m b2 r1 l0 t1 lines" data-braille="last-cell">\((p \wedge \sim q)\)</td>
+<td class="c m b2 r1 l0 t1 lines" data-braille="last-cell">\((p\ \wedge \sim q)\)</td>
 </tr>
 <tr>
 <td class="c m b1 r1 l1 t0 lines">T</td>
@@ -453,9 +453,9 @@ MathJax.Hub.Config({
 </tr>
 </table></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-30"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-115">Are any of the three statements in the above exercises logically equivalent?</p>
+<p id="p-113">Are any of the three statements in the above exercises logically equivalent?</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-30" id="answer-30"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-30"><div class="answer solution-like"><p id="p-116">Yes, \(\sim(\sim p\vee q)\) is logically equivalent to \((p \wedge \sim q)\text{.}\)</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-30" id="answer-30"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-30"><div class="answer solution-like"><p id="p-114">Yes, \(\sim(\sim p\vee q)\) is logically equivalent to \((p\ \wedge \sim q)\text{.}\)</p></div></div>
 </div></article></section></section></div></main>
 </div>
 </body>

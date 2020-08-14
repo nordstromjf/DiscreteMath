@@ -182,44 +182,44 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="contradiction4-5"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.5</span> <span class="title">Proof by Contradiction and Contrapositive</span>
 </h2>
-<p id="p-546">In this section we will learn two new proof techniques, contradiction and contrapositive. Both proof techniques rely on being able to negate mathematical statements.</p>
-<p id="p-547">As we add more proof techniques, it is important to realize that you are not expected to know which technique to use when you start a proof. Proof-writing often takes some trial and error. First try a direct proof, if you get stuck, you may think about whether breaking your set into cases will  help, or whether negating a statement will make it easier to use. It is also quite possible that different methods can be used to prove the same statement.</p>
-<p id="p-548">Method of Proof by Contradiction:</p>
+<p id="p-545">In this section we will learn two new proof techniques, contradiction and contrapositive. Both proof techniques rely on being able to negate mathematical statements.</p>
+<p id="p-546">As we add more proof techniques, it is important to realize that you are not expected to know which technique to use when you start a proof. Proof-writing often takes some trial and error. First try a direct proof, if you get stuck, you may think about whether breaking your set into cases will  help, or whether negating a statement will make it easier to use. It is also quite possible that different methods can be used to prove the same statement.</p>
+<p id="p-547">Method of Proof by Contradiction:</p>
 <ol class="decimal">
-<li id="li-94"><p id="p-549">Assume the statement to be proved is false. Or, assume the negation is true.</p></li>
-<li id="li-95"><p id="p-550">Show you reach some logical conclusion.</p></li>
-<li id="li-96"><p id="p-551">Conclude the original statement is true.</p></li>
+<li id="li-94"><p id="p-548">Assume the statement to be proved is false. Or, assume the negation is true.</p></li>
+<li id="li-95"><p id="p-549">Show you reach some logical conclusion.</p></li>
+<li id="li-96"><p id="p-550">Conclude the original statement is true.</p></li>
 </ol>
 <article class="example example-like" id="E_nogreatinteger"><a data-knowl="" class="id-ref original" data-refid="hk-E_nogreatinteger"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">There Is No Greatest Integer.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_nogreatinteger"><article class="example example-like"><p id="p-552">Prove there is no greatest integer.</p>
-<article class="hiddenproof" id="proof-12"><a data-knowl="" class="id-ref original" data-refid="hk-proof-12"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-12"><article class="hiddenproof"><p id="p-553">By contradiction. Assume there is a greatest integer. Call this greatest integer \(N\text{.}\) Now consider \(N+1\text{.}\) Since \(N\) is an integer, \(N+1\) is an integer. We can see that \(N+1&gt;N\text{,}\) which contradicts that \(N\) was the greatest. Therefore, there is no greatest integer.</p></article></div></article></div>
-<p id="p-554">Since contradiction relies on negating statements, recall the following negations:</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_nogreatinteger"><article class="example example-like"><p id="p-551">Prove there is no greatest integer.</p>
+<article class="hiddenproof" id="proof-12"><a data-knowl="" class="id-ref original" data-refid="hk-proof-12"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-12"><article class="hiddenproof"><p id="p-552">By contradiction. Assume there is a greatest integer. Call this greatest integer \(N\text{.}\) Now consider \(N+1\text{.}\) Since \(N\) is an integer, \(N+1\) is an integer. We can see that \(N+1&gt;N\text{,}\) which contradicts that \(N\) was the greatest. Therefore, there is no greatest integer.</p></article></div></article></div>
+<p id="p-553">Since contradiction relies on negating statements, recall the following negations:</p>
 <ul class="disc">
 <li id="li-97">\(p\rightarrow q\) has negation \(p\ \wedge \sim q\)</li>
 <li id="li-98">\(p\ \wedge q\) has negation \(\sim p\ \vee \sim q\)</li>
 <li id="li-99">\(p\ \vee q\) has negation \(\sim p\ \wedge \sim q\)</li>
 </ul>
-<p id="p-555">Method of Proof by Contrapositive:</p>
+<p id="p-554">Method of Proof by Contrapositive:</p>
 <ol class="decimal">
-<li id="li-100"><p id="p-556">Write the statement to be proved in the form \(\forall x\in D\text{,}\) if \(P(x)\) then \(Q(x)\text{.}\)</p></li>
-<li id="li-101"><p id="p-557">Write the contrapositive of the statement: \(\forall x\in D\text{,}\) if \(\sim Q(x)\) then \(\sim P(x)\text{.}\)</p></li>
-<li id="li-102"><p id="p-558">Prove the contrapositive directly: assume \(\sim Q(x)\text{,}\) show \(\sim P(x)\text{.}\)</p></li>
+<li id="li-100"><p id="p-555">Write the statement to be proved in the form \(\forall x\in D\text{,}\) if \(P(x)\) then \(Q(x)\text{.}\)</p></li>
+<li id="li-101"><p id="p-556">Write the contrapositive of the statement: \(\forall x\in D\text{,}\) if \(\sim Q(x)\) then \(\sim P(x)\text{.}\)</p></li>
+<li id="li-102"><p id="p-557">Prove the contrapositive directly: assume \(\sim Q(x)\text{,}\) show \(\sim P(x)\text{.}\)</p></li>
 </ol>
 <article class="example example-like" id="E_contrapositiveproof"><a data-knowl="" class="id-ref original" data-refid="hk-E_contrapositiveproof"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">A Divisibility Proof by Contrapositive.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_contrapositiveproof"><article class="example example-like"><p id="p-559">Prove for all \(a, b, c\in \mathbb{Z}\text{,}\) if \(a \nmid bc\) then \(a \nmid b\text{.}\)</p>
-<p id="p-560">This statement has contrapositive for all \(a, b, c\in \mathbb{Z}\text{,}\) if \(a \mid b\) then \(a \mid bc\text{.}\)</p>
-<article class="hiddenproof" id="proof-13"><a data-knowl="" class="id-ref original" data-refid="hk-proof-13"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-13"><article class="hiddenproof"><p id="p-561">By contrapositive. Let \(a, b, c\in \mathbb{Z}\text{.}\) Assume \(a \mid b\text{.}\) This means \(b=ak\) for some \(k\in\mathbb{Z}\text{.}\) Then \(bc=(ak)c=a(kc)\text{,}\) where \(kc \in \mathbb{Z}\text{.}\) Thus, \(a \mid bc\text{.}\)</p></article></div></article></div>
-<p id="p-562">Since we can use either contradiction or contrapositive on statements of the form \(p\rightarrow q\text{,}\) the following comparison may be helpful.</p>
-<p id="p-563">Contradiction with \(p\rightarrow q\text{:}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_contrapositiveproof"><article class="example example-like"><p id="p-558">Prove for all \(a, b, c\in \mathbb{Z}\text{,}\) if \(a \nmid bc\) then \(a \nmid b\text{.}\)</p>
+<p id="p-559">This statement has contrapositive: for all \(a, b, c\in \mathbb{Z}\text{,}\) if \(a \mid b\) then \(a \mid bc\text{.}\)</p>
+<article class="hiddenproof" id="proof-13"><a data-knowl="" class="id-ref original" data-refid="hk-proof-13"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-13"><article class="hiddenproof"><p id="p-560">By contrapositive. Let \(a, b, c\in \mathbb{Z}\text{.}\) Assume \(a \mid b\text{.}\) This means \(b=ak\) for some \(k\in\mathbb{Z}\text{.}\) Then \(bc=(ak)c=a(kc)\text{,}\) where \(kc \in \mathbb{Z}\text{.}\) Thus, \(a \mid bc\text{.}\)</p></article></div></article></div>
+<p id="p-561">Since we can use either contradiction or contrapositive on statements of the form \(p\rightarrow q\text{,}\) the following comparison may be helpful.</p>
+<p id="p-562">Contradiction with \(p\rightarrow q\text{:}\)</p>
 <ul class="disc">
 <li id="li-103">Assume \(p\ \wedge \sim q\text{.}\)</li>
 <li id="li-104">Show any contradiction. The contradiction may be \(\sim p\) or it may be \(q\text{,}\) or some other logical contradiction.</li>
 <li id="li-105">Since you can reach any contradiction at all, it may be difficult to know what you are looking for. It also may be difficult to know if you've made an error.</li>
 <li id="li-106">With contradticion you get to assume more, but it is less clear what you want to show.</li>
 </ul>
-<p id="p-564">Contrapositive with \(p\rightarrow q\text{:}\)</p>
+<p id="p-563">Contrapositive with \(p\rightarrow q\text{:}\)</p>
 <ul class="disc">
 <li id="li-107">Assume \(\sim q\text{.}\)</li>
 <li id="li-108">Show \(\sim p\text{.}\)</li>
@@ -229,41 +229,41 @@ MathJax.Hub.Config({
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Check Your Understanding</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-102"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-565">Give the negation for the statement: there does not exist a greatest odd integer.</p>
+<p id="p-564">Give the negation for the statement: there does not exist a greatest odd integer.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-160" id="answer-160"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-160"><div class="answer solution-like"><p id="p-566">There exists a great odd integer.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-160" id="answer-160"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-160"><div class="answer solution-like"><p id="p-565">There exists a great odd integer.</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-103"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-567">Give the negation for the statement: for all real numbers \(r\text{,}\) if \(r\) is not rational then \(3r\) is not rational.</p>
+<p id="p-566">Give the negation for the statement: for all real numbers \(r\text{,}\) if \(r\) is not rational then \(3r\) is not rational.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-161" id="answer-161"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-161"><div class="answer solution-like"><p id="p-568">There exists a real number \(r\) such that \(r\) is rational and \(3r\) is not rational.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-161" id="answer-161"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-161"><div class="answer solution-like"><p id="p-567">There exists a real number \(r\) such that \(r\) is rational and \(3r\) is not rational.</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-104"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-569">Suppose you want to prove the following statement by contradiction: for all real numbers \(r\text{,}\) if \(r\) is not rational then \(3r\) is not rational. What should you assume? What should you show&gt;</p>
+<p id="p-568">Suppose you want to prove the following statement by contradiction: for all real numbers \(r\text{,}\) if \(r\) is not rational then \(3r\) is not rational. What should you assume? What should you show?</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-162" id="answer-162"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-162"><div class="answer solution-like"><p id="p-570">Assume: there exists a real number \(r\) such that \(r\) is rational and \(3r\) is not rational. Show: any contradiction.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-162" id="answer-162"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-162"><div class="answer solution-like"><p id="p-569">Assume: there exists a real number \(r\) such that \(r\) is rational and \(3r\) is not rational. Show: any contradiction.</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-105"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-571">Give the contrapositive for the statement: for all real numbers \(r\text{,}\) if \(r\) is not rational then \(3r\) is not rational.</p>
+<p id="p-570">Give the contrapositive for the statement: for all real numbers \(r\text{,}\) if \(r\) is not rational then \(3r\) is not rational.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-163" id="answer-163"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-163"><div class="answer solution-like"><p id="p-572">For all real numbers \(r\) if \(3r\) is rational then \(r\) is rational.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-163" id="answer-163"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-163"><div class="answer solution-like"><p id="p-571">For all real numbers \(r\) if \(3r\) is rational then \(r\) is rational.</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-106"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-573">Suppose you want to prove the following statement by contrapositive: for all real numbers \(r\text{,}\) if \(r\) is not rational then \(3r\) is not rational. What should you assume? What should you show?</p>
+<p id="p-572">Suppose you want to prove the following statement by contrapositive: for all real numbers \(r\text{,}\) if \(r\) is not rational then \(3r\) is not rational. What should you assume? What should you show?</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-164" id="answer-164"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-164"><div class="answer solution-like"><p id="p-574">Assume: \(r\) is real, \(3r\) is rational. Show: \(r\) is rational.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-164" id="answer-164"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-164"><div class="answer solution-like"><p id="p-573">Assume: \(r\) is real, \(3r\) is rational. Show: \(r\) is rational.</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-107"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-575">Give the negation for the statement: for all integers \(n\) and primes \(p\text{,}\) if  \(p\mid n^2\)  then \(p \mid n\text{.}\)</p>
+<p id="p-574">Give the negation for the statement: for all integers \(n\) and primes \(p\text{,}\) if  \(p\mid n^2\)  then \(p \mid n\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-165" id="answer-165"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-165"><div class="answer solution-like"><p id="p-576">There exists an integer \(n\) and a prime \(p\) such that \(p\mid n^2\) and \(p\nmid n\text{.}\)</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-165" id="answer-165"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-165"><div class="answer solution-like"><p id="p-575">There exists an integer \(n\) and a prime \(p\) such that \(p\mid n^2\) and \(p\nmid n\text{.}\)</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-108"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
-<p id="p-577">Suppose you want to prove the following statement by contradiction: for all integers \(n\) and primes \(p\text{,}\) if  \(p\mid n^2\)  then \(p \mid n\text{.}\) What should you assume? What should you show?</p>
+<p id="p-576">Suppose you want to prove the following statement by contradiction: for all integers \(n\) and primes \(p\text{,}\) if  \(p\mid n^2\)  then \(p \mid n\text{.}\) What should you assume? What should you show?</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-166" id="answer-166"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-166"><div class="answer solution-like"><p id="p-578">Assume: there exists an integer \(n\) and a prime \(p\) such that \(p\mid n^2\) and \(p\nmid n\text{.}\) Show any contradiction.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-166" id="answer-166"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-166"><div class="answer solution-like"><p id="p-577">Assume: there exists an integer \(n\) and a prime \(p\) such that \(p\mid n^2\) and \(p\nmid n\text{.}\) Show any contradiction.</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-109"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
-<p id="p-579">Give the contrapositive for the statement: for all integers \(n\) and primes \(p\text{,}\) if  \(p\mid n^2\)  then \(p \mid n\text{.}\)</p>
+<p id="p-578">Give the contrapositive for the statement: for all integers \(n\) and primes \(p\text{,}\) if  \(p\mid n^2\)  then \(p \mid n\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-167" id="answer-167"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-167"><div class="answer solution-like"><p id="p-580">For all integers \(n\) if \(p \nmid n\) then \(p\nmid n^2\text{.}\)</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-167" id="answer-167"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-167"><div class="answer solution-like"><p id="p-579">For all integers \(n\) if \(p \nmid n\) then \(p\nmid n^2\text{.}\)</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-110"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
-<p id="p-581">Suppose you want to prove the following statement by contrapositive: for all integers \(n\) and primes \(p\text{,}\) if  \(p\mid n^2\)  then \(p \mid n\text{.}\) What should you assume? What should you show?</p>
+<p id="p-580">Suppose you want to prove the following statement by contrapositive: for all integers \(n\) and primes \(p\text{,}\) if  \(p\mid n^2\)  then \(p \mid n\text{.}\) What should you assume? What should you show?</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-168" id="answer-168"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-168"><div class="answer solution-like"><p id="p-582">Assume: \(n\) is an integer, \(p\) is prime, and \(p\nmid n\text{.}\) Show: \(p \nmid n^2\text{.}\)</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-168" id="answer-168"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-168"><div class="answer solution-like"><p id="p-581">Assume: \(n\) is an integer, \(p\) is prime, and \(p\nmid n\text{.}\) Show: \(p \nmid n^2\text{.}\)</p></div></div>
 </div></article></section></section></div></main>
 </div>
 </body>

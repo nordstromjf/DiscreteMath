@@ -12,13 +12,14 @@
 </head>
 <body>
 <div class="displaymath">
-\begin{gather*}
-C\in \mathcal{P}(A\cap B)\\
-\Leftrightarrow C\subseteq A\cap B\\
-\Leftrightarrow C\subseteq A \text{ and } C\subseteq B\\
-\Leftrightarrow C\in \mathcal{P}(A) \text{ and } C\in \mathcal{P}(B)\\
-\Leftrightarrow C\in\mathcal{P}(A)\cap\mathcal{P}(B).
-\end{gather*}
+\begin{align*}
+A-(A\cap B) &amp;= A\cap(A\cap B)^C \ \ \text{ Set Difference Law}\\
+&amp;= A\cap(A^C\cup B^C) \ \ \text{ DeMorgan's Law}\\
+&amp;= (A\cap A^C)\cup (A\cap B^C) \ \ \text{ Distributive Law}\\
+&amp;= \emptyset\cup (A\cap B^C) \ \ \text{ Complement Law}\\
+&amp;= A\cap B^C \ \ \text{ Identity Law}\\
+&amp;= A-B \ \ \text{ Set Difference Law}
+\end{align*}
 </div>
 <span class="incontext"><a href="algebraicsets6-3.html#mjx-eqn-mrow-85">in-context</a></span>
 </body>

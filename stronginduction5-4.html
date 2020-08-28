@@ -182,7 +182,7 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="stronginduction5-4"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.4</span> <span class="title">Strong Induction</span>
 </h2>
-<p id="p-762">In this section we look at a variation on induction called strong induction. This is really just regular induction except we make a strong assumption in the induction hypothesis. It is possible that we need to show more than one base case as well, but for the moment, we will just look at how and why we may need to change the assumption.</p>
+<p id="p-762">In this section we look at a variation on induction called strong induction. This is really just regular induction except we make a stronger assumption in the induction hypothesis. It is possible that we need to show more than one base case as well, but for the moment we will just look at how and why we may need to change the assumption.</p>
 <p id="p-763"><dfn class="terminology">Stong induction</dfn>: Let \(P(n)\) be a property defined for integers \(n\text{.}\) If</p>
 <ol class="decimal">
 <li id="li-124">\(P(1), \ldots P(a)\) are true for some \(a\text{,}\) and</li>
@@ -199,10 +199,10 @@ MathJax.Hub.Config({
 </ol>
 <p id="p-766">For now, we can use \(a=1\) in the base step and just do one base step as before. But we might need to show, say, \(P(1)\) and \(P(2)\text{.}\)</p>
 <p id="p-767">The only real difference between strong induction and regular induction is that instead of assuming \(P(k)\text{,}\) we assume \(P(1), P(2), \ldots P(k)\text{.}\) In notation, this is \(P(i)\) for all \(1\leq i\leq k\text{.}\)</p>
-<p id="p-768">Why can we change the assumption? Well, remenber how induction works, first we show \(P(1)\text{,}\) then the induction step gets us to \(P(2)\text{,}\) which then gets us to \(P(3)\text{,}\) etc. But once we get to, say, \(P(4)\text{,}\) we already know \(P(1), P(2), P(3)\text{.}\) So we may as well assume we have \(P(i)\) for everything up to \(P(k)\text{.}\)</p>
+<p id="p-768">Why can we change the assumption? Well, remember how induction works, first we show \(P(1)\text{,}\) then the induction step gets us to \(P(2)\text{,}\) which then gets us to \(P(3)\text{,}\) etc. But once we get to, say, \(P(4)\text{,}\) we already know \(P(1), P(2), P(3)\text{.}\) So we may as well assume we have \(P(i)\) for everything up to \(P(k)\text{.}\)</p>
 <p id="p-769">For the next two examples, we will look at proving every integer \(n&gt;1\) is divisible by a prime. Although we proved this using cases in Chapter 4, we will now prove it using induction. First we will attempt to use regular induction and see why it isn't enough.</p>
 <article class="example example-like" id="E_divbyprimeregular"><a data-knowl="" class="id-ref original" data-refid="hk-E_divbyprimeregular"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Using Regular Induction.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Trying Regular Induction.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_divbyprimeregular"><article class="example example-like"><p id="p-770">Prove for all integers \(n&gt;1\text{,}\) \(n\) is divisible by a prime.</p>
 <p id="p-771">First we try to do the proof using regular induction.</p>
 <article class="hiddenproof" id="proof-23"><a data-knowl="" class="id-ref original" data-refid="hk-proof-23"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-23"><article class="hiddenproof"><p id="p-772">Base Step: Let \(n=2\text{.}\) Then \(2\mid 2\) and 2 is prime.</p>
@@ -220,7 +220,7 @@ MathJax.Hub.Config({
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_divisinduction2"><article class="example example-like"><p id="p-782">Prove for all integers \(n&gt;1\text{,}\) \(n\) is divisible by a prime.</p>
 <p id="p-783">The only change in the structure is to the induction assumption.</p>
 <article class="hiddenproof" id="proof-24"><a data-knowl="" class="id-ref original" data-refid="hk-proof-24"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-24"><article class="hiddenproof"><p id="p-784">Base Step: Let \(n=2\text{.}\) Then \(2\mid 2\) and 2 is prime.</p>
-<p id="p-785">Thus, \(n\) is divisible by a prime..</p>
+<p id="p-785">Thus, \(n\) is divisible by a prime.</p>
 <p id="p-786">Induction Step:</p>
 <p id="p-787">Assume \(i\) is divisible by a prime for all \(2\leq i\leq k\) and for some \(k\geq 2\text{.}\)</p>
 <p id="p-788">Show \(k+1\) is divisible by a prime.</p>

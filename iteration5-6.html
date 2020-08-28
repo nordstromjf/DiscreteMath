@@ -182,12 +182,12 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="iteration5-6"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.6</span> <span class="title">Solving Recurrence Relations by Iteration</span>
 </h2>
-<p id="p-859">Given a sequence defined recursively, we want to be able to find an explicit formula for the sequence. In general, this can be difficult and can involve very sophisticated mathematical tools. We will learn one method just to get a a taste for the ideas.</p>
+<p id="p-859">Given a sequence defined recursively, we want to be able to find an explicit formula for the sequence. In general, this can be difficult and can involve very sophisticated mathematical tools. We will learn one method just to get a taste for the ideas.</p>
 <p id="p-860"><dfn class="terminology">Method of Iteration</dfn> to find an explicit formula for a recursive sequence:</p>
 <ol id="p-861" class="decimal">
 <li id="li-136">Calculate several terms of the sequence, often without simplifying the terms.</li>
 <li id="li-137">See a pattern.</li>
-<li id="li-138">Guess an explicit formaul for the pattern. Keep in mind your formula should just depend on \(n\text{.}\)</li>
+<li id="li-138">Guess an explicit formula for the pattern. Keep in mind your formula should just depend on \(n\text{.}\)</li>
 <li id="li-139">Prove your explicit formula using induction.</li>
 </ol>
 <article class="example example-like" id="E_arithmetic"><a data-knowl="" class="id-ref original" data-refid="hk-E_arithmetic"><h6 class="heading">
@@ -207,9 +207,9 @@ a_4&amp; =(((4+3)+3)+3)+3
 <p id="p-864">Now it should be easier to see a pattern: it seems we have \(a_n=4+3n\text{,}\) which is our explicit formula.</p>
 <p id="p-865">To prove this is the correct formula, we would assume \(a_k=a_{k-1}+3\) and prove \(a_n=4+3n\) by induction.</p>
 <article class="hiddenproof" id="proof-27"><a data-knowl="" class="id-ref original" data-refid="hk-proof-27"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-27"><article class="hiddenproof"><p id="p-866">Let \(a_k=a_{k-1}+3, a_0=4\text{.}\) Prove \(a_n=4+3n, n\geq 0\)</p>
-<p id="p-867">Base Step: Let \(n=0\text{.}\) Then \(a_n=a_0=4\text{.}\) And \(4+3n=4+3(0)=4\text{.}\) Thus \(a_n=4+3n\) for \(n=0\text{.}\)</p>
+<p id="p-867">Base Step: Let \(n=0\text{.}\) Then \(a_n=a_0=4\text{.}\) And \(4+3n=4+3(0)=4\text{.}\) Thus, \(a_n=4+3n\) for \(n=0\text{.}\)</p>
 <p id="p-868">Induction Step: Assume \(a_k=4+3k\) for some \(k\geq 0\text{.}\)</p>
-<p id="p-869">Show \(a_{k+1}=4+3(k+1)\)</p>
+<p id="p-869">Show \(a_{k+1}=4+3(k+1)\text{.}\)</p>
 <p id="p-870">Proof of induction step: By the recursive definition of the sequence, \(a_{k+1}=a_{k}+3\text{.}\) Thus,</p>
 <div class="displaymath">
 \begin{align*}
@@ -228,7 +228,7 @@ a_{k+1}&amp;=a_k+3\\
 a_k=a_{k-1}+d
 \end{equation*}
 </div>
-<p data-braille="continuation">where \(d\) is constant.</p></article><p id="p-872">You can probably generalize the example above to find an explicit formula for an arithmentic sequence.</p>
+<p data-braille="continuation">where \(d\) is constant.</p></article><p id="p-872">You can probably generalize the example above to find an explicit formula for an arithmetic sequence.</p>
 <article class="definition definition-like" id="D_geomseq"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.3</span><span class="period">.</span>
 </h6>
@@ -271,7 +271,7 @@ a_k=ra_{k-1}
 F_i=\frac{1}{\sqrt{5}}\biggl[\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{i+1}-\biggl(\frac{1-\sqrt{5}}{2}\biggr)^{i+1}\biggr], 0\leq i\leq k
 \end{equation*}
 </div>
-<p data-braille="continuation">for some \(k\geq 0\) (Strong induction).</p>
+<p data-braille="continuation">for some \(k\geq 0\) (strong induction).</p>
 <p id="p-883">Show</p>
 <div class="displaymath">
 \begin{equation*}
@@ -319,7 +319,7 @@ F_{k+1}&amp;=\frac{1}{\sqrt{5}}\biggl[\biggl(\frac{1+\sqrt{5}}{2}\biggr)^{k+1}-\
 </div></article><article class="exercise exercise-like" id="exercise-163"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
 <p id="p-894">Simplify \(\biggl(\frac{1-\sqrt{5}}{2}\biggr)^2\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-242" id="answer-242"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-242"><div class="answer solution-like"><p id="p-895">1, 2, 2, 1</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-242" id="answer-242"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-242"><div class="answer solution-like"><p id="p-895">\(\biggl(\frac{1-\sqrt{5}}{2}\biggr)\biggl(\frac{1-\sqrt{5}}{2}\biggr)=\biggl(\frac{1-2\sqrt{5}+5}{4}\biggr)=\biggl(\frac{6-2\sqrt{5}}{4}\biggr)=\biggl(\frac{3-\sqrt{5}}{2}\biggr).\)</p></div></div>
 </div></article></section></section></div></main>
 </div>
 </body>

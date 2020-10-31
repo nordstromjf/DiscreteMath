@@ -186,9 +186,9 @@ MathJax.Hub.Config({
 <article class="definition definition-like" id="D_equivrel"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.3.1</span><span class="period">.</span>
 </h6>
-<p id="p-1212">A relation that is reflexive, symmetric and transitive is an <dfn class="terminology">equivalence relation</dfn>.</p></article><p id="p-1213">In <a class="xref" data-knowl="./knowl/E_provingRST.html" title="Example 8.2.8: Proving Refexive, Symmetric, Transitive">Example 8.2.8</a> we proved that the relation given by \((m, n)\in R \Leftrightarrow 3\mid (m-n)\) is a n equivalence relation since we proved it is reflexive, symmetric, and transitive.</p>
+<p id="p-1212">A relation that is reflexive, symmetric and transitive is an <dfn class="terminology">equivalence relation</dfn>.</p></article><p id="p-1213">In <a class="xref" data-knowl="./knowl/E_provingRST.html" title="Example 8.2.8: Proving Refexive, Symmetric, Transitive">Example 8.2.8</a> we proved that the relation given by \((m, n)\in R \Leftrightarrow 3\mid (m-n)\) is an equivalence relation since we proved it is reflexive, symmetric, and transitive.</p>
 <p id="p-1214">In fact, the proof can easily be adapted to show \((m, n)\in R \Leftrightarrow d\mid (m-n)\) is an equivalence relation for \(d\neq 0, d\in \mathbb{Z}\text{.}\)</p>
-<p id="p-1215">This is an important enough relation that is has its own notation.</p>
+<p id="p-1215">This is an important enough relation that it has its own notation.</p>
 <div class="displaymath">
 \begin{equation*}
 m\equiv n \mod d.
@@ -230,7 +230,7 @@ m\equiv n \mod d.
 <p id="p-1233">Find \([-1]\text{,}\) the set of elements in \(\mathbb{Z}\) equivalent to -1.</p>
 <a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-333" id="answer-333"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">5</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-333"><div class="answer solution-like">\([-1]=\{2, 5, -1, -4, -7, \ldots\}=\{3k+2: k\in \mathbb{Z}\}\)</div></div></article></div>
 <p id="p-1234">We can notice a few things from this last example. We can see that some of our equivalence classes are the same. In particular, \([0]=[3]\) and \([2]=[-1]\text{.}\) In fact, there are only three distinct equivalence classes, \([0], [1], [2]\text{,}\) any other equivalence class will equal one of these.</p>
-<p id="p-1235">A few other things to notice, distinct equivalence classes are disjoint--they have no elements in common. Also, \([a]\) contains \(a\text{.}\) We may also recogize that the equivalence classes \([0], [1]. [2]\) partition the integers.</p>
+<p id="p-1235">A few other things to notice, distinct equivalence classes are disjoint--they have no elements in common. Also, \([a]\) contains \(a\text{.}\) We may also recogize that the equivalence classes \([0], [1], [2]\) partition the integers.</p>
 <article class="example example-like" id="E_equivclasses2"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-E_equivclasses2"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">8.3.5</span><span class="period">.</span><span class="space"> </span><span class="title">More Equivalence Classes.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_equivclasses2"><article class="example example-like"><p id="p-1236">Consider the equivalence relation \(A R B \Leftrightarrow |A|=|B|\text{,}\) on \(\mathcal{P}(\{1, 2, 3\})\text{.}\)</p>
@@ -243,12 +243,12 @@ m\equiv n \mod d.
 <a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-336" id="answer-336"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-336"><div class="answer solution-like">\([\{1, 2\}]=\{\{1, 2\}, \{2, 3\}, \{1, 3\}\}\)</div></div>
 <p id="p-1241">Find \([\{1, 2, 3\}]\text{.}\)</p>
 <a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-337" id="answer-337"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">4</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-337"><div class="answer solution-like">\([\{1, 2, 3\}]=\{\{1, 2, 3\}\}\)</div></div></article></div>
-<p id="p-1242">Once again, distinct equivalence classes are disjoint--they have no elements in common. Furthermore, the equivalence classes \([\emptyset], [\{1\}], [\{1, 2\}], [\{1, 2, 3\}]\) partition the power set by size of the subset.</p>
+<p id="p-1242">Once again, the distinct equivalence classes are disjoint--they have no elements in common. Furthermore, the equivalence classes \([\emptyset], [\{1\}], [\{1, 2\}], [\{1, 2, 3\}]\) partition the power set by size of the subset.</p>
 <p id="p-1243">There is an important connection between equivalence classes and partitions, as we see in the next two theorems.</p>
 <article class="theorem theorem-like" id="T_equivclassespartition"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">8.3.6</span><span class="period">.</span>
 </h6>
-<p id="p-1244">Let \(A\) be a set and \(R\) an equivalence relation. The equivalence classes of \(R\) form a partition of \(A\)</p>.</article><p id="p-1245">Conversely, if we have a partition \(\{A_1, A_2, \ldots, A_n, \ldots\}\) of \(A\) and define the relation \((a, b)\in R \Leftrightarrow a\) and \(b\) are in th same subset \(A_i\text{,}\) then \(R\) is an equivalence relation. We call this the equivalence relation <dfn class="terminology">induced</dfn> by the partition.</p>
+<p id="p-1244">Let \(A\) be a set and \(R\) an equivalence relation. The equivalence classes of \(R\) form a partition of \(A\)</p>.</article><p id="p-1245">Conversely, if we have a partition \(\{A_1, A_2, \ldots, A_n, \ldots\}\) of \(A\) and define the relation \((a, b)\in R \Leftrightarrow a\) and \(b\) are in the same subset \(A_i\text{,}\) then \(R\) is an equivalence relation. We call this the equivalence relation <dfn class="terminology">induced</dfn> by the partition.</p>
 <article class="theorem theorem-like" id="T_partitionequivrelation"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">8.3.7</span><span class="period">.</span>
 </h6>

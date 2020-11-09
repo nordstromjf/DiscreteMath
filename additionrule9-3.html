@@ -184,7 +184,7 @@ MathJax.Hub.Config({
 <span class="type">Section</span> <span class="codenumber">9.3</span> <span class="title">Addition Rule</span>
 </h2>
 <p id="p-1383">In this section we look at how to count unions of disjoint sets, then look at counting sets with nontrivial intersections.</p>
-<p id="p-1384">If \(A\) is the union of \(k\) distinct, mutually disjoint sets, \(A_1, A_2, \ldots, A_k\text{,}\) then the number of elelments in \(A\) is given by</p>
+<p id="p-1384">If \(A\) is the union of \(k\) distinct, mutually disjoint sets, \(A_1, A_2, \ldots, A_k\text{,}\) then the number of elements in \(A\) is given by</p>
 <div class="displaymath">
 \begin{equation*}
 N(A)=N(A_1)+N(A_2)+\cdots +N(A_k).
@@ -207,7 +207,7 @@ N(A)=90+90=180.
 <p id="p-1392">It is going to take practice to be able to see when to use the multiplication rule and when to use the addition rule. If you are counting elements of different sets, use addition. If you are counting elements that are constructed in a process (can you determine step 1, step 2, etc?), then use the multiplication rule. Many problems require both rules, as we saw in <a class="xref" data-knowl="./knowl/E_divby5.html" title="Example 9.3.1: Addition Rule: Counting Numbers Divisible by 5">Example 9.3.1</a>.</p>
 <p id="p-1393">Now we want to look at what happens if our sets are not disjoint.</p>
 <p id="p-1394">If \(A\) is finite and \(B\subseteq A\text{,}\) then \(N(A-B)=N(A)-N(B)\text{.}\)</p>
-<p id="p-1395">If we want to count the number of elements in \(A\cup B\text{,}\) we can count those in \(A\) and those in \(B\text{.}\) But every element in the intersetion has now been counted twice. so we need to subtract \(N(A\cap B)\text{.}\) This is the idea behind the Inclusion-Exclusion Rule.</p>
+<p id="p-1395">If we want to count the number of elements in \(A\cup B\text{,}\) we can count those in \(A\) and those in \(B\text{.}\) But every element in the intersection has now been counted twice. so we need to subtract \(N(A\cap B)\text{.}\) This is the idea behind the Inclusion-Exclusion Rule.</p>
 <article class="theorem theorem-like" id="T_inclusionexclusion"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Inclusion-Exclusion Rule.</span>
 </h6>
@@ -227,7 +227,7 @@ N(A\cup B\cup C)=N(A)+N(B)+N(C)-N(A\cap B)-N(A\cap C)-N(B\cap C)+N(A\cap B\cap C
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_countingmultiples"><article class="example example-like"><p id="p-1398">How many integers from 1 to 1000 are multiples of 3 or multiples of 5?</p>
 <p id="p-1399">Let \(A\) be the set of multiples of 3. Let \(B\) be the set of multiples of 5.</p>
 <p id="p-1400">Then \(A\cap B\) is the set of multiples of 3 and 5, so multiples of 15.</p>
-<p id="p-1401">We need a good way to count the multiples of 3. We know they have the form \(n=3k\text{.}\) Since \(1\leq n\leq 1000,\text{,}\) we have that \(1\leq 3k \leq 1000\text{.}\) Hence, \(1/3\leq k\leq 1000/3\approx 333.3\text{.}\) Since \(k\in \mathbb{Z}\text{,}\) \(1\leq k\leq 333\text{.}\) Thus,</p>
+<p id="p-1401">We need a good way to count the multiples of 3. We know they have the form \(n=3k\text{.}\) Since \(1\leq n\leq 1000\text{,}\) we have that \(1\leq 3k \leq 1000\text{.}\) Hence, \(1/3\leq k\leq 1000/3\approx 333.3\text{.}\) Since \(k\in \mathbb{Z}\text{,}\) \(1\leq k\leq 333\text{.}\) Thus,</p>
 <div class="displaymath">
 \begin{equation*}
 A=\{3k : 1\leq k\leq 333\}.
@@ -290,7 +290,7 @@ N(A\cap B\cap C)=N(A\cup B\cup C)-N(A)-N(B)-N(C)+N(A\cap B)+N(A\cap C)+N(B\cap C
 <div class="solutions">
 <a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-388" id="answer-388"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-388"><div class="answer solution-like">\((1)(10)(10)+9(10)(1)-1(10)(1)=180\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-258"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-1411">How many 3 digit numbers begin with 1 or 2 or end with 2, 3, 4?</p>
+<p id="p-1411">How many 3 digit numbers begin with 1 or 2 or end with 2, 3, or 4?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-389" id="answer-389"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-389"><div class="answer solution-like">\((2)(10)(10)+9(10)(3)-2(10)(3)=410\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-259"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>

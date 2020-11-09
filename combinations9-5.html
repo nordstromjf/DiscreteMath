@@ -203,14 +203,14 @@ MathJax.Hub.Config({
 <p id="p-1451">We use combinations: \(\binom{15}{3}\text{.}\) It does not matter if a member was chosen first, second, or third, they would still be a member of the group. Thus, there are \(\frac{15!}{3!12!}=455\) ways to choose a group of 3.</p>
 <p id="p-1452">Now suppose you want to choose a group of 3 students in a class of 15 for a group project, but the first student chosen will be the note-taker, the second will be the presenter, the third will manage the discussion. How many ways can you choose the group?</p>
 <p id="p-1453">We use permutations: \(P(15, 3)\text{.}\) Now it DOES matter if a member was chosen first, second, or third, as each member has a different role. Thus, there are \(\frac{15!}{12!}=2730\) ways to choose a group of 3 where the members' roles are defined.</p></article></div>
-<p id="p-1454">In deciding whether to use combinations or permutations, you need to decide whether order matters. For combinatons, order doesn't matter, think about choosing subsets. For permuations, order does matter, think about choosing ordered lists.</p>
+<p id="p-1454">In deciding whether to use combinations or permutations, you need to decide whether order matters. For combinatons, order doesn't matter; think about choosing subsets. For permuations, order does matter; think about choosing ordered lists.</p>
 <article class="example example-like" id="E_binstrings"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-E_binstrings"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.5.3</span><span class="period">.</span><span class="space"> </span><span class="title">Binary Strings.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_binstrings"><article class="example example-like"><p id="p-1455">How many binary strings of length 5 can have exactly 2 ones?</p>
 <p id="p-1456">We can think of forming a binary string with 2 ones as a list of 5 places where we need to choose 2 places for the ones. Once we've done that, the other places must have 0's. Thus, we have five places and choose 2:</p>
 <div class="displaymath">
 \begin{equation*}
-\binom{5}{2}=\frac{5!}{2!}{3!}=10.
+\binom{5}{2}=\frac{5!}{2!3!}=10.
 \end{equation*}
 </div>
 <p id="p-1457">How many binary strings of length 5 can have at most 2 ones?</p>
@@ -248,7 +248,7 @@ MathJax.Hub.Config({
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.5.6</span><span class="period">.</span><span class="space"> </span><span class="title">Forming Committees.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_committees"><article class="example example-like"><p id="p-1469">A class has 13 students. How many ways can a group of 7 be chosen?</p>
 <a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-405" id="answer-405"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-405"><div class="answer solution-like">\(\binom{13}{7}\)</div></div>
-<p id="p-1470">Suppose in this class of 13 there are 6 juniors and 7 seniors.</p>
+<p id="p-1470">Suppose in this class of 13 there are 7 juniors and 6 seniors.</p>
 <p id="p-1471">How many groups of 7 can be chosen that contain 4 juniors and 3 seniors?</p>
 <a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-406" id="answer-406"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-406"><div class="answer solution-like"><p id="p-1472">\(\binom{7}{4}\cdot \binom{6}{3}\text{,}\) first choose the juniors then the seniors.</p></div></div>
 <p id="p-1473">How many groups of 7 can be chosen so that there is at least one senior?</p>

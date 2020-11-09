@@ -183,7 +183,7 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="binomial9-6"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">9.6</span> <span class="title">Binomial Theorem</span>
 </h2>
-<p id="p-1492">The Binomial Theorem has applications in many areas of mathematics, from Calculus, to Number Theory, to Probability. In this section we look at some examples of combinatorial proofs using binomial coefficients and ultimately prove the Binomial Theorem using induction.</p>
+<p id="p-1492">The Binomial Theorem has applications in many areas of mathematics, from calculus, to number theory, to probability. In this section we look at some examples of combinatorial proofs using binomial coefficients and ultimately prove the Binomial Theorem using induction.</p>
 <article class="theorem theorem-like" id="T_requalsnminusr"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.6.1</span><span class="period">.</span>
 </h6>
@@ -192,7 +192,7 @@ MathJax.Hub.Config({
 \begin{equation*}
 \binom{n}{r}=\binom{n}{n-r}.
 \end{equation*}
-</div></article><p id="p-1494">An algebraic proof is straightforward and left as an exercise. We will give a combinatorial proof. This means we will prove the two side of the equation are equal by showing that they are two different ways to count the same set. In general, a combinatorial proof is done by giving a counting argument.</p>
+</div></article><p id="p-1494">An algebraic proof is straightforward and left as an exercise. We will give a combinatorial proof. This means we will prove the two sides of the equation are equal by showing that they are two different ways to count the same set. In general, a combinatorial proof is done by giving a counting argument.</p>
 <article class="hiddenproof" id="proof-43"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-43"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-43"><article class="hiddenproof"><p id="p-1495">By definition, \(\binom{n}{r}\) is the number of subsets where we choose \(r\) objects from \(n\) objects. We can create a set of \(r\) objects by specifying which objects are in the set or by specifying which objects are NOT in the set. We note that there are \(n-r\) objects NOT in the set. Thus, \(\binom{n}{n-r}\) counts the ways to find a set of \(r\) objects out of \(n\) by finding the ways to not include \(n-r\) objects. Thus, both \(\binom{n}{r}\) and \(\binom{n}{n-r}\) count subsets of \(r\) objects from \(n\text{,}\) one by counting the objects in the set, one by counting the objects not in the set.</p></article></div>
 <article class="theorem theorem-like" id="T_pascalsformula"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.6.2</span><span class="period">.</span><span class="space"> </span><span class="title">Pascal's Formula.</span>
@@ -342,13 +342,13 @@ MathJax.Hub.Config({
 \begin{align*}
 (a+b)^{k+1}&amp;=\sum_{i=0}^{k}\binom{k}{i}a^{k+1-i}b^i+\sum_{i=0}^{k}\binom{k}{i}a^{k-i}b^{i+1}\\
 &amp;=\sum_{i=0}^{k}\binom{k}{i}a^{k+1-i}b^i+\sum_{j=1}^{k+1}\binom{k}{j-1}a^{k+1-j}b^j\\
-&amp;=a^{k+1}\sum_{i=1}^{k}\binom{k}{i}a^{k+1-i}b^i+\sum_{j=1}^{k}\binom{k}{j-1}a^{k+1-j}b^j+b^{k+1}\\
+&amp;=a^{k+1}+\sum_{i=1}^{k}\binom{k}{i}a^{k+1-i}b^i+\sum_{j=1}^{k}\binom{k}{j-1}a^{k+1-j}b^j+b^{k+1}\\
 &amp;\text{where we pulled out the first term of the first sum and the last term of the second sum}\\
-&amp;=a^{k+1}\sum_{i=1}^{k}\binom{k}{i}a^{k+1-i}b^i+\sum_{i=1}^{k}\binom{k}{i-1}a^{k+1-i}b^i+b^{k+1}\\
+&amp;=a^{k+1}+\sum_{i=1}^{k}\binom{k}{i}a^{k+1-i}b^i+\sum_{i=1}^{k}\binom{k}{i-1}a^{k+1-i}b^i+b^{k+1}\\
 &amp;\text{where we just relabeled the index in the second sum}\\
-&amp;=a^{k+1}\sum_{i=1}^{k}\biggl[\binom{k}{i}+\binom{k}{i-1}\biggr]a^{k+1-i}b^i+b^{k+1}\\
+&amp;=a^{k+1}+\sum_{i=1}^{k}\biggl[\binom{k}{i}+\binom{k}{i-1}\biggr]a^{k+1-i}b^i+b^{k+1}\\
 &amp;\text{where we combined like terms in the two sums}\\
-&amp;=a^{k+1}\sum_{i=1}^{k}\binom{k+1}{i}a^{k+1-i}b^i+b^{k+1}\\
+&amp;=a^{k+1}+\sum_{i=1}^{k}\binom{k+1}{i}a^{k+1-i}b^i+b^{k+1}\\
 &amp;\text{by Pascal's Formula}\\
 &amp;=\sum_{i=0}^{k+1}\binom{k+1}{i}a^{k+1-i}b^i
 \end{align*}

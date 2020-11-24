@@ -192,7 +192,7 @@ MathJax.Hub.Config({
 </h6>
 <p id="p-1528">A graph, \(G\text{,}\) consists of a finite set, \(V(G)\text{,}\) of <dfn class="terminology">vertices</dfn> and a finite set, \(E(G)\text{,}\) of <dfn class="terminology">edges</dfn>. Each edge is assocated with two vertices (it may be the same vertex) called <dfn class="terminology">endpoints</dfn>. In the above example, \(V(G)=\{v_1, v_2, v_3, v_4\}, E(G)=\{e_1, e_2, e_3, e_4, e_5\}\text{.}\) The endpoints of edge \(e_1\) are \(v_1, v_2\text{.}\)</p>
 <p id="p-1529">If two edges have the same endpoints, we say they are <dfn class="terminology">parallel</dfn>.</p>
-<p id="p-1530">A <dfn class="terminology">loop</dfn> is an edge where both endpints are the same vertex.</p>
+<p id="p-1530">A <dfn class="terminology">loop</dfn> is an edge where both endpoints are the same vertex.</p>
 <p id="p-1531">Two vertices connected by an edge are called <dfn class="terminology">adjacent</dfn>. For example, \(v_2\) is adjacent to \(v_3\text{,}\) but \(v_3\) is not adjacent to \(v_4\text{.}\)</p>
 <p id="p-1532">A vertex of a loop is adjacent to itself.</p>
 <p id="p-1533">An edge is <dfn class="terminology">incident on</dfn> each of its endpoints.</p>
@@ -218,7 +218,7 @@ MathJax.Hub.Config({
 <a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-429" id="answer-429"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">6</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-429"><div class="answer solution-like">\(e_1, e_2, e_3, e_4\)</div></div>
 <p id="p-1545">Find all vertices adjacent to \(v_4\text{.}\)</p>
 <a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-430" id="answer-430"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">7</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-430"><div class="answer solution-like">\(\{v_1, v_3\}\)</div></div>
-<p id="p-1546">Does \(G\) have any paralell edges?</p>
+<p id="p-1546">Does \(G\) have any parallel edges?</p>
 <a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-431" id="answer-431"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">8</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-431"><div class="answer solution-like">Yes. \(e_2, e_3\)</div></div>
 <p id="p-1547">Does \(G\) have any loops?</p>
 <a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-432" id="answer-432"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">9</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-432"><div class="answer solution-like">No.</div></div></article></div>
@@ -228,7 +228,7 @@ MathJax.Hub.Config({
 <article class="definition definition-like" id="digraph"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">10.1.7</span><span class="period">.</span>
 </h6>
-<p id="p-1550">A <dfn class="terminology">directed graph</dfn> or <dfn class="terminology">digraph</dfn> consists of a set of vertices, \(V(G)\) and directed edges (arrows), \(D(G)\text{,}\) where each edge is associated with an <em class="alert">ordered</em> pair of of vertices called endpoints, \((v, w)\text{.}\)</p></article><p id="p-1551">We saw directed graphs in <a href="relations8-1.html" class="internal" title="Section 8.1: Relations on Sets">Section 8.1</a> and <a href="relations8-1.html" class="internal" title="Section 8.1: Relations on Sets">Section 8.1</a>. For example, see <a class="xref" data-knowl="./knowl/F_digraphlessthan.html" title="Figure 8.1.10">Figure 8.1.10</a>. In this example, we have an edge with endpoints \((1, 2)\text{,}\) but not \((2, 1)\text{.}\)</p>
+<p id="p-1550">A <dfn class="terminology">directed graph</dfn> or <dfn class="terminology">digraph</dfn> consists of a set of vertices, \(V(G)\) and directed edges (arrows), \(D(G)\text{,}\) where each edge is associated with an <em class="alert">ordered</em> pair of of vertices called endpoints, \((v, w)\text{.}\)</p></article><p id="p-1551">We saw directed graphs in <a href="relations8-1.html" class="internal" title="Section 8.1: Relations on Sets">Section 8.1</a> and <a href="rstrelations8-2.html" class="internal" title="Section 8.2: Reflexive, Symmetric, Transitive Properties">Section 8.2</a>. For example, see <a class="xref" data-knowl="./knowl/F_digraphlessthan.html" title="Figure 8.1.10">Figure 8.1.10</a>. In this example, we have an edge with endpoints \((1, 2)\text{,}\) but not \((2, 1)\text{.}\)</p>
 <p id="p-1552">Really, the vertices of a graph represent a set, while the edges represent relationships between elements of that set. There are lots of examples of graphs as representations of relationships, or networks. For example graphs are used to represent communications systems, flight patterns, and friendship networks. Graphs can even be used to find strategies in games such as sudoku.</p>
 <p id="p-1553">A graph with no parallel edges or loops is called <dfn class="terminology">simple</dfn>. For example, <a class="xref" data-knowl="./knowl/F_basicgraph.html" title="Figure 10.1.1">Figure 10.1.1</a> is simple, while <a class="xref" data-knowl="./knowl/F_parallelandloop.html" title="Figure 10.1.3">Figure 10.1.3</a> is not.</p>
 <p id="p-1554">Now we want to define a couple special graphs.</p>
@@ -331,15 +331,11 @@ MathJax.Hub.Config({
 </div></article><article class="exercise exercise-like" id="exercise-292"><h6 class="heading"><span class="codenumber">12<span class="period">.</span></span></h6>
 <p id="p-1587">True or false: there exists a graph with 4 vertices of degrees 4, 4, 4, 4.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-450" id="answer-450"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-450"><div class="answer solution-like">True. One example has parallel edges between each vertex.</div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-450" id="answer-450"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-450"><div class="answer solution-like">True. One example has parallel edges between each vertex. Can also have an example with loops.</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-293"><h6 class="heading"><span class="codenumber">13<span class="period">.</span></span></h6>
-<p id="p-1588">True or false: there exists a graph with 4 vertices of degrees 4, 4, 4, 4.</p>
+<p id="p-1588">True or false: there exists a simple graph with 4 vertices of degrees 4, 4, 4, 4.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-451" id="answer-451"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-451"><div class="answer solution-like">True. One example has parallel edges between each vertex. Can also have an example with loops.</div></div>
-</div></article><article class="exercise exercise-like" id="exercise-294"><h6 class="heading"><span class="codenumber">14<span class="period">.</span></span></h6>
-<p id="p-1589">True or false: there exists a simple graph with 4 vertices of degrees 4, 4, 4, 4.</p>
-<div class="solutions">
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-452" id="answer-452"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-452"><div class="answer solution-like">False. Can't have more edges than the complete graph on 4 vertices.</div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-451" id="answer-451"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-451"><div class="answer solution-like">False. Can't have more edges than the complete graph on 4 vertices.</div></div>
 </div></article></section></section></div></main>
 </div>
 </body>

@@ -204,7 +204,7 @@ MathJax.Hub.Config({
 \end{equation*}
 </div></article><p id="p-1497">We leave the algebraic proof as an exercise, and instead provide a combinatorial proof.</p>
 <article class="hiddenproof" id="proof-44"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-44"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-44"><article class="hiddenproof"><p id="p-1498">By definition, \(\binom{n+1}{r}\) counts the subsets of \(r\) objects chosen from \(n+1\) objects.</p>
-<p id="p-1499">Let \(S=\{x_1, x_2, \ldots x_{n+1}\}\text{,}\) a set of \(n+1\) objects. We can create all the subsets of \(r\) objects by choosing all \(r\) objects from \(\{x_1, \ldots, x_n\}\) or by choosing \(r-1\) out of \(\{x_1, \ldots, x_n\}\) and including \(x_{n+1}\text{.}\) Thus, we can count the subsets of \(r\) objects from \(n\) objects with \(\binom{n}{r}+\binom{n}{n-r}\text{.}\)</p></article></div>
+<p id="p-1499">Let \(S=\{x_1, x_2, \ldots x_{n+1}\}\text{,}\) a set of \(n+1\) objects. We can create all the subsets of \(r\) objects by choosing all \(r\) objects from \(\{x_1, \ldots, x_n\}\) or by choosing \(r-1\) out of \(\{x_1, \ldots, x_n\}\) and including \(x_{n+1}\text{.}\) Thus, we can count the subsets of \(r\) objects from \(n\) objects with \(\binom{n}{r}+\binom{n}{r-1}\text{.}\)</p></article></div>
 <p id="p-1500">We often call terms of the form \(\binom{n}{r}\) <dfn class="terminology">binomial coefficients</dfn>.</p>
 <p id="p-1501">There is a connection between binomial coefficients and Pascal's Triangle.</p>
 <p id="p-1502">You may have seen Pascal's Triangle before, the start of which is <table>
@@ -284,7 +284,7 @@ MathJax.Hub.Config({
 </tr>
 </table> If you calculate the binomial coefficients, you will see that you get the same values as Pascal's Triangle. Furthermore, Pascal's Formula is just the rule we use to get the triangle: add the \(r-1\) and \(r\) terms from the \(n^{th}\) row to get the \(r\) term in the \(n+1\) row.</p>
 <p id="p-1504">A <dfn class="terminology">binomial</dfn> is an expression of the form \(a+b\text{.}\)</p>
-<p id="p-1505">The Binomnial Theorem gives a formula for calculating \((a+b)^n\text{.}\)</p>
+<p id="p-1505">The Binomial Theorem gives a formula for calculating \((a+b)^n\text{.}\)</p>
 <article class="example example-like" id="E_combbinomialthm"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-E_combbinomialthm"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.6.3</span><span class="period">.</span><span class="space"> </span><span class="title">A Combinatorial Calculation for \((a+b)^3\).</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_combbinomialthm"><article class="example example-like"><p id="p-1506">Suppose we want to expand (or multiply) \((a+b)^3=(a+b)(a+b)(a+b)\text{.}\) We can think of the multiplication in this way,</p>

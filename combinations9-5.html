@@ -190,7 +190,7 @@ MathJax.Hub.Config({
 <p id="p-1444">Let \(n, r\) be nonnegative integers with \(r\leq n\text{.}\) An <dfn class="terminology">\(r\)-combination</dfn> of a set of \(n\) elements is the number of subsets of size \(r\) that can be chosen from a set of \(n\) elements.</p></article><p id="p-1445">Notation: \(\binom{n}{r}\text{,}\) \(C(n, r)\text{,}\) or \(nCr\text{.}\) We will generally use the first notation, which we first saw in <a href="sequences5-1.html" class="internal" title="Section 5.1: Sequences">Section 5.1</a>.</p>
 <p id="p-1446">For example, \(\binom{5}{4}\) is the number of subsets of size 4 chosen from a set of 5 elements.</p>
 <p id="p-1447">Note, the order in which we choose elements of a set does not matter.</p>
-<p id="p-1448">We can calculate combinations by first finding all the \(r\)-permuatiations of a set, then dividing by all the possible orderings of that subset: \(\frac{P(n, r)}{r!}\text{.}\) This can be rewritten to be the standard formula for calculating combinations:</p>
+<p id="p-1448">We can calculate combinations by first finding all the \(r\)-permuatations of a set, then dividing by all the possible orderings of that subset: \(\frac{P(n, r)}{r!}\text{.}\) This can be rewritten to be the standard formula for calculating combinations:</p>
 <div class="displaymath">
 \begin{equation*}
 \binom{n}{r}=\frac{n!}{r!(n-r)!}\text{.}
@@ -203,7 +203,7 @@ MathJax.Hub.Config({
 <p id="p-1451">We use combinations: \(\binom{15}{3}\text{.}\) It does not matter if a member was chosen first, second, or third, they would still be a member of the group. Thus, there are \(\frac{15!}{3!12!}=455\) ways to choose a group of 3.</p>
 <p id="p-1452">Now suppose you want to choose a group of 3 students in a class of 15 for a group project, but the first student chosen will be the note-taker, the second will be the presenter, the third will manage the discussion. How many ways can you choose the group?</p>
 <p id="p-1453">We use permutations: \(P(15, 3)\text{.}\) Now it DOES matter if a member was chosen first, second, or third, as each member has a different role. Thus, there are \(\frac{15!}{12!}=2730\) ways to choose a group of 3 where the members' roles are defined.</p></article></div>
-<p id="p-1454">In deciding whether to use combinations or permutations, you need to decide whether order matters. For combinatons, order doesn't matter; think about choosing subsets. For permuations, order does matter; think about choosing ordered lists.</p>
+<p id="p-1454">In deciding whether to use combinations or permutations, you need to decide whether order matters. For combinations, order doesn't matter; think about choosing subsets. For permuations, order does matter; think about choosing ordered lists.</p>
 <article class="example example-like" id="E_binstrings"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-E_binstrings"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.5.3</span><span class="period">.</span><span class="space"> </span><span class="title">Binary Strings.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_binstrings"><article class="example example-like"><p id="p-1455">How many binary strings of length 5 can have exactly 2 ones?</p>
@@ -237,7 +237,7 @@ MathJax.Hub.Config({
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.5.5</span><span class="period">.</span><span class="space"> </span><span class="title">Alternate Rearranging Letters.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-E_altreorderletters"><article class="example example-like"><p id="p-1465">How many ways are there to order the letters in the word “letter”?</p>
 <p id="p-1466">We can think of the string of letters as 6 places where we can choose to put letters. First we can think of all the letters as distinct. Then we have 6 letters to choose for the first place, 5 for the second, 4 for the third, etc. Thus we have \(6!\) ways to place 6 distinct letters.</p>
-<p id="p-1467">But the letters are not distinct, so we need to divide by the number of ways we over-counted. For each permutation we just counted, switching the two e's gives us the same word, so we need to divide by the number of ways to rearrange to two e's: \(2!.\) Similarly, we need to divide by equivalent arrangements of the two t's: \(2!\text{.}\)</p>
+<p id="p-1467">But the letters are not distinct, so we need to divide by the number of ways we over-counted. For each permutation we just counted, switching the two e's gives us the same word, so we need to divide by the number of ways to rearrange the two e's: \(2!.\) Similarly, we need to divide by equivalent arrangements of the two t's: \(2!\text{.}\)</p>
 <p id="p-1468">Putting this together we have</p>
 <div class="displaymath">
 \begin{equation*}
